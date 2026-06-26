@@ -1,0 +1,30 @@
+# Inferred GameController method mappings:
+- a() -> reset/clear
+- a(int) -> loadIGPEntryBytes/getResource
+- a(byte[]) -> readShort
+- a(byte[], int, int) -> readImageFromBytes/createImageFromBytes
+- a(int, int) -> readColor/getPaletteColor
+- a(int, Graphics, int, int, int) -> drawIGPImage/renderResource
+- a(String, Graphics, int, int, int) -> drawText/renderText
+- a(String, int) -> validateString
+- a(String, String, String) -> resolveIGPValue
+- a(int, String, int, String, String) -> loadIGPEntry
+- a(int, String[], int, String) -> loadCategory
+- a(byte[]) -> readStringArray
+- a(String[]) -> initStringArray
+- b() -> loadIGPData
+- c() -> isOnline/hasNetwork
+- g() -> openURL
+- a(Graphics, Image, int, int, int) -> drawImageBlinking
+- commandAction(Command, Displayable) -> onCommand
+- a(String) -> getAppPropertyCached
+
+Fields:
+- a (Hashtable) -> igpProperties
+- b (String[]) -> urlKeys
+- c (boolean) -> hasNetwork
+- d (String) -> pendingURL
+- e (String) -> operatorName/orangeProvider
+- f (String[]) -> urlTemplates
+- k (boolean) -> hasCommands
+- l (String) -> urlTemplateGame
