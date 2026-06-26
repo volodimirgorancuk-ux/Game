@@ -1,0 +1,27 @@
+# Mapping created by analysis of obfuscated J2ME bytecode
+# Format: original_name -> obfuscated_name
+# Note: ProGuard -applymapping uses this to rename obfuscated -> original
+
+# Main entry point (MIDlet)
+ZombieInfectionMIDlet -> GloftMASS
+
+# Core game canvas
+GameCanvas -> g
+
+# Graphics/sprite rendering engine
+GraphicsEngine -> a
+
+# Main game controller / state manager
+GameController -> b
+
+# Data container / layer
+GameData -> c
+
+# Configuration flags
+GameConfig -> d
+
+# Accelerometer/sensor handler
+SensorHandler -> e
+
+# Audio/options manager
+AudioManager -> f

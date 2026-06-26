@@ -1,0 +1,86 @@
+# Deobfuscation Report: Zombie Infection (240x320-rus-zombie-infection.jar)
+# Original: GloftMASS.class, a.class, b.class, c.class, d.class, e.class, f.class, g.class
+
+## Classes
+
+### ZombieInfectionMIDlet (GloftMASS)
+- Type: javax.microedition.midlet.MIDlet
+- Role: Application entry point
+- References: GameCanvas, GameController
+- Methods: startApp, pauseApp, destroyApp, constructor
+
+### GameCanvas (g)
+- Type: javax.microedition.lcdui.Canvas + java.lang.Runnable
+- Size: 422,699 bytes (422 KB), 1335 methods, 634 fields
+- Role: Main game rendering and input loop
+- Key features:
+  - Image/sprite management
+  - Audio playback (javax.microedition.media.Player)
+  - Game state machine (many boolean/int flags a-z, aa-az, aA-aZ)
+  - Graphics commands: drawString, drawImage, drawRegion, fillRect, fillTriangle
+  - References to: GraphicsEngine[], GameData[], AudioManager, SensorHandler
+  - Warnings present for: particles, NPC targets, layer lists, timers, buffers
+
+### GameController (b)
+- Type: java.lang.Runnable + javax.microedition.lcdui.CommandListener
+- Size: 33,176 bytes, 62 methods, 142 fields
+- Role: Main game logic, state management, IGP (In-Game Promotion) system
+- Key features:
+  - Loads resources from /dataIGP
+  - Handles IGP configuration: IGP-BS, IGP-CATEGORIES, IGP-PROMOS, IGP-VERSION, etc.
+  - URL handling: URL-BS, URL-GLIVE, URL-OPERATOR, URL-ORANGE, URL-PROMO, URL-PT, URL-WN, URL-TEMPLATE-GAME
+  - Font and text rendering
+  - RMS (RecordStore) persistence
+  - Thread-based execution
+
+### GraphicsEngine (a)
+- Type: Standalone utility class
+- Size: 13,163 bytes
+- Role: Low-level graphics operations, tilemap/sprite rendering
+- Key features:
+  - Image.createRGBImage usage (palette-based graphics)
+  - short[] and byte[] buffers for tile/sprite data
+  - Borders/clipping calculations (field l, m, n, o, p = bounds)
+  - drawLine, drawRect references
+  - Likely handles sprite sheets and tile maps
+
+### GameData (c)
+- Type: Standalone data container
+- Size: 2,608 bytes
+- Role: Game state entity/layer representation
+- Fields: position (int a,b,c), dimensions (int d,e,f), flags (boolean a), arrays (int[] a)
+- References: GraphicsEngine
+
+### GameConfig (d)
+- Type: Static configuration
+- Size: 536 bytes
+- Role: Global feature flags and constants
+- All fields static boolean/int
+- Initialized in static initializer
+
+### SensorHandler (e)
+- Type: javax.microedition.sensor.DataListener
+- Size: 2,934 bytes
+- Role: Device accelerometer/gyroscope input
+- Features:
+  - SensorManager.findSensors for "acceleration"
+  - SensorConnection/channel handling
+  - References to GameCanvas.c()
+
+### AudioManager (f)
+- Type: Standalone manager
+- Size: 100,180 bytes
+- Role: Sound/music playback, game options
+- Features:
+  - References to GameCanvas methods
+  - Manages game state flags
+  - References GameData.a (c.a)
+
+## Resources
+- icon.png: Game icon
+- dataIGP: IGP configuration payload (56,713 bytes)
+- m0-m13_*, t0: Game modules/maps (largest: m3_0 at 627 KB)
+- palettesAmount.bin: Palette definitions
+
+## Devices referenced
+Sony Ericsson: K770, K790, K800, K810, K850, S500, T650, W580, W760, W850, W880, W890, W950
