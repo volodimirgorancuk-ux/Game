@@ -2799,6 +2799,14 @@ lbl152:
                 inputStream.read(a[i]);
             }
             inputStream.close();
+            System.out.println("DEBUG palettes loaded: " + n);
+            for (int i = 0; i < n && i < 5; ++i) {
+                System.out.print("Palette " + i + ": ");
+                for (int j = 0; j < a[i].length && j < 20; ++j) {
+                    System.out.print(String.format("%02x ", a[i][j]));
+                }
+                System.out.println();
+            }
         }/*         catch (Exception exception) */ {}
         System.gc();
     }
@@ -4002,6 +4010,7 @@ lbl80:
                 h[n4] = h[n4] | (a.read() & 0xFF) << 24;
             }
             B = 0;
+            System.out.println("DEBUG loaded resource: " + string + " size=" + A + " offsets=" + h[0] + "," + h[1] + "," + h[2] + "...");
         }/*         catch (Exception exception) */ {}
         System.gc();
     }
