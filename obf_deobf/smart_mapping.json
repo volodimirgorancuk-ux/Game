@@ -1,0 +1,6384 @@
+{
+  "GameCanvas.m": {
+    "obfuscated": "m",
+    "suggested": "audioUpdate",
+    "params": "int n, int n2, int n3",
+    "return": "void",
+    "callers": [
+      "GameCanvas.h",
+      "GameCanvas.av",
+      "GameCanvas.aN",
+      "GameCanvas.bd",
+      "GameCanvas.bF"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.a": {
+    "obfuscated": "a",
+    "suggested": "audioUpdate",
+    "params": "int n, int n2, int n3, int n4, byte by, boolean bl",
+    "return": "void",
+    "callers": [
+      "GameCanvas.a",
+      "GameCanvas.n",
+      "GameCanvas.u",
+      "GameCanvas.w",
+      "GameCanvas.c"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.n": {
+    "obfuscated": "n",
+    "suggested": "drawLevelSelect",
+    "params": "Graphics graphics, boolean bl",
+    "return": "void",
+    "callers": [
+      "GameCanvas.v",
+      "GameCanvas.c",
+      "GameCanvas.z",
+      "GameCanvas.h",
+      "GameCanvas.P"
+    ],
+    "callees": [
+      "H",
+      "setColor",
+      "fillRect",
+      "GameCanvas.S",
+      "j"
+    ],
+    "strings": []
+  },
+  "GameCanvas.o": {
+    "obfuscated": "o",
+    "suggested": "getAudio",
+    "params": "int n, int n2, int n3",
+    "return": "int",
+    "callers": [
+      "GameCanvas.bG",
+      "GameCanvas.bH",
+      "GameCanvas.cf",
+      "GameCanvas.cj",
+      "GameCanvas.cm"
+    ],
+    "callees": [
+      "GameCanvas.j",
+      "j"
+    ],
+    "strings": []
+  },
+  "GameCanvas.p": {
+    "obfuscated": "p",
+    "suggested": "getAudio",
+    "params": "int n, int n2, int n3",
+    "return": "int",
+    "callers": [
+      "GameCanvas.W",
+      "GameCanvas.aE",
+      "GameCanvas.aS",
+      "GameCanvas.aT",
+      "GameCanvas.aU"
+    ],
+    "callees": [
+      "q",
+      "GameCanvas.q"
+    ],
+    "strings": []
+  },
+  "GameCanvas.q": {
+    "obfuscated": "q",
+    "suggested": "drawCharacterSelect",
+    "params": "int n, int n2, int n3",
+    "return": "int",
+    "callers": [
+      "GameCanvas.p",
+      "GameCanvas.W",
+      "GameCanvas.aJ",
+      "GameCanvas.aT",
+      "GameCanvas.aU"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.r": {
+    "obfuscated": "r",
+    "suggested": "getAudio",
+    "params": "int n, int n2, int n3",
+    "return": "int",
+    "callers": [
+      "GameCanvas.bG",
+      "GameCanvas.cM",
+      "GameCanvas.cZ",
+      "GameCanvas.dy",
+      "GameCanvas.dA"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.d": {
+    "obfuscated": "d",
+    "suggested": "isAudio",
+    "params": "int n, int n2",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.G",
+      "GameCanvas.ae",
+      "GameCanvas.aF",
+      "GameCanvas.aI",
+      "GameCanvas.bE"
+    ],
+    "callees": [
+      "GameCanvas.C",
+      "C"
+    ],
+    "strings": []
+  },
+  "GameCanvas.s": {
+    "obfuscated": "s",
+    "suggested": "calc_s",
+    "params": "int n, int n2, int n3",
+    "return": "int",
+    "callers": [
+      "GameCanvas.V",
+      "GameCanvas.aq",
+      "GameCanvas.bc",
+      "GameCanvas.cd",
+      "GameCanvas.cf"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.t": {
+    "obfuscated": "t",
+    "suggested": "check_t",
+    "params": "int n",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.cm",
+      "GameCanvas.cO",
+      "GameCanvas.dw",
+      "GameCanvas.dz",
+      "GameCanvas.dJ"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.u": {
+    "obfuscated": "u",
+    "suggested": "update_u",
+    "params": "int n, int n2",
+    "return": "void",
+    "callers": [
+      "GameCanvas.V",
+      "GameCanvas.bZ",
+      "GameCanvas.cu",
+      "GameCanvas.cw",
+      "GameCanvas.dj"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.v": {
+    "obfuscated": "v",
+    "suggested": "updateMainMenu",
+    "params": "int n, int n2",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cA",
+      "GameCanvas.dE",
+      "GameCanvas.dH",
+      "GameCanvas.dJ",
+      "GameCanvas.dL"
+    ],
+    "callees": [
+      "l",
+      "GameCanvas.n",
+      "n",
+      "GameCanvas.l"
+    ],
+    "strings": []
+  },
+  "GameCanvas.b": {
+    "obfuscated": "b",
+    "suggested": "drawMainMenu",
+    "params": "Graphics var0, int var1_1, int var2_2, int var3_3",
+    "return": "void",
+    "callers": [
+      "GameCanvas.n",
+      "GameCanvas.h",
+      "GameCanvas.i",
+      "GameCanvas.ac",
+      "GameCanvas.ao"
+    ],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.w": {
+    "obfuscated": "w",
+    "suggested": "update_w",
+    "params": "int n, int n2",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bH",
+      "GameCanvas.dH",
+      "GameCanvas.dJ",
+      "GameCanvas.dL",
+      "GameCanvas.dN"
+    ],
+    "callees": [
+      "fq",
+      "GameCanvas.a",
+      "GameCanvas.fq",
+      "aJ",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.x": {
+    "obfuscated": "x",
+    "suggested": "updateOptions",
+    "params": "int n, int n2",
+    "return": "void",
+    "callers": [
+      "GameCanvas.i",
+      "GameCanvas.bG",
+      "GameCanvas.bM",
+      "GameCanvas.dS",
+      "GameCanvas.eh"
+    ],
+    "callees": [
+      "GameCanvas.fF",
+      "fF"
+    ],
+    "strings": []
+  },
+  "GameCanvas.c": {
+    "obfuscated": "c",
+    "suggested": "drawOptions",
+    "params": "AudioManager audioManager, boolean bl",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.h",
+      "GameCanvas.Y",
+      "GameCanvas.ah",
+      "GameCanvas.aB",
+      "GameCanvas.aC"
+    ],
+    "callees": [
+      "j",
+      "A",
+      "GameCanvas.a",
+      "GameCanvas.j",
+      "f"
+    ],
+    "strings": []
+  },
+  "GameCanvas.y": {
+    "obfuscated": "y",
+    "suggested": "isAudio",
+    "params": "int n",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.fl"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.f": {
+    "obfuscated": "f",
+    "suggested": "audioUpdate",
+    "params": "int n, boolean bl",
+    "return": "void",
+    "callers": [
+      "GameCanvas.c",
+      "GameCanvas.ab",
+      "GameCanvas.ac",
+      "GameCanvas.ae",
+      "GameCanvas.ar"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.z": {
+    "obfuscated": "z",
+    "suggested": "updateInGame",
+    "params": "int n, int n2",
+    "return": "int",
+    "callers": [
+      "GameCanvas.aN",
+      "GameCanvas.eR",
+      "GameCanvas.fc"
+    ],
+    "callees": [
+      "GameCanvas.n",
+      "n",
+      "a",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.A": {
+    "obfuscated": "A",
+    "suggested": "calc_A",
+    "params": "int n, int n2",
+    "return": "int",
+    "callers": [
+      "GameCanvas.c",
+      "GameCanvas.B",
+      "GameCanvas.h",
+      "GameCanvas.W",
+      "GameCanvas.ba"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.B": {
+    "obfuscated": "B",
+    "suggested": "updateGameOver",
+    "params": "int n, int n2",
+    "return": "int",
+    "callers": [
+      "GameCanvas.T",
+      "GameCanvas.bG",
+      "GameCanvas.ci",
+      "GameCanvas.fl",
+      "GameCanvas.fn"
+    ],
+    "callees": [
+      "A",
+      "GameCanvas.A",
+      "a",
+      "GameCanvas.h",
+      "h"
+    ],
+    "strings": []
+  },
+  "GameCanvas.e": {
+    "obfuscated": "e",
+    "suggested": "drawGameOver",
+    "params": "int n, int n2",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.n",
+      "GameCanvas.ab",
+      "GameCanvas.ac",
+      "GameCanvas.ao",
+      "GameCanvas.ar"
+    ],
+    "callees": [
+      "GameCanvas.C",
+      "C"
+    ],
+    "strings": []
+  },
+  "GameCanvas.C": {
+    "obfuscated": "C",
+    "suggested": "getAudio",
+    "params": "int n, int n2",
+    "return": "int",
+    "callers": [
+      "GameCanvas.d",
+      "GameCanvas.e",
+      "GameCanvas.V",
+      "GameCanvas.aK",
+      "GameCanvas.eW"
+    ],
+    "callees": [
+      "l",
+      "GameCanvas.l"
+    ],
+    "strings": []
+  },
+  "GameCanvas.D": {
+    "obfuscated": "D",
+    "suggested": "audioUpdate",
+    "params": "boolean bl",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ar",
+      "GameCanvas.bH",
+      "GameCanvas.cZ",
+      "GameCanvas.dA",
+      "GameCanvas.dH"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.E": {
+    "obfuscated": "E",
+    "suggested": "updatePausedSubmenu",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.Z",
+      "GameCanvas.aI",
+      "GameCanvas.bx",
+      "GameCanvas.ct",
+      "GameCanvas.cZ"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.g": {
+    "obfuscated": "g",
+    "suggested": "drawPausedSubmenu",
+    "params": "int n, int n2, int n3, int n4, int n5",
+    "return": "void",
+    "callers": [
+      "GameCanvas.as",
+      "GameCanvas.aw",
+      "GameCanvas.ba",
+      "GameCanvas.bf",
+      "GameCanvas.cd"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.F": {
+    "obfuscated": "F",
+    "suggested": "updateLoading",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.i",
+      "GameCanvas.Z",
+      "GameCanvas.bE",
+      "GameCanvas.eZ"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.h": {
+    "obfuscated": "h",
+    "suggested": "drawLoading",
+    "params": "Graphics graphics, int n, int n2, int n3, int n4",
+    "return": "void",
+    "callers": [
+      "GameCanvas.B",
+      "GameCanvas.au",
+      "GameCanvas.cd",
+      "GameCanvas.cx",
+      "GameCanvas.ds"
+    ],
+    "callees": [
+      "m",
+      "GameCanvas.c",
+      "setClip",
+      "j",
+      "n"
+    ],
+    "strings": []
+  },
+  "GameCanvas.i": {
+    "obfuscated": "i",
+    "suggested": "drawConfirmDialog",
+    "params": "Graphics var0, int var1_1, int var2_2, int var3_3,",
+    "return": "void",
+    "callers": [
+      "GameCanvas.af",
+      "GameCanvas.aM",
+      "GameCanvas.aN",
+      "GameCanvas.bc",
+      "GameCanvas.bn"
+    ],
+    "callees": [
+      "Z",
+      "l",
+      "GameCanvas.l",
+      "GameCanvas.S",
+      "GameCanvas.Z"
+    ],
+    "strings": []
+  },
+  "GameCanvas.G": {
+    "obfuscated": "G",
+    "suggested": "updateConfirmDialog",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.i",
+      "GameCanvas.Z"
+    ],
+    "callees": [
+      "d",
+      "GameCanvas.d",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.j": {
+    "obfuscated": "j",
+    "suggested": "drawInGame",
+    "params": "AudioManager var0, int var1_1",
+    "return": "void",
+    "callers": [
+      "GameCanvas.n",
+      "GameCanvas.o",
+      "GameCanvas.c",
+      "GameCanvas.h",
+      "GameCanvas.ao"
+    ],
+    "callees": [
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.H": {
+    "obfuscated": "H",
+    "suggested": "calc_H",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.n",
+      "GameCanvas.ad",
+      "GameCanvas.am",
+      "GameCanvas.ao",
+      "GameCanvas.ar"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.I": {
+    "obfuscated": "I",
+    "suggested": "calc_I",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.B",
+      "GameCanvas.h",
+      "GameCanvas.J",
+      "GameCanvas.X",
+      "GameCanvas.bH"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.J": {
+    "obfuscated": "J",
+    "suggested": "calc_J",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "GameCanvas.I",
+      "I"
+    ],
+    "strings": []
+  },
+  "GameCanvas.K": {
+    "obfuscated": "K",
+    "suggested": "calc_K",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.W",
+      "GameCanvas.bc",
+      "GameCanvas.ch",
+      "GameCanvas.cO",
+      "GameCanvas.fk"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.k": {
+    "obfuscated": "k",
+    "suggested": "audioUpdate",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ar",
+      "GameCanvas.aQ",
+      "GameCanvas.bb",
+      "GameCanvas.bk",
+      "GameCanvas.cc"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.L": {
+    "obfuscated": "L",
+    "suggested": "calc_L",
+    "params": "",
+    "return": "int",
+    "callers": [
+      "GameCanvas.bj",
+      "GameCanvas.br",
+      "GameCanvas.cd",
+      "GameCanvas.cL",
+      "GameCanvas.cO"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.M": {
+    "obfuscated": "M",
+    "suggested": "getAudio",
+    "params": "int n",
+    "return": "int",
+    "callers": [
+      "GameCanvas.bG",
+      "GameCanvas.cf",
+      "GameCanvas.cZ"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.N": {
+    "obfuscated": "N",
+    "suggested": "calc_N",
+    "params": "int n",
+    "return": "int",
+    "callers": [
+      "GameCanvas.ap",
+      "GameCanvas.bG",
+      "GameCanvas.cU",
+      "GameCanvas.dd",
+      "GameCanvas.eU"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.O": {
+    "obfuscated": "O",
+    "suggested": "check_O",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.ae"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.P": {
+    "obfuscated": "P",
+    "suggested": "drawTutorial",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.ar",
+      "GameCanvas.bK",
+      "GameCanvas.dz",
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "GameCanvas.n",
+      "n",
+      "a",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.Q": {
+    "obfuscated": "Q",
+    "suggested": "check_Q",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.as",
+      "GameCanvas.dz",
+      "GameCanvas.dJ",
+      "GameCanvas.dN"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.R": {
+    "obfuscated": "R",
+    "suggested": "drawSubState",
+    "params": "",
+    "return": "boolean",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.S": {
+    "obfuscated": "S",
+    "suggested": "check_S",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.n",
+      "GameCanvas.i",
+      "GameCanvas.W",
+      "GameCanvas.af",
+      "GameCanvas.ag"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.T": {
+    "obfuscated": "T",
+    "suggested": "check_T",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.ei",
+      "GameCanvas.eS"
+    ],
+    "callees": [
+      "GameCanvas.B",
+      "B"
+    ],
+    "strings": []
+  },
+  "GameCanvas.U": {
+    "obfuscated": "U",
+    "suggested": "isAudio",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.eS"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.V": {
+    "obfuscated": "V",
+    "suggested": "updateCutscene",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.bG",
+      "GameCanvas.dH",
+      "GameCanvas.eS"
+    ],
+    "callees": [
+      "eW",
+      "s",
+      "dp",
+      "GameCanvas.s",
+      "GameCanvas.aM"
+    ],
+    "strings": []
+  },
+  "GameCanvas.W": {
+    "obfuscated": "W",
+    "suggested": "isAudio",
+    "params": "",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.cj",
+      "GameCanvas.dH",
+      "GameCanvas.eS",
+      "GameCanvas.eT"
+    ],
+    "callees": [
+      "GameCanvas.S",
+      "p",
+      "GameCanvas.q",
+      "S",
+      "A"
+    ],
+    "strings": []
+  },
+  "GameCanvas.l": {
+    "obfuscated": "l",
+    "suggested": "drawCutscene",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.v",
+      "GameCanvas.C",
+      "GameCanvas.i",
+      "GameCanvas.Z",
+      "GameCanvas.aU"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.X": {
+    "obfuscated": "X",
+    "suggested": "getAudio",
+    "params": "int n",
+    "return": "int",
+    "callers": [
+      "GameCanvas.dH",
+      "GameCanvas.eh",
+      "GameCanvas.eS"
+    ],
+    "callees": [
+      "GameCanvas.I",
+      "I"
+    ],
+    "strings": []
+  },
+  "GameCanvas.Y": {
+    "obfuscated": "Y",
+    "suggested": "calc_Y",
+    "params": "int n",
+    "return": "int",
+    "callers": [
+      "GameCanvas.ab",
+      "GameCanvas.bA",
+      "GameCanvas.cy"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "c"
+    ],
+    "strings": []
+  },
+  "GameCanvas.Z": {
+    "obfuscated": "Z",
+    "suggested": "getAudio",
+    "params": "int n",
+    "return": "int",
+    "callers": [
+      "GameCanvas.i",
+      "GameCanvas.ad"
+    ],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "E",
+      "GameCanvas.E",
+      "G"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aa": {
+    "obfuscated": "aa",
+    "suggested": "getAudio",
+    "params": "int n",
+    "return": "int",
+    "callers": [
+      "GameCanvas.ad",
+      "GameCanvas.keyPressed",
+      "GameCanvas.keyReleased"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.ab": {
+    "obfuscated": "ab",
+    "suggested": "audioRender",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ad"
+    ],
+    "callees": [
+      "GameCanvas.Y",
+      "e",
+      "GameCanvas.a",
+      "f",
+      "GameCanvas.e"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ac": {
+    "obfuscated": "ac",
+    "suggested": "audioRender",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ad"
+    ],
+    "callees": [
+      "e",
+      "GameCanvas.a",
+      "f",
+      "GameCanvas.e",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ad": {
+    "obfuscated": "ad",
+    "suggested": "audioRender",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "Z",
+      "H",
+      "GameCanvas.Z",
+      "GameCanvas.ab",
+      "aa"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ae": {
+    "obfuscated": "ae",
+    "suggested": "audioRender",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cU",
+      "GameCanvas.dT",
+      "GameCanvas.eK"
+    ],
+    "callees": [
+      "getClipY",
+      "getClipX",
+      "setClip",
+      "GameCanvas.d",
+      "d"
+    ],
+    "strings": []
+  },
+  "GameCanvas.af": {
+    "obfuscated": "af",
+    "suggested": "audioRender",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aj",
+      "GameCanvas.cw",
+      "GameCanvas.dK",
+      "GameCanvas.dT"
+    ],
+    "callees": [
+      "setColor",
+      "fillRect",
+      "GameCanvas.S",
+      "S",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ag": {
+    "obfuscated": "ag",
+    "suggested": "audioRender",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "S",
+      "GameCanvas.S",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ah": {
+    "obfuscated": "ah",
+    "suggested": "audioRender",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "c",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.c"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ai": {
+    "obfuscated": "ai",
+    "suggested": "update_ai",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aj",
+      "GameCanvas.aM",
+      "GameCanvas.ce",
+      "GameCanvas.cy",
+      "GameCanvas.dy"
+    ],
+    "callees": [
+      "S",
+      "GameCanvas.S",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aj": {
+    "obfuscated": "aj",
+    "suggested": "update_aj",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "setColor",
+      "fillRect",
+      "af",
+      "GameCanvas.a",
+      "GameCanvas.ak"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ak": {
+    "obfuscated": "ak",
+    "suggested": "update_ak",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aj",
+      "GameCanvas.cB",
+      "GameCanvas.cD"
+    ],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.al": {
+    "obfuscated": "al",
+    "suggested": "update_al",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ao",
+      "GameCanvas.fE"
+    ],
+    "callees": [
+      "an",
+      "GameCanvas.av",
+      "av",
+      "GameCanvas.an",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.am": {
+    "obfuscated": "am",
+    "suggested": "update_am",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.al",
+      "GameCanvas.cF",
+      "GameCanvas.cG",
+      "GameCanvas.cH"
+    ],
+    "callees": [
+      "H",
+      "GameCanvas.H",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.an": {
+    "obfuscated": "an",
+    "suggested": "update_an",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.al",
+      "GameCanvas.cY"
+    ],
+    "callees": [
+      "getClipY",
+      "getClipX",
+      "setClip",
+      "GameCanvas.a",
+      "getClipHeight"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ao": {
+    "obfuscated": "ao",
+    "suggested": "drawVictory",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cU",
+      "GameCanvas.cY"
+    ],
+    "callees": [
+      "H",
+      "GameCanvas.al",
+      "al",
+      "GameCanvas.av",
+      "j"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ap": {
+    "obfuscated": "ap",
+    "suggested": "update_ap",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ar",
+      "GameCanvas.cZ"
+    ],
+    "callees": [
+      "GameCanvas.N",
+      "GameCanvas.a",
+      "N",
+      "a",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aq": {
+    "obfuscated": "aq",
+    "suggested": "update_aq",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ar",
+      "GameCanvas.dq"
+    ],
+    "callees": [
+      "GameCanvas.S",
+      "s",
+      "GameCanvas.s",
+      "S",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ar": {
+    "obfuscated": "ar",
+    "suggested": "drawContinue",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cd",
+      "GameCanvas.dg"
+    ],
+    "callees": [
+      "GameCanvas.ap",
+      "GameCanvas.j",
+      "k",
+      "GameCanvas.b",
+      "aQ"
+    ],
+    "strings": []
+  },
+  "GameCanvas.as": {
+    "obfuscated": "as",
+    "suggested": "update_as",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ao",
+      "GameCanvas.df",
+      "GameCanvas.dq"
+    ],
+    "callees": [
+      "getClipY",
+      "getClipX",
+      "Q",
+      "setClip",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.at": {
+    "obfuscated": "at",
+    "suggested": "update_at",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "H",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.b",
+      "GameCanvas.H"
+    ],
+    "strings": []
+  },
+  "GameCanvas.au": {
+    "obfuscated": "au",
+    "suggested": "update_au",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dl"
+    ],
+    "callees": [
+      "GameCanvas.av",
+      "av",
+      "GameCanvas.h",
+      "a",
+      "h"
+    ],
+    "strings": []
+  },
+  "GameCanvas.av": {
+    "obfuscated": "av",
+    "suggested": "update_av",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.al",
+      "GameCanvas.ao",
+      "GameCanvas.au",
+      "GameCanvas.av",
+      "GameCanvas.cN"
+    ],
+    "callees": [
+      "m",
+      "GameCanvas.av",
+      "setClip",
+      "av",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aw": {
+    "obfuscated": "aw",
+    "suggested": "update_aw",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "g",
+      "a",
+      "GameCanvas.g"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ax": {
+    "obfuscated": "ax",
+    "suggested": "drawCredits",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ay",
+      "GameCanvas.bG",
+      "GameCanvas.ce",
+      "GameCanvas.ew"
+    ],
+    "callees": [
+      "f",
+      "AudioManager.f",
+      "println"
+    ],
+    "strings": [
+      "WARNING: GameParticles: Releasing no reserved focus "
+    ]
+  },
+  "GameCanvas.ay": {
+    "obfuscated": "ay",
+    "suggested": "update_ay",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bK",
+      "GameCanvas.df",
+      "GameCanvas.ex"
+    ],
+    "callees": [
+      "GameCanvas.az",
+      "GameCanvas.ax",
+      "ax",
+      "az"
+    ],
+    "strings": []
+  },
+  "GameCanvas.az": {
+    "obfuscated": "az",
+    "suggested": "update_az",
+    "params": "int var0",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ay"
+    ],
+    "callees": [
+      "e",
+      "GameCanvas.a",
+      "f",
+      "GameCanvas.e",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aA": {
+    "obfuscated": "aA",
+    "suggested": "update_aA",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aB",
+      "GameCanvas.aC",
+      "GameCanvas.aD",
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.aB": {
+    "obfuscated": "aB",
+    "suggested": "update_aB",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eA"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "GameCanvas.aA",
+      "GameCanvas.a",
+      "c",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aC": {
+    "obfuscated": "aC",
+    "suggested": "update_aC",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG",
+      "GameCanvas.eA"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "GameCanvas.aA",
+      "c",
+      "GameCanvas.b",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aD": {
+    "obfuscated": "aD",
+    "suggested": "update_aD",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cZ",
+      "GameCanvas.eA"
+    ],
+    "callees": [
+      "GameCanvas.aA",
+      "c",
+      "GameCanvas.c",
+      "aA"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aE": {
+    "obfuscated": "aE",
+    "suggested": "update_aE",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.aG",
+      "p",
+      "e",
+      "GameCanvas.p",
+      "f"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aF": {
+    "obfuscated": "aF",
+    "suggested": "update_aF",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aE",
+      "GameCanvas.eA"
+    ],
+    "callees": [
+      "d",
+      "GameCanvas.d"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aG": {
+    "obfuscated": "aG",
+    "suggested": "update_aG",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aE",
+      "GameCanvas.eA"
+    ],
+    "callees": [
+      "e",
+      "GameCanvas.e"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aH": {
+    "obfuscated": "aH",
+    "suggested": "update_aH",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eA"
+    ],
+    "callees": [
+      "S",
+      "GameCanvas.S",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aI": {
+    "obfuscated": "aI",
+    "suggested": "update_aI",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bF"
+    ],
+    "callees": [
+      "d",
+      "E",
+      "GameCanvas.E",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aJ": {
+    "obfuscated": "aJ",
+    "suggested": "update_aJ",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.w",
+      "GameCanvas.bF"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a",
+      "q",
+      "GameCanvas.q"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aK": {
+    "obfuscated": "aK",
+    "suggested": "update_aK",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aM"
+    ],
+    "callees": [
+      "GameCanvas.C",
+      "GameCanvas.a",
+      "a",
+      "C"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aL": {
+    "obfuscated": "aL",
+    "suggested": "update_aL",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aM"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.b",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aM": {
+    "obfuscated": "aM",
+    "suggested": "update_aM",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.V"
+    ],
+    "callees": [
+      "aL",
+      "GameCanvas.aK",
+      "j",
+      "GameCanvas.j",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aN": {
+    "obfuscated": "aN",
+    "suggested": "update_aN",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dI"
+    ],
+    "callees": [
+      "m",
+      "GameCanvas.z",
+      "setClip",
+      "z",
+      "GameCanvas.n"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aO": {
+    "obfuscated": "aO",
+    "suggested": "updateCharacterSelect",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ar"
+    ],
+    "callees": [
+      "getClipY",
+      "getClipX",
+      "setClip",
+      "j",
+      "GameCanvas.j"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aP": {
+    "obfuscated": "aP",
+    "suggested": "update_aP",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ar"
+    ],
+    "callees": [
+      "aV",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.aV"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aQ": {
+    "obfuscated": "aQ",
+    "suggested": "update_aQ",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ar"
+    ],
+    "callees": [
+      "aX",
+      "GameCanvas.k",
+      "k",
+      "GameCanvas.aT",
+      "aT"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aR": {
+    "obfuscated": "aR",
+    "suggested": "update_aR",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "setColor",
+      "fillRect",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aS": {
+    "obfuscated": "aS",
+    "suggested": "update_aS",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aQ",
+      "GameCanvas.eS"
+    ],
+    "callees": [
+      "setColor",
+      "GameCanvas.p",
+      "drawRect",
+      "p"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aT": {
+    "obfuscated": "aT",
+    "suggested": "update_aT",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aQ"
+    ],
+    "callees": [
+      "p",
+      "GameCanvas.q",
+      "GameCanvas.p",
+      "GameCanvas.a",
+      "AudioManager.h"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aU": {
+    "obfuscated": "aU",
+    "suggested": "update_aU",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "l",
+      "setColor",
+      "fillRect",
+      "GameCanvas.l",
+      "p"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aV": {
+    "obfuscated": "aV",
+    "suggested": "update_aV",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aP",
+      "GameCanvas.cN",
+      "GameCanvas.dH",
+      "GameCanvas.fm"
+    ],
+    "callees": [
+      "setColor",
+      "GameCanvas.a",
+      "drawRect",
+      "aW",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aW": {
+    "obfuscated": "aW",
+    "suggested": "update_aW",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aV"
+    ],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "GameCanvas.a",
+      "AudioManager.h",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aX": {
+    "obfuscated": "aX",
+    "suggested": "update_aX",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aQ"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "AudioManager.h",
+      "a",
+      "GameCanvas.b",
+      "h"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aY": {
+    "obfuscated": "aY",
+    "suggested": "update_aY",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "setColor",
+      "getClipY",
+      "fillRect",
+      "getClipX",
+      "setClip"
+    ],
+    "strings": []
+  },
+  "GameCanvas.aZ": {
+    "obfuscated": "aZ",
+    "suggested": "update_aZ",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fC"
+    ],
+    "callees": [
+      "setColor",
+      "getClipY",
+      "getClipX",
+      "fillRect",
+      "setClip"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ba": {
+    "obfuscated": "ba",
+    "suggested": "update_ba",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fE"
+    ],
+    "callees": [
+      "H",
+      "setColor",
+      "fillRect",
+      "A",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bb": {
+    "obfuscated": "bb",
+    "suggested": "update_bb",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "getClipY",
+      "getClipX",
+      "setClip",
+      "GameCanvas.k",
+      "k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bc": {
+    "obfuscated": "bc",
+    "suggested": "update_bc",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "l",
+      "s",
+      "GameCanvas.l",
+      "GameCanvas.s",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bd": {
+    "obfuscated": "bd",
+    "suggested": "update_bd",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "l",
+      "GameCanvas.l",
+      "d",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.be": {
+    "obfuscated": "be",
+    "suggested": "update_be",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bf": {
+    "obfuscated": "bf",
+    "suggested": "update_bf",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "GameCanvas.a",
+      "g",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bg": {
+    "obfuscated": "bg",
+    "suggested": "update_bg",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bh": {
+    "obfuscated": "bh",
+    "suggested": "update_bh",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bi": {
+    "obfuscated": "bi",
+    "suggested": "update_bi",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bj"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bj": {
+    "obfuscated": "bj",
+    "suggested": "update_bj",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "GameCanvas.bi",
+      "bi",
+      "L",
+      "GameCanvas.L"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bk": {
+    "obfuscated": "bk",
+    "suggested": "update_bk",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.k",
+      "k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bl": {
+    "obfuscated": "bl",
+    "suggested": "update_bl",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bm": {
+    "obfuscated": "bm",
+    "suggested": "update_bm",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.V"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bn": {
+    "obfuscated": "bn",
+    "suggested": "update_bn",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cO",
+      "GameCanvas.fv"
+    ],
+    "callees": [
+      "i",
+      "GameCanvas.i"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bo": {
+    "obfuscated": "bo",
+    "suggested": "update_bo",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bp",
+      "GameCanvas.dE"
+    ],
+    "callees": [
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bp": {
+    "obfuscated": "bp",
+    "suggested": "update_bp",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "bo",
+      "GameCanvas.bo"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bq": {
+    "obfuscated": "bq",
+    "suggested": "update_bq",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.br": {
+    "obfuscated": "br",
+    "suggested": "update_br",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.L",
+      "L",
+      "GameCanvas.bs",
+      "bs"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bs": {
+    "obfuscated": "bs",
+    "suggested": "update_bs",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.br"
+    ],
+    "callees": [
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bt": {
+    "obfuscated": "bt",
+    "suggested": "update_bt",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bu": {
+    "obfuscated": "bu",
+    "suggested": "update_bu",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bv": {
+    "obfuscated": "bv",
+    "suggested": "update_bv",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "bx",
+      "GameCanvas.bx"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bw": {
+    "obfuscated": "bw",
+    "suggested": "update_bw",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bx": {
+    "obfuscated": "bx",
+    "suggested": "update_bx",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bv"
+    ],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "E",
+      "GameCanvas.E",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.by": {
+    "obfuscated": "by",
+    "suggested": "update_by",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bz": {
+    "obfuscated": "bz",
+    "suggested": "update_bz",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bA": {
+    "obfuscated": "bA",
+    "suggested": "update_bA",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "Y",
+      "GameCanvas.Y"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bB": {
+    "obfuscated": "bB",
+    "suggested": "update_bB",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bC": {
+    "obfuscated": "bC",
+    "suggested": "update_bC",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bD": {
+    "obfuscated": "bD",
+    "suggested": "update_bD",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bE": {
+    "obfuscated": "bE",
+    "suggested": "update_bE",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.c",
+      "d",
+      "GameCanvas.a",
+      "c",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bF": {
+    "obfuscated": "bF",
+    "suggested": "update_bF",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "ed",
+      "GameCanvas.aI",
+      "GameCanvas.ed",
+      "d"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bG": {
+    "obfuscated": "bG",
+    "suggested": "update_bG",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.m",
+      "GameCanvas.da",
+      "GameCanvas.ez",
+      "V",
+      "GameCanvas.bI"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bH": {
+    "obfuscated": "bH",
+    "suggested": "update_bH",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "l",
+      "GameCanvas.l",
+      "GameCanvas.o",
+      "GameCanvas.D"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bI": {
+    "obfuscated": "bI",
+    "suggested": "update_bI",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "b",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bJ": {
+    "obfuscated": "bJ",
+    "suggested": "update_bJ",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "e",
+      "GameCanvas.e"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bK": {
+    "obfuscated": "bK",
+    "suggested": "updatePaused",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "cE",
+      "GameCanvas.c",
+      "GameCanvas.a",
+      "c",
+      "GameCanvas.P"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bL": {
+    "obfuscated": "bL",
+    "suggested": "update_bL",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bM": {
+    "obfuscated": "bM",
+    "suggested": "update_bM",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "dv",
+      "GameCanvas.ep",
+      "GameCanvas.eA",
+      "eA",
+      "GameCanvas.x"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bN": {
+    "obfuscated": "bN",
+    "suggested": "update_bN",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bO": {
+    "obfuscated": "bO",
+    "suggested": "update_bO",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bP": {
+    "obfuscated": "bP",
+    "suggested": "update_bP",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bQ": {
+    "obfuscated": "bQ",
+    "suggested": "update_bQ",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "h"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bR": {
+    "obfuscated": "bR",
+    "suggested": "update_bR",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bS": {
+    "obfuscated": "bS",
+    "suggested": "update_bS",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "bT",
+      "AudioManager.c",
+      "GameCanvas.bT",
+      "c"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bT": {
+    "obfuscated": "bT",
+    "suggested": "update_bT",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG",
+      "GameCanvas.bS"
+    ],
+    "callees": [
+      "AudioManager.c",
+      "c"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bU": {
+    "obfuscated": "bU",
+    "suggested": "update_bU",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.GameCanvas"
+    ],
+    "callees": [
+      "length",
+      "getAppProperty",
+      "compareTo"
+    ],
+    "strings": [
+      "Has-Blood",
+      "0"
+    ]
+  },
+  "GameCanvas.bV": {
+    "obfuscated": "bV",
+    "suggested": "update_bV",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bW": {
+    "obfuscated": "bW",
+    "suggested": "update_bW",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "println"
+    ],
+    "strings": [
+      "WARNING: Action stack size GameObjInteractionsDefs.k_ACTIONSSTACK_LEN is too small"
+    ]
+  },
+  "GameCanvas.bX": {
+    "obfuscated": "bX",
+    "suggested": "update_bX",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.bY": {
+    "obfuscated": "bY",
+    "suggested": "update_bY",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.c",
+      "GameCanvas.d",
+      "d",
+      "c",
+      "f"
+    ],
+    "strings": []
+  },
+  "GameCanvas.bZ": {
+    "obfuscated": "bZ",
+    "suggested": "update_bZ",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "u",
+      "GameCanvas.u"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ca": {
+    "obfuscated": "ca",
+    "suggested": "update_ca",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cb": {
+    "obfuscated": "cb",
+    "suggested": "update_cb",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cc": {
+    "obfuscated": "cc",
+    "suggested": "update_cc",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cd"
+    ],
+    "callees": [
+      "GameCanvas.k",
+      "k",
+      "GameCanvas.b",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cd": {
+    "obfuscated": "cd",
+    "suggested": "updateTutorial",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.s",
+      "setClip",
+      "L",
+      "h",
+      "GameCanvas.n"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ce": {
+    "obfuscated": "ce",
+    "suggested": "update_ce",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.ax",
+      "ai",
+      "ax",
+      "GameCanvas.ai"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cf": {
+    "obfuscated": "cf",
+    "suggested": "update_cf",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cd"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.a",
+      "ci",
+      "GameCanvas.ci"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cg": {
+    "obfuscated": "cg",
+    "suggested": "update_cg",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "ch",
+      "GameCanvas.ch"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ch": {
+    "obfuscated": "ch",
+    "suggested": "update_ch",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cg"
+    ],
+    "callees": [
+      "m",
+      "d",
+      "GameCanvas.a",
+      "c",
+      "GameCanvas.m"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ci": {
+    "obfuscated": "ci",
+    "suggested": "update_ci",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cf"
+    ],
+    "callees": [
+      "SensorHandler.a",
+      "GameCanvas.c",
+      "GameCanvas.B",
+      "GameCanvas.k",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cj": {
+    "obfuscated": "cj",
+    "suggested": "updateSubState",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "W",
+      "s",
+      "GameCanvas.s",
+      "o",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ck": {
+    "obfuscated": "ck",
+    "suggested": "update_ck",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "b",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cl": {
+    "obfuscated": "cl",
+    "suggested": "update_cl",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cm"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cm": {
+    "obfuscated": "cm",
+    "suggested": "update_cm",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.dw",
+      "fG",
+      "GameCanvas.eq",
+      "GameCanvas.cl",
+      "dw"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cn": {
+    "obfuscated": "cn",
+    "suggested": "update_cn",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.co": {
+    "obfuscated": "co",
+    "suggested": "update_co",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cp": {
+    "obfuscated": "cp",
+    "suggested": "update_cp",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cq": {
+    "obfuscated": "cq",
+    "suggested": "update_cq",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "System.arraycopy",
+      "d",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cr": {
+    "obfuscated": "cr",
+    "suggested": "update_cr",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cs": {
+    "obfuscated": "cs",
+    "suggested": "update_cs",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "l",
+      "GameCanvas.p",
+      "p",
+      "GameCanvas.l"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ct": {
+    "obfuscated": "ct",
+    "suggested": "update_ct",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "GameCanvas.c",
+      "E",
+      "GameCanvas.E"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cu": {
+    "obfuscated": "cu",
+    "suggested": "update_cu",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "u",
+      "GameCanvas.u"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cv": {
+    "obfuscated": "cv",
+    "suggested": "update_cv",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cw": {
+    "obfuscated": "cw",
+    "suggested": "update_cw",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eS"
+    ],
+    "callees": [
+      "af",
+      "GameCanvas.af",
+      "u",
+      "GameCanvas.u"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cx": {
+    "obfuscated": "cx",
+    "suggested": "update_cx",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "eG",
+      "GameCanvas.eG",
+      "d",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cy": {
+    "obfuscated": "cy",
+    "suggested": "update_cy",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.Y",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.ai",
+      "Y"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cz": {
+    "obfuscated": "cz",
+    "suggested": "update_cz",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "GameCanvas.m"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cA": {
+    "obfuscated": "cA",
+    "suggested": "update_cA",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.v",
+      "v"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cB": {
+    "obfuscated": "cB",
+    "suggested": "update_cB",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "ak",
+      "GameCanvas.ak"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cC": {
+    "obfuscated": "cC",
+    "suggested": "update_cC",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cD": {
+    "obfuscated": "cD",
+    "suggested": "update_cD",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "cH",
+      "GameCanvas.ak",
+      "i",
+      "ak",
+      "GameCanvas.i"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cE": {
+    "obfuscated": "cE",
+    "suggested": "update_cE",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bK"
+    ],
+    "callees": [
+      "i",
+      "GameCanvas.i"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cF": {
+    "obfuscated": "cF",
+    "suggested": "update_cF",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "cG",
+      "GameCanvas.cG",
+      "am",
+      "GameCanvas.am"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cG": {
+    "obfuscated": "cG",
+    "suggested": "update_cG",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cF",
+      "GameCanvas.cH"
+    ],
+    "callees": [
+      "am",
+      "GameCanvas.am"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cH": {
+    "obfuscated": "cH",
+    "suggested": "update_cH",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cD"
+    ],
+    "callees": [
+      "cG",
+      "GameCanvas.cG",
+      "am",
+      "GameCanvas.am"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cI": {
+    "obfuscated": "cI",
+    "suggested": "update_cI",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cJ": {
+    "obfuscated": "cJ",
+    "suggested": "update_cJ",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cK": {
+    "obfuscated": "cK",
+    "suggested": "update_cK",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cL": {
+    "obfuscated": "cL",
+    "suggested": "update_cL",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dW"
+    ],
+    "callees": [
+      "L",
+      "GameCanvas.L"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cM": {
+    "obfuscated": "cM",
+    "suggested": "update_cM",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "GameCanvas.s",
+      "s",
+      "GameCanvas.r",
+      "r"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cN": {
+    "obfuscated": "cN",
+    "suggested": "update_cN",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "GameCanvas.cO",
+      "GameCanvas.av",
+      "av",
+      "aV",
+      "GameCanvas.aV"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cO": {
+    "obfuscated": "cO",
+    "suggested": "update_cO",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cN"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.bn",
+      "d",
+      "L"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cP": {
+    "obfuscated": "cP",
+    "suggested": "update_cP",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "f",
+      "GameCanvas.f",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cQ": {
+    "obfuscated": "cQ",
+    "suggested": "update_cQ",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cU"
+    ],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cR": {
+    "obfuscated": "cR",
+    "suggested": "update_cR",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cW"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cS": {
+    "obfuscated": "cS",
+    "suggested": "update_cS",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cW"
+    ],
+    "callees": [
+      "i",
+      "GameCanvas.i"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cT": {
+    "obfuscated": "cT",
+    "suggested": "update_cT",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.cU": {
+    "obfuscated": "cU",
+    "suggested": "update_cU",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cY"
+    ],
+    "callees": [
+      "ae",
+      "k",
+      "GameCanvas.b",
+      "GameCanvas.d",
+      "GameCanvas.ae"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cV": {
+    "obfuscated": "cV",
+    "suggested": "update_cV",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cZ"
+    ],
+    "callees": [
+      "AudioManager.k",
+      "a",
+      "b",
+      "k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cW": {
+    "obfuscated": "cW",
+    "suggested": "update_cW",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cY",
+      "GameCanvas.cZ"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "GameCanvas.a",
+      "c",
+      "cR",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cX": {
+    "obfuscated": "cX",
+    "suggested": "update_cX",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cY"
+    ],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cY": {
+    "obfuscated": "cY",
+    "suggested": "update_cY",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cZ"
+    ],
+    "callees": [
+      "cW",
+      "an",
+      "GameCanvas.ao",
+      "cX",
+      "GameCanvas.cW"
+    ],
+    "strings": []
+  },
+  "GameCanvas.cZ": {
+    "obfuscated": "cZ",
+    "suggested": "update_cZ",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.ap",
+      "GameCanvas.cW",
+      "aD",
+      "E",
+      "k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.da": {
+    "obfuscated": "da",
+    "suggested": "update_da",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "GameCanvas.k",
+      "k",
+      "q",
+      "GameCanvas.q"
+    ],
+    "strings": []
+  },
+  "GameCanvas.db": {
+    "obfuscated": "db",
+    "suggested": "update_db",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cm"
+    ],
+    "callees": [
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dc": {
+    "obfuscated": "dc",
+    "suggested": "update_dc",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dd": {
+    "obfuscated": "dd",
+    "suggested": "update_dd",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.N",
+      "d",
+      "N",
+      "a",
+      "GameCanvas.d"
+    ],
+    "strings": []
+  },
+  "GameCanvas.de": {
+    "obfuscated": "de",
+    "suggested": "update_de",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.df": {
+    "obfuscated": "df",
+    "suggested": "update_df",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.dn",
+      "GameCanvas.as",
+      "GameCanvas.ay"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dg": {
+    "obfuscated": "dg",
+    "suggested": "update_dg",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cd",
+      "GameCanvas.dq"
+    ],
+    "callees": [
+      "i",
+      "GameCanvas.ar",
+      "ar",
+      "GameCanvas.i"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dh": {
+    "obfuscated": "dh",
+    "suggested": "update_dh",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aj"
+    ],
+    "callees": [
+      "e",
+      "f",
+      "GameCanvas.e",
+      "a",
+      "GameCanvas.f"
+    ],
+    "strings": []
+  },
+  "GameCanvas.di": {
+    "obfuscated": "di",
+    "suggested": "update_di",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dj": {
+    "obfuscated": "dj",
+    "suggested": "update_dj",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dq"
+    ],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "GameCanvas.a",
+      "GameCanvas.u",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dk": {
+    "obfuscated": "dk",
+    "suggested": "update_dk",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dl": {
+    "obfuscated": "dl",
+    "suggested": "update_dl",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "au",
+      "GameCanvas.au"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dm": {
+    "obfuscated": "dm",
+    "suggested": "update_dm",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dn": {
+    "obfuscated": "dn",
+    "suggested": "update_dn",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.df"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.do": {
+    "obfuscated": "do",
+    "suggested": "update_do",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dq"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dp": {
+    "obfuscated": "dp",
+    "suggested": "update_dp",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.V",
+      "GameCanvas.dq"
+    ],
+    "callees": [
+      "i",
+      "GameCanvas.i"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dq": {
+    "obfuscated": "dq",
+    "suggested": "update_dq",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.do",
+      "dg",
+      "dp",
+      "GameCanvas.aq",
+      "i"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dr": {
+    "obfuscated": "dr",
+    "suggested": "update_dr",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.ds",
+      "ds",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ds": {
+    "obfuscated": "ds",
+    "suggested": "update_ds",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dr"
+    ],
+    "callees": [
+      "d",
+      "GameCanvas.a",
+      "GameCanvas.h",
+      "a",
+      "h"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dt": {
+    "obfuscated": "dt",
+    "suggested": "update_dt",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.du": {
+    "obfuscated": "du",
+    "suggested": "update_du",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dv": {
+    "obfuscated": "dv",
+    "suggested": "update_dv",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bM"
+    ],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dw": {
+    "obfuscated": "dw",
+    "suggested": "update_dw",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cm"
+    ],
+    "callees": [
+      "GameCanvas.t",
+      "t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dx": {
+    "obfuscated": "dx",
+    "suggested": "update_dx",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "g",
+      "GameCanvas.g"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dy": {
+    "obfuscated": "dy",
+    "suggested": "update_dy",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dA"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "p",
+      "e",
+      "GameCanvas.p"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dz": {
+    "obfuscated": "dz",
+    "suggested": "update_dz",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dA"
+    ],
+    "callees": [
+      "s",
+      "Q",
+      "GameCanvas.s",
+      "GameCanvas.P",
+      "GameCanvas.t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dA": {
+    "obfuscated": "dA",
+    "suggested": "updateVictory",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.s",
+      "r",
+      "GameCanvas.d",
+      "GameCanvas.n",
+      "dB"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dB": {
+    "obfuscated": "dB",
+    "suggested": "update_dB",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dA"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "dC",
+      "GameCanvas.k",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dC": {
+    "obfuscated": "dC",
+    "suggested": "update_dC",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dB"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dD": {
+    "obfuscated": "dD",
+    "suggested": "update_dD",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dI"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dE": {
+    "obfuscated": "dE",
+    "suggested": "update_dE",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "e",
+      "dF",
+      "r",
+      "bo",
+      "GameCanvas.v"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dF": {
+    "obfuscated": "dF",
+    "suggested": "update_dF",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dE"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dG": {
+    "obfuscated": "dG",
+    "suggested": "update_dG",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH",
+      "GameCanvas.dI"
+    ],
+    "callees": [
+      "p",
+      "GameCanvas.p",
+      "a",
+      "GameCanvas.n",
+      "n"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dH": {
+    "obfuscated": "dH",
+    "suggested": "updateContinue",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "dZ",
+      "GameCanvas.n",
+      "V",
+      "X",
+      "GameCanvas.fu"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dI": {
+    "obfuscated": "dI",
+    "suggested": "update_dI",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "dO",
+      "GameCanvas.b",
+      "GameCanvas.d",
+      "GameCanvas.dG",
+      "dU"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dJ": {
+    "obfuscated": "dJ",
+    "suggested": "update_dJ",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "Q",
+      "s",
+      "dL",
+      "GameCanvas.s",
+      "GameCanvas.w"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dK": {
+    "obfuscated": "dK",
+    "suggested": "update_dK",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "H",
+      "af",
+      "ai",
+      "GameCanvas.c",
+      "c"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dL": {
+    "obfuscated": "dL",
+    "suggested": "update_dL",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dJ",
+      "GameCanvas.dN"
+    ],
+    "callees": [
+      "GameCanvas.s",
+      "k",
+      "r",
+      "GameCanvas.v",
+      "GameCanvas.t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dM": {
+    "obfuscated": "dM",
+    "suggested": "update_dM",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH",
+      "GameCanvas.dI"
+    ],
+    "callees": [
+      "GameCanvas.t",
+      "t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dN": {
+    "obfuscated": "dN",
+    "suggested": "update_dN",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dA",
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "s",
+      "dL",
+      "Q",
+      "GameCanvas.s",
+      "GameCanvas.w"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dO": {
+    "obfuscated": "dO",
+    "suggested": "update_dO",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dI",
+      "GameCanvas.dY",
+      "GameCanvas.ef",
+      "GameCanvas.ek",
+      "GameCanvas.ft"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dP": {
+    "obfuscated": "dP",
+    "suggested": "update_dP",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dA",
+      "GameCanvas.dH",
+      "GameCanvas.eh"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dQ": {
+    "obfuscated": "dQ",
+    "suggested": "update_dQ",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "m",
+      "GameCanvas.a",
+      "r",
+      "GameCanvas.m",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dR": {
+    "obfuscated": "dR",
+    "suggested": "update_dR",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dI"
+    ],
+    "callees": [
+      "SensorHandler.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dS": {
+    "obfuscated": "dS",
+    "suggested": "update_dS",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "dT",
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.x",
+      "x"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dT": {
+    "obfuscated": "dT",
+    "suggested": "update_dT",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dS"
+    ],
+    "callees": [
+      "l",
+      "af",
+      "GameCanvas.l",
+      "GameCanvas.c",
+      "GameCanvas.k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dU": {
+    "obfuscated": "dU",
+    "suggested": "update_dU",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dI"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.dV": {
+    "obfuscated": "dV",
+    "suggested": "update_dV",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "s",
+      "dW",
+      "GameCanvas.dW",
+      "GameCanvas.s"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dW": {
+    "obfuscated": "dW",
+    "suggested": "update_dW",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dV"
+    ],
+    "callees": [
+      "GameCanvas.ft",
+      "GameCanvas.dY",
+      "d",
+      "cL",
+      "dY"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dX": {
+    "obfuscated": "dX",
+    "suggested": "update_dX",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "av",
+      "GameCanvas.fv",
+      "GameCanvas.av",
+      "fv"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dY": {
+    "obfuscated": "dY",
+    "suggested": "update_dY",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dW"
+    ],
+    "callees": [
+      "dO",
+      "GameCanvas.d",
+      "GameCanvas.dO",
+      "d"
+    ],
+    "strings": []
+  },
+  "GameCanvas.dZ": {
+    "obfuscated": "dZ",
+    "suggested": "update_dZ",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "d",
+      "GameCanvas.t",
+      "t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ea": {
+    "obfuscated": "ea",
+    "suggested": "update_ea",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eb": {
+    "obfuscated": "eb",
+    "suggested": "update_eb",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bF"
+    ],
+    "callees": [
+      "GameCanvas.h",
+      "h",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ec": {
+    "obfuscated": "ec",
+    "suggested": "update_ec",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bM"
+    ],
+    "callees": [
+      "h"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ed": {
+    "obfuscated": "ed",
+    "suggested": "update_ed",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bF",
+      "GameCanvas.ee"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.ee": {
+    "obfuscated": "ee",
+    "suggested": "update_ee",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "ed",
+      "GameCanvas.ed"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ef": {
+    "obfuscated": "ef",
+    "suggested": "update_ef",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.dO",
+      "d",
+      "GameCanvas.ei"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eg": {
+    "obfuscated": "eg",
+    "suggested": "update_eg",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eh"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "p",
+      "e",
+      "GameCanvas.p"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eh": {
+    "obfuscated": "eh",
+    "suggested": "updateCredits",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.s",
+      "GameCanvas.eg",
+      "ek",
+      "E",
+      "GameCanvas.ek"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ei": {
+    "obfuscated": "ei",
+    "suggested": "update_ei",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ef"
+    ],
+    "callees": [
+      "GameCanvas.T",
+      "T"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ej": {
+    "obfuscated": "ej",
+    "suggested": "update_ej",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eh"
+    ],
+    "callees": [
+      "el",
+      "s",
+      "GameCanvas.s",
+      "r",
+      "GameCanvas.el"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ek": {
+    "obfuscated": "ek",
+    "suggested": "update_ek",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eh"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.dO",
+      "GameCanvas.x",
+      "x"
+    ],
+    "strings": []
+  },
+  "GameCanvas.el": {
+    "obfuscated": "el",
+    "suggested": "update_el",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ej"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.k",
+      "GameCanvas.a",
+      "k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.em": {
+    "obfuscated": "em",
+    "suggested": "update_em",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.en": {
+    "obfuscated": "en",
+    "suggested": "update_en",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eo": {
+    "obfuscated": "eo",
+    "suggested": "update_eo",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.ep": {
+    "obfuscated": "ep",
+    "suggested": "update_ep",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bM"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "GameCanvas.k",
+      "GameCanvas.a",
+      "c",
+      "k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eq": {
+    "obfuscated": "eq",
+    "suggested": "update_eq",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cm"
+    ],
+    "callees": [
+      "GameCanvas.t",
+      "t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.er": {
+    "obfuscated": "er",
+    "suggested": "update_er",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.c",
+      "d",
+      "e",
+      "GameCanvas.k",
+      "k"
+    ],
+    "strings": []
+  },
+  "GameCanvas.es": {
+    "obfuscated": "es",
+    "suggested": "update_es",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "d",
+      "e",
+      "GameCanvas.e",
+      "a",
+      "GameCanvas.d"
+    ],
+    "strings": []
+  },
+  "GameCanvas.et": {
+    "obfuscated": "et",
+    "suggested": "update_et",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.e",
+      "e",
+      "w",
+      "GameCanvas.w"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eu": {
+    "obfuscated": "eu",
+    "suggested": "update_eu",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.v",
+      "w",
+      "GameCanvas.w",
+      "v"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ev": {
+    "obfuscated": "ev",
+    "suggested": "update_ev",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ew": {
+    "obfuscated": "ew",
+    "suggested": "update_ew",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [
+      "GameCanvas.ax",
+      "ax"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ex": {
+    "obfuscated": "ex",
+    "suggested": "update_ex",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.ay",
+      "ay"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ey": {
+    "obfuscated": "ey",
+    "suggested": "update_ey",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.k",
+      "GameCanvas.a",
+      "k",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ez": {
+    "obfuscated": "ez",
+    "suggested": "update_ez",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eA": {
+    "obfuscated": "eA",
+    "suggested": "update_eA",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bM"
+    ],
+    "callees": [
+      "GameCanvas.aG",
+      "GameCanvas.aH",
+      "GameCanvas.aC",
+      "aD",
+      "aB"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eB": {
+    "obfuscated": "eB",
+    "suggested": "update_eB",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cm"
+    ],
+    "callees": [
+      "GameCanvas.t",
+      "t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eC": {
+    "obfuscated": "eC",
+    "suggested": "update_eC",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eD": {
+    "obfuscated": "eD",
+    "suggested": "update_eD",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eE": {
+    "obfuscated": "eE",
+    "suggested": "update_eE",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eF": {
+    "obfuscated": "eF",
+    "suggested": "update_eF",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "eH",
+      "GameCanvas.a",
+      "GameCanvas.eM",
+      "eL",
+      "GameCanvas.eP"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eG": {
+    "obfuscated": "eG",
+    "suggested": "update_eG",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cx",
+      "GameCanvas.eI",
+      "GameCanvas.eJ"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eH": {
+    "obfuscated": "eH",
+    "suggested": "update_eH",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eF"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eI": {
+    "obfuscated": "eI",
+    "suggested": "update_eI",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "eG",
+      "GameCanvas.eG",
+      "GameCanvas.a",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eJ": {
+    "obfuscated": "eJ",
+    "suggested": "update_eJ",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "eG",
+      "GameCanvas.eG"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eK": {
+    "obfuscated": "eK",
+    "suggested": "update_eK",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "d",
+      "ae",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eL": {
+    "obfuscated": "eL",
+    "suggested": "update_eL",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eF"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.b",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eM": {
+    "obfuscated": "eM",
+    "suggested": "update_eM",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eF"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eN": {
+    "obfuscated": "eN",
+    "suggested": "update_eN",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eO": {
+    "obfuscated": "eO",
+    "suggested": "update_eO",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eP": {
+    "obfuscated": "eP",
+    "suggested": "update_eP",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eF"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eQ": {
+    "obfuscated": "eQ",
+    "suggested": "update_eQ",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eS"
+    ],
+    "callees": [
+      "GameCanvas.j",
+      "j"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eR": {
+    "obfuscated": "eR",
+    "suggested": "update_eR",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eS"
+    ],
+    "callees": [
+      "GameCanvas.z",
+      "j",
+      "z",
+      "GameCanvas.k",
+      "GameCanvas.j"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eS": {
+    "obfuscated": "eS",
+    "suggested": "update_eS",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.eR",
+      "GameCanvas.q",
+      "GameCanvas.aS",
+      "E",
+      "eQ"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eT": {
+    "obfuscated": "eT",
+    "suggested": "update_eT",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "W",
+      "GameCanvas.W"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eU": {
+    "obfuscated": "eU",
+    "suggested": "update_eU",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.N",
+      "N"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eV": {
+    "obfuscated": "eV",
+    "suggested": "update_eV",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "eW",
+      "GameCanvas.S",
+      "GameCanvas.eW",
+      "S",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eW": {
+    "obfuscated": "eW",
+    "suggested": "update_eW",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.V",
+      "GameCanvas.eV"
+    ],
+    "callees": [
+      "f",
+      "GameCanvas.f",
+      "GameCanvas.C",
+      "C"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eX": {
+    "obfuscated": "eX",
+    "suggested": "update_eX",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.eY"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.eY": {
+    "obfuscated": "eY",
+    "suggested": "update_eY",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "GameCanvas.eX",
+      "eX",
+      "GameCanvas.a",
+      "GameCanvas.m"
+    ],
+    "strings": []
+  },
+  "GameCanvas.eZ": {
+    "obfuscated": "eZ",
+    "suggested": "update_eZ",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "j",
+      "GameCanvas.a",
+      "GameCanvas.j",
+      "GameCanvas.m"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fa": {
+    "obfuscated": "fa",
+    "suggested": "update_fa",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "fg",
+      "GameCanvas.a",
+      "fd",
+      "GameCanvas.fd",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fb": {
+    "obfuscated": "fb",
+    "suggested": "update_fb",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "p",
+      "GameCanvas.p",
+      "fe",
+      "GameCanvas.fe",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fc": {
+    "obfuscated": "fc",
+    "suggested": "update_fc",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "fg",
+      "s",
+      "GameCanvas.ff",
+      "GameCanvas.z",
+      "GameCanvas.s"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fd": {
+    "obfuscated": "fd",
+    "suggested": "update_fd",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fa",
+      "GameCanvas.fc"
+    ],
+    "callees": [
+      "fe",
+      "GameCanvas.fe",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fe": {
+    "obfuscated": "fe",
+    "suggested": "update_fe",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fb",
+      "GameCanvas.fd"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.ff": {
+    "obfuscated": "ff",
+    "suggested": "update_ff",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fc"
+    ],
+    "callees": [
+      "fg",
+      "a",
+      "GameCanvas.fg"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fg": {
+    "obfuscated": "fg",
+    "suggested": "update_fg",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fa",
+      "GameCanvas.fc",
+      "GameCanvas.ff"
+    ],
+    "callees": [
+      "AudioManager.a",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.n",
+      "n"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fh": {
+    "obfuscated": "fh",
+    "suggested": "update_fh",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.fi": {
+    "obfuscated": "fi",
+    "suggested": "update_fi",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "GameCanvas.p",
+      "a",
+      "p"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fj": {
+    "obfuscated": "fj",
+    "suggested": "update_fj",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.fo",
+      "GameCanvas.fl",
+      "GameCanvas.s",
+      "GameCanvas.fn"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fk": {
+    "obfuscated": "fk",
+    "suggested": "update_fk",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fl"
+    ],
+    "callees": [
+      "GameCanvas.S",
+      "p",
+      "S",
+      "GameCanvas.p",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fl": {
+    "obfuscated": "fl",
+    "suggested": "update_fl",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fj"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "fk",
+      "GameCanvas.B",
+      "A"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fm": {
+    "obfuscated": "fm",
+    "suggested": "update_fm",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fo"
+    ],
+    "callees": [
+      "aV",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.aV"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fn": {
+    "obfuscated": "fn",
+    "suggested": "update_fn",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fj"
+    ],
+    "callees": [
+      "GameCanvas.B",
+      "B"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fo": {
+    "obfuscated": "fo",
+    "suggested": "update_fo",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fj"
+    ],
+    "callees": [
+      "fm",
+      "L",
+      "GameCanvas.fm",
+      "GameCanvas.L"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fp": {
+    "obfuscated": "fp",
+    "suggested": "update_fp",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "c",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.c"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fq": {
+    "obfuscated": "fq",
+    "suggested": "update_fq",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.w"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.fr": {
+    "obfuscated": "fr",
+    "suggested": "update_fr",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.fs": {
+    "obfuscated": "fs",
+    "suggested": "update_fs",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "A",
+      "GameCanvas.a",
+      "GameCanvas.m",
+      "GameCanvas.A"
+    ],
+    "strings": []
+  },
+  "GameCanvas.ft": {
+    "obfuscated": "ft",
+    "suggested": "update_ft",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dW"
+    ],
+    "callees": [
+      "dO",
+      "GameCanvas.dO",
+      "B",
+      "GameCanvas.B"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fu": {
+    "obfuscated": "fu",
+    "suggested": "update_fu",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dH"
+    ],
+    "callees": [
+      "dO",
+      "GameCanvas.dO"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fv": {
+    "obfuscated": "fv",
+    "suggested": "update_fv",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.dX"
+    ],
+    "callees": [
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.bn",
+      "GameCanvas.B",
+      "bn"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fw": {
+    "obfuscated": "fw",
+    "suggested": "update_fw",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.fx": {
+    "obfuscated": "fx",
+    "suggested": "update_fx",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "m",
+      "GameCanvas.c",
+      "GameCanvas.a",
+      "c",
+      "f"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fy": {
+    "obfuscated": "fy",
+    "suggested": "update_fy",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fA"
+    ],
+    "callees": [
+      "A",
+      "GameCanvas.A",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fz": {
+    "obfuscated": "fz",
+    "suggested": "update_fz",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fA"
+    ],
+    "callees": [
+      "d",
+      "GameCanvas.d",
+      "GameCanvas.p",
+      "p"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fA": {
+    "obfuscated": "fA",
+    "suggested": "update_fA",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.j",
+      "GameCanvas.m",
+      "GameCanvas.d",
+      "GameCanvas.n",
+      "GameCanvas.fz"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fB": {
+    "obfuscated": "fB",
+    "suggested": "update_fB",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fA"
+    ],
+    "callees": [
+      "A",
+      "GameCanvas.A"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fC": {
+    "obfuscated": "fC",
+    "suggested": "update_fC",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fA"
+    ],
+    "callees": [
+      "m",
+      "s",
+      "GameCanvas.s",
+      "GameCanvas.aZ",
+      "p"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fD": {
+    "obfuscated": "fD",
+    "suggested": "update_fD",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.fE"
+    ],
+    "callees": [
+      "A",
+      "GameCanvas.a",
+      "r",
+      "GameCanvas.A",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fE": {
+    "obfuscated": "fE",
+    "suggested": "updateLevelSelect",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "E",
+      "k",
+      "GameCanvas.m",
+      "GameCanvas.b",
+      "GameCanvas.n"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fF": {
+    "obfuscated": "fF",
+    "suggested": "update_fF",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.x"
+    ],
+    "callees": [
+      "g",
+      "a",
+      "GameCanvas.b",
+      "GameCanvas.g",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.fG": {
+    "obfuscated": "fG",
+    "suggested": "update_fG",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cm"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "GameCanvas.t",
+      "a",
+      "t",
+      "b"
+    ],
+    "strings": []
+  },
+  "GameCanvas.GameCanvas": {
+    "obfuscated": "GameCanvas",
+    "suggested": "GameCanvas",
+    "params": "",
+    "return": "public",
+    "callers": [],
+    "callees": [
+      "SensorHandler.a",
+      "GameController.a",
+      "setFullScreenMode",
+      "start",
+      "setCurrent"
+    ],
+    "strings": [
+      "MIDlet-Version"
+    ]
+  },
+  "GameCanvas.hideNotify": {
+    "obfuscated": "hideNotify",
+    "suggested": "update_hideNotify",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.t",
+      "GameController.a",
+      "a",
+      "t"
+    ],
+    "strings": []
+  },
+  "GameCanvas.showNotify": {
+    "obfuscated": "showNotify",
+    "suggested": "update_showNotify",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameController.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.keyPressed": {
+    "obfuscated": "keyPressed",
+    "suggested": "update_keyPressed",
+    "params": "int n",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "f",
+      "GameCanvas.aa",
+      "GameCanvas.f",
+      "aa"
+    ],
+    "strings": []
+  },
+  "GameCanvas.keyReleased": {
+    "obfuscated": "keyReleased",
+    "suggested": "update_keyReleased",
+    "params": "int n",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "f",
+      "GameCanvas.aa",
+      "GameCanvas.f",
+      "aa"
+    ],
+    "strings": []
+  },
+  "GameCanvas.keyRepeated": {
+    "obfuscated": "keyRepeated",
+    "suggested": "update_keyRepeated",
+    "params": "int n",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.fH": {
+    "obfuscated": "fH",
+    "suggested": "update_fH",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.paint"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GameCanvas.paint": {
+    "obfuscated": "paint",
+    "suggested": "update_paint",
+    "params": "Graphics graphics",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "Thread.sleep",
+      "GameCanvas.fH",
+      "fH",
+      "p",
+      "GraphicsEngine.a"
+    ],
+    "strings": []
+  },
+  "GameCanvas.run": {
+    "obfuscated": "run",
+    "suggested": "update_run",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "currentTimeMillis",
+      "Thread.yield",
+      "repaint",
+      "yield",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameController.b": {
+    "obfuscated": "b",
+    "suggested": "drawMainMenu",
+    "params": "Graphics graphics, int n, int n2, int n3, int n4",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "Math.max",
+      "setClip",
+      "min",
+      "max",
+      "Math.min"
+    ],
+    "strings": []
+  },
+  "GameController.a": {
+    "obfuscated": "a",
+    "suggested": "a",
+    "params": "String string",
+    "return": "String",
+    "callers": [
+      "GameCanvas.GameCanvas",
+      "GameCanvas.hideNotify",
+      "GameCanvas.showNotify",
+      "GameController.d",
+      "GameController.commandAction"
+    ],
+    "callees": [
+      "getAppProperty",
+      "get"
+    ],
+    "strings": [
+      ""
+    ]
+  },
+  "GameController.c": {
+    "obfuscated": "c",
+    "suggested": "drawOptions",
+    "params": "",
+    "return": "boolean",
+    "callers": [],
+    "callees": [
+      "closeRecordStore",
+      "RecordStore.openRecordStore",
+      "openRecordStore"
+    ],
+    "strings": [
+      "igp19"
+    ]
+  },
+  "GameController.d": {
+    "obfuscated": "d",
+    "suggested": "audioRender",
+    "params": "Graphics var0",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameController.a",
+      "getWidth",
+      "a",
+      "getHeight"
+    ],
+    "strings": []
+  },
+  "GameController.e": {
+    "obfuscated": "e",
+    "suggested": "drawGameOver",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "removeCommand"
+    ],
+    "strings": []
+  },
+  "GameController.run": {
+    "obfuscated": "run",
+    "suggested": "update_run",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "sleep",
+      "GameController.g",
+      "g",
+      "Thread.sleep"
+    ],
+    "strings": []
+  },
+  "GameController.f": {
+    "obfuscated": "f",
+    "suggested": "audioUpdate",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "closeRecordStore",
+      "RecordStore.openRecordStore",
+      "openRecordStore"
+    ],
+    "strings": [
+      "igp19"
+    ]
+  },
+  "GameController.g": {
+    "obfuscated": "g",
+    "suggested": "drawPausedSubmenu",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameController.run"
+    ],
+    "callees": [
+      "Thread.sleep",
+      "notifyDestroyed",
+      "length",
+      "platformRequest",
+      "sleep"
+    ],
+    "strings": []
+  },
+  "GameController.commandAction": {
+    "obfuscated": "commandAction",
+    "suggested": "update_commandAction",
+    "params": "Command command, Displayable displayable",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameController.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "GameController.h": {
+    "obfuscated": "h",
+    "suggested": "drawLoading",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "put"
+    ],
+    "strings": [
+      "URL-ORANGE",
+      "IGP-VERSION",
+      "URL-OPERATOR"
+    ]
+  },
+  "AudioManager.a": {
+    "obfuscated": "a",
+    "suggested": "audioRender",
+    "params": "Graphics var1_1, boolean var2_2",
+    "return": "void",
+    "callers": [
+      "GameCanvas.W",
+      "GameCanvas.aB",
+      "GameCanvas.bG",
+      "GameCanvas.ch",
+      "GameCanvas.cU"
+    ],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "p",
+      "d",
+      "e"
+    ],
+    "strings": []
+  },
+  "AudioManager.b": {
+    "obfuscated": "b",
+    "suggested": "drawMainMenu",
+    "params": "AudioManager audioManager, boolean bl",
+    "return": "void",
+    "callers": [
+      "AudioManager.n",
+      "AudioManager.d",
+      "AudioManager.z",
+      "AudioManager.A",
+      "AudioManager.F"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "d",
+      "GameCanvas.k",
+      "GameCanvas.a",
+      "c"
+    ],
+    "strings": []
+  },
+  "AudioManager.i": {
+    "obfuscated": "i",
+    "suggested": "drawConfirmDialog",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "AudioManager.e",
+      "AudioManager.E"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "AudioManager.c": {
+    "obfuscated": "c",
+    "suggested": "drawOptions",
+    "params": "AudioManager audioManager, int n, int n2",
+    "return": "void",
+    "callers": [
+      "GameCanvas.bG",
+      "GameCanvas.bS",
+      "GameCanvas.bT",
+      "GameCanvas.cU",
+      "GameCanvas.dK"
+    ],
+    "callees": [
+      "d",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.w": {
+    "obfuscated": "w",
+    "suggested": "check_w",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [],
+    "callees": [
+      "d",
+      "h",
+      "GameCanvas.d",
+      "GameCanvas.h"
+    ],
+    "strings": []
+  },
+  "AudioManager.m": {
+    "obfuscated": "m",
+    "suggested": "getAudio",
+    "params": "AudioManager audioManager",
+    "return": "int",
+    "callers": [
+      "AudioManager.o",
+      "AudioManager.q"
+    ],
+    "callees": [
+      "d",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.x": {
+    "obfuscated": "x",
+    "suggested": "updateOptions",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "AudioManager.U"
+    ],
+    "callees": [
+      "AudioManager.e",
+      "d",
+      "e",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "AudioManager.y": {
+    "obfuscated": "y",
+    "suggested": "isAudio",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "AudioManager.U"
+    ],
+    "callees": [
+      "d",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.n": {
+    "obfuscated": "n",
+    "suggested": "drawLevelSelect",
+    "params": "AudioManager audioManager",
+    "return": "int",
+    "callers": [
+      "AudioManager.U",
+      "AudioManager.V"
+    ],
+    "callees": [
+      "l",
+      "AudioManager.e",
+      "d",
+      "e",
+      "AudioManager.b"
+    ],
+    "strings": []
+  },
+  "AudioManager.o": {
+    "obfuscated": "o",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager, int n",
+    "return": "void",
+    "callers": [
+      "AudioManager.U"
+    ],
+    "callees": [
+      "m",
+      "AudioManager.e",
+      "d",
+      "e",
+      "AudioManager.m"
+    ],
+    "strings": []
+  },
+  "AudioManager.d": {
+    "obfuscated": "d",
+    "suggested": "d",
+    "params": "AudioManager audioManager",
+    "return": "AudioManager",
+    "callers": [
+      "AudioManager.a",
+      "AudioManager.c",
+      "AudioManager.m",
+      "AudioManager.x",
+      "AudioManager.y"
+    ],
+    "callees": [
+      "d",
+      "AudioManager.b",
+      "b",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.e": {
+    "obfuscated": "e",
+    "suggested": "drawGameOver",
+    "params": "AudioManager audioManager, AudioManager audioManag",
+    "return": "void",
+    "callers": [
+      "AudioManager.x",
+      "AudioManager.n",
+      "AudioManager.o",
+      "AudioManager.q",
+      "AudioManager.M"
+    ],
+    "callees": [
+      "i",
+      "AudioManager.i",
+      "d",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.z": {
+    "obfuscated": "z",
+    "suggested": "updateInGame",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "AudioManager.U"
+    ],
+    "callees": [
+      "AudioManager.b",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.b",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.f": {
+    "obfuscated": "f",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager, int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ax",
+      "GameCanvas.bG",
+      "GameCanvas.cU",
+      "AudioManager.E",
+      "AudioManager.I"
+    ],
+    "callees": [
+      "AudioManager.D",
+      "AudioManager.C",
+      "C",
+      "D",
+      "a"
+    ],
+    "strings": []
+  },
+  "AudioManager.A": {
+    "obfuscated": "A",
+    "suggested": "check_A",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [],
+    "callees": [
+      "AudioManager.b",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.j": {
+    "obfuscated": "j",
+    "suggested": "drawInGame",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "AudioManager.U"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "AudioManager.B": {
+    "obfuscated": "B",
+    "suggested": "updateGameOver",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "AudioManager.C",
+      "AudioManager.ad"
+    ],
+    "callees": [
+      "d",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.p": {
+    "obfuscated": "p",
+    "suggested": "getAudio",
+    "params": "AudioManager var0",
+    "return": "int",
+    "callers": [
+      "AudioManager.a",
+      "AudioManager.C",
+      "AudioManager.ah"
+    ],
+    "callees": [
+      "GameCanvas.a",
+      "GameCanvas.h",
+      "a",
+      "GameCanvas.b",
+      "h"
+    ],
+    "strings": []
+  },
+  "AudioManager.C": {
+    "obfuscated": "C",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.f"
+    ],
+    "callees": [
+      "AudioManager.B",
+      "p",
+      "B",
+      "GameCanvas.h",
+      "h"
+    ],
+    "strings": []
+  },
+  "AudioManager.D": {
+    "obfuscated": "D",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.f"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "AudioManager.g": {
+    "obfuscated": "g",
+    "suggested": "drawPausedSubmenu",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.cU",
+      "AudioManager.Z",
+      "AudioManager.ac"
+    ],
+    "callees": [
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.h": {
+    "obfuscated": "h",
+    "suggested": "drawLoading",
+    "params": "",
+    "return": "void",
+    "callers": [
+      "GameCanvas.aT",
+      "GameCanvas.aU",
+      "GameCanvas.aW",
+      "GameCanvas.aX",
+      "AudioManager.q"
+    ],
+    "callees": [
+      "AudioManager.q",
+      "ae",
+      "GameCanvas.a",
+      "AudioManager.ah",
+      "AudioManager.ae"
+    ],
+    "strings": []
+  },
+  "AudioManager.E": {
+    "obfuscated": "E",
+    "suggested": "updatePausedSubmenu",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "d",
+      "AudioManager.G",
+      "c",
+      "f",
+      "AudioManager.i"
+    ],
+    "strings": []
+  },
+  "AudioManager.F": {
+    "obfuscated": "F",
+    "suggested": "updateLoading",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "AudioManager.b",
+      "c",
+      "AudioManager.c",
+      "M",
+      "AudioManager.M"
+    ],
+    "strings": []
+  },
+  "AudioManager.G": {
+    "obfuscated": "G",
+    "suggested": "updateConfirmDialog",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.E",
+      "AudioManager.R",
+      "AudioManager.S"
+    ],
+    "callees": [
+      "AudioManager.c",
+      "c"
+    ],
+    "strings": []
+  },
+  "AudioManager.H": {
+    "obfuscated": "H",
+    "suggested": "update_H",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "l",
+      "GameCanvas.l",
+      "AudioManager.b",
+      "GameCanvas.h",
+      "a"
+    ],
+    "strings": []
+  },
+  "AudioManager.q": {
+    "obfuscated": "q",
+    "suggested": "drawCharacterSelect",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.h"
+    ],
+    "callees": [
+      "m",
+      "AudioManager.ad",
+      "ad",
+      "AudioManager.e",
+      "AudioManager.ab"
+    ],
+    "strings": []
+  },
+  "AudioManager.k": {
+    "obfuscated": "k",
+    "suggested": "isAudio",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "GameCanvas.cU",
+      "GameCanvas.cV"
+    ],
+    "callees": [
+      "GameCanvas.k",
+      "AudioManager.a",
+      "a",
+      "k"
+    ],
+    "strings": []
+  },
+  "AudioManager.I": {
+    "obfuscated": "I",
+    "suggested": "update_I",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "AudioManager.b",
+      "c",
+      "f",
+      "AudioManager.f",
+      "AudioManager.c"
+    ],
+    "strings": []
+  },
+  "AudioManager.J": {
+    "obfuscated": "J",
+    "suggested": "update_J",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.h",
+      "h",
+      "b",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "AudioManager.K": {
+    "obfuscated": "K",
+    "suggested": "update_K",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "a",
+      "b",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "AudioManager.L": {
+    "obfuscated": "L",
+    "suggested": "update_L",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "j",
+      "d",
+      "GameCanvas.j",
+      "GameCanvas.h",
+      "h"
+    ],
+    "strings": []
+  },
+  "AudioManager.l": {
+    "obfuscated": "l",
+    "suggested": "drawCutscene",
+    "params": "AudioManager audioManager",
+    "return": "boolean",
+    "callers": [
+      "AudioManager.n",
+      "AudioManager.T"
+    ],
+    "callees": [
+      "GameCanvas.k",
+      "k"
+    ],
+    "strings": []
+  },
+  "AudioManager.M": {
+    "obfuscated": "M",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.F"
+    ],
+    "callees": [
+      "AudioManager.e",
+      "j",
+      "d",
+      "e",
+      "GameCanvas.j"
+    ],
+    "strings": []
+  },
+  "AudioManager.r": {
+    "obfuscated": "r",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.N"
+    ],
+    "callees": [
+      "AudioManager.e",
+      "e",
+      "a",
+      "AudioManager.a",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.N": {
+    "obfuscated": "N",
+    "suggested": "update_N",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "c",
+      "r",
+      "AudioManager.c",
+      "GameCanvas.h",
+      "h"
+    ],
+    "strings": []
+  },
+  "AudioManager.s": {
+    "obfuscated": "s",
+    "suggested": "update_s",
+    "params": "AudioManager var0",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "d",
+      "GameCanvas.d",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.t": {
+    "obfuscated": "t",
+    "suggested": "update_t",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "AudioManager.u": {
+    "obfuscated": "u",
+    "suggested": "update_u",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.k",
+      "a",
+      "k",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.O": {
+    "obfuscated": "O",
+    "suggested": "update_O",
+    "params": "AudioManager var0",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "AudioManager.P": {
+    "obfuscated": "P",
+    "suggested": "drawTutorial",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "d",
+      "GameCanvas.a",
+      "a",
+      "GameCanvas.d",
+      "AudioManager.a"
+    ],
+    "strings": []
+  },
+  "AudioManager.Q": {
+    "obfuscated": "Q",
+    "suggested": "update_Q",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "AudioManager.c",
+      "c",
+      "GameCanvas.a",
+      "a"
+    ],
+    "strings": []
+  },
+  "AudioManager.R": {
+    "obfuscated": "R",
+    "suggested": "drawSubState",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "GameCanvas.c",
+      "AudioManager.e",
+      "d",
+      "e",
+      "AudioManager.G"
+    ],
+    "strings": []
+  },
+  "AudioManager.S": {
+    "obfuscated": "S",
+    "suggested": "update_S",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "AudioManager.e",
+      "d",
+      "e",
+      "AudioManager.G",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "AudioManager.v": {
+    "obfuscated": "v",
+    "suggested": "updateMainMenu",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.T": {
+    "obfuscated": "T",
+    "suggested": "update_T",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "l",
+      "d",
+      "e",
+      "AudioManager.b",
+      "AudioManager.l"
+    ],
+    "strings": []
+  },
+  "AudioManager.U": {
+    "obfuscated": "U",
+    "suggested": "audioUpdate",
+    "params": "AudioManager var0",
+    "return": "void",
+    "callers": [
+      "AudioManager.q"
+    ],
+    "callees": [
+      "y",
+      "AudioManager.y",
+      "AudioManager.W",
+      "AudioManager.n",
+      "AudioManager.z"
+    ],
+    "strings": []
+  },
+  "AudioManager.V": {
+    "obfuscated": "V",
+    "suggested": "updateCutscene",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "l",
+      "AudioManager.a",
+      "GameCanvas.l",
+      "g",
+      "a"
+    ],
+    "strings": []
+  },
+  "AudioManager.W": {
+    "obfuscated": "W",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.U"
+    ],
+    "callees": [
+      "d",
+      "AudioManager.d"
+    ],
+    "strings": []
+  },
+  "AudioManager.X": {
+    "obfuscated": "X",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.U"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "d",
+      "AudioManager.b",
+      "aa",
+      "GameCanvas.a"
+    ],
+    "strings": []
+  },
+  "AudioManager.Y": {
+    "obfuscated": "Y",
+    "suggested": "update_Y",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "AudioManager.b",
+      "GameCanvas.a",
+      "GameCanvas.b",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.Z": {
+    "obfuscated": "Z",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.ac"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "AudioManager.b",
+      "c",
+      "AudioManager.g",
+      "g"
+    ],
+    "strings": []
+  },
+  "AudioManager.aa": {
+    "obfuscated": "aa",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.X"
+    ],
+    "callees": [
+      "d",
+      "AudioManager.b",
+      "GameCanvas.a",
+      "a",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.ab": {
+    "obfuscated": "ab",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.q"
+    ],
+    "callees": [
+      "d",
+      "f",
+      "a",
+      "GameCanvas.b",
+      "GameCanvas.f"
+    ],
+    "strings": []
+  },
+  "AudioManager.ac": {
+    "obfuscated": "ac",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.q"
+    ],
+    "callees": [
+      "Z",
+      "AudioManager.e",
+      "AudioManager.Z",
+      "d",
+      "e"
+    ],
+    "strings": []
+  },
+  "AudioManager.ad": {
+    "obfuscated": "ad",
+    "suggested": "audioUpdate",
+    "params": "AudioManager var0",
+    "return": "void",
+    "callers": [
+      "AudioManager.q"
+    ],
+    "callees": [
+      "AudioManager.B",
+      "d",
+      "GameCanvas.k",
+      "GameCanvas.a",
+      "B"
+    ],
+    "strings": []
+  },
+  "AudioManager.ae": {
+    "obfuscated": "ae",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.h"
+    ],
+    "callees": [
+      "af",
+      "AudioManager.b",
+      "GameCanvas.k",
+      "GameCanvas.a",
+      "k"
+    ],
+    "strings": []
+  },
+  "AudioManager.af": {
+    "obfuscated": "af",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.ae"
+    ],
+    "callees": [
+      "GameCanvas.k",
+      "k",
+      "b"
+    ],
+    "strings": []
+  },
+  "AudioManager.ag": {
+    "obfuscated": "ag",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.ah"
+    ],
+    "callees": [
+      "a",
+      "b",
+      "GameCanvas.b"
+    ],
+    "strings": []
+  },
+  "AudioManager.ah": {
+    "obfuscated": "ah",
+    "suggested": "audioUpdate",
+    "params": "AudioManager audioManager",
+    "return": "void",
+    "callers": [
+      "AudioManager.h"
+    ],
+    "callees": [
+      "AudioManager.e",
+      "p",
+      "ag",
+      "d",
+      "e"
+    ],
+    "strings": []
+  },
+  "AudioManager.AudioManager": {
+    "obfuscated": "AudioManager",
+    "suggested": "AudioManager",
+    "params": "int n, int n2, int n3, int n4, int[] nArray",
+    "return": "public",
+    "callers": [],
+    "callees": [
+      "AudioManager.b",
+      "GameCanvas.k",
+      "GameCanvas.a",
+      "k",
+      "GameCanvas.h"
+    ],
+    "strings": []
+  },
+  "GraphicsEngine.a": {
+    "obfuscated": "a",
+    "suggested": "audioUpdate",
+    "params": "int n",
+    "return": "void",
+    "callers": [
+      "GameCanvas.paint"
+    ],
+    "callees": [],
+    "strings": []
+  },
+  "GraphicsEngine.b": {
+    "obfuscated": "b",
+    "suggested": "drawMainMenu",
+    "params": "int n, int n2, int n3, int n4",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "setColor",
+      "getClipY",
+      "getClipX",
+      "fillRect",
+      "Image.createRGBImage"
+    ],
+    "strings": []
+  },
+  "GraphicsEngine.c": {
+    "obfuscated": "c",
+    "suggested": "drawOptions",
+    "params": "int[] nArray, int n, int n2, int n3, int n4",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "a"
+    ],
+    "strings": []
+  },
+  "SensorHandler.a": {
+    "obfuscated": "a",
+    "suggested": "audioUpdate",
+    "params": "boolean bl",
+    "return": "void",
+    "callers": [
+      "GameCanvas.ci",
+      "GameCanvas.dR",
+      "GameCanvas.GameCanvas"
+    ],
+    "callees": [
+      "GameCanvas.c",
+      "c"
+    ],
+    "strings": []
+  },
+  "SensorHandler.b": {
+    "obfuscated": "b",
+    "suggested": "drawMainMenu",
+    "params": "",
+    "return": "void",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  },
+  "SensorHandler.dataReceived": {
+    "obfuscated": "dataReceived",
+    "suggested": "update_dataReceived",
+    "params": "SensorConnection sensorConnection, Data[] dataArra",
+    "return": "void",
+    "callers": [],
+    "callees": [
+      "getIntValues",
+      "getName",
+      "getChannelInfo",
+      "compareTo",
+      "b"
+    ],
+    "strings": []
+  },
+  "SensorHandler.c": {
+    "obfuscated": "c",
+    "suggested": "drawOptions",
+    "params": "",
+    "return": "boolean",
+    "callers": [],
+    "callees": [],
+    "strings": []
+  }
+}
