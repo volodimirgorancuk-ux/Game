@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: KiloDeobf
+MIDlet-1: Zombie Infection, /icon.png, GameCanvas
+MIDlet-Name: Zombie Infection
+MIDlet-Vendor: KiloDeobf
+MIDlet-Version: 1.2.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Icon: /icon.png
+MIDlet-Jar-Size: 1129126
+MIDlet-Jar-URL: ZombieInfection.jar

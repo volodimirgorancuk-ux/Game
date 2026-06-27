@@ -1,29 +1,5 @@
 package javax.microedition.lcdui;
-
 public class Canvas extends Displayable {
-    public static final int UP = 1;
-    public static final int DOWN = 2;
-    public static final int LEFT = 3;
-    public static final int RIGHT = 4;
-    public static final int FIRE = 5;
-    public static final int GAME_A = 6;
-    public static final int GAME_B = 7;
-    public static final int GAME_C = 8;
-    public static final int GAME_D = 9;
-    public static final int KEY_NUM0 = 48;
-    public static final int KEY_NUM1 = 49;
-    public static final int KEY_NUM2 = 50;
-    public static final int KEY_NUM3 = 51;
-    public static final int KEY_NUM4 = 52;
-    public static final int KEY_NUM5 = 53;
-    public static final int KEY_NUM6 = 54;
-    public static final int KEY_NUM7 = 55;
-    public static final int KEY_NUM8 = 56;
-    public static final int KEY_NUM9 = 57;
-    public static final int KEY_STAR = 42;
-    public static final int KEY_POUND = 35;
-    public static final int SCREEN_DOWN = 100;
-    public static final int SCREEN_UP = 101;
     public static final int UP = 1;
     public static final int DOWN = 2;
     public static final int LEFT = 4;

@@ -503,7 +503,7 @@ implements Runnable {
     public static int dm;
     public static int dn;
     public static int[] S;
-    public static int do;
+    public static int varDo;
     public static int dp;
     public static int dq;
     public static boolean ad;
@@ -699,78 +699,78 @@ implements Runnable {
         }
         a = false;
         switch (a) {
-            case 0: {
+
                 GameCanvas.updateMainMenu();
                 break;
             }
-            case 1: {
+
                 GameCanvas.updateOptions();
                 break;
             }
-            case 2: {
+
                 GameCanvas.updateLoading();
                 break;
             }
-            case 3: {
+
                 GameCanvas.updateCutscene();
                 break;
             }
-            case 16: {
+
                 GameCanvas.calc_dca5();
                 break;
             }
-            case 4: {
+
                 GameCanvas.renderInGame();
                 break;
             }
-            case 5: {
+
                 GameCanvas.updatePaused();
                 break;
             }
-            case 6: {
+
                 GameCanvas.updateGameOver();
                 break;
             }
-            case 8: {
+
                 switch (u) {
-                    case 1: {
+
                         GameCanvas.updateSubState();
                     }
                 }
                 break;
             }
-            case 10: {
+
                 GameCanvas.updateVictory();
                 break;
             }
-            case 11: {
+
                 GameCanvas.updateContinue();
                 break;
             }
-            case 12: {
+
                 GameCanvas.updateCredits();
                 break;
             }
-            case 13: {
+
                 GameCanvas.updateLevelSelect();
                 break;
             }
-            case 17: {
+
                 GameCanvas.stateOrRender_aO();
                 break;
             }
-            case 7: {
+
                 GameCanvas.updateTutorial();
                 break;
             }
-            case 18: {
+
                 GameCanvas.updatePausedSubmenu();
                 break;
             }
-            case 99: {
+
                 break;
             }
-            case 19: {
+
                 GameCanvas.updateConfirmDialog();
             }
         }
@@ -784,76 +784,76 @@ implements Runnable {
 
     private static void handleWeaponSelect() {
         switch (a) {
-            case 0: {
+
                 GameCanvas.spawnEnemy(a);
                 break;
             }
-            case 1: {
+
                 GameCanvas.playFootstep(a);
                 break;
             }
-            case 2: {
+
                 GameCanvas.drawBackground(a);
                 break;
             }
-            case 3: {
+
                 GameCanvas.getEntityProperty(a);
                 break;
             }
-            case 16: {
+
                 GameCanvas.isPlayerDead(a);
                 break;
             }
             case 4: 
-            case 5: {
+
                 a = false;
                 GameCanvas.drawBuffer(a);
                 break;
             }
-            case 6: {
+
                 GameCanvas.createOffscreenBuffer(GameCanvas.triggerDamageFlash());
                 break;
             }
-            case 8: {
+
                 switch (u) {
-                    case 1: {
+
                         GameCanvas.check_9d9d(a);
                     }
                 }
                 break;
             }
-            case 10: {
+
                 GameCanvas.drawContinue(a);
                 break;
             }
-            case 11: {
+
                 GameCanvas.audioMethod_ao(a);
                 break;
             }
-            case 12: {
+
                 GameCanvas.releaseParticleFocus(a);
                 break;
             }
-            case 13: {
+
                 GameCanvas.drawLevelSelect(a, false);
                 break;
             }
-            case 18: {
+
                 GameCanvas.drawSprites(a);
                 break;
             }
-            case 17: {
+
                 GameCanvas.handleSpecialInput(a);
                 break;
             }
-            case 7: {
+
                 GameCanvas.check_a8d0(a);
                 break;
             }
-            case 20: {
+
                 break;
             }
-            case 19: {
+
                 GameCanvas.drawForeground(a);
             }
         }
@@ -911,7 +911,7 @@ implements Runnable {
         GameCanvas.getEntityProperty(0);
         GameCanvas.setPaused();
         switch (a) {
-            case 18: {
+
                 if (!GameCanvas.getEntityProperty(1)) {
                     GameCanvas.audioMethod_ai();
                     return;
@@ -919,7 +919,7 @@ implements Runnable {
                 GameCanvas.triggerDamageFlash(3, -1);
                 return;
             }
-            case 6: {
+
                 if (!GameCanvas.isPlayerDead()) break;
                 GameCanvas.update_0b14();
                 GameCanvas.handleWeaponSelect(false);
@@ -927,34 +927,34 @@ implements Runnable {
                 GameCanvas.update_a059();
                 return;
             }
-            case 12: {
+
                 GameCanvas.update_0b14();
                 return;
             }
-            case 13: {
+
                 GameCanvas.update_0b14();
                 return;
             }
-            case 3: {
+
                 if (b == 0 && !GameCanvas.getEntityProperty(1)) {
                     GameCanvas.audioMethod_ai();
                 }
                 GameCanvas.check_71af();
                 return;
             }
-            case 10: {
+
                 GameCanvas.dispatch_daf0();
                 return;
             }
             case 0: 
             case 1: 
-            case 17: {
+
                 return;
             }
-            case 2: {
+
                 return;
             }
-            case 7: {
+
                 GameCanvas.update_9f3f();
                 return;
             }
@@ -993,13 +993,13 @@ implements Runnable {
     private static void updateOptions() {
         boolean bl = false;
         switch (b) {
-            case 1: {
+
                 GameCanvas.update_1d79();
                 GameCanvas.triggerDamageFlash(0, false);
                 GameCanvas.drawLevelSelect(2);
                 return;
             }
-            case 2: {
+
                 boolean bl2 = bl = false;
                 while (!bl2) {
                     bl2 = GameCanvas.drawSprites();
@@ -1007,7 +1007,7 @@ implements Runnable {
                 a[0].triggerDamageFlash(0, 0);
                 return;
             }
-            case 3: {
+
                 if (a[0].triggerDamageFlash()) {
                     GameCanvas.triggerDamageFlash(0);
                     a[0].triggerDamageFlash(c);
@@ -1017,7 +1017,7 @@ implements Runnable {
                 a[0].triggerDamageFlash();
                 return;
             }
-            case 4: {
+
                 GameCanvas.triggerDamageFlash(1, false);
                 boolean bl3 = bl = false;
                 while (!bl3) {
@@ -1027,7 +1027,7 @@ implements Runnable {
                 GameCanvas.drawLevelSelect(5);
                 return;
             }
-            case 5: {
+
                 GameCanvas.triggerDamageFlash(2, false);
                 boolean bl4 = bl = false;
                 while (!bl4) {
@@ -1104,7 +1104,7 @@ implements Runnable {
         GameCanvas.update_6498();
         AudioManager.spawnEnemy();
         switch (b) {
-            case 0: {
+
                 if (AudioManager.createOffscreenBuffer(c) != -1) {
                     GameCanvas.playFootstep(c);
                     AudioManager.triggerDamageFlash(c);
@@ -1129,7 +1129,7 @@ implements Runnable {
                 GameCanvas.dispatch_fd0e();
                 break;
             }
-            case 1: {
+
                 if (GameCanvas.resetTimers() || GameCanvas.initTimers()) {
                     GameCanvas.update_94d9();
                     GameCanvas.update_b5ac();
@@ -1137,15 +1137,15 @@ implements Runnable {
                 GameCanvas.update_f9f7();
                 break;
             }
-            case 2: {
+
                 GameCanvas.dispatch_683a();
                 break;
             }
-            case 3: {
+
                 GameCanvas.triggerDamageFlash(true, false);
                 break;
             }
-            case 4: {
+
                 GameCanvas.dispatch_4f0f();
             }
         }
@@ -1272,7 +1272,7 @@ implements Runnable {
 
     private static void calc_dca5() {
         switch (b) {
-            case 0: {
+
                 GameCanvas.triggerDamageFlash();
                 s = false;
                 h = 0;
@@ -1286,7 +1286,7 @@ implements Runnable {
                 GameCanvas.drawLevelSelect(1);
                 break;
             }
-            case 1: {
+
                 if (h < 6000) {
                     GameCanvas.draw_d18c(GameCanvas.drawForeground(0, 255, (6000 - h << 14) / 6000) >> 14);
                     GameCanvas.setPaused();
@@ -1298,7 +1298,7 @@ implements Runnable {
                 GameCanvas.drawLevelSelect(2);
                 break;
             }
-            case 2: {
+
                 if (s) {
                     GameCanvas.drawLevelSelect(3);
                     GameCanvas.isPlayerDead(c);
@@ -1353,12 +1353,12 @@ implements Runnable {
             GameCanvas.triggerDamageFlash(3, -1);
         }
         switch (b) {
-            case 0: {
+
                 if (!GameCanvas.calc_d1c5()) break;
                 GameCanvas.drawLevelSelect(1);
                 return;
             }
-            case 1: {
+
                 boolean bl;
                 GameCanvas.triggerDamageFlash(21, false);
                 boolean bl2 = bl = false;
@@ -1369,7 +1369,7 @@ implements Runnable {
                 GameCanvas.drawLevelSelect(2);
                 return;
             }
-            case 2: {
+
                 if (!GameCanvas.updateCutscene()) break;
                 GameCanvas.getEntityProperty(false);
                 GameCanvas.triggerDamageFlash(4, true);
@@ -1381,11 +1381,11 @@ implements Runnable {
         if (c) {
             GameCanvas.drawBuffer(graphics);
             switch (b) {
-                case 0: {
+
                     GameCanvas.setPaused(graphics);
                     break;
                 }
-                case 2: {
+
                     GameCanvas.stateOrRender_aM(graphics);
                 }
             }
@@ -1419,11 +1419,11 @@ implements Runnable {
 
     private static void updateLoading() {
         switch (b) {
-            case 0: {
+
                 GameCanvas.drawSprites();
                 return;
             }
-            case 1: {
+
                 if (ez == 0) break;
                 f = false;
                 GameCanvas.renderTarget(2, 0);
@@ -1433,11 +1433,11 @@ implements Runnable {
 
     private static void drawBackground(Graphics graphics) {
         switch (b) {
-            case 0: {
+
                 GameCanvas.triggerDamageFlash(a, false);
                 return;
             }
-            case 1: {
+
                 GameCanvas.spawnEnemy(graphics, 0);
             }
         }
@@ -1712,90 +1712,54 @@ implements Runnable {
                         var1_1 = (short)(var1_1 + 1);
                         var7_7 = GameCanvas.a[v4];
                         switch (var7_7) {
-                            case 11: {
+
+                                v5 = var1_1;}
+
+                                v5 = var1_1;}
+
                                 v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 12: {
+                                v6 = 5;}
+
+                                v5 = var1_1;}
+
                                 v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 13: {
+                                v6 = 2;}
+
+                                v5 = var1_1;}
+
+                                v5 = var1_1;}
+
+                                v5 = var1_1;}
+
                                 v5 = var1_1;
-                                v6 = 5;
-                                ** GOTO lbl116
-                            }
-                            case 21: {
+                                v6 = 2;}
+
+                                v5 = var1_1;}
+
                                 v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 22: {
+                                v6 = 6;}
+
                                 v5 = var1_1;
-                                v6 = 2;
-                                ** GOTO lbl116
-                            }
-                            case 23: {
-                                v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 24: {
-                                v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 31: {
-                                v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 32: {
-                                v5 = var1_1;
-                                v6 = 2;
-                                ** GOTO lbl116
-                            }
-                            case 34: {
-                                v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 35: {
-                                v5 = var1_1;
-                                v6 = 6;
-                                ** GOTO lbl116
-                            }
-                            case 36: {
-                                v5 = var1_1;
-                                v6 = 8;
-                                ** GOTO lbl116
-                            }
-                            case 37: {
+                                v6 = 8;}
+
                                 var8_8 = GameCanvas.triggerDamageFlash(var0, var1_1);
                                 var8_8 = (short)GameCanvas.triggerDamageFlash(GameCanvas.b[GameCanvas.update_83ef(2, 0, 0)], (int)var8_8);
                                 GameCanvas.triggerDamageFlash(var0, var1_1, var8_8);
                                 v5 = var1_1;
-                                v6 = 2;
-                                ** GOTO lbl116
-                            }
-                            case 38: {
+                                v6 = 2;}
+
+                                v5 = var1_1;}
+
                                 v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 39: {
+                                v6 = 6;}
+
+                                v5 = var1_1;}
+
                                 v5 = var1_1;
-                                v6 = 6;
-                                ** GOTO lbl116
-                            }
-                            case 41: {
-                                v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 42: {
-                                v5 = var1_1;
-                                v6 = 1;
-                                ** GOTO lbl116
-                            }
-                            case 43: {
-                                v5 = var1_1;
-                                ** GOTO lbl115
-                            }
-                            case 44: {
+                                v6 = 1;}
+
+                                v5 = var1_1;}
+
                                 v5 = var1_1;
 lbl115:
                                 // 11 sources
@@ -1823,7 +1787,7 @@ lbl116:
             GameCanvas.a[n] = true;
             int n4 = c[n] + 2;
             switch (c[n]) {
-                case 2: {
+
                     short s = GameCanvas.triggerDamageFlash(a, n4);
                     n4 += 2;
                     GameCanvas.d[n] = GameCanvas.calc_d1c5(s);
@@ -1831,7 +1795,7 @@ lbl116:
                     GameCanvas.playFootstep(a[d[n]], n);
                     break;
                 }
-                case 3: {
+
                     short s = GameCanvas.triggerDamageFlash(a, n4);
                     n4 += 2;
                     GameCanvas.d[n] = m;
@@ -1880,7 +1844,6 @@ lbl116:
             if (var0 >= GameCanvas.n || var0 <= -1 || GameCanvas.e[var0] <= -1 || GameCanvas.d[var0] <= -1) break block36;
             var3_3 = GameCanvas.b[var0] + var2_2;
             var5_4 = false;
-            do {
                 block37: {
                     var6_5 = GameCanvas.e[var0];
                     var7_6 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5) * 90;
@@ -1891,23 +1854,23 @@ lbl116:
                     block33: for (var9_9 = 0; var9_9 < var8_7; ++var9_9) {
                         var10_10 = GameCanvas.a[var6_5++] & 255;
                         switch (var10_10) {
-                            case 11: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 12: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 13: {
+
                                 ++var6_5;
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 21: {
+
                                 var11_11 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5) << 14;
                                 var12_12 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5 += 2) << 14;
                                 var6_5 += 2;
@@ -1917,62 +1880,60 @@ lbl116:
                                 var5_4 = GameCanvas.triggerDamageFlash(GameCanvas.a[GameCanvas.d[var0]], var0, var17_16, var18_17, var1_1);
                                 continue block33;
                             }
-                            case 22: {
+
                                 var13_13 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5);
                                 var6_5 += 2;
                                 GameCanvas.spawnEnemy(GameCanvas.a[GameCanvas.d[var0]], var13_13);
                                 continue block33;
                             }
-                            case 23: {
-                                var6_5 += 4;
-                                ** GOTO lbl102
-                            }
-                            case 24: {
+
+                                var6_5 += 4;}
+
                                 var6_5 += 4;
                                 continue block33;
                             }
-                            case 41: {
+
                                 var11_11 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5);
                                 var12_12 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5 += 2);
                                 var6_5 += 2;
                                 GameCanvas.triggerDamageFlash(GameCanvas.a[GameCanvas.d[var0]].a, var11_11, var12_12);
                                 continue block33;
                             }
-                            case 42: {
+
                                 var13_13 = GameCanvas.a[var6_5++] & 255;
                                 GameCanvas.a[GameCanvas.d[var0]].a.spawnEnemy(var13_13);
                                 continue block33;
                             }
-                            case 43: {
+
                                 var6_5 += 4;
                                 continue block33;
                             }
-                            case 44: {
+
                                 var6_5 += 4;
                                 continue block33;
                             }
-                            case 31: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 32: {
+
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 34: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 35: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 var14_14 = false;
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 36: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 var14_14 = false;
@@ -1980,18 +1941,18 @@ lbl116:
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 37: {
+
                                 var13_13 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5);
                                 var6_5 += 2;
                                 GameCanvas.drawSprites(var13_13, var0);
                                 continue block33;
                             }
-                            case 38: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 continue block33;
                             }
-                            case 39: {
+
                                 var6_5 += 2;
                                 var6_5 += 2;
                                 var6_5 += 2;
@@ -2000,7 +1961,6 @@ lbl116:
 lbl102:
                             // 2 sources
 
-                            case 50: {
                                 v0 = var0;
                                 GameCanvas.c[v0] = GameCanvas.c[v0] | 2;
                             }
@@ -2024,31 +1984,26 @@ lbl102:
                     var6_5 += 3;
                     var13_13 = GameCanvas.a[var6_5++] & 255;
                     switch (GameCanvas.c[var0]) {
-                        case 1: {
+
                             break;
                         }
-                        case 2: {
+
                             if (var13_13 != 21) break;
                             var11_11 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5) << 14;
                             var12_12 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5 += 2) << 14;
                             var14_15 = GameCanvas.a[GameCanvas.d[var0]].a;
-                            if (var10_10 - var9_9 <= 90) ** GOTO lbl136
-                            GameCanvas.f[var0] = (var11_11 - var14_15.a) / (var10_10 - var9_9);
+                            if (var10_10 - var9_9 <= 90)GameCanvas.f[var0] = (var11_11 - var14_15.a) / (var10_10 - var9_9);
                             v4 = GameCanvas.g;
                             v5 = var0;
                             v6 = var12_12 - var14_15.b;
-                            v7 = var10_10 - var9_9;
-                            ** GOTO lbl151
-lbl136:
+                            v7 = var10_10 - var9_9;lbl136:
                             // 1 sources
 
                             GameCanvas.f[var0] = 0;
                             v4 = GameCanvas.g;
                             v5 = var0;
-                            v8 = 0;
-                            ** GOTO lbl152
-                        }
-                        case 3: {
+                            v8 = 0;}
+
                             if (var13_13 != 41) break;
                             var11_11 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5) << 14;
                             var12_12 = GameCanvas.triggerDamageFlash(GameCanvas.a, var6_5 += 2) << 14;
@@ -2073,11 +2028,11 @@ lbl152:
                 if ((GameCanvas.c[var0] & 1) == 0) continue;
                 var8_8 = null;
                 switch (GameCanvas.c[var0]) {
-                    case 1: {
+
                         break;
                     }
                     case 2: 
-                    case 3: {
+
                         var8_8 = GameCanvas.a[GameCanvas.d[var0]].a;
                         var10_10 = var8_8.triggerDamageFlash();
                         var11_11 = var8_8.spawnEnemy();
@@ -2089,7 +2044,7 @@ lbl152:
                         var5_4 = GameCanvas.triggerDamageFlash(GameCanvas.a[GameCanvas.d[var0]], var0, var10_10, var11_11, var1_1);
                         break;
                     }
-                    case 0: {
+
                         v1 = GameCanvas.b;
                         v2 = var0;
                         v3 = v1[v2] = var3_3;
@@ -2256,11 +2211,11 @@ lbl152:
             int n9 = 0;
             switch (audioManager.L) {
                 case 1: 
-                case 2: {
+
                     audioManager.g[11] = 2;
                     break;
                 }
-                case 10: {
+
                     GameCanvas.renderTarget(audioManager);
                     n5 += GameCanvas.playFootstep(audioManager.g[2]) >> 1;
                     n6 += GameCanvas.playFootstep(audioManager.g[3]) >> 1;
@@ -2393,7 +2348,7 @@ lbl152:
             for (n3 = 0; n3 < n4; ++n3) {
                 int[] nArray2 = a[q];
                 block0 : switch (nArray2[0]) {
-                    case 0: {
+
                         int n6 = nArray2[1];
                         int n7 = nArray2[2];
                         String string = a[0];
@@ -2405,7 +2360,7 @@ lbl152:
                         p = n7;
                         break;
                     }
-                    case 1: {
+
                         int n8 = nArray2[1];
                         int n9 = nArray2[2];
                         if (o != n8 || n9 <= p) {
@@ -2416,7 +2371,7 @@ lbl152:
                         p = n9;
                         break;
                     }
-                    case 2: {
+
                         int n8 = nArray2[1];
                         int n10 = nArray2[3];
                         int n11 = nArray2[2];
@@ -2426,7 +2381,7 @@ lbl152:
                         GameCanvas.b[n10].b = 4;
                         break;
                     }
-                    case 3: {
+
                         int n8 = nArray2[1];
                         int n10 = nArray2[3];
                         int n11 = nArray2[2];
@@ -2435,7 +2390,7 @@ lbl152:
                         GameCanvas.triggerDamageFlash(n8, n10, n11, n12, n13, a);
                         break;
                     }
-                    case 4: {
+
                         int n10 = nArray2[1];
                         int n11 = nArray2[2];
                         int n14 = nArray2[3];
@@ -2448,7 +2403,7 @@ lbl152:
                         GameCanvas.a[n10] = new GameData(a[n11], n14, n15, a[n16]);
                         break;
                     }
-                    case 9: {
+
                         int n8 = nArray2[1];
                         int n17 = nArray2[2];
                         int n11 = nArray2[3];
@@ -2477,10 +2432,10 @@ lbl152:
                         p = n17;
                         break;
                     }
-                    case 10: {
+
                         break;
                     }
-                    case 11: {
+
                         int n21 = nArray2[2];
                         int n22 = nArray2[1];
                         GameCanvas.triggerDamageFlash("/" + a[16 + n21]);
@@ -2488,7 +2443,7 @@ lbl152:
                         d = GameCanvas.triggerDamageFlash(GameCanvas.triggerDamageFlash((n22 << 1) + 0), GameCanvas.triggerDamageFlash((n22 << 1) + 1));
                         break;
                     }
-                    case 12: {
+
                         int n22 = nArray2[1];
                         if (o != 22) {
                             GameCanvas.triggerDamageFlash("/" + a[22]);
@@ -2499,7 +2454,7 @@ lbl152:
                         c = new short[e.length][e[0].length];
                         break;
                     }
-                    case 13: {
+
                         byte[] byArray;
                         if (o != nArray2[1]) {
                             GameCanvas.triggerDamageFlash("/" + a[25]);
@@ -2511,7 +2466,7 @@ lbl152:
                         GameCanvas.triggerDamageFlash(byArray);
                         break;
                     }
-                    case 5: {
+
                         boolean bl4;
                         int n8 = nArray2[1];
                         int n17 = GameCanvas.stopGame(nArray2[2]);
@@ -2528,7 +2483,7 @@ lbl152:
                         p = n17;
                         break;
                     }
-                    case 6: {
+
                         int n26 = nArray2[1];
                         int n27 = nArray2[2];
                         if (n27 != -1) {
@@ -2545,7 +2500,7 @@ lbl152:
                         GameCanvas.triggerDamageFlash(c, true);
                         break;
                     }
-                    case 7: {
+
                         int n28 = nArray2[1];
                         int n29 = nArray2[2];
                         GameCanvas.playFootstep(n28, n29, true);
@@ -2554,11 +2509,11 @@ lbl152:
                         GameCanvas.draw_f220();
                         break;
                     }
-                    case 8: {
+
                         GameCanvas.update_1d79(nArray2[1]);
                         break;
                     }
-                    case 15: {
+
                         int n8 = nArray2[1];
                         int n10 = nArray2[3];
                         int n11 = nArray2[2];
@@ -2597,7 +2552,7 @@ lbl152:
                         graphicsEngine.triggerDamageFlash();
                         break;
                     }
-                    case 16: {
+
                         int n31 = nArray2[1];
                         int n32 = nArray2[2];
                         int n33 = nArray2[3];
@@ -2606,56 +2561,56 @@ lbl152:
                         f = GameCanvas.triggerDamageFlash(GameCanvas.triggerDamageFlash(n32), GameCanvas.triggerDamageFlash(n33));
                         break;
                     }
-                    case 17: {
+
                         int n34 = nArray2[1];
                         switch (n34) {
-                            case 2: {
+
                                 GameCanvas.update_92e8();
                                 break block0;
                             }
-                            case 3: {
+
                                 GameCanvas.update_32ef();
                                 break block0;
                             }
-                            case 4: {
+
                                 GameCanvas.dispatch_bd4c();
                                 break block0;
                             }
-                            case 5: {
+
                                 GameCanvas.spawnParticle();
                                 o = -1;
                                 break block0;
                             }
-                            case 6: {
+
                                 GameCanvas.updatePaused();
                                 --q;
                                 break block0;
                             }
-                            case 7: {
+
                                 GameCanvas.update_b1a2();
                                 break block0;
                             }
-                            case 8: {
+
                                 GameCanvas.isPlayerDead(true);
                                 break block0;
                             }
-                            case 9: {
+
                                 GameCanvas.isPlayerDead(false);
                                 break block0;
                             }
-                            case 11: {
+
                                 GameCanvas.triggerDamageFlash(true, true, true, by, bz);
                                 break block0;
                             }
-                            case 12: {
+
                                 GameCanvas.dispatch_ac71();
                                 break block0;
                             }
-                            case 13: {
+
                                 GameCanvas.update_0dfa();
                                 break block0;
                             }
-                            case 14: {
+
                                 int n35 = a[by][bz][2 + bD] & 0xFF;
                                 GraphicsEngine graphicsEngine = a[6];
                                 l = false;
@@ -2667,32 +2622,32 @@ lbl152:
                                 a[6].triggerDamageFlash();
                                 break block0;
                             }
-                            case 15: {
+
                                 GameCanvas.update_77fa();
                                 break block0;
                             }
-                            case 16: {
+
                                 U = false;
                                 e = null;
                                 GameCanvas.getEntityProperty(false);
                                 break block0;
                             }
-                            case 17: {
+
                                 GameCanvas.triggerDamageFlash(true, true, true, by, bz);
                                 U = false;
                                 e = null;
                                 GameCanvas.getEntityProperty(false);
                                 break block0;
                             }
-                            case 10: {
+
                                 GameCanvas.update_a857();
                                 break block0;
                             }
-                            case 18: {
+
                                 GameCanvas.update_1d79(by, bz);
                                 break block0;
                             }
-                            case 19: {
+
                                 GameCanvas.renderWorld();
                             }
                         }
@@ -2743,26 +2698,26 @@ lbl152:
         block8: for (int i = 0; i < n2; ++i) {
             int[] nArray = a[n][i];
             switch (nArray[0]) {
-                case 0: {
+
                     int n3 = nArray[1];
                     GameCanvas.updateConfirmDialog(n3);
                     continue block8;
                 }
-                case 2: {
+
                     int n4 = nArray[3];
                     if (b[n4] == null) continue block8;
                     b[n4].spawnEnemy();
                     GameCanvas.b[n4] = null;
                     continue block8;
                 }
-                case 3: {
+
                     int n4 = nArray[3];
                     if (a[n4] == null) continue block8;
                     a[n4].spawnEnemy();
                     GameCanvas.a[n4] = null;
                     continue block8;
                 }
-                case 4: {
+
                     int n4 = nArray[1];
                     if (a[n4] == null) continue block8;
                     GameCanvas.a[n4].a.spawnEnemy();
@@ -2770,13 +2725,13 @@ lbl152:
                     GameCanvas.a[n4] = null;
                     continue block8;
                 }
-                case 5: {
+
                     int n5 = nArray[3];
                     if (!GameCanvas.drawSprites(n5)) continue block8;
                     GameCanvas.updateLoading(n5);
                     continue block8;
                 }
-                case 16: {
+
                     f = null;
                 }
             }
@@ -2844,8 +2799,7 @@ lbl152:
                 inputStream.read(a[i]);
             }
             inputStream.close();
-        }
-        catch (Exception exception) {}
+        }/*         catch (Exception exception) */ {}
         System.gc();
     }
 
@@ -2899,7 +2853,7 @@ lbl152:
                 case 2: 
                 case 3: 
                 case 4: 
-                case 5: {
+
                     GameCanvas.isPlayerDying(1);
                 }
             }
@@ -2912,15 +2866,15 @@ lbl152:
         g = true;
         z = 0;
         switch (u) {
-            case 6: {
+
                 GameCanvas.dispatch_1728();
                 break;
             }
-            case 0: {
+
                 GameCanvas.draw_f0f7();
                 break;
             }
-            case 7: {
+
                 GameCanvas.dispatch_b300();
             }
             default: {
@@ -2940,21 +2894,19 @@ lbl152:
      */
     private static void updateOptions(int var0) {
         switch (var0) {
-            case 0: {
+
                 switch (GameCanvas.c[GameCanvas.w][6]) {
-                    case 1: {
-                        GameCanvas.y = 0;
-                        ** GOTO lbl15
-                    }
-                    case 2: {
+
+                        GameCanvas.y = 0;}
+
                         GameCanvas.draw_ad2c(0);
                         break;
                     }
-                    case 3: {
+
                         GameCanvas.draw_ad2c(3);
                         break;
                     }
-                    case 0: {
+
                         GameCanvas.triggerDamageFlash(0);
 lbl15:
                         // 2 sources
@@ -2964,20 +2916,18 @@ lbl15:
                 }
                 break;
             }
-            case 1: {
+
                 GameCanvas.y = GameCanvas.createOffscreenBuffer();
                 break;
             }
-            case 2: {
+
                 GameCanvas.y = GameCanvas.createOffscreenBuffer();
                 switch (GameCanvas.c[GameCanvas.w][6]) {
                     case 2: 
-                    case 3: {
+
                         if (GameCanvas.isPlayerDead(GameCanvas.u, GameCanvas.v)) {
                             GameCanvas.update_dc26();
-                        } else {
-                            ** GOTO lbl27
-                        }
+                        } else {}
                     }
                 }
             }
@@ -3082,24 +3032,24 @@ lbl27:
         int n = GameCanvas.createOffscreenBuffer();
         GameCanvas.check_28fb();
         switch (x) {
-            case 0: {
+
                 int n2 = Integer.MIN_VALUE;
-                block18: do {
+                block18: varDo {
                     switch (n2 == Integer.MIN_VALUE ? c[w][6] : n2) {
-                        case 1: {
+
                             if ((y += 20 * GameData.k) < n) return;
                             n2 = 0;
                             continue block18;
                         }
-                        case 2: {
+
                             GameCanvas.dispatch_b36f();
                             return;
                         }
-                        case 3: {
+
                             GameCanvas.dispatch_b36f();
                             return;
                         }
-                        case 0: {
+
                             GameCanvas.updateOptions(1);
                             return;
                         }
@@ -3108,10 +3058,10 @@ lbl27:
                 } while (true);
                 return;
             }
-            case 1: {
+
                 switch (c[w][6]) {
                     case 2: 
-                    case 3: {
+
                         GameCanvas.dispatch_b36f();
                         break;
                     }
@@ -3119,10 +3069,10 @@ lbl27:
                 GameCanvas.check_4fbf();
                 return;
             }
-            case 2: {
+
                 switch (c[w][6]) {
                     case 0: 
-                    case 1: {
+
                         if (GameData.k == 1 && ++z % 2 != 0) {
                             boolean bl = g = !g;
                             if (z >= 10) {
@@ -3133,7 +3083,7 @@ lbl27:
                         break;
                     }
                     case 2: 
-                    case 3: {
+
                         if (!GameCanvas.isPlayerDead(u, v) || GameCanvas.check_df73()) {
                             GameCanvas.renderInGame(b[u][v]);
                         }
@@ -3173,7 +3123,6 @@ lbl27:
                                                                                     block10: {
                                                                                         nArray = b[u];
                                                                                         if ((ez & 0x404) == 0) break block10;
-                                                                                        do {
                                                                                             if (--v >= 2) continue;
                                                                                             v = nArray.length - 3;
                                                                                         } while (nArray[v] <= -1);
@@ -3181,7 +3130,6 @@ lbl27:
                                                                                         break block11;
                                                                                     }
                                                                                     if ((ez & 0x900) == 0) break block12;
-                                                                                    do {
                                                                                         if (++v <= nArray.length - 3) continue;
                                                                                         v = 2;
                                                                                     } while (nArray[v] <= -1);
@@ -3272,14 +3220,14 @@ lbl27:
 
     private static void getEntityProperty(Graphics graphics) {
         block0 : switch (x) {
-            case 0: {
+
                 switch (c[w][6]) {
                     case 2: 
-                    case 3: {
+
                         GameCanvas.audioMethod_aj(graphics);
                         break block0;
                     }
-                    case 1: {
+
                         GameCanvas.drawBuffer(graphics);
                         byte[] byArray = a[8].triggerDamageFlash(0, 0);
                         int n = byArray[2] & 0xFF;
@@ -3289,15 +3237,15 @@ lbl27:
                 return;
             }
             case 1: 
-            case 2: {
+
                 int n = 240;
                 switch (c[w][6]) {
                     case 2: 
-                    case 3: {
+
                         GameCanvas.audioMethod_aj(graphics);
                         break;
                     }
-                    case 1: {
+
                         GameCanvas.drawBuffer(graphics);
                         byte[] byArray = a[8].triggerDamageFlash(0, 0);
                         n = byArray[2] & 0xFF;
@@ -3305,7 +3253,7 @@ lbl27:
                         GameCanvas.triggerDamageFlash(graphics, a[8], 0, 1, 2, 3, -771745742, 240 - n >> 1, GameCanvas.calc_119c(n2), n, n2);
                         break;
                     }
-                    case 0: {
+
                         int n3 = GameCanvas.createOffscreenBuffer();
                         GameCanvas.drawBuffer(graphics);
                         GameCanvas.renderWorld(0xD60000);
@@ -3591,14 +3539,14 @@ lbl27:
         GameCanvas.updateOptions(1);
         var1_1 = 0;
         block0 : switch (GameCanvas.u) {
-            case 8: {
+
                 switch (var0) {
-                    case 26: {
+
                         GameCanvas.triggerDamageFlash(GameCanvas.ce == 0, 0);
                         GameCanvas.update_8a5c();
                         return;
                     }
-                    case 28: {
+
                         GameCanvas.update_02b1();
                         return;
                     }
@@ -3606,19 +3554,19 @@ lbl27:
                 GameCanvas.draw_f54d(var0);
                 return;
             }
-            case 7: {
+
                 var1_1 = 0;
                 switch (var0) {
-                    case 50: {
+
                         ++var1_1;
                     }
-                    case 49: {
+
                         ++var1_1;
                     }
-                    case 48: {
+
                         ++var1_1;
                     }
-                    case 47: {
+
                         var2_2 = true;
                         GameCanvas.bF = var1_1;
                         if (SensorHandler.triggerDamageFlash()) {
@@ -3640,14 +3588,14 @@ lbl27:
                 }
                 return;
             }
-            case 9: {
+
                 var2_3 = false;
                 switch (var0) {
-                    case 24: {
+
                         v0 = true;
                         break;
                     }
-                    case 25: {
+
                         v0 = var2_3 = false;
                     }
                 }
@@ -3663,9 +3611,9 @@ lbl27:
                 GameCanvas.isPlayerDying(false);
                 return;
             }
-            case 5: {
+
                 switch (var0) {
-                    case 24: {
+
                         GameCanvas.ce = 0;
                         GameCanvas.E = null;
                         GameCanvas.T = true;
@@ -3679,13 +3627,11 @@ lbl27:
                 GameCanvas.updateCamera(0);
                 return;
             }
-            case 4: {
+
                 switch (var0) {
-                    case 24: {
-                        v1 = true;
-                        ** GOTO lbl80
-                    }
-                    case 25: {
+
+                        v1 = true;}
+
                         v1 = false;
 lbl80:
                         // 2 sources
@@ -3696,9 +3642,9 @@ lbl80:
                 GameCanvas.isPlayerDead(true);
                 return;
             }
-            case 3: {
+
                 switch (var0) {
-                    case 24: {
+
                         GameCanvas.ce = 0;
                         GameCanvas.E = null;
                         GameCanvas.T = true;
@@ -3707,19 +3653,19 @@ lbl80:
                         GameCanvas.triggerDamageFlash(true, true);
                         break block0;
                     }
-                    case 25: {
+
                         GameCanvas.isPlayerDying();
                     }
                 }
                 return;
             }
-            case 2: {
+
                 switch (var0) {
-                    case 24: {
+
                         GameCanvas.update_83ef(99);
                         break block0;
                     }
-                    case 25: {
+
                         GameCanvas.isPlayerDying();
                     }
                 }
@@ -3727,61 +3673,61 @@ lbl80:
             }
             case 0: 
             case 1: 
-            case 6: {
+
                 switch (var0) {
-                    case 0: {
+
                         GameCanvas.renderInGame(GameCanvas.b[GameCanvas.u][GameCanvas.v]);
                         return;
                     }
-                    case 1: {
+
                         GameCanvas.setPaused();
                         return;
                     }
-                    case 3: {
+
                         GameCanvas.playFootstep(7, 1, true);
                         return;
                     }
-                    case 8: {
+
                         GameCanvas.playFootstep(1, 1, true);
                         GameCanvas.update_83ef(8);
                         GameCanvas.S = true;
                         return;
                     }
-                    case 5: {
+
                         GameCanvas.check_399f(0);
                         return;
                     }
-                    case 6: {
+
                         GameCanvas.check_399f(1);
                         return;
                     }
-                    case 13: {
+
                         GameCanvas.calc_d1c5(1);
                         return;
                     }
-                    case 45: {
+
                         GameCanvas.update_38f1();
                         GameCanvas.bB = 3;
                         GameCanvas.cb = 8;
                         GameCanvas.calc_d1c5(2);
                         return;
                     }
-                    case 7: {
+
                         GameCanvas.playFootstep(2, 1, true);
                         GameCanvas.setPaused();
                         return;
                     }
-                    case 4: {
+
                         GameCanvas.playFootstep(6, 1, true);
                         return;
                     }
-                    case 31: {
+
                         GameCanvas.playFootstep(5, 1, true);
                         return;
                     }
                     case 44: 
                     case 69: 
-                    case 70: {
+
                         GameCanvas.update_83ef(19);
                         GameCanvas.update_d03d();
                         GameCanvas.triggerDamageFlash();
@@ -3794,10 +3740,10 @@ lbl80:
 
     private static void updateCamera(int n) {
         block0 : switch (n) {
-            case 0: {
+
                 GameCanvas.calc_119c();
                 switch (a) {
-                    case 3: {
+
                         if (b == 0) {
                             GameCanvas.triggerDamageFlash(true, false);
                             GameCanvas.isPlayerDying();
@@ -3807,19 +3753,19 @@ lbl80:
                         GameCanvas.setPaused();
                         break block0;
                     }
-                    case 6: {
+
                         GameCanvas.audioMethod_ai();
                         a = b;
                         GameCanvas.updateCamera();
                         break block0;
                     }
-                    case 10: {
+
                         a[19].triggerDamageFlash(c, 0, 0, 0, 0);
                     }
                 }
                 return;
             }
-            case 1: {
+
                 if (GameCanvas.drawBackground()) {
                     GameCanvas.calc_d37b();
                     return;
@@ -4013,15 +3959,15 @@ lbl80:
             int[] nArray4;
             int n9 = -1;
             switch (GameController.triggerDamageFlash()) {
-                case 1: {
+
                     int n10 = 70;
                     break;
                 }
-                case 0: {
+
                     int n10 = 44;
                     break;
                 }
-                case 2: {
+
                     int n10 = n9 = 69;
                 }
             }
@@ -4056,8 +4002,7 @@ lbl80:
                 h[n4] = h[n4] | (a.read() & 0xFF) << 24;
             }
             B = 0;
-        }
-        catch (Exception exception) {}
+        }/*         catch (Exception exception) */ {}
         System.gc();
     }
 
@@ -4087,8 +4032,7 @@ lbl80:
             byArray = new byte[n2];
             a.read(byArray);
             B = n + 1;
-        }
-        catch (Exception exception) {}
+        }/*         catch (Exception exception) */ {}
         System.gc();
         return byArray;
     }
@@ -4098,8 +4042,7 @@ lbl80:
             try {
                 a.close();
                 a = null;
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
         h = null;
         A = 0;
@@ -4122,8 +4065,7 @@ lbl80:
             if (recordStore == null) break block13;
             try {
                 recordStore.closeRecordStore();
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
         return;
         catch (Exception exception) {
@@ -4164,8 +4106,7 @@ lbl80:
         try {
             recordStore.closeRecordStore();
             return byArray;
-        }
-        catch (Exception exception) {}
+        }/*         catch (Exception exception) */ {}
         return byArray;
         catch (Exception exception) {
             try {
@@ -4202,8 +4143,7 @@ lbl80:
             if (recordStore == null) break block11;
             try {
                 recordStore.closeRecordStore();
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
         return;
         catch (Exception exception) {
@@ -4267,8 +4207,7 @@ lbl80:
                     a[n].prefetch();
                 }
                 return;
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
     }
 
@@ -4330,8 +4269,7 @@ lbl80:
                 if (player.getState() == 400) {
                     return true;
                 }
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
         return false;
     }
@@ -4439,8 +4377,7 @@ lbl80:
                     player.setLoopCount(j[n]);
                     player.start();
                     return;
-                }
-                catch (Exception exception) {
+                }/*                 catch (Exception exception) */ {
                     if (!bl) {
                         try {
                             if (k) {
@@ -4469,8 +4406,7 @@ lbl80:
                 b[n].stop();
                 GameCanvas.b[n] = null;
                 return;
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
     }
 
@@ -4498,8 +4434,7 @@ lbl80:
                     }
                     b[i].stop();
                     GameCanvas.b[i] = null;
-                }
-                catch (Exception exception) {}
+                }/*                 catch (Exception exception) */ {}
                 continue;
             }
             C = 80000;
@@ -4517,8 +4452,7 @@ lbl80:
             try {
                 b[i].start();
                 continue;
-            }
-            catch (Exception exception) {
+            }/*             catch (Exception exception) */ {
                 int n = GameCanvas.i[i];
                 GameCanvas.i[i] = -1;
                 GameCanvas.triggerDamageFlash(n, j[i]);
@@ -4606,8 +4540,7 @@ lbl80:
         D = 0;
         try {
             string = System.getProperty("microedition.platform");
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             string = null;
         }
         try {
@@ -4622,8 +4555,7 @@ lbl80:
                 }
             }
             return;
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             k = true;
             return;
         }
@@ -4844,7 +4776,6 @@ lbl80:
         int n7 = GameCanvas.isPlayerDead(n, n2, n6);
         int n8 = 0;
         int n9 = n6 - 1;
-        do {
             int n10 = n9 + 1;
             int n11 = d == 0 ? n7 : n6 + n7 - n10;
             n9 = GameCanvas.triggerDamageFlash(graphicsEngineArray, graphicsEngine, b[n], n10, n11, n4, n5, n8);
@@ -5028,9 +4959,7 @@ lbl80:
                                                     v6 = GameCanvas.l;
                                                     v7 = GameCanvas.l[v4];
                                                     v8 = var26_27[2];
-                                                    v9 = var26_27[0];
-                                                    ** GOTO lbl160
-                                                }
+                                                    v9 = var26_27[0];}
                                                 if (var8_8 != 102) break block43;
                                                 v10 = var2_2[++var22_22];
                                                 while (true) {
@@ -5099,12 +5028,11 @@ lbl80:
                                         break block41;
                                     }
                                     if (var8_8 != 37) break block41;
-                                    ** GOTO lbl-1000
                                 }
                                 if (var8_8 == 92 && (var2_2[var22_22 + 1] & 255) == 110) {
                                     GameCanvas.k[GameCanvas.J] = ++var22_22;
                                     var19_19 = true;
-                                } else lbl-1000:
+                                } else 
                                 // 2 sources
 
                                 {
@@ -5727,7 +5655,7 @@ lbl160:
         int n2 = GameCanvas.triggerDamageFlash(byArray, n);
         if (n < byArray.length - 1) {
             switch (n2) {
-                case 92: {
+
                     if ((byArray[n + 1] & 0xFF) != 110) break;
                     n2 = 10;
                 }
@@ -6209,8 +6137,7 @@ lbl160:
         try {
             Thread.sleep(100L);
             return;
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             return;
         }
     }
@@ -6345,14 +6272,12 @@ lbl160:
             GameCanvas.r[0] = var1_2[2] = var0.a.triggerDamageFlash();
             var1_2[1] = var1_2[3] = var0.a.spawnEnemy();
             switch (var0.L) {
-                case 16: {
+
                     var1_2[2] = var1_2[2] + var0.g[5];
                     v0 = 3;
                     v1 = var1_2;
                     v2 = var1_2[3];
-                    v3 = var0.g[6];
-                    ** GOTO lbl28
-                }
+                    v3 = var0.g[6];}
                 case -256: {
                     var1_2[0] = var1_2[0] - (var0.g[0] >> 1);
                     var1_2[1] = var1_2[1] - (var0.g[1] >> 1);
@@ -6450,14 +6375,12 @@ lbl28:
             GameCanvas.r[0] = var1_1[2] = var0.a.triggerDamageFlash();
             var1_1[1] = var1_1[3] = var0.a.spawnEnemy();
             switch (var0.L) {
-                case 16: {
+
                     var1_1[2] = var1_1[2] + var0.g[5];
                     v0 = 3;
                     v1 = var1_1;
                     v2 = var1_1[3];
-                    v3 = var0.g[6];
-                    ** GOTO lbl23
-                }
+                    v3 = var0.g[6];}
                 case -256: {
                     var1_1[0] = var1_1[0] - (var0.g[0] >> 1);
                     var1_1[1] = var1_1[1] - (var0.g[1] >> 1);
@@ -6888,7 +6811,6 @@ lbl23:
         }
         int n3 = n2 + 65536 >> 1;
         int n4 = 8;
-        do {
             n3 = (int)((long)n3 + (((long)n2 << 32) / (long)n3 >> 16) >> 1);
         } while (--n4 != 0);
         if (bl) {
@@ -7133,7 +7055,7 @@ lbl23:
                         int n10 = 19660;
                         int n11 = 26214;
                         block0 : switch (S) {
-                            case 0: {
+
                                 int n12;
                                 T -= X;
                                 U -= Y;
@@ -7154,10 +7076,10 @@ lbl23:
                                 GameCanvas.calc_88d7(1);
                                 break;
                             }
-                            case 1: {
+
                                 if (a == c) {
                                     switch (AudioManager.a) {
-                                        case 3: {
+
                                             if ((AudioManager.h & 0x404) != 0) {
                                                 if (GameCanvas.renderTarget(W += 26214 * n9 / 70) > n6) {
                                                     W = n6;
@@ -7183,7 +7105,7 @@ lbl23:
                                             break block0;
                                         }
                                         case 6: 
-                                        case 7: {
+
                                             n10 = 58982;
                                             n11 = 58982;
                                         }
@@ -7470,7 +7392,7 @@ lbl23:
         if (audioManagerArray != null) {
             for (int i = 0; i < audioManagerArray.length; ++i) {
                 switch (audioManagerArray[i].L) {
-                    case 16: {
+
                         audioManagerArray[i].g[9] = GameCanvas.triggerDamageFlash(d, audioManagerArray[i].g[9]);
                         audioManagerArray[i].g[10] = GameCanvas.triggerDamageFlash(d, audioManagerArray[i].g[10]);
                         audioManagerArray[i].g[11] = GameCanvas.triggerDamageFlash(d, audioManagerArray[i].g[11]);
@@ -7911,11 +7833,11 @@ lbl23:
         int n2 = 1;
         switch (b[n][0]) {
             case 4: 
-            case 6: {
+
                 int n3 = b[n][10];
                 return n3;
             }
-            case 5: {
+
                 int n3;
                 n2 = b[n][10];
                 if (bF == 0) {
@@ -8002,16 +7924,16 @@ lbl23:
         boolean bl = false;
         if (n == -1) return bl;
         switch (b[n][0]) {
-            case 10: {
+
                 if (GameCanvas.c.g[20] != 1) return bl;
                 return true;
             }
-            case 7: {
+
                 if (GameCanvas.c.g[7] >= 200) return bl;
                 return true;
             }
             case 4: 
-            case 6: {
+
                 int n2 = GameCanvas.destroyBuffer(n);
                 if (n2 != -1 && GameCanvas.spawnEnemy(c, n2)) return true;
                 int n3 = GameCanvas.resetClipBuffer(n);
@@ -8036,34 +7958,34 @@ lbl23:
             n5 = GameCanvas.stopParticles(n3, n4, n2);
         }
         switch (b[n][0]) {
-            case 7: {
+
                 GameCanvas.check_9d9d(n5 * b[n][10]);
                 break;
             }
-            case 0: {
+
                 break;
             }
-            case 2: {
+
                 break;
             }
-            case 1: {
+
                 break;
             }
-            case 3: {
+
                 break;
             }
-            case 4: {
+
                 n5 = 0;
                 break;
             }
-            case 5: {
+
                 break;
             }
-            case 6: {
+
                 n5 = 0;
                 break;
             }
-            case 10: {
+
                 GameCanvas.triggerDamageFlash(c[n3], d[n3], (int)b[n][11], n5, true);
             }
         }
@@ -8096,7 +8018,7 @@ lbl23:
                 if (bl) {
                     switch (b[n][0]) {
                         case 4: 
-                        case 6: {
+
                             if (L[1] == -1) {
                                 if (bl2) {
                                     GameCanvas.update_53bd();
@@ -8278,7 +8200,7 @@ lbl23:
     private static int triggerDamageFlash(boolean var0, boolean var1_1) {
         var2_2 = 0;
         switch (GameCanvas.ae) {
-            case 0: {
+
                 if (!GameCanvas.handleSpecialInput()) break;
                 if (GameCanvas.b[GameCanvas.af][0] == 11) {
                     GameCanvas.ae = 3;
@@ -8288,10 +8210,9 @@ lbl23:
                 GameCanvas.ae = 1;
                 break;
             }
-            case 1: {
+
                 if (!GameCanvas.update_2a26()) break;
-                if (!GameCanvas.updatePausedSubmenu()) ** GOTO lbl23
-                if (var0) {
+                if (!GameCanvas.updatePausedSubmenu())if (var0) {
                     GameCanvas.drawLevelSelect(0);
                 }
                 if (!GameCanvas.update_83ef()) {
@@ -8301,9 +8222,7 @@ lbl23:
                     GameCanvas.stopParticles(GameCanvas.af, 18);
                     GameCanvas.ae = 4;
                     break;
-                }
-                ** GOTO lbl69
-lbl23:
+                }lbl23:
                 // 1 sources
 
                 if (var0) {
@@ -8312,7 +8231,7 @@ lbl23:
                 v0 = 2;
                 break;
             }
-            case 4: {
+
                 if (!GameCanvas.update_2a26()) break;
                 if (var1_1) {
                     GameCanvas.stopParticles(GameCanvas.af, 19);
@@ -8325,7 +8244,7 @@ lbl23:
                 GameCanvas.ae = 6;
                 break;
             }
-            case 5: {
+
                 if (!GameCanvas.update_2a26()) break;
                 if (GameCanvas.triggerDamageFlash(GameCanvas.p, GameCanvas.q, GameCanvas.af, GameCanvas.renderInGame(GameCanvas.af), true) < 0) {
                     GameCanvas.triggerDamageFlash(GameCanvas.af, 1, GameCanvas.c);
@@ -8337,7 +8256,7 @@ lbl23:
                 break;
             }
             case 6: 
-            case 7: {
+
                 if (!GameCanvas.update_2a26()) break;
                 if (var0) {
                     GameCanvas.drawLevelSelect(0);
@@ -8346,7 +8265,7 @@ lbl23:
                 v0 = var2_2 | 2;
                 break;
             }
-            case 2: {
+
                 if (!GameCanvas.stopGame()) break;
                 if (GameCanvas.b != null && GameCanvas.b.g[6] != -1) {
                     GameCanvas.stateOrRender_aS();
@@ -8358,7 +8277,7 @@ lbl23:
                 GameCanvas.ae = 3;
                 break;
             }
-            case 3: {
+
                 if (var0) {
                     GameCanvas.drawLevelSelect(0);
                 }
@@ -8380,15 +8299,15 @@ lbl69:
             case 1: 
             case 4: 
             case 5: 
-            case 6: {
+
                 GameCanvas.destroyBuffer(graphics);
                 return;
             }
-            case 2: {
+
                 GameCanvas.updateOptions(graphics);
                 return;
             }
-            case 3: {
+
                 return;
             }
         }
@@ -8412,16 +8331,16 @@ lbl69:
 
     private static int updateCamera(int n) {
         switch (n) {
-            case 0: {
+
                 return 0;
             }
-            case 12: {
+
                 return 1;
             }
-            case 4: {
+
                 return 2;
             }
-            case 6: {
+
                 return 68;
             }
         }
@@ -8445,7 +8364,7 @@ lbl69:
             int n9 = 1;
             if (audioManager.L >= 9) {
                 switch (audioManager.L) {
-                    case 9: {
+
                         if (audioManager.g[5] != 0) {
                             n6 = GameCanvas.spawnEnemy(audioManager.a.triggerDamageFlash() + 8);
                             n7 = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy() + 8);
@@ -8455,7 +8374,7 @@ lbl69:
                         }
                         return;
                     }
-                    case 16: {
+
                         n8 = GameCanvas.spawnEnemy(audioManager.g[5]);
                         n9 = GameCanvas.spawnEnemy(audioManager.g[6]);
                         break;
@@ -8468,11 +8387,11 @@ lbl69:
                 }
             } else {
                 switch (audioManager.L) {
-                    case 3: {
+
                         if (AudioManager.isPlayerDead(audioManager)) break;
                         return;
                     }
-                    case 1: {
+
                         if (!bl) break;
                         n5 = 0;
                         n5 = GameCanvas.triggerDamageFlash(0, 7168, n3);
@@ -8510,14 +8429,14 @@ lbl69:
             int n4 = 1;
             if (audioManager.L >= 9) {
                 switch (audioManager.L) {
-                    case 9: {
+
                         n = GameCanvas.spawnEnemy(audioManager.a.triggerDamageFlash() + 8);
                         n2 = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy() + 8);
                         n3 = GameCanvas.stopParticles(audioManager.g[0], 6);
                         n4 = GameCanvas.stopParticles(audioManager.g[0], 7);
                         break;
                     }
-                    case 16: {
+
                         n3 = GameCanvas.spawnEnemy(audioManager.g[5]);
                         n4 = GameCanvas.spawnEnemy(audioManager.g[6]);
                         break;
@@ -8715,15 +8634,13 @@ lbl69:
                 var5_5 = GameCanvas.spawnEnemy(var0.a.spawnEnemy());
                 if (var4_4 < 0 || var4_4 >= GameCanvas.e.length || var5_5 < 0 || var5_5 >= GameCanvas.e[var4_4].length) break block10;
                 switch (var1_1) {
-                    case 0: {
+
                         v0 = GameCanvas.e[var4_4];
                         v1 = var5_5;
                         v2 = v1;
                         v3 = v0;
-                        v4 = v0[v1] | var3_3;
-                        ** GOTO lbl23
-                    }
-                    case 1: {
+                        v4 = v0[v1] | var3_3;}
+
                         v5 = GameCanvas.e[var4_4];
                         v6 = var5_5;
                         v2 = v6;
@@ -8739,10 +8656,10 @@ lbl23:
             }
             if (var0.g[11] == 2) {
                 switch (var1_1) {
-                    case 0: {
+
                         return;
                     }
-                    case 1: {
+
                         var0.g[11] = 1;
                     }
                 }
@@ -8766,7 +8683,7 @@ lbl23:
                     if (audioManager.L == 14 || audioManager.L == 16 && audioManager.g[7] == 0 && audioManager.g[20] != 1 || audioManager.L == 9 && audioManager.g[5] <= 0 && GameCanvas.stopParticles(audioManager.g[0], 8) >= 0) break block8;
                     n5 = 4 | GameCanvas.playFootstep(audioManager);
                     switch (audioManager.L) {
-                        case 9: {
+
                             n2 = GameCanvas.spawnEnemy(audioManager.a.triggerDamageFlash() + 8);
                             n = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy() + 8);
                             n4 = GameCanvas.stopParticles(audioManager.g[0], 6);
@@ -8774,7 +8691,7 @@ lbl23:
                             n5 |= 8;
                             break block9;
                         }
-                        case 16: {
+
                             n4 = GameCanvas.spawnEnemy(audioManager.g[5]);
                             n6 = GameCanvas.spawnEnemy(audioManager.g[6]);
                             break;
@@ -8816,7 +8733,7 @@ lbl23:
                 n4 = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy());
                 n3 = 4 | GameCanvas.playFootstep(audioManager);
                 switch (audioManager.L) {
-                    case 9: {
+
                         n5 = GameCanvas.spawnEnemy(audioManager.a.triggerDamageFlash() + 8);
                         n4 = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy() + 8);
                         n2 = GameCanvas.stopParticles(audioManager.g[0], 6);
@@ -8824,7 +8741,7 @@ lbl23:
                         n3 |= 8;
                         break block7;
                     }
-                    case 16: {
+
                         n2 = GameCanvas.spawnEnemy(audioManager.g[5]);
                         n6 = GameCanvas.spawnEnemy(audioManager.g[6]);
                         break;
@@ -8855,14 +8772,14 @@ lbl23:
                 int n4;
                 int n5;
                 switch (audioManager.L) {
-                    case 9: {
+
                         n2 = GameCanvas.spawnEnemy(audioManager.a.triggerDamageFlash() + 8);
                         n3 = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy() + 8);
                         n5 = GameCanvas.stopParticles(audioManager.g[0], 6);
                         n4 = GameCanvas.stopParticles(audioManager.g[0], 7);
                         break;
                     }
-                    case 16: {
+
                         n5 = GameCanvas.spawnEnemy(audioManager.g[5]);
                         n4 = GameCanvas.spawnEnemy(audioManager.g[6]);
                         break;
@@ -8897,14 +8814,14 @@ lbl23:
                 int n4;
                 int n5;
                 switch (audioManager.L) {
-                    case 9: {
+
                         n2 = GameCanvas.spawnEnemy(audioManager.a.triggerDamageFlash() + 8);
                         n3 = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy() + 8);
                         n5 = GameCanvas.stopParticles(audioManager.g[0], 6);
                         n4 = GameCanvas.stopParticles(audioManager.g[0], 7);
                         break;
                     }
-                    case 16: {
+
                         n5 = GameCanvas.spawnEnemy(audioManager.g[5]);
                         n4 = GameCanvas.spawnEnemy(audioManager.g[6]);
                         break;
@@ -8936,14 +8853,14 @@ lbl23:
                 int n4 = GameCanvas.spawnEnemy(nArray[i][3]);
                 int n5 = 16;
                 switch (nArray[i][4]) {
-                    case 0: {
+
                         n5 = 48;
                     }
-                    case 1: {
+
                         GameCanvas.triggerDamageFlash(n, n2, n3, n4, n5);
                         continue block5;
                     }
-                    case 2: {
+
                         GameCanvas.triggerDamageFlash(n, n2, n3, n4);
                     }
                 }
@@ -10150,8 +10067,7 @@ lbl23:
             GameCanvas.triggerDamageFlash(v, al << 1, n5, n6, n7);
             graphics.drawRGB(v, al << 1, n3, n, n2, n3, n4, false);
             return;
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             return;
         }
     }
@@ -10255,11 +10171,11 @@ lbl23:
         p = false;
         GameCanvas.renderTarget(17, n);
         switch (b) {
-            case 0: {
+
                 GameCanvas.stateOrRender_aP();
                 return;
             }
-            case 1: {
+
                 GameCanvas.stopParticles(true);
             }
         }
@@ -10279,11 +10195,11 @@ lbl23:
             ez |= 0x4020;
         }
         switch (b) {
-            case 0: {
+
                 GameCanvas.stateOrRender_aQ();
                 break;
             }
-            case 1: {
+
                 GameCanvas.triggerDamageFlash(true);
             }
         }
@@ -10303,11 +10219,11 @@ lbl23:
                 GameCanvas.triggerDamageFlash(graphics, 0, 0, 240, 320);
             }
             switch (b) {
-                case 0: {
+
                     GameCanvas.calc_119c(graphics);
                     break;
                 }
-                case 1: {
+
                     GameCanvas.spawnEnemy(graphics, true);
                 }
             }
@@ -10383,21 +10299,21 @@ lbl23:
         boolean bl = false;
         GameCanvas.setPaused();
         switch (w[0]) {
-            case 0: {
+
                 w[3] = w[3] + (int)d;
                 if (w[3] < 3000) break;
                 GameCanvas.w[3] = 0;
                 GameCanvas.w[0] = 1;
                 break;
             }
-            case 1: {
+
                 w[3] = w[3] + (int)d;
                 if (w[3] < 2000) break;
                 GameCanvas.w[3] = 0;
                 GameCanvas.w[0] = 2;
                 break;
             }
-            case 2: {
+
                 w[3] = w[3] + (int)d;
                 if (w[3] < 3000) break;
                 GameCanvas.triggerDamageFlash(0);
@@ -10410,7 +10326,7 @@ lbl23:
                 GameCanvas.w[0] = 0;
                 break;
             }
-            case 3: {
+
                 if (!GameCanvas.triggerDamageFlash(false)) break;
                 bl = true;
             }
@@ -10421,17 +10337,17 @@ lbl23:
     private static void setPaused(Graphics graphics) {
         switch (w[0]) {
             case 0: 
-            case 2: {
+
                 GameCanvas.triggerDamageFlash(0);
                 GameCanvas.startGame(c);
                 GameCanvas.stopGame(graphics);
                 return;
             }
-            case 1: {
+
                 GameCanvas.startGame(graphics);
                 return;
             }
-            case 3: {
+
                 GameCanvas.spawnEnemy(graphics, false);
             }
         }
@@ -10483,7 +10399,6 @@ lbl23:
         }
         n9 = GameCanvas.drawForeground(n2, n, (w[3] << 14) / 3000) >> 14;
         int n10 = 0;
-        do {
             GameCanvas.triggerDamageFlash(b, 0, n6 - 3, 240, n4 + 6);
             GameCanvas.playFootstep(graphics, 0, n6 - 3, 240, n4 + 6, n7, n8, n9);
             n6 += n4 + n5;
@@ -10572,21 +10487,17 @@ lbl23:
             GameCanvas.f[var2_2][3] = var4_4[2] - var4_4[0];
             GameCanvas.f[var2_2][4] = var4_4[2] - var4_4[1];
             switch (GameCanvas.f[var2_2][0]) {
-                case 0: {
+
                     v1 = GameCanvas.f[var2_2];
                     v2 = 5;
-                    v3 = 0;
-                    ** GOTO lbl35
-                }
-                case 1: {
+                    v3 = 0;}
+
                     GameCanvas.f[var2_2][6] = 0;
                     GameCanvas.f[var2_2][1] = 0;
                     v1 = GameCanvas.f[var2_2];
                     v2 = 5;
-                    v3 = 0x3C0000 + var2_2 * 0x1E0000;
-                    ** GOTO lbl35
-                }
-                case 2: {
+                    v3 = 0x3C0000 + var2_2 * 0x1E0000;}
+
                     GameCanvas.b[var2_2] = null;
                     GameCanvas.f[var2_2][5] = 0;
                     GameCanvas.f[var2_2][6] = GameCanvas.triggerDamageFlash() % GameCanvas.f[var2_2][4] << 14;
@@ -10614,12 +10525,12 @@ lbl35:
             if (GameCanvas.f[var2_2][2] == -1) continue;
             var1_1 |= 1 << var2_2;
             switch (GameCanvas.f[var2_2][0]) {
-                case 0: {
+
                     continue block10;
                 }
-                case 1: {
+
                     switch (GameCanvas.f[var2_2][1]) {
-                        case 0: {
+
                             if (GameCanvas.f[var2_2][5] <= 0) break;
                             v0 = GameCanvas.f[var2_2];
                             v0[5] = v0[5] - 15728 * (int)GameCanvas.d;
@@ -10628,14 +10539,12 @@ lbl35:
                             GameCanvas.f[var2_2][1] = 1;
                             v1 = GameCanvas.f[var2_2];
                             v2 = 6;
-                            v3 = 0;
-                            ** GOTO lbl32
-                        }
-                        case 1: {
+                            v3 = 0;}
+
                             var0 |= 1 << var2_2;
                             break;
                         }
-                        case 2: {
+
                             v4 = GameCanvas.f[var2_2];
                             v4[6] = v4[6] + 1;
                             if (v4[6] != 10) break;
@@ -10650,7 +10559,7 @@ lbl32:
                     }
                     continue block10;
                 }
-                case 2: {
+
                     v5 = GameCanvas.f[var2_2];
                     v5[6] = v5[6] + GameCanvas.f[var2_2][7] * (int)GameCanvas.d;
                     if (GameCanvas.f[var2_2][7] > 0 && GameCanvas.f[var2_2][6] >> 14 >= GameCanvas.f[var2_2][4]) {
@@ -10688,23 +10597,23 @@ lbl32:
             int n4 = f[i][4];
             graphicsEngine.triggerDamageFlash(graphics, f[i][2], n + (f[i][5] >> 14), n2 - n4, 0);
             switch (f[i][0]) {
-                case 0: {
+
                     break;
                 }
-                case 1: {
+
                     boolean bl = true;
                     switch (f[i][1]) {
-                        case 2: {
+
                             bl = f[i][6] % 4 == 0;
                         }
-                        case 3: {
+
                             if (!bl) break;
                             graphicsEngine.triggerDamageFlash(graphics, 27, n + (f[i][5] >> 14), n2 - n4, 0);
                         }
                     }
                     break;
                 }
-                case 2: {
+
                     GameCanvas.renderWorld(1677786880);
                     GameCanvas.triggerDamageFlash(graphics, n + (f[i][5] >> 14) - 2, n2 - n4 - 2, n3 + 4, n4 + 4);
                     GameCanvas.triggerDamageFlash(graphics, n + (f[i][5] >> 14) - 2, n2 - n4 + (f[i][6] >> 14) - 2, n3 + 4, 5);
@@ -10735,18 +10644,18 @@ lbl32:
                     au = 0;
                     if (at != -1) {
                         switch (k[at][2]) {
-                            case 0: {
+
                                 break;
                             }
-                            case 1: {
+
                                 aw >>= 1;
                                 break;
                             }
-                            case 2: {
+
                                 aw <<= 1;
                                 break;
                             }
-                            case 3: {
+
                                 au |= 0x10;
                                 if (av != -1) break;
                                 av = GameCanvas.drawForeground();
@@ -10775,7 +10684,7 @@ lbl32:
         GameCanvas.stateOrRender_aU();
         GameCanvas.stateOrRender_aT();
         switch (ao) {
-            case 0: {
+
                 if ((au & 0x10) != 0) {
                     if (!GameCanvas.triggerDamageFlash(av, 300)) break;
                     GameCanvas.resetTimers(av);
@@ -10786,7 +10695,7 @@ lbl32:
                 ao = 1;
                 break;
             }
-            case 1: {
+
                 if (ay > 0) {
                     if ((ay -= (int)d) <= 0) {
                         ao = 2;
@@ -10816,7 +10725,7 @@ lbl32:
                 ++ax;
                 break;
             }
-            case 2: {
+
                 bl = true;
                 GameCanvas.stateOrRender_aS();
             }
@@ -10895,7 +10804,7 @@ lbl32:
                     int n12 = 0;
                     int n13 = 0;
                     switch (ao) {
-                        case 0: {
+
                             if ((au & 0x10) == 0 || av == -1) break;
                             n12 = -1 + (GameCanvas.triggerDamageFlash() % 2 + 1);
                             n13 = -1 + (GameCanvas.triggerDamageFlash() % 2 + 1);
@@ -11070,7 +10979,7 @@ lbl32:
         var0 = false;
         GameCanvas.stateOrRender_aU();
         switch (GameCanvas.ao) {
-            case 4: {
+
                 var1_1 = GameCanvas.calc_d1c5(GameCanvas.aC, 2);
                 var2_3 = GameCanvas.triggerDamageFlash(var1_1, 500);
                 if (!var2_3) break;
@@ -11078,7 +10987,7 @@ lbl32:
                 GameCanvas.renderTarget(var1_1);
                 break;
             }
-            case 5: {
+
                 var1_2 = GameCanvas.calc_d1c5(GameCanvas.aC, 2);
                 var2_4 = GameCanvas.triggerDamageFlash(var1_2, 500);
                 if (!var2_4) break;
@@ -11086,14 +10995,11 @@ lbl32:
                 GameCanvas.resetTimers(var1_2);
                 break;
             }
-            case 6: {
-                if ((GameCanvas.ez & 2304) == 0 && (GameCanvas.ez & 1028) == 0) ** GOTO lbl25
-                var6_5 = GameCanvas.calc_d1c5(GameCanvas.aC, 0);
+
+                if ((GameCanvas.ez & 2304) == 0 && (GameCanvas.ez & 1028) == 0)var6_5 = GameCanvas.calc_d1c5(GameCanvas.aC, 0);
                 v0 = GameCanvas.aC;
                 v1 = var6_5 == 0 ? 1 : 0;
-                v2 = 0;
-                ** GOTO lbl46
-lbl25:
+                v2 = 0;lbl25:
                 // 1 sources
 
                 if ((GameCanvas.ez & 16416) == 0) break;
@@ -11102,7 +11008,7 @@ lbl25:
                 GameCanvas.ao = 7;
                 break;
             }
-            case 7: {
+
                 var3_7 = GameCanvas.calc_d1c5(GameCanvas.aC, 1);
                 var4_8 = GameCanvas.calc_d1c5(GameCanvas.aC, 2);
                 var5_9 = GameCanvas.triggerDamageFlash(var4_8, 1000);
@@ -11181,13 +11087,13 @@ lbl46:
     private static boolean stopGame() {
         boolean bl = false;
         switch (ao) {
-            case 0: {
+
                 if ((aD += 20 * GameData.k) < aE) break;
                 aD = aE;
                 ao = 1;
                 break;
             }
-            case 1: {
+
                 a[1].triggerDamageFlash();
                 if ((ez & 0x4020) == 0) break;
                 if (q) {
@@ -11212,7 +11118,7 @@ lbl46:
                 s = true;
                 break;
             }
-            case 2: {
+
                 if ((aD -= 20 * GameData.k) > 0) break;
                 aD = 0;
                 bl = true;
@@ -11228,11 +11134,11 @@ lbl46:
         n2 = byArray[2] & 0xFF;
         switch (ao) {
             case 0: 
-            case 2: {
+
                 GameCanvas.triggerDamageFlash(graphics, a[8], 0, 1, 2, 3, -771745742, 240 - n2 >> 1, n, n2, aD);
                 return;
             }
-            case 1: {
+
                 GameCanvas.b[GameCanvas.ar].b = 7;
                 GameCanvas.playFootstep(graphics, ar, ap, aq, 240 - n2 >> 1, n, n2, aD, au);
                 GameCanvas.b[GameCanvas.ar].b = 4;
@@ -11876,7 +11782,7 @@ lbl46:
             n2 = byArray[3] & 0xFF;
             switch (n12) {
                 case 4: 
-                case 6: {
+
                     int n13;
                     if (!D && bl) break;
                     byArray = a[20].triggerDamageFlash(0, 0);
@@ -11934,11 +11840,11 @@ lbl46:
                 GameCanvas.spawnEnemy(0, GameCanvas.handleWeaponSelect(n6, bt));
             }
             switch (n9) {
-                case 4: {
+
                     n11 = 80;
                     break;
                 }
-                case 0: {
+
                     n11 = 42;
                     break;
                 }
@@ -12090,7 +11996,7 @@ lbl46:
         if (z[0] != 0) {
             int n = GameCanvas.calc_470e();
             switch (z[0]) {
-                case 1: {
+
                     z[2] = z[2] + 2457600 * n / 1000;
                     boolean bl = false;
                     if (z[2] < 0) break;
@@ -12104,7 +12010,7 @@ lbl46:
                     int n3 = GameCanvas.drawForeground();
                     break;
                 }
-                case 2: {
+
                     boolean bl;
                     if (GameCanvas.drawLevelSelect(z[3])) {
                         GameCanvas.calc_8265(z[3]);
@@ -12119,7 +12025,7 @@ lbl46:
                     int n3 = 3;
                     break;
                 }
-                case 3: {
+
                     z[2] = z[2] - 2457600 * n / 1000;
                     int n4 = 0 - z[1] << 14;
                     if (z[2] > n4) break;
@@ -12296,40 +12202,34 @@ lbl46:
         }
         var0 = GameCanvas.triggerDamageFlash(GameCanvas.b[0]);
         switch (GameCanvas.B[0]) {
-            case 2: {
+
                 GameCanvas.B[5] = GameCanvas.B[5] - 1638 * (int)GameCanvas.d;
                 if (GameCanvas.B[5] > 0) break;
                 GameCanvas.B[5] = 0;
                 GameCanvas.B[6] = var0 << 14;
                 v0 = GameCanvas.B;
                 v1 = 0;
-                v2 = 3;
-                ** GOTO lbl46
-            }
+                v2 = 3;}
             case 3: 
-            case 4: {
+
                 GameCanvas.B[6] = GameCanvas.B[6] - 163 * (int)GameCanvas.d;
                 if (GameCanvas.B[6] > 0) break;
                 GameCanvas.B[6] = var0 << 14;
                 GameCanvas.B[5] = 0;
                 v1 = 0;
                 v0 = GameCanvas.B;
-                v2 = GameCanvas.B[0] + 1;
-                ** GOTO lbl46
-            }
-            case 5: {
+                v2 = GameCanvas.B[0] + 1;}
+
                 GameCanvas.B[5] = GameCanvas.B[5] + (int)GameCanvas.d;
                 if (GameCanvas.B[5] < 2000) break;
                 GameCanvas.B[0] = 6;
                 GameCanvas.B[5] = 0;
                 v0 = GameCanvas.B;
                 v1 = 6;
-                v2 = 6553;
-                ** GOTO lbl46
-            }
+                v2 = 6553;}
             case 6: 
             case 7: 
-            case 8: {
+
                 GameCanvas.B[5] = GameCanvas.B[5] + GameCanvas.B[6];
                 GameCanvas.B[6] = GameCanvas.B[6] + 3276 * (int)GameCanvas.d;
                 if (GameCanvas.B[5] < 0x3C0000) break;
@@ -12337,10 +12237,8 @@ lbl46:
                 GameCanvas.B[6] = 6553;
                 v1 = 0;
                 v0 = GameCanvas.B;
-                v2 = GameCanvas.B[0] + 1;
-                ** GOTO lbl46
-            }
-            case 9: {
+                v2 = GameCanvas.B[0] + 1;}
+
                 v0 = GameCanvas.B;
                 v1 = 0;
                 v2 = 0;
@@ -12388,37 +12286,33 @@ lbl46:
             var29_25 = var26_23 - 3;
             var30_26 = var11_11 + 3;
             switch (GameCanvas.B[0]) {
-                case 2: {
-                    var23_21 -= GameCanvas.B[5] >> 14;
-                    ** GOTO lbl53
-                }
-                case 3: {
-                    var12_12 += GameCanvas.B[6] >> 14;
-                    ** GOTO lbl54
-                }
-                case 4: {
+
+                    var23_21 -= GameCanvas.B[5] >> 14;}
+
+                    var12_12 += GameCanvas.B[6] >> 14;}
+
                     var26_23 += GameCanvas.B[6] >> 14;
                     break;
                 }
-                case 5: {
+
                     break;
                 }
-                case 6: {
+
                     var13_13 = 0 + (GameCanvas.B[5] >> 14);
                     break;
                 }
-                case 7: {
+
                     var8_8 = false;
                     var21_19 += GameCanvas.B[5] >> 14;
                     break;
                 }
-                case 8: {
+
                     var27_24 = 0 + (GameCanvas.B[5] >> 14);
                     var7_7 = false;
                     var8_8 = false;
                     break;
                 }
-                case 9: {
+
                     var7_7 = false;
 lbl53:
                     // 2 sources
@@ -12466,14 +12360,14 @@ lbl54:
     private static void dispatch_b154() {
         GameCanvas.bg = (int)((long)GameCanvas.bg + GameCanvas.d);
         switch (GameCanvas.aY) {
-            case 0: {
+
                 if (GameCanvas.bg <= 1000) break;
                 GameCanvas.bf = 0;
                 GameCanvas.bg = 0;
                 GameCanvas.aY = 1;
                 return;
             }
-            case 1: {
+
                 if (GameCanvas.bg > GameCanvas.bh) {
                     GameCanvas.bf = -GameCanvas.be;
                     GameCanvas.bg = 0;
@@ -12483,17 +12377,15 @@ lbl54:
                 if (GameCanvas.bh <= 0) break;
                 v0 = -GameCanvas.be;
                 v1 = 0;
-                v2 = GameCanvas.bh - GameCanvas.bg;
-                ** GOTO lbl36
-            }
-            case 2: {
+                v2 = GameCanvas.bh - GameCanvas.bg;}
+
                 if (GameCanvas.bg <= 1000) break;
                 GameCanvas.bf = -GameCanvas.be;
                 GameCanvas.bg = 0;
                 GameCanvas.aY = 3;
                 return;
             }
-            case 3: {
+
                 if (GameCanvas.bg > GameCanvas.bh) {
                     GameCanvas.bf = 0;
                     GameCanvas.bg = 0;
@@ -12563,51 +12455,31 @@ lbl36:
         GameCanvas.C[1] = var0;
         GameCanvas.C[2] = var1_1;
         switch (var1_1) {
-            case 11: {
+
                 var3_2.spawnEnemy(1);
-                v0 = 6;
-                ** GOTO lbl39
-            }
-            case 12: {
+                v0 = 6;}
+
                 var3_2.spawnEnemy(2);
-                v0 = 6;
-                ** GOTO lbl39
-            }
-            case 10: {
-                v0 = 0;
-                ** GOTO lbl39
-            }
-            case 13: {
-                v0 = 0;
-                ** GOTO lbl39
-            }
+                v0 = 6;}
+
+                v0 = 0;}
+
+                v0 = 0;}
             case 14: 
-            case 22: {
-                v0 = 4;
-                ** GOTO lbl39
-            }
-            case 15: {
-                v0 = 4;
-                ** GOTO lbl39
-            }
-            case 16: {
-                v0 = 4;
-                ** GOTO lbl39
-            }
-            case 17: {
-                v0 = 0;
-                ** GOTO lbl39
-            }
+
+                v0 = 4;}
+
+                v0 = 4;}
+
+                v0 = 4;}
+
+                v0 = 0;}
             case 18: 
-            case 19: {
-                v0 = 4;
-                ** GOTO lbl39
-            }
-            case 20: {
-                v0 = 0;
-                ** GOTO lbl39
-            }
-            case 21: {
+
+                v0 = 4;}
+
+                v0 = 0;}
+
                 v0 = 0;
 lbl39:
                 // 11 sources
@@ -12658,28 +12530,24 @@ lbl39:
             var13_11 = 0;
             var14_12 = 0;
             switch (GameCanvas.C[0]) {
-                case 0: {
+
                     v0 = var2_2;
-                    v1 = 0;
-                    ** GOTO lbl59
-                }
-                case 1: {
+                    v1 = 0;}
+
                     GameCanvas.dispatch_ef62();
                     return;
                 }
-                case 4: {
+
                     v0 = var2_2;
-                    v1 = 4;
-                    ** GOTO lbl59
-                }
-                case 2: {
+                    v1 = 4;}
+
                     GameCanvas.C[3] = var4_4 + var11_9 << 14;
                     GameCanvas.C[4] = var5_5 + var12_10 << 14;
                     GameCanvas.C[5] = -GameCanvas.C[3] / 500;
                     GameCanvas.C[6] = (var9_7 - (var7_6 <<= 14) - GameCanvas.C[4]) / 500;
                     return;
                 }
-                case 3: {
+
                     GameCanvas.C[3] = 0;
                     GameCanvas.C[4] = var9_7 - (var7_6 <<= 14);
                     var13_11 = var4_4 + var11_9 << 14;
@@ -12688,14 +12556,14 @@ lbl39:
                     GameCanvas.C[6] = (var14_12 - GameCanvas.C[4]) / 500;
                     return;
                 }
-                case 5: {
+
                     GameCanvas.C[3] = var4_4 + var11_9 << 14;
                     GameCanvas.C[4] = var5_5 + var12_10 << 14;
                     GameCanvas.C[5] = (GameCanvas.C[7] - GameCanvas.C[3]) / 500;
                     GameCanvas.C[6] = (GameCanvas.C[8] - GameCanvas.C[4]) / 500;
                     return;
                 }
-                case 6: {
+
                     GameCanvas.C[3] = GameCanvas.C[7];
                     GameCanvas.C[4] = GameCanvas.C[8];
                     var13_11 = var4_4 + var11_9 << 14;
@@ -12704,7 +12572,7 @@ lbl39:
                     GameCanvas.C[6] = (var14_12 - GameCanvas.C[4]) / 500;
                     return;
                 }
-                case 7: {
+
                     v0 = var2_2;
                     v1 = 3;
 lbl59:
@@ -12723,13 +12591,13 @@ lbl59:
         switch (C[2]) {
             case 14: 
             case 16: 
-            case 22: {
+
                 gameData = gameData2;
                 n = 4;
                 break;
             }
             case 12: 
-            case 17: {
+
                 gameData = gameData2;
                 n = 2;
                 break;
@@ -12769,7 +12637,7 @@ lbl59:
             var12_10 = 0x500000;
             GameCanvas.a[4 + GameCanvas.bj].triggerDamageFlash();
             block0 : switch (GameCanvas.C[0]) {
-                case 0: {
+
                     if (!var2_2.triggerDamageFlash()) break;
                     if (GameCanvas.C[2] == 20) {
                         GameCanvas.dispatch_1728(4);
@@ -12778,7 +12646,7 @@ lbl59:
                     GameCanvas.dispatch_1728(1);
                     break;
                 }
-                case 1: {
+
                     if ((GameCanvas.ez & 12368) != 0) {
                         if (var2_2.d == 2) {
                             var2_2.spawnEnemy(1);
@@ -12788,24 +12656,21 @@ lbl59:
                         break;
                     }
                     if ((GameCanvas.ez & 16416) == 0) break;
-                    if (var2_2.d != 1) ** GOTO lbl49
-                    GameCanvas.H = true;
+                    if (var2_2.d != 1)GameCanvas.H = true;
                     switch (GameCanvas.C[2]) {
-                        case 10: {
+
                             GameCanvas.dispatch_1728(2);
                             break;
                         }
                         case 11: 
                         case 12: 
-                        case 17: {
+
                             GameCanvas.dispatch_1728(7);
                             break;
                         }
-                        case 13: {
-                            v0 = true;
-                            ** GOTO lbl46
-                        }
-                        case 21: {
+
+                            v0 = true;}
+
                             v0 = true;
 lbl46:
                             // 2 sources
@@ -12821,31 +12686,29 @@ lbl49:
                     switch (GameCanvas.C[2]) {
                         case 10: 
                         case 13: 
-                        case 17: {
+
                             GameCanvas.dispatch_1728(7);
                             break;
                         }
                         case 11: 
-                        case 12: {
+
                             GameCanvas.dispatch_1728(5);
                             break;
                         }
-                        case 21: {
+
                             var0 = true;
                         }
                     }
                     break;
                 }
-                case 2: {
+
                     GameCanvas.C[3] = GameCanvas.C[3] + GameCanvas.C[5] * (int)GameCanvas.d;
                     GameCanvas.C[4] = GameCanvas.C[4] + GameCanvas.C[6] * (int)GameCanvas.d;
                     if (GameCanvas.C[4] < var12_10 - (var10_9 <<= 14)) break;
                     GameCanvas.C[4] = var12_10 - var10_9;
-                    GameCanvas.C[3] = 0;
-                    ** GOTO lbl105
-                }
+                    GameCanvas.C[3] = 0;}
                 case 3: 
-                case 6: {
+
                     GameCanvas.C[3] = GameCanvas.C[3] + GameCanvas.C[5] * (int)GameCanvas.d;
                     GameCanvas.C[4] = GameCanvas.C[4] + GameCanvas.C[6] * (int)GameCanvas.d;
                     var13_11 = var7_7 + var4_4 << 14;
@@ -12860,19 +12723,17 @@ lbl49:
                     }
                     if (GameCanvas.C[5] != 0 || GameCanvas.C[6] != 0) break;
                     switch (GameCanvas.C[2]) {
-                        case 10: {
+
                             GameCanvas.dispatch_1728(7);
                             break block0;
                         }
-                        case 12: {
+
                             GameCanvas.dispatch_1728(1);
                             break block0;
                         }
                     }
-                    v1 = true;
-                    ** GOTO lbl106
-                }
-                case 5: {
+                    v1 = true;}
+
                     GameCanvas.C[3] = GameCanvas.C[3] + GameCanvas.C[5] * (int)GameCanvas.d;
                     GameCanvas.C[4] = GameCanvas.C[4] + GameCanvas.C[6] * (int)GameCanvas.d;
                     if (GameCanvas.C[6] > 0 && GameCanvas.C[4] >= GameCanvas.C[8] || GameCanvas.C[6] < 0 && GameCanvas.C[4] <= GameCanvas.C[8]) {
@@ -12883,14 +12744,10 @@ lbl49:
                         GameCanvas.C[3] = GameCanvas.C[7];
                         GameCanvas.C[5] = 0;
                     }
-                    if (GameCanvas.C[5] != 0 || GameCanvas.C[6] != 0) break;
-                    ** GOTO lbl105
-                }
-                case 4: {
-                    if ((GameCanvas.ez & 16416) == 0) break;
-                    ** GOTO lbl105
-                }
-                case 7: {
+                    if (GameCanvas.C[5] != 0 || GameCanvas.C[6] != 0) break;}
+
+                    if ((GameCanvas.ez & 16416) == 0) break;}
+
                     if (!var2_2.triggerDamageFlash()) break;
 lbl105:
                     // 4 sources
@@ -12920,17 +12777,13 @@ lbl106:
             case 11: 
             case 12: 
             case 17: 
-            case 21: {
+
                 switch (var0) {
-                    case 0: {
-                        v0 = 0;
-                        ** GOTO lbl13
-                    }
-                    case 1: {
-                        v0 = 1;
-                        ** GOTO lbl13
-                    }
-                    case 2: {
+
+                        v0 = 0;}
+
+                        v0 = 1;}
+
                         v0 = 2;
 lbl13:
                         // 3 sources
@@ -12940,21 +12793,15 @@ lbl13:
                 }
                 break;
             }
-            case 13: {
+
                 switch (var0) {
-                    case 0: {
-                        v1 = 2;
-                        ** GOTO lbl28
-                    }
-                    case 3: {
-                        v1 = 0;
-                        ** GOTO lbl28
-                    }
-                    case 4: {
-                        v1 = 1;
-                        ** GOTO lbl28
-                    }
-                    case 2: {
+
+                        v1 = 2;}
+
+                        v1 = 0;}
+
+                        v1 = 1;}
+
                         v1 = 3;
 lbl28:
                         // 4 sources
@@ -12967,29 +12814,27 @@ lbl28:
             case 14: 
             case 16: 
             case 18: 
-            case 22: {
+
                 switch (var0) {
-                    case 2: {
+
                         var1_1 = 0;
                     }
                 }
                 break;
             }
-            case 15: {
+
                 switch (var0) {
-                    case 2: {
+
                         var1_1 = 0;
                     }
                 }
                 break;
             }
-            case 20: {
+
                 switch (var0) {
-                    case 2: {
-                        v2 = 0;
-                        ** GOTO lbl47
-                    }
-                    case 1: {
+
+                        v2 = 0;}
+
                         v2 = 1;
 lbl47:
                         // 2 sources
@@ -13015,7 +12860,7 @@ lbl47:
             case 10: 
             case 11: 
             case 12: 
-            case 17: {
+
                 int n6;
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(1));
                 n3 = (byArray[0] & 0xFF) + n;
@@ -13026,15 +12871,15 @@ lbl47:
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
                 switch (C[2]) {
-                    case 10: {
+
                         n6 = 9;
                         break;
                     }
-                    case 17: {
+
                         n6 = 76;
                         break;
                     }
-                    case 12: {
+
                         n6 = 126;
                         break;
                     }
@@ -13047,7 +12892,7 @@ lbl47:
                 GameCanvas.triggerDamageFlash(graphics, b, null, 13, n5, 0, n3, n4, 20);
                 break;
             }
-            case 13: {
+
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(3));
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
@@ -13070,7 +12915,7 @@ lbl47:
                 GameCanvas.triggerDamageFlash(graphics, b, null, 13, 51, 0, n3, n4, 20);
                 break;
             }
-            case 16: {
+
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(2));
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
@@ -13078,7 +12923,7 @@ lbl47:
                 break;
             }
             case 18: 
-            case 19: {
+
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(2));
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
@@ -13087,7 +12932,7 @@ lbl47:
                 break;
             }
             case 14: 
-            case 22: {
+
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(2));
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
@@ -13098,7 +12943,7 @@ lbl47:
                 GameCanvas.triggerDamageFlash(graphics, b, null, 13, n5, 0, n3, n4, byArray[2] & 0xFF, byArray[3] & 0xFF, 0, 3);
                 break;
             }
-            case 15: {
+
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(2));
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
@@ -13106,7 +12951,7 @@ lbl47:
                 GameCanvas.triggerDamageFlash(graphics, b, null, 13, n5, 0, n3, n4, byArray[2] & 0xFF, byArray[3] & 0xFF, 0, 3);
                 break;
             }
-            case 20: {
+
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(2));
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
@@ -13125,7 +12970,7 @@ lbl47:
                 GameCanvas.triggerDamageFlash(graphics, b, null, 10, 0, 0, n3, n4, byArray[2] & 0xFF, byArray[3] & 0xFF, 0, 3);
                 break;
             }
-            case 21: {
+
                 byArray = graphicsEngine.triggerDamageFlash(C[2], GameCanvas.updateGameOver(1));
                 n3 = (byArray[0] & 0xFF) + n;
                 n4 = (byArray[1] & 0xFF) + n2;
@@ -13256,7 +13101,7 @@ lbl47:
             if (h[i][0] == 0) continue;
             int n = GameCanvas.calc_470e();
             switch (h[i][0]) {
-                case 1: {
+
                     int[] nArray = h[i];
                     nArray[6] = nArray[6] - 2457600 * n / 1000;
                     int n2 = 240 - h[i][5] << 14;
@@ -13267,7 +13112,7 @@ lbl47:
                     int n4 = 2;
                     break;
                 }
-                case 3: {
+
                     int[] nArray = h[i];
                     nArray[6] = nArray[6] + 2457600 * n / 1000;
                     int n2 = 0x3C0000;
@@ -13467,7 +13312,6 @@ lbl47:
     }
 
     private static void update_c8db() {
-        do {
             if (--bp >= 0) continue;
             bp = D.length - 1;
         } while (D[bp] == -1);
@@ -13475,13 +13319,13 @@ lbl47:
 
     public static void renderTarget() {
         switch (bn) {
-            case 0: {
+
                 if ((bq -= br) > 0) break;
                 bq = 0;
                 bn = 1;
                 return;
             }
-            case 1: {
+
                 bs -= (int)d;
                 if ((ez & 0x40000) != 0) {
                     GameCanvas.update_c8db();
@@ -13504,7 +13348,7 @@ lbl47:
     private static void calc_470e(Graphics graphics) {
         switch (bn) {
             case 0: 
-            case 1: {
+
                 GameCanvas.calc_8265(graphics);
             }
         }
@@ -13566,31 +13410,25 @@ lbl47:
             if (GameCanvas.E[0] == -1) break block8;
             GameCanvas.E[1] = GameCanvas.E[1] + (int)GameCanvas.d;
             switch (GameCanvas.E[0]) {
-                case 0: {
+
                     if (GameCanvas.E[1] < 1300) break;
                     GameCanvas.E[1] = 0;
                     v0 = GameCanvas.E;
                     v1 = 0;
-                    v2 = 1;
-                    ** GOTO lbl38
-                }
-                case 1: {
+                    v2 = 1;}
+
                     if (GameCanvas.E[1] < 1300) break;
                     GameCanvas.E[1] = 0;
                     v0 = GameCanvas.E;
                     v1 = 0;
-                    v2 = 2;
-                    ** GOTO lbl38
-                }
-                case 2: {
+                    v2 = 2;}
+
                     if (GameCanvas.E[1] < 1300) break;
                     GameCanvas.E[1] = 0;
                     v0 = GameCanvas.E;
                     v1 = 0;
-                    v2 = 3;
-                    ** GOTO lbl38
-                }
-                case 3: {
+                    v2 = 3;}
+
                     if (GameCanvas.E[1] < GameCanvas.E[6]) break;
                     GameCanvas.E[2] = GameCanvas.E[2] - 1;
                     if (GameCanvas.E[2] < GameCanvas.E[3]) {
@@ -13622,15 +13460,15 @@ lbl38:
             var1_1 = true;
             var2_2 = 255;
             switch (GameCanvas.E[0]) {
-                case 0: {
+
                     var2_2 = GameCanvas.drawForeground(0, 255, (GameCanvas.E[1] << 14) / 1300) >> 14;
                     break;
                 }
-                case 2: {
+
                     var2_2 = GameCanvas.drawForeground(255, 0, (GameCanvas.E[1] << 14) / 1300) >> 14;
                     break;
                 }
-                case 3: {
+
                     var1_1 = false;
                 }
             }
@@ -13646,16 +13484,14 @@ lbl38:
             var7_7 = 240;
             var8_8 = 320;
             switch (GameCanvas.E[7]) {
-                case 0: {
+
                     break;
                 }
-                case 1: {
+
                     var6_6 = 39;
                     var8_8 = var4_4;
-                    v0 = 0;
-                    ** GOTO lbl35
-                }
-                case 2: {
+                    v0 = 0;}
+
                     var6_6 = 39;
                     var8_8 = var4_4;
                     v0 = 240 - (var3_3 + 20);
@@ -13734,12 +13570,10 @@ lbl35:
                 var4_4 = var1_1[var3_3++] & 255;
                 var3_3 += var4_4 << 1;
                 switch (var5_5) {
-                    case 100: {
-                        v0 = var3_3 - ((var4_4 << 1) + 4);
-                        ** GOTO lbl22
-                    }
+
+                        v0 = var3_3 - ((var4_4 << 1) + 4);}
                     case 101: 
-                    case 102: {
+
                         v0 = GameCanvas.triggerDamageFlash(var1_1, var3_3 - (var4_4 << 1) - 8, null, 1, false, var0);
 lbl22:
                         // 2 sources
@@ -13763,12 +13597,10 @@ lbl22:
                 var4_4 = var1_1[var3_3++] & 255;
                 var3_3 += var4_4 << 1;
                 switch (var5_5) {
-                    case 100: {
-                        v2 = var3_3 - ((var4_4 << 1) + 4);
-                        ** GOTO lbl43
-                    }
+
+                        v2 = var3_3 - ((var4_4 << 1) + 4);}
                     case 101: 
-                    case 102: {
+
                         v2 = GameCanvas.triggerDamageFlash(var1_1, var3_3 - (var4_4 << 1) - 8, null, 1, false, var0);
 lbl43:
                         // 2 sources
@@ -13900,48 +13732,48 @@ lbl43:
                     }
                 }
                 switch (n8) {
-                    case 3: {
+
                         int[] nArray17 = nArray10[n17];
                         int n21 = n18;
                         nArray17[n21] = nArray17[n21] + 1;
                         break;
                     }
-                    case 9: {
+
                         int[] nArray18 = nArray11[n17];
                         int n22 = n18;
                         nArray18[n22] = nArray18[n22] + 1;
                         break;
                     }
-                    case 0: {
+
                         ++n15;
                         break;
                     }
                     case 1: 
-                    case 2: {
+
                         int[] nArray19 = nArray9[n17];
                         int n23 = n18;
                         nArray19[n23] = nArray19[n23] + 1;
                         break;
                     }
-                    case 10: {
+
                         int[] nArray20 = nArray[n17];
                         int n24 = n18;
                         nArray20[n24] = nArray20[n24] + 1;
                         break;
                     }
-                    case 26: {
+
                         int[] nArray21 = nArray2[n17];
                         int n25 = n18;
                         nArray21[n25] = nArray21[n25] + 1;
                         break;
                     }
-                    case 15: {
+
                         int[] nArray22 = nArray3[n17];
                         int n26 = n18;
                         nArray22[n26] = nArray22[n26] + 1;
                         break;
                     }
-                    case 18: {
+
                         int[] nArray23 = nArray4[n17];
                         int n27 = n18;
                         nArray23[n27] = nArray23[n27] + 1;
@@ -13950,7 +13782,7 @@ lbl43:
                         nArray24[n28] = nArray24[n28] + GameCanvas.triggerDamageFlash(byArray4, n12 + (-n7 + 3 << 1));
                         break;
                     }
-                    case 19: {
+
                         int[] nArray25 = nArray5[n17];
                         int n29 = n18;
                         nArray25[n29] = nArray25[n29] + 1;
@@ -13959,41 +13791,41 @@ lbl43:
                         nArray26[n30] = nArray26[n30] + GameCanvas.triggerDamageFlash(byArray4, n12 + (-n7 + 4 - 2 << 1));
                         break;
                     }
-                    case 16: {
+
                         int[] nArray27 = nArray6[n17];
                         int n31 = n18;
                         nArray27[n31] = nArray27[n31] + 1;
                         break;
                     }
-                    case 11: {
+
                         int[] nArray28 = nArray7[n17];
                         int n32 = n18;
                         nArray28[n32] = nArray28[n32] + 1;
                         break;
                     }
-                    case 12: {
+
                         int[] nArray29 = nArray13[n17];
                         int n33 = n18;
                         nArray29[n33] = nArray29[n33] + 1;
                         break;
                     }
-                    case 17: {
+
                         int[] nArray30 = nArray14[n17];
                         int n34 = n18;
                         nArray30[n34] = nArray30[n34] + 1;
                         break;
                     }
-                    case 13: {
+
                         ++n14;
                         break;
                     }
-                    case 14: {
+
                         int[] nArray31 = nArray8[n17];
                         int n35 = n18;
                         nArray31[n35] = nArray31[n35] + 1;
                         break;
                     }
-                    case 23: {
+
                         int[] nArray32 = nArray[n17];
                         int n36 = n18;
                         nArray32[n36] = nArray32[n36] + 1;
@@ -14002,14 +13834,14 @@ lbl43:
                     case 21: 
                     case 22: 
                     case 24: 
-                    case 25: {
+
                         int[] nArray33 = nArray12[n17];
                         int n37 = n18;
                         nArray33[n37] = nArray33[n37] + 1;
                         break;
                     }
                     case 101: 
-                    case 102: {
+
                         n6 = bl ? 1 : 2;
                         n12 = GameCanvas.triggerDamageFlash(byArray4, n12 - (n7 << 1) - 8, nArray15, n6, false, n17);
                     }
@@ -14187,7 +14019,7 @@ lbl43:
                     n12 += 2;
                 }
                 switch (n8) {
-                    case 3: {
+
                         n4 = nArray34[13];
                         nArray34 = AudioManager.playFootstep(nArray34);
                         nArrayArray2[n6][n5][0] = s;
@@ -14202,7 +14034,7 @@ lbl43:
                         nArray35[n48] = nArray35[n48] + 1;
                         break;
                     }
-                    case 9: {
+
                         nArray34 = AudioManager.renderTarget(nArray34);
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray11[n17][n18];
@@ -14213,7 +14045,7 @@ lbl43:
                         GameCanvas.k[n17][n18][n50] = new AudioManager(s, n8, n44, n45, nArray34);
                         break;
                     }
-                    case 0: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = n15;
                         GameCanvas.c[n15] = new AudioManager(s, n8, n44, n45, AudioManager.triggerDamageFlash(nArray34, n17, n18));
@@ -14221,7 +14053,7 @@ lbl43:
                         break;
                     }
                     case 1: 
-                    case 2: {
+
                         if (n8 == 1) {
                             n3 = nArray34.length + 3 + 15;
                             n42 = 28 + GameCanvas.renderTarget();
@@ -14242,7 +14074,7 @@ lbl43:
                         GameCanvas.f[n17][n18][n52] = new AudioManager(s, n8, n44, n45, nArray34);
                         break;
                     }
-                    case 10: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray[n17][n18];
                         int[] nArray39 = nArray[n17];
@@ -14252,7 +14084,7 @@ lbl43:
                         GameCanvas.a[n17][n18][n54] = new AudioManager(s, n8, n44, n45, nArray34);
                         break;
                     }
-                    case 26: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray2[n17][n18];
                         int[] nArray40 = new int[nArray34.length + 2];
@@ -14266,7 +14098,7 @@ lbl43:
                         GameCanvas.i[n17][n18][n56] = new AudioManager(s, n8, n44, n45, nArray34);
                         break;
                     }
-                    case 15: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray3[n17][n18];
                         int[] nArray42 = nArray3[n17];
@@ -14276,7 +14108,7 @@ lbl43:
                         GameCanvas.b[n17][n18][n58] = new AudioManager(s, n8, n44, n45, nArray34);
                         break;
                     }
-                    case 18: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray4[n17][n18];
                         int[] nArray43 = nArray4[n17];
@@ -14286,7 +14118,7 @@ lbl43:
                         GameCanvas.c[n17][n18][n60] = new AudioManager(s, n8, n44, n45, AudioManager.createOffscreenBuffer(nArray34));
                         break;
                     }
-                    case 19: {
+
                         nArray34 = GameCanvas.triggerDamageFlash(nArray34);
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray5[n17][n18];
@@ -14299,7 +14131,7 @@ lbl43:
                         nArray44[n61] = nArray44[n61] + 1;
                         break;
                     }
-                    case 16: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray6[n17][n18];
                         int[] nArray45 = nArray6[n17];
@@ -14309,7 +14141,7 @@ lbl43:
                         GameCanvas.h[n17][n18][n63] = new AudioManager(s, n8, n44, n45, GameCanvas.spawnEnemy(nArray34));
                         break;
                     }
-                    case 11: {
+
                         int[] nArray46 = new int[nArray34.length + 4];
                         System.arraycopy(nArray34, 0, nArray46, 0, nArray34.length);
                         nArray34 = nArray46;
@@ -14323,7 +14155,7 @@ lbl43:
                         GameCanvas.d[n17][n18][n65] = new AudioManager(s, n8, n44, n45, nArray34);
                         break;
                     }
-                    case 12: {
+
                         int[] nArray48 = new int[nArray34.length + 2];
                         System.arraycopy(nArray34, 0, nArray48, 0, nArray34.length);
                         nArray34 = nArray48;
@@ -14337,7 +14169,7 @@ lbl43:
                         GameCanvas.l[n17][n18][n67] = new AudioManager(s, n8, n44, n45, nArray34);
                         break;
                     }
-                    case 13: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = n14;
                         GameCanvas.l[n17][n18][nArray13[n17][n18] - 1].g[11] = GameCanvas.l[n17][n18][nArray13[n17][n18] - 1].g[11] + 1;
@@ -14348,7 +14180,7 @@ lbl43:
                         }
                         break;
                     }
-                    case 17: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray14[n17][n18];
                         GameCanvas.b[n17][n18][nArray14[n17][n18]] = new int[nArray34.length + 2];
@@ -14360,7 +14192,7 @@ lbl43:
                         nArray50[n68] = nArray50[n68] + 1;
                         break;
                     }
-                    case 14: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray8[n17][n18];
                         int[] nArray51 = nArray8[n17];
@@ -14370,7 +14202,7 @@ lbl43:
                         GameCanvas.e[n17][n18][n70] = GameCanvas.triggerDamageFlash((int)s, n44, n45, nArray34, n17, n18);
                         break;
                     }
-                    case 23: {
+
                         nArray34 = AudioManager.triggerDamageFlash(nArray34);
                         GameCanvas.a[n17][n18][nArray[n17][n18]] = AudioManager.triggerDamageFlash(n44, n45, nArray34, nArray12[n17][n18]);
                         int[] nArray52 = nArray[n17];
@@ -14383,14 +14215,14 @@ lbl43:
                         nArray34[3] = GameCanvas.playFootstep(GameCanvas.spawnEnemy(nArray34[3]) + (nArray34[3] % 16 > 0 ? 1 : 0));
                     }
                     case 20: 
-                    case 21: {
+
                         if (n8 == 21) {
                             GameCanvas.updatePausedSubmenu(18);
                         }
                     }
                     case 22: 
                     case 24: 
-                    case 25: {
+
                         nArrayArray2[n6][n5][0] = s;
                         nArrayArray2[n6][n5][1] = nArray12[n17][n18];
                         if (n8 == 25) {
@@ -14933,14 +14765,14 @@ lbl43:
         }
         block7: for (n = 0; n < g[by][bz].length; ++n) {
             switch (GameCanvas.g[GameCanvas.by][GameCanvas.bz][n].L) {
-                case 21: {
+
                     continue block7;
                 }
-                case 23: {
+
                     AudioManager.playFootstep(GameCanvas.g[GameCanvas.by][GameCanvas.bz][n].g);
                     continue block7;
                 }
-                case 25: {
+
                     AudioManager.triggerDamageFlash(GameCanvas.g[GameCanvas.by][GameCanvas.bz][n].g, GameCanvas.g[GameCanvas.by][GameCanvas.bz][n].a.triggerDamageFlash(), GameCanvas.g[GameCanvas.by][GameCanvas.bz][n].a.spawnEnemy(), false, true);
                 }
             }
@@ -15001,7 +14833,7 @@ lbl43:
         GameCanvas.triggerDamageFlash(0);
         GameCanvas.update_1d79(12);
         switch (bM) {
-            case 1: {
+
                 if ((e & 1) != 0) {
                     GameCanvas.triggerDamageFlash(false, 1);
                 }
@@ -15015,11 +14847,11 @@ lbl43:
                 GameCanvas.calc_d1c5(3);
                 break;
             }
-            case 0: {
+
                 GameCanvas.update_83ef(5);
                 break;
             }
-            case 2: {
+
                 int n;
                 int n2;
                 byte[] byArray;
@@ -15092,13 +14924,11 @@ lbl43:
     private static int update_83ef(int var0, int var1_1, int var2_2) {
         var3_3 = 0;
         switch (var0) {
-            case 0: {
+
                 switch (var2_2) {
-                    case 0: {
-                        v0 = 0;
-                        ** GOTO lbl10
-                    }
-                    case 1: {
+
+                        v0 = 0;}
+
                         v0 = 1;
 lbl10:
                         // 2 sources
@@ -15108,17 +14938,13 @@ lbl10:
                 }
                 break;
             }
-            case 1: {
+
                 switch (var2_2) {
-                    case 0: {
-                        v1 = 5;
-                        ** GOTO lbl22
-                    }
-                    case 1: {
-                        v1 = 6;
-                        ** GOTO lbl22
-                    }
-                    case 2: {
+
+                        v1 = 5;}
+
+                        v1 = 6;}
+
                         v1 = 7;
 lbl22:
                         // 3 sources
@@ -15126,20 +14952,14 @@ lbl22:
                         var3_3 = v1;
                     }
                 }
-                v2 = var3_3 + var1_1 * 3;
-                ** GOTO lbl35
-            }
-            case 2: {
+                v2 = var3_3 + var1_1 * 3;}
+
                 switch (var2_2) {
-                    case 0: {
-                        v2 = 3;
-                        ** GOTO lbl35
-                    }
-                    case 1: {
-                        v2 = 2;
-                        ** GOTO lbl35
-                    }
-                    case 2: {
+
+                        v2 = 3;}
+
+                        v2 = 2;}
+
                         v2 = 4;
 lbl35:
                         // 4 sources
@@ -15168,7 +14988,7 @@ lbl35:
                         var7_7 = 9;
                         var8_8 = 0;
                         switch (var0[var3_3].L) {
-                            case 0: {
+
                                 var6_6 = 23;
                                 var7_7 = 24;
                                 v0 = var0[var3_3].g[21];
@@ -15176,7 +14996,7 @@ lbl35:
                                 v2 = 22;
                                 break;
                             }
-                            case 25: {
+
                                 var6_6 = 9;
                                 var7_7 = 0;
                                 v0 = var0[var3_3].g[8];
@@ -15184,7 +15004,7 @@ lbl35:
                                 v4 = 0;
                                 break block17;
                             }
-                            case 20: {
+
                                 var6_6 = 6;
                                 var7_7 = 0;
                                 v0 = var0[var3_3].g[5];
@@ -15192,7 +15012,7 @@ lbl35:
                                 v4 = 0;
                                 break block17;
                             }
-                            case 21: {
+
                                 var6_6 = 4;
                                 var7_7 = 0;
                                 v0 = var0[var3_3].g[3];
@@ -15200,7 +15020,7 @@ lbl35:
                                 v4 = 0;
                                 break block17;
                             }
-                            case 22: {
+
                                 var6_6 = 6;
                                 var7_7 = 0;
                                 var8_8 = GameCanvas.update_83ef(var0[var3_3].g[5], var2_2, 0);
@@ -15208,7 +15028,7 @@ lbl35:
                                 var5_5 = false;
                                 break block18;
                             }
-                            case 24: {
+
                                 var6_6 = 2;
                                 var7_7 = 0;
                                 v0 = var0[var3_3].g[1];
@@ -15216,7 +15036,7 @@ lbl35:
                                 v4 = 0;
                                 break block17;
                             }
-                            case 23: {
+
                                 var6_6 = 10;
                                 var7_7 = 8;
                                 v0 = 0;
@@ -15224,19 +15044,19 @@ lbl35:
                                 v4 = 0;
                                 break block17;
                             }
-                            case 3: {
+
                                 var6_6 = 9;
                                 var8_8 = GameCanvas.update_83ef(var0[var3_3].g[7], var0[var3_3].g[8], 0);
                                 var5_5 = false;
                                 break block18;
                             }
-                            case 14: {
+
                                 var6_6 = 3;
                                 var8_8 = GameCanvas.update_83ef(var0[var3_3].g[2], var2_2, 0);
                                 var5_5 = false;
                                 break block18;
                             }
-                            case 16: {
+
                                 var8_8 = GameCanvas.update_83ef(var0[var3_3].g[15], var2_2, 0);
                                 var0[var3_3].g[16] = GameCanvas.triggerDamageFlash(var1_1[var8_8], var0[var3_3].g[16]);
                                 var6_6 = 19;
@@ -15244,10 +15064,9 @@ lbl35:
                                 var5_5 = false;
                                 break block18;
                             }
-                            case 1: {
+
                                 var0[var3_3].g[20] = GameCanvas.triggerDamageFlash(var1_1[GameCanvas.update_83ef(var0[var3_3].g[18], var0[var3_3].g[19], 0)], var0[var3_3].g[20]);
-                                if (var0[var3_3].g[21] != 255) ** GOTO lbl82
-                                var4_4 = false;
+                                if (var0[var3_3].g[21] != 255)var4_4 = false;
                                 var0[var3_3].g[21] = 1;
                                 break block18;
                             }
@@ -15296,19 +15115,19 @@ lbl82:
             int n4 = byArray[i++] & 0xFF;
             n = byArray[i++] & 0xFF;
             switch (n4) {
-                case 169: {
+
                     if (GameCanvas.triggerDamageFlash(byArray, i + 0) != 2) continue block28;
                     GameCanvas.updatePausedSubmenu(3);
                     GameCanvas.update_2a26(3);
                     continue block28;
                 }
-                case 134: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     if (s2 < 0) continue block28;
                     GameCanvas.updatePausedSubmenu(s2);
                     continue block28;
                 }
-                case 110: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15316,7 +15135,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 8, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 112: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15329,7 +15148,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 14, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 113: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 6);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15342,7 +15161,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 12, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 114: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 6);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15350,7 +15169,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 6, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 115: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 6);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15358,7 +15177,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 6, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 116: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 6);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15366,7 +15185,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 6, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 118: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15375,7 +15194,7 @@ lbl82:
                     continue block28;
                 }
                 case 119: 
-                case 155: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15384,7 +15203,7 @@ lbl82:
                     continue block28;
                 }
                 case 136: 
-                case 162: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15392,7 +15211,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 8, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 123: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 4);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15400,7 +15219,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 4, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 124: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 14);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 10);
@@ -15408,7 +15227,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 14, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 129: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 4);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15416,7 +15235,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 4, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 130: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15424,7 +15243,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 8, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 150: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15432,7 +15251,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 8, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 151: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 16);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 12);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 14);
@@ -15440,22 +15259,22 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 16, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 154: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     GameCanvas.triggerDamageFlash(byArray, i + 0, (short)GameCanvas.handleWeaponSelect(s2));
                     continue block28;
                 }
-                case 117: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     GameCanvas.triggerDamageFlash(byArray, i + 0, (short)GameCanvas.handleWeaponSelect(s2));
                     continue block28;
                 }
-                case 133: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     GameCanvas.triggerDamageFlash(byArray, i + 0, (short)GameCanvas.handleWeaponSelect(s2));
                     continue block28;
                 }
-                case 142: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 6);
@@ -15463,7 +15282,7 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 8, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 172: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 6);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15471,12 +15290,12 @@ lbl82:
                     GameCanvas.triggerDamageFlash(byArray, i + 6, (short)GameCanvas.triggerDamageFlash(nArray[n2], (int)s2));
                     continue block28;
                 }
-                case 167: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 0);
                     GameCanvas.triggerDamageFlash(byArray, i + 0, (short)GameCanvas.triggerDamageFlash(d, (int)s2));
                     continue block28;
                 }
-                case 127: {
+
                     int n5;
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 4);
                     n2 = GameCanvas.update_83ef(2, n3, 0);
@@ -15491,7 +15310,7 @@ lbl82:
                     }
                     continue block28;
                 }
-                case 147: {
+
                     int n5;
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
@@ -15507,7 +15326,7 @@ lbl82:
                     }
                     continue block28;
                 }
-                case 148: {
+
                     short s2 = GameCanvas.triggerDamageFlash(byArray, i + 8);
                     s = GameCanvas.triggerDamageFlash(byArray, i + 2);
                     n3 = GameCanvas.triggerDamageFlash(byArray, i + 4);
@@ -15797,22 +15616,16 @@ lbl82:
         var5_5 = var1_1.a.spawnEnemy() + (var3_3 >> 1);
         var6_6 = 0;
         switch (var1_1.g[4]) {
-            case 0: {
+
                 var5_5 -= (var3_3 + 16 >> 1) + 1;
-                v0 = 1028;
-                ** GOTO lbl22
-            }
-            case 1: {
+                v0 = 1028;}
+
                 var5_5 += (var3_3 + 16 >> 1) + 1;
-                v0 = 2304;
-                ** GOTO lbl22
-            }
-            case 2: {
+                v0 = 2304;}
+
                 var4_4 -= (var2_2 + 16 >> 1) + 1;
-                v0 = 4112;
-                ** GOTO lbl22
-            }
-            case 3: {
+                v0 = 4112;}
+
                 var4_4 += (var2_2 + 16 >> 1) + 1;
                 v0 = 8256;
 lbl22:
@@ -16163,19 +15976,19 @@ lbl22:
     public static int triggerDamageFlash(AudioManager audioManager) {
         int n = -1;
         switch (audioManager.L) {
-            case 1: {
+
                 int n2 = 14;
                 break;
             }
-            case 2: {
+
                 int n2 = 6;
                 break;
             }
-            case 0: {
+
                 int n2 = 3;
                 break;
             }
-            case 3: {
+
                 int n2 = n = 2;
             }
         }
@@ -16193,7 +16006,7 @@ lbl22:
             var6_6 = var1_1[var5_5];
             switch (var6_6.L) {
                 case 10: 
-                case 11: {
+
                     var7_7 = 10 + var6_6.g[1];
                     if (var4_4 != var7_7) continue block7;
                     var16_16 = GameCanvas.a[GameCanvas.t[var4_4]];
@@ -16204,10 +16017,8 @@ lbl22:
                     v0 = var0;
                     v1 = var16_16;
                     v2 = var6_6.g;
-                    v3 = 5;
-                    ** GOTO lbl69
-                }
-                case 23: {
+                    v3 = 5;}
+
                     var16_17 = var6_6.g[4];
                     var7_7 = 10 + GameCanvas.a[var2_2][var3_3][var16_17].g[1];
                     if (var4_4 != var7_7) continue block7;
@@ -16216,10 +16027,8 @@ lbl22:
                     v0 = var0;
                     v1 = var17_18;
                     v2 = var6_6.g;
-                    v3 = 7;
-                    ** GOTO lbl69
-                }
-                case 9: {
+                    v3 = 7;}
+
                     var8_8 = GameCanvas.stopParticles(var6_6.g[0], 1);
                     var9_9 = GameCanvas.stopParticles(var6_6.g[0], 3);
                     var10_10 = GameCanvas.stopParticles(var6_6.g[0], 4);
@@ -16234,10 +16043,8 @@ lbl22:
                     if (var12_12 == -1) continue block7;
                     v0 = var0;
                     v1 = var16_16;
-                    v4 = var12_12;
-                    ** GOTO lbl70
-                }
-                case 16: {
+                    v4 = var12_12;}
+
                     var8_8 = var6_6.g[1];
                     var13_13 = var6_6.g[2];
                     var14_14 = var6_6.g[3];
@@ -16254,10 +16061,8 @@ lbl22:
                     if (var15_15 < 0) continue block7;
                     v0 = var0;
                     v1 = var16_16;
-                    v4 = var15_15;
-                    ** GOTO lbl70
-                }
-                case 26: {
+                    v4 = var15_15;}
+
                     var8_8 = var6_6.g[1];
                     if (var8_8 == -1 || var4_4 != (var7_7 = 10 + var8_8)) continue block7;
                     var16_16 = GameCanvas.a[GameCanvas.t[var4_4]];
@@ -16296,35 +16101,25 @@ lbl70:
             var4_4 = null;
             if (var1_1 <= -1) break block8;
             switch (var0) {
-                case 3: {
+
                     if (var1_1 >= GameCanvas.j[var2_2][var3_3].length) break;
-                    v0 = GameCanvas.j;
-                    ** GOTO lbl30
-                }
-                case 4: {
+                    v0 = GameCanvas.j;}
+
                     if (var1_1 >= GameCanvas.d.length) break;
-                    v1 = GameCanvas.d;
-                    ** GOTO lbl33
-                }
-                case 1: {
+                    v1 = GameCanvas.d;}
+
                     if (var1_1 >= GameCanvas.c.length) break;
-                    v1 = GameCanvas.c;
-                    ** GOTO lbl33
-                }
-                case 2: {
+                    v1 = GameCanvas.c;}
+
                     var5_5 = GameCanvas.triggerDamageFlash(var1_1, 7168);
                     var6_6 = GameCanvas.triggerDamageFlash(var1_1, 896);
                     if (var5_5 >= GameCanvas.f.length || var6_6 >= GameCanvas.f[var5_5].length || (var1_1 &= -8065) >= GameCanvas.f[var5_5][var6_6].length) break;
                     v2 = GameCanvas.f[var5_5];
-                    v3 = var6_6;
-                    ** GOTO lbl32
-                }
-                case 6: {
+                    v3 = var6_6;}
+
                     if (var1_1 >= GameCanvas.f[var2_2][var3_3].length) break;
-                    v0 = GameCanvas.f;
-                    ** GOTO lbl30
-                }
-                case 5: {
+                    v0 = GameCanvas.f;}
+
                     if (var1_1 >= GameCanvas.k[var2_2][var3_3].length) break;
                     v0 = GameCanvas.k;
 lbl30:
@@ -16717,8 +16512,7 @@ lbl33:
                 N = true;
             }
             return;
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             return;
         }
     }
@@ -16739,21 +16533,16 @@ lbl33:
             }
             var8_8 = var0[var1_1++] & 255;
             switch (var7_7) {
-                case 101: {
-                    if (var2_2 == null) ** GOTO lbl31
-                    var2_2[0] = var2_2[0] + 1;
+
+                    if (var2_2 == null)var2_2[0] = var2_2[0] + 1;
                     switch (var3_3) {
-                        case 0: {
+
                             v0 = var2_2;
-                            v1 = 9;
-                            ** GOTO lbl26
-                        }
-                        case 1: {
+                            v1 = 9;}
+
                             v0 = var2_2;
-                            v1 = 13 + var5_5 * 2;
-                            ** GOTO lbl26
-                        }
-                        case 2: {
+                            v1 = 13 + var5_5 * 2;}
+
                             v0 = var2_2;
                             v1 = 11;
 lbl26:
@@ -16774,21 +16563,17 @@ lbl31:
                     var1_1 += var8_8;
                     continue block15;
                 }
-                case 102: {
+
                     if (var2_2 == null) continue block15;
                     var2_2[1] = var2_2[1] + 1;
                     switch (var3_3) {
-                        case 0: {
+
                             v2 = var2_2;
-                            v3 = 10;
-                            ** GOTO lbl48
-                        }
-                        case 1: {
+                            v3 = 10;}
+
                             v2 = var2_2;
-                            v3 = 14 + var5_5 * 2;
-                            ** GOTO lbl48
-                        }
-                        case 2: {
+                            v3 = 14 + var5_5 * 2;}
+
                             v2 = var2_2;
                             v3 = 12;
 lbl48:
@@ -16799,7 +16584,7 @@ lbl48:
                     }
                     continue block15;
                 }
-                case 103: {
+
                     if (var2_2 != null) {
                         var2_2[2] = var2_2[2] + 1;
                     }
@@ -16864,18 +16649,14 @@ lbl48:
                 }
                 var12_12 = var0[var1_1++] & 255;
                 switch (var10_10) {
-                    case 101: {
+
                         var13_13 = var11_11;
                         switch (var3_3) {
-                            case 0: {
-                                v0 = 9;
-                                ** GOTO lbl28
-                            }
-                            case 1: {
-                                v0 = 13 + var5_5 * 2;
-                                ** GOTO lbl28
-                            }
-                            case 2: {
+
+                                v0 = 9;}
+
+                                v0 = 13 + var5_5 * 2;}
+
                                 v0 = 11;
 lbl28:
                                 // 3 sources
@@ -16902,17 +16683,13 @@ lbl28:
                         var1_1 += var12_12;
                         continue block15;
                     }
-                    case 102: {
+
                         switch (var3_3) {
-                            case 0: {
-                                v4 = 10;
-                                ** GOTO lbl56
-                            }
-                            case 1: {
-                                v4 = 14 + var5_5 * 2;
-                                ** GOTO lbl56
-                            }
-                            case 2: {
+
+                                v4 = 10;}
+
+                                v4 = 14 + var5_5 * 2;}
+
                                 v4 = 12;
 lbl56:
                                 // 3 sources
@@ -16932,7 +16709,7 @@ lbl56:
                         var6_6 = false;
                         continue block15;
                     }
-                    case 103: {
+
                         for (var13_13 = 0; var13_13 < var12_12; ++var13_13) {
                             v8 = var2_2[2];
                             var2_2[2] = v8 + 1;
@@ -17148,7 +16925,7 @@ lbl56:
             switch (audioManager.L) {
                 case 1: 
                 case 2: 
-                case 3: {
+
                     n = 0;
                     break;
                 }
@@ -17199,7 +16976,7 @@ lbl56:
         int[] nArray;
         int n2 = 0;
         switch (audioManager.L) {
-            case 0: {
+
                 nArray = audioManager.g;
                 n = 23;
                 break;
@@ -17269,7 +17046,7 @@ lbl56:
             case 140: 
             case 145: 
             case 160: 
-            case 167: {
+
                 return true;
             }
         }
@@ -17296,7 +17073,6 @@ lbl56:
                 ++n5;
             }
             boolean bl2 = false;
-            do {
                 if (bl2) {
                     ++n5;
                     bl2 = false;
@@ -17323,7 +17099,6 @@ lbl56:
             return;
         }
         if (!bl || n2 != 143 || bQ <= 0) return;
-        do {
             if (--bQ > 0) {
                 bO += 2 + (z[bO + 1] << 1);
             }
@@ -17349,35 +17124,35 @@ lbl56:
                 while (GameCanvas.bQ > 0 && var0 < 150) {
                     var5_5 = false;
                     switch (var0) {
-                        case 110: {
+
                             GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 16));
                             break;
                         }
-                        case 111: {
+
                             GameCanvas.drawLevelSelect(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2));
                             break;
                         }
-                        case 112: {
+
                             GameCanvas.spawnEnemy((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), var4_4);
                             break;
                         }
-                        case 113: {
+
                             GameCanvas.drawBuffer(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12));
                             break;
                         }
-                        case 114: {
+
                             GameCanvas.stopParticles(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8));
                             break;
                         }
-                        case 115: {
+
                             GameCanvas.renderTarget(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10));
                             break;
                         }
-                        case 116: {
+
                             GameCanvas.createOffscreenBuffer(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10));
                             break;
                         }
-                        case 117: {
+
                             GameCanvas.renderTarget(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0));
                             if (!var4_4) break;
                             v0 = var6_6 = 0;
@@ -17387,107 +17162,107 @@ lbl56:
                             }
                             break;
                         }
-                        case 119: {
+
                             GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 16), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 18));
                             break;
                         }
-                        case 120: {
+
                             GameCanvas.handleWeaponSelect(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2));
                             break;
                         }
-                        case 118: {
+
                             GameCanvas.playFootstep(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12));
                             break;
                         }
-                        case 136: {
+
                             GameCanvas.co = var1_1 + 14;
                             GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), false);
                             break;
                         }
-                        case 121: {
+
                             GameCanvas.update_dc4e();
                             GameCanvas.update_321f();
                             break;
                         }
-                        case 122: {
+
                             break;
                         }
-                        case 124: {
+
                             var5_5 = GameCanvas.playFootstep(2, (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6));
                             break;
                         }
-                        case 125: {
+
                             var5_5 = GameCanvas.playFootstep(1, 0, 0, 0, (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6));
                             break;
                         }
-                        case 126: {
+
                             GameCanvas.audioMethod_ah(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0));
                             break;
                         }
-                        case 128: {
+
                             GameCanvas.calc_d1c5(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2));
                             break;
                         }
-                        case 129: {
+
                             break;
                         }
-                        case 130: {
+
                             GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), var4_4);
                             break;
                         }
-                        case 131: {
+
                             GameCanvas.bD = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0);
                             break;
                         }
-                        case 132: {
+
                             if (GameCanvas.d == null) break;
                             GameCanvas.d.g[9] = 0;
                             break;
                         }
-                        case 133: {
+
                             GameCanvas.setPaused(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0));
                             break;
                         }
-                        case 134: {
+
                             GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), var4_4);
                             break;
                         }
-                        case 135: {
+
                             GameCanvas.createOffscreenBuffer((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), var4_4);
                             break;
                         }
-                        case 138: {
+
                             var5_5 = GameCanvas.calc_119c(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0));
                             break;
                         }
-                        case 139: {
+
                             GameCanvas.bi = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0);
                             break;
                         }
-                        case 140: {
+
                             break;
                         }
-                        case 141: {
+
                             GameCanvas.renderTarget((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), false);
                             break;
                         }
-                        case 142: {
+
                             GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14));
                             break;
                         }
-                        case 127: {
+
                             GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 22), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 24), var1_1 + 10, GameCanvas.z);
                             break;
                         }
-                        case 147: {
+
                             GameCanvas.triggerDamageFlash(GameCanvas.playFootstep(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8)), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), GameCanvas.z, var1_1 + 12);
                             break;
                         }
-                        case 148: {
+
                             GameCanvas.triggerDamageFlash(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 16), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 18), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 20), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 22));
                             break;
                         }
-                        case 137: {
+
                             if (!var4_4) {
                                 GameCanvas.drawForeground(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6));
                                 break;
@@ -17521,13 +17296,13 @@ lbl56:
                 }
                 if (GameCanvas.bQ <= 0) break block86;
                 switch (var0) {
-                    case 150: {
+
                         var6_6 = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12);
                         var8_8 = var6_6 == 1 ? 0 : -1;
                         GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), var8_8, (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 16));
                         break;
                     }
-                    case 151: {
+
                         if (var4_4) break;
                         var8_9 = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0);
                         var9_12 = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2);
@@ -17557,7 +17332,7 @@ lbl56:
                         GameCanvas.triggerDamageFlash(GameCanvas.b, 0, (int)var8_9, var9_12, null, GameCanvas.a[7], var10_14);
                         break;
                     }
-                    case 152: {
+
                         var7_7 = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0);
                         if (AudioManager.y != 0) {
                             var7_7 = AudioManager.y;
@@ -17565,20 +17340,20 @@ lbl56:
                         GameCanvas.isPlayerDead(var7_7, (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), var1_1);
                         break;
                     }
-                    case 154: {
+
                         GameCanvas.renderTarget(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0));
                         break;
                     }
-                    case 155: {
+
                         GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 16), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 18));
                         break;
                     }
-                    case 156: {
+
                         if (var4_4) break;
                         GameCanvas.check_9d9d(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2));
                         break;
                     }
-                    case 157: {
+
                         if (var4_4) break;
                         var8_10 = false;
                         if (GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6) == 1) {
@@ -17590,29 +17365,22 @@ lbl56:
                         GameCanvas.v = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8) == 1;
                         break;
                     }
-                    case 158: {
+
                         GameCanvas.Q = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4) == 1;
                         GameCanvas.drawBuffer(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2));
                         break;
                     }
-                    case 160: {
+
                         if (var4_4) break;
                         GameCanvas.ay = 0;
                         var9_13 = var8_11 = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0);
-                        if (var8_11 != -1) ** GOTO lbl215
-                        v3 = GameCanvas.c.g[4];
-                        ** GOTO lbl220
-lbl215:
+                        if (var8_11 != -1)v3 = GameCanvas.c.g[4];lbl215:
                         // 1 sources
 
-                        if (var8_11 != -2) ** GOTO lbl218
-                        v3 = GameCanvas.d.g[4];
-                        ** GOTO lbl220
-lbl218:
+                        if (var8_11 != -2)v3 = GameCanvas.d.g[4];lbl218:
                         // 1 sources
 
-                        if (var8_11 != -3) ** GOTO lbl221
-                        v3 = -1;
+                        if (var8_11 != -3)v3 = -1;
 lbl220:
                         // 3 sources
 
@@ -17628,30 +17396,30 @@ lbl221:
                         GameCanvas.triggerDamageFlash(GameCanvas.b, 0, (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), null, GameCanvas.a[7], var8_11, (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), var1_1);
                         break;
                     }
-                    case 165: {
+
                         GameCanvas.check_71af(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0));
                         break;
                     }
-                    case 168: {
+
                         if (var4_4) break;
                         GameCanvas.drawSprites(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6));
                         GameCanvas.G = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8) == 1;
                         break;
                     }
-                    case 169: {
+
                         if (var4_4 && !GameCanvas.P) break;
                         GameCanvas.bM = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0);
                         break;
                     }
-                    case 170: {
+
                         break;
                     }
-                    case 171: {
+
                         if (var4_4) break;
                         GameCanvas.draw_f0f7(GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0));
                         break;
                     }
-                    case 161: {
+
                         GameCanvas.dE = -3;
                         if (GameCanvas.d != null && GameCanvas.d.L == 11) {
                             GameCanvas.dE = GameCanvas.d.g[12];
@@ -17659,19 +17427,19 @@ lbl221:
                         GameCanvas.O = true;
                         break;
                     }
-                    case 172: {
+
                         GameCanvas.spawnEnemy((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), var4_4);
                         break;
                     }
-                    case 153: {
+
                         GameCanvas.update_1040();
                         break;
                     }
-                    case 167: {
+
                         GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 2), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), var4_4);
                         break;
                     }
-                    case 162: {
+
                         GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 4), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 6), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 8), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 10), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 12), (int)GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 14), GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 16) == 1);
                         GameCanvas.co = -1;
                     }
@@ -17712,7 +17480,6 @@ lbl221:
             aT = 0;
             int n = 0;
             P = true;
-            do {
                 n = z[bO + 0] & 0xFF;
                 bl = GameCanvas.resetTimers();
             } while (n != 159 && !bl && bM == -1);
@@ -17737,73 +17504,73 @@ lbl221:
                     int n3 = bO + 2;
                     boolean bl4 = false;
                     switch (n2) {
-                        case 150: {
+
                             bl2 = bl3 || GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(z, n3 + 0), (int)GameCanvas.triggerDamageFlash(z, n3 + 4), (int)GameCanvas.triggerDamageFlash(z, n3 + 6), (int)GameCanvas.triggerDamageFlash(z, n3 + 8), GameCanvas.triggerDamageFlash(z, n3 + 18) == 1);
                             break;
                         }
-                        case 151: {
+
                             bl2 = bl3 || u || GameCanvas.handleSpecialInput();
                             break;
                         }
-                        case 152: {
+
                             bl2 = bl3 || GameCanvas.spawnEnemy((int)GameCanvas.triggerDamageFlash(z, n3 + 6), (int)GameCanvas.triggerDamageFlash(z, n3 + 8), (int)GameCanvas.triggerDamageFlash(z, n3 + 4), (int)GameCanvas.triggerDamageFlash(z, n3 + 10));
                             break;
                         }
-                        case 154: {
+
                             if (bl3) {
                                 GameCanvas.check_399f();
                             }
                             boolean bl5 = GameCanvas.createOffscreenBuffer(GameCanvas.triggerDamageFlash(z, n3 + 0));
                             break;
                         }
-                        case 155: {
+
                             if (bl3) {
                                 GameCanvas.stateOrRender_aC();
                             }
                             bl2 = S == 1;
                             break;
                         }
-                        case 156: {
+
                             bl2 = bl3 || GameCanvas.updateMainMenu();
                             break;
                         }
-                        case 157: {
+
                             bl2 = bl3 || !v || GameCanvas.stopGame();
                             break;
                         }
-                        case 158: {
+
                             boolean bl5 = GameCanvas.update_1d79();
                             break;
                         }
-                        case 159: {
+
                             bl2 = GameCanvas.updateOptions();
                             if (!bl2 || a == 2) break;
                             P = false;
                             break;
                         }
-                        case 160: {
+
                             bl2 = bl3 || GameCanvas.startGame();
                             if (!bl2 || bl3) break;
                             n = GameCanvas.calc_d1c5(aC, 0);
                             bl4 = n == GameCanvas.triggerDamageFlash(z, n3 + 10);
                             break;
                         }
-                        case 165: {
+
                             boolean bl5 = GameCanvas.spawnEnemy(bl3);
                             break;
                         }
-                        case 168: {
+
                             bl2 = bl3 || GameCanvas.updateGameOver();
                             break;
                         }
-                        case 170: {
+
                             break;
                         }
-                        case 171: {
+
                             bl2 = bl3 || GameCanvas.update_1d79(GameCanvas.triggerDamageFlash(z, n3 + 0));
                             break;
                         }
-                        case 161: {
+
                             if (O) {
                                 GameCanvas.initAudio();
                                 GameCanvas.update_780d();
@@ -17817,15 +17584,15 @@ lbl221:
                             boolean bl5 = true;
                             break;
                         }
-                        case 172: {
+
                             boolean bl5 = GameCanvas.spawnEnemy((int)GameCanvas.triggerDamageFlash(z, n3 + 2), (int)GameCanvas.triggerDamageFlash(z, n3 + 4), (int)GameCanvas.triggerDamageFlash(z, n3 + 6), (int)GameCanvas.triggerDamageFlash(z, n3 + 10), bl3);
                             break;
                         }
-                        case 153: {
+
                             boolean bl5 = GameCanvas.triggerDamageFlash((int)GameCanvas.triggerDamageFlash(z, n3 + 0), bl3);
                             break;
                         }
-                        case 167: {
+
                             GameCanvas.n = false;
                             int n4 = GameCanvas.spawnEnemy((int)GameCanvas.triggerDamageFlash(z, n3 + 0), (int)GameCanvas.triggerDamageFlash(z, n3 + 2), (int)GameCanvas.triggerDamageFlash(z, n3 + 4), bl3);
                             GameCanvas.n = true;
@@ -17835,7 +17602,7 @@ lbl221:
                             bl4 = true;
                             break;
                         }
-                        case 162: {
+
                             bl2 = bl3 || GameCanvas.updateCamera();
                             break;
                         }
@@ -17890,7 +17657,7 @@ lbl221:
     private static void drawSprites(Graphics graphics, boolean bl) {
         int n = z[bO + 0] & 0xFF;
         switch (n) {
-            case 154: {
+
                 if (!bl) break;
                 for (int i = 0; i < j[by][bz].length; ++i) {
                     AudioManager audioManager = j[by][bz][i];
@@ -17900,7 +17667,7 @@ lbl221:
                 break;
             }
             case 151: 
-            case 160: {
+
                 if (bl) {
                     GameCanvas.updateMainMenu(graphics);
                     break;
@@ -17908,17 +17675,17 @@ lbl221:
                 GameCanvas.update_1d79(graphics);
                 break;
             }
-            case 157: {
+
                 if (bl) break;
                 GameCanvas.updateOptions(graphics);
                 break;
             }
-            case 167: {
+
                 if (bl) break;
                 GameCanvas.calc_d1c5(graphics);
                 break;
             }
-            case 162: {
+
                 if (bl) break;
                 GameCanvas.updatePausedSubmenu(graphics);
             }
@@ -17934,35 +17701,21 @@ lbl221:
     private static AudioManager[] triggerDamageFlash(int var0, int var1_1, int var2_2) {
         var3_3 = null;
         switch (var0) {
-            case 2: {
-                v0 = GameCanvas.f;
-                ** GOTO lbl26
-            }
-            case 3: {
-                v0 = GameCanvas.d;
-                ** GOTO lbl26
-            }
-            case 4: {
-                v0 = GameCanvas.g;
-                ** GOTO lbl26
-            }
-            case 5: {
-                v0 = GameCanvas.j;
-                ** GOTO lbl26
-            }
-            case 6: {
-                v0 = GameCanvas.a;
-                ** GOTO lbl26
-            }
-            case 7: {
-                v1 = GameCanvas.c;
-                ** GOTO lbl27
-            }
-            case 8: {
-                v0 = GameCanvas.e;
-                ** GOTO lbl26
-            }
-            case 10: {
+
+                v0 = GameCanvas.f;}
+
+                v0 = GameCanvas.d;}
+
+                v0 = GameCanvas.g;}
+
+                v0 = GameCanvas.j;}
+
+                v0 = GameCanvas.a;}
+
+                v1 = GameCanvas.c;}
+
+                v0 = GameCanvas.e;}
+
                 v0 = GameCanvas.h;
 lbl26:
                 // 7 sources
@@ -17985,70 +17738,40 @@ lbl27:
             block17: {
                 var4_4 = null;
                 if (var0 != 1) break block17;
-                v0 = GameCanvas.c;
-                ** GOTO lbl56
-            }
+                v0 = GameCanvas.c;}
             if (var0 != 0) break block18;
-            v0 = GameCanvas.d;
-            ** GOTO lbl56
-        }
+            v0 = GameCanvas.d;}
         if (var1_1 < 0) {
             var1_1 = GameCanvas.by;
         }
         switch (var0) {
-            case 2: {
-                v1 = GameCanvas.f;
-                ** GOTO lbl54
-            }
-            case 3: {
-                v1 = GameCanvas.d;
-                ** GOTO lbl54
-            }
-            case 4: {
-                v1 = GameCanvas.g;
-                ** GOTO lbl54
-            }
-            case 5: {
-                v1 = GameCanvas.j;
-                ** GOTO lbl54
-            }
-            case 6: {
-                v1 = GameCanvas.a;
-                ** GOTO lbl54
-            }
-            case 7: {
-                v2 = GameCanvas.c;
-                ** GOTO lbl55
-            }
-            case 8: {
-                v1 = GameCanvas.e;
-                ** GOTO lbl54
-            }
-            case 9: {
-                v1 = GameCanvas.k;
-                ** GOTO lbl54
-            }
-            case 10: {
-                v1 = GameCanvas.h;
-                ** GOTO lbl54
-            }
-            case 11: {
-                v1 = GameCanvas.c;
-                ** GOTO lbl54
-            }
-            case 12: {
-                v1 = GameCanvas.l;
-                ** GOTO lbl54
-            }
-            case 13: {
-                v1 = GameCanvas.i;
-                ** GOTO lbl54
-            }
-            case 14: {
-                v1 = GameCanvas.g;
-                ** GOTO lbl54
-            }
-            case 15: {
+
+                v1 = GameCanvas.f;}
+
+                v1 = GameCanvas.d;}
+
+                v1 = GameCanvas.g;}
+
+                v1 = GameCanvas.j;}
+
+                v1 = GameCanvas.a;}
+
+                v2 = GameCanvas.c;}
+
+                v1 = GameCanvas.e;}
+
+                v1 = GameCanvas.k;}
+
+                v1 = GameCanvas.h;}
+
+                v1 = GameCanvas.c;}
+
+                v1 = GameCanvas.l;}
+
+                v1 = GameCanvas.i;}
+
+                v1 = GameCanvas.g;}
+
                 v1 = GameCanvas.b;
 lbl54:
                 // 13 sources
@@ -18192,27 +17915,19 @@ lbl56:
             var0 = GameCanvas.by;
         }
         switch (GameCanvas.g[var0][var1_1][var2_2].L) {
-            case 25: {
+
                 v0 = GameCanvas.g[var0][var1_1][var2_2].g;
-                v1 = 9;
-                ** GOTO lbl23
-            }
-            case 20: {
+                v1 = 9;}
+
                 v0 = GameCanvas.g[var0][var1_1][var2_2].g;
-                v1 = 6;
-                ** GOTO lbl23
-            }
-            case 21: {
+                v1 = 6;}
+
                 v0 = GameCanvas.g[var0][var1_1][var2_2].g;
-                v1 = 4;
-                ** GOTO lbl23
-            }
-            case 22: {
+                v1 = 4;}
+
                 v0 = GameCanvas.g[var0][var1_1][var2_2].g;
-                v1 = 6;
-                ** GOTO lbl23
-            }
-            case 24: {
+                v1 = 6;}
+
                 v0 = GameCanvas.g[var0][var1_1][var2_2].g;
                 v1 = 2;
 lbl23:
@@ -18229,18 +17944,18 @@ lbl23:
         }
         GameCanvas.g[n][n2][n3].g[0] = n4;
         switch (GameCanvas.g[n][n2][n3].L) {
-            case 21: {
+
                 AudioManager.spawnEnemy(GameCanvas.g[n][n2][n3].g);
                 return;
             }
-            case 23: {
+
                 int n5 = n4 == 1 ? 0 : 1;
                 AudioManager.triggerDamageFlash(GameCanvas.g[n][n2][n3].g, n5, n, n2);
                 if (n4 != 0) break;
                 AudioManager.triggerDamageFlash(g[n][n2][n3], n, n2);
                 return;
             }
-            case 25: {
+
                 AudioManager.triggerDamageFlash(GameCanvas.g[n][n2][n3].g, GameCanvas.g[n][n2][n3].a.triggerDamageFlash(), GameCanvas.g[n][n2][n3].a.spawnEnemy(), true, n == by && n2 == bz);
             }
         }
@@ -18309,27 +18024,21 @@ lbl23:
                     case 9: 
                     case 10: 
                     case 11: 
-                    case 16: {
+
                         GameCanvas.renderTarget(var8_8);
                     }
                 }
                 switch (var8_8.L) {
-                    case 3: {
+
                         var6_6 = 3;
-                        GameCanvas.triggerDamageFlash(var8_8, 1, true);
-                        ** GOTO lbl24
-                    }
-                    case 1: {
+                        GameCanvas.triggerDamageFlash(var8_8, 1, true);}
+
                         var6_6 = 2;
-                        GameCanvas.triggerDamageFlash(var8_8, 1, true);
-                        ** GOTO lbl24
-                    }
-                    case 0: {
+                        GameCanvas.triggerDamageFlash(var8_8, 1, true);}
+
                         var6_6 = 1;
-                        GameCanvas.triggerDamageFlash(var8_8, 1, true);
-                        ** GOTO lbl24
-                    }
-                    case 9: {
+                        GameCanvas.triggerDamageFlash(var8_8, 1, true);}
+
                         var6_6 = 5;
 lbl24:
                         // 4 sources
@@ -18344,23 +18053,23 @@ lbl24:
                     case 9: 
                     case 10: 
                     case 11: 
-                    case 16: {
+
                         GameCanvas.triggerDamageFlash(var8_8, true);
                         break;
                     }
-                    case 23: {
+
                         AudioManager.spawnEnemy(var8_8, var1_1, var2_2);
                     }
                 }
                 switch (var8_8.L) {
                     case 0: 
                     case 1: 
-                    case 3: {
+
                         if (var8_8 != GameCanvas.c) {
                             GameCanvas.triggerDamageFlash(var8_8, 0, true);
                         }
                     }
-                    case 9: {
+
                         GameCanvas.triggerDamageFlash(var8_8, var6_6, var7_7);
                     }
                 }
@@ -18427,27 +18136,27 @@ lbl24:
         AudioManager audioManager = GameCanvas.playFootstep(n, n2, n3, n4);
         int n9 = audioManager.g[n5];
         switch (n6) {
-            case 0: {
+
                 bl = n9 == n7;
                 break;
             }
-            case 1: {
+
                 bl = n9 != n7;
                 break;
             }
-            case 2: {
+
                 bl = n9 < n7;
                 break;
             }
-            case 3: {
+
                 bl = n9 > n7;
                 break;
             }
-            case 4: {
+
                 bl = n9 <= n7;
                 break;
             }
-            case 5: {
+
                 bl = n9 >= n7;
             }
         }
@@ -18461,38 +18170,38 @@ lbl24:
             }
             audioManager.g[n2] = n3;
             block0 : switch (audioManager.L) {
-                case 18: {
+
                     if (n4 != by || n5 != bz) break;
                     GameCanvas.update_b2f7();
                     if (n2 != 4) break;
                     AudioManager.isPlayerDead(audioManager, n3);
                     return;
                 }
-                case 3: {
+
                     if (n2 != 10 || audioManager.g[12] == 101 || audioManager.g[12] == -1) break;
                     switch (n3) {
-                        case 3: {
+
                             AudioManager.drawForeground(audioManager);
                             AudioManager.playFootstep(audioManager, 0);
                             break block0;
                         }
-                        case 6: {
+
                             AudioManager.calc_d1c5(audioManager);
                         }
                     }
                     return;
                 }
-                case 25: {
+
                     if (n2 != 0 || n3 != 0) break;
                     AudioManager.triggerDamageFlash(audioManager.g, 0, 0, false, false);
                     return;
                 }
-                case 0: {
+
                     if (audioManager != c || n2 != 19 || n3 != 0) break;
                     GameCanvas.update_50e3();
                     return;
                 }
-                case 1: {
+
                     if (n2 != 11 || n3 != 0) break;
                     GameCanvas.triggerDamageFlash(audioManager, 1, false);
                 }
@@ -18525,7 +18234,7 @@ lbl24:
     private static boolean calc_119c(int n) {
         boolean bl = false;
         switch (n) {
-            case 0: {
+
                 if (!N) break;
                 bl = true;
             }
@@ -18581,20 +18290,20 @@ lbl24:
 
     private static void draw_f0f7(int n) {
         switch (n) {
-            case 0: {
+
                 GameCanvas.update_2576();
                 return;
             }
-            case 1: {
+
                 GameCanvas.update_b478();
                 return;
             }
-            case 2: {
+
                 GameCanvas.spawnEnemy(7);
                 GameCanvas.renderTarget(750, 1, 1, 35);
                 return;
             }
-            case 3: {
+
                 GameCanvas.update_af3c();
             }
         }
@@ -18622,19 +18331,13 @@ lbl24:
                         if (var5_5 == null || var5_5 == GameCanvas.c) break block21;
                         var10_7 = AudioManager.triggerDamageFlash(var5_5, false);
                         switch (var10_7) {
-                            case 3: {
-                                v0 = 8256;
-                                ** GOTO lbl17
-                            }
-                            case 2: {
-                                v0 = 4112;
-                                ** GOTO lbl17
-                            }
-                            case 0: {
-                                v0 = 1028;
-                                ** GOTO lbl17
-                            }
-                            case 1: {
+
+                                v0 = 8256;}
+
+                                v0 = 4112;}
+
+                                v0 = 1028;}
+
                                 v0 = 2304;
 lbl17:
                                 // 4 sources
@@ -18644,7 +18347,7 @@ lbl17:
                         }
                     }
                     switch (var0) {
-                        case 0: {
+
                             var7_8 = 0;
                             if ((var6_6 & 3332) != 0) {
                                 var7_8 = 0 | (var6_6 ^ 3332) & 3332;
@@ -18652,22 +18355,14 @@ lbl17:
                             if ((var6_6 & 12368) != 0) {
                                 var7_8 |= (var6_6 ^ 12368) & 12368;
                             }
-                            v1 = var7_8;
-                            ** GOTO lbl39
-                        }
-                        case 1: {
-                            v1 = 8256;
-                            ** GOTO lbl39
-                        }
-                        case 2: {
-                            v1 = 4112;
-                            ** GOTO lbl39
-                        }
-                        case 3: {
-                            v1 = 1028;
-                            ** GOTO lbl39
-                        }
-                        case 4: {
+                            v1 = var7_8;}
+
+                            v1 = 8256;}
+
+                            v1 = 4112;}
+
+                            v1 = 1028;}
+
                             v1 = 2304;
 lbl39:
                             // 5 sources
@@ -18848,7 +18543,7 @@ lbl39:
                 }
                 if (audioManager == null) break block11;
                 switch (audioManager.L) {
-                    case 1: {
+
                         int n5 = AudioManager.renderTarget(audioManager);
                         int n6 = GameCanvas.triggerDamageFlash(audioManager.g[n5 + 14], 0xFF0000);
                         if (GameCanvas.g[n6].a.triggerDamageFlash()) {
@@ -18858,7 +18553,7 @@ lbl39:
                         }
                         break block10;
                     }
-                    case 3: {
+
                         if (!GameCanvas.updateConfirmDialog()) {
                             AudioManager.triggerDamageFlash(audioManager, false);
                         }
@@ -18911,13 +18606,13 @@ lbl39:
     private static void updateTutorial() {
         GameCanvas.update_bc66();
         switch (b) {
-            case 0: {
+
                 if (!GameCanvas.calc_470e()) break;
                 GameCanvas.triggerDamageFlash(20, false);
                 GameCanvas.drawLevelSelect(1);
                 return;
             }
-            case 1: {
+
                 boolean bl;
                 GameCanvas.drawBackground(c, true);
                 c.setClip(0, 0, 1, 1);
@@ -18932,7 +18627,7 @@ lbl39:
                 return;
             }
             case 2: 
-            case 3: {
+
                 GameCanvas.dispatch_d46a();
                 GameCanvas.setPaused();
                 if ((bZ += (int)d) < 3000) break;
@@ -18940,7 +18635,7 @@ lbl39:
                 ++b;
                 return;
             }
-            case 4: {
+
                 GameCanvas.setPaused();
                 GameCanvas.dispatch_d46a();
                 GameCanvas.update_c39f();
@@ -18950,16 +18645,16 @@ lbl39:
 
     private static void check_a8d0(Graphics graphics) {
         switch (b) {
-            case 0: {
+
                 GameCanvas.drawBackground(graphics, false);
                 return;
             }
-            case 1: {
+
                 return;
             }
             case 2: 
             case 3: 
-            case 4: {
+
                 GameCanvas.check_399f(graphics);
             }
         }
@@ -19546,12 +19241,12 @@ lbl39:
                         audioManager.a.renderTarget(GameCanvas.triggerDamageFlash(E, n8 += 2));
                         n3 = audioManager.g[9] = GameCanvas.triggerDamageFlash((int)E[n8 += 2], 7);
                         switch (audioManager.g[9]) {
-                            case 1: {
+
                                 AudioManager.setPaused(audioManager);
                                 AudioManager.createOffscreenBuffer(audioManager, audioManager.g[10]);
                                 AudioManager.renderTarget(audioManager, 667);
                             }
-                            case 0: {
+
                                 audioManager.g[9] = GameCanvas.triggerDamageFlash((int)E[n8], 8);
                                 audioManager.g[17] = GameCanvas.triggerDamageFlash((int)E[n8], 240);
                                 audioManager.g[23] = GameCanvas.triggerDamageFlash((int)E[++n8], 15);
@@ -19562,7 +19257,7 @@ lbl39:
                                 continue block26;
                             }
                             case 2: 
-                            case 3: {
+
                                 AudioManager.setPaused(audioManager);
                                 AudioManager.drawBackground(audioManager);
                                 if (n3 == 3) {
@@ -19979,48 +19674,40 @@ lbl39:
         var3_3 = -1;
         var4_4 = 0;
         switch (GameCanvas.bB) {
-            case 0: {
+
                 var3_3 = 0;
                 v0 = 16;
                 break;
             }
-            case 1: {
+
                 var3_3 = 16;
                 v0 = 10;
                 break;
             }
-            case 2: {
+
                 var3_3 = 26;
                 v0 = 23;
                 break;
             }
-            case 3: {
+
                 var3_3 = 49;
                 v0 = 9;
                 break;
             }
-            case 4: {
+
                 var3_3 = 58;
                 v0 = 18;
                 break;
             }
-            case 5: {
-                v1 = 76;
-                ** GOTO lbl38
-            }
-            case 6: {
-                v1 = 77;
-                ** GOTO lbl38
-            }
-            case 7: {
-                v1 = 78;
-                ** GOTO lbl38
-            }
-            case 8: {
-                v1 = 79;
-                ** GOTO lbl38
-            }
-            case 9: {
+
+                v1 = 76;}
+
+                v1 = 77;}
+
+                v1 = 78;}
+
+                v1 = 79;}
+
                 v1 = 80;
 lbl38:
                 // 5 sources
@@ -20241,27 +19928,17 @@ lbl38:
                 GameCanvas.triggerDamageFlash(true);
             }
             switch (var0.L) {
-                case 15: {
-                    v0 = true;
-                    ** GOTO lbl23
-                }
-                case 9: {
-                    if (var0.g[4] != 3 || (var1_1 = GameCanvas.stopParticles(var0.g[0], 13)) < 0) break;
-                    ** GOTO lbl22
-                }
-                case 0: {
-                    if (var0 != GameCanvas.c || (AudioManager.p & 1) == 0) break;
-                    ** GOTO lbl22
-                }
-                case 3: {
-                    if (var0.g[12] == 101 || (var0.g[16] & 24) == 0) break;
-                    ** GOTO lbl22
-                }
+
+                    v0 = true;}
+
+                    if (var0.g[4] != 3 || (var1_1 = GameCanvas.stopParticles(var0.g[0], 13)) < 0) break;}
+
+                    if (var0 != GameCanvas.c || (AudioManager.p & 1) == 0) break;}
+
+                    if (var0.g[12] == 101 || (var0.g[16] & 24) == 0) break;}
                 case -101: {
-                    if (var0.g[0] != 3 || (var2_3 = GameCanvas.getEntityProperty(var1_2 = GameCanvas.triggerDamageFlash(var0.g[15], 255), 21)) != 5) break;
-                    ** GOTO lbl22
-                }
-                case 26: {
+                    if (var0.g[0] != 3 || (var2_3 = GameCanvas.getEntityProperty(var1_2 = GameCanvas.triggerDamageFlash(var0.g[15], 255), 21)) != 5) break;}
+
                     if (var0.g[3] <= -1) break;
 lbl22:
                     // 5 sources
@@ -20296,9 +19973,7 @@ lbl23:
                                 if ((var0.L != 10 || var0.g[7] != 1) && (var0.L != 26 || var0.g[14] != 1)) break block11;
                                 v0 = var0;
                                 v1 = (var0.a.spawnEnemy() + 320 << 8) + var0.a.triggerDamageFlash();
-                                v2 = 240;
-                                ** GOTO lbl45
-                            }
+                                v2 = 240;}
                             if (var0.L != -100) break block12;
                             GameCanvas.stopGame(var0);
                             break block10;
@@ -20307,14 +19982,10 @@ lbl23:
                         var1_1 = GameCanvas.a[GameCanvas.by][GameCanvas.bz][var0.g[1]];
                         v0 = var0;
                         v1 = (var1_1.a.spawnEnemy() << 8) + var1_1.a.triggerDamageFlash();
-                        v2 = 1;
-                        ** GOTO lbl45
-                    }
+                        v2 = 1;}
                     if (var0.L != -200 || var0.g[1] != 3) break block14;
                     v0 = var0;
-                    v3 = 0;
-                    ** GOTO lbl46
-                }
+                    v3 = 0;}
                 if (var0.L == 3) {
                     AudioManager.drawLevelSelect(var0);
                 } else if (var0.L == 18) {
@@ -20560,15 +20231,15 @@ lbl46:
             GameCanvas.update_1d79(graphics);
         }
         switch (b) {
-            case 1: {
+
                 GameCanvas.drawSprites(graphics, false);
                 break;
             }
-            case 2: {
+
                 GameCanvas.stateOrRender_aI(graphics);
                 break;
             }
-            case 3: {
+
                 GameCanvas.calc_d1c5(graphics);
             }
         }
@@ -20578,12 +20249,12 @@ lbl46:
                 if (g[n][i] == null) continue;
                 block15: for (int j = 0; j < g[n][i].length; ++j) {
                     switch (GameCanvas.g[n][i][j].L) {
-                        case 22: {
+
                             if (n != by || i != bz) continue block15;
                             AudioManager.triggerDamageFlash(graphics, GameCanvas.g[n][i][j].g, GameCanvas.g[n][i][j].a.triggerDamageFlash(), GameCanvas.g[n][i][j].a.spawnEnemy(), GameCanvas.g[n][i][j].g[0] == 1);
                             continue block15;
                         }
-                        case 21: {
+
                             AudioManager.triggerDamageFlash(graphics, GameCanvas.g[n][i][j].g);
                         }
                     }
@@ -20721,29 +20392,22 @@ lbl46:
                                                                         case 20: 
                                                                         case 22: 
                                                                         case 23: 
-                                                                        case 25: {
+
                                                                             GameCanvas.I[0] = var7_7.a.triggerDamageFlash();
                                                                             GameCanvas.I[1] = var7_7.a.spawnEnemy();
-                                                                            if (var7_7.L != 22) ** GOTO lbl47
-                                                                            switch (var7_7.g[4]) {
-                                                                                case 0: {
+                                                                            if (var7_7.L != 22)switch (var7_7.g[4]) {
+
                                                                                     v1 = 1;
                                                                                     v2 = GameCanvas.I;
-                                                                                    v3 = GameCanvas.I[1] + 9;
-                                                                                    ** GOTO lbl46
-                                                                                }
-                                                                                case 1: {
+                                                                                    v3 = GameCanvas.I[1] + 9;}
+
                                                                                     v4 = GameCanvas.I;
-                                                                                    v5 = 1;
-                                                                                    ** GOTO lbl43
-                                                                                }
-                                                                                case 2: {
+                                                                                    v5 = 1;}
+
                                                                                     v1 = 0;
                                                                                     v2 = GameCanvas.I;
-                                                                                    v3 = GameCanvas.I[0] + 9;
-                                                                                    ** GOTO lbl46
-                                                                                }
-                                                                                case 3: {
+                                                                                    v3 = GameCanvas.I[0] + 9;}
+
                                                                                     v4 = GameCanvas.I;
                                                                                     v5 = 0;
 lbl43:
@@ -21084,28 +20748,28 @@ lbl47:
     public static int drawBuffer(int n) {
         int n2 = 0;
         switch (n) {
-            case 0: {
+
                 return 8256;
             }
-            case 1: {
+
                 return 9284;
             }
-            case 2: {
+
                 return 1028;
             }
-            case 3: {
+
                 return 5140;
             }
-            case 4: {
+
                 return 4112;
             }
-            case 5: {
+
                 return 6416;
             }
-            case 6: {
+
                 return 2304;
             }
-            case 7: {
+
                 return 10560;
             }
         }
@@ -21293,7 +20957,6 @@ lbl47:
         int n2 = GameCanvas.updatePausedSubmenu();
         int n3 = 0;
         int n4 = 0;
-        do {
             if (++n < n2) continue;
             n = 0;
         } while ((n3 = GameCanvas.getEntityProperty(n, 18)) != -1 && (GameCanvas.handleWeaponSelect(n3, bt) <= 0 || !GameCanvas.spawnEnemy(c, n)) && ++n4 < n2);
@@ -21396,12 +21059,12 @@ lbl47:
             if ((n3 = GameCanvas.triggerDamageFlash(n4, n5, n6, n7)) <= (n2 = GameCanvas.getEntityProperty(n, 11))) {
                 GameCanvas.draw_2c44();
                 switch (audioManager2.L) {
-                    case 3: {
+
                         if (audioManager2.g[12] == 15 || audioManager2.g[12] == 14 || audioManager2.g[12] >= 100) break;
                         AudioManager.drawBuffer(audioManager2);
                         return;
                     }
-                    case 9: {
+
                         AudioManager.triggerDamageFlash(audioManager2.g[5], audioManager2);
                     }
                 }
@@ -21431,11 +21094,11 @@ lbl47:
                         AudioManager.spawnEnemy(audioManager, audioManager2);
                     }
                     switch (n5) {
-                        case 4: {
+
                             GameCanvas.triggerDamageFlash(audioManager2, audioManager, n);
                             break block10;
                         }
-                        case 6: {
+
                             break block10;
                         }
                         default: {
@@ -21450,10 +21113,10 @@ lbl47:
                     break block11;
                 }
                 switch (n5) {
-                    case 4: {
+
                         break block10;
                     }
-                    case 6: {
+
                         eg = 0;
                         break block10;
                     }
@@ -21497,7 +21160,7 @@ lbl47:
             }
             int n = GameCanvas.getEntityProperty(L[1], 21);
             switch (n) {
-                case 4: {
+
                     int n2 = GameCanvas.getEntityProperty(L[1], 15);
                     if (GameCanvas.stopParticles(f[n2])) break;
                     GameCanvas.spawnEnemy(n2);
@@ -21545,37 +21208,27 @@ lbl47:
                                 var3_1 = GameCanvas.X >> 14;
                                 var4_2 = GameCanvas.Y >> 14;
                                 switch (GameCanvas.drawBackground(AudioManager.h)) {
-                                    case 0: {
+
                                         var3_1 -= 40;
                                         break;
                                     }
-                                    case 1: {
+
                                         var3_1 -= 40;
-                                        v0 = var4_2 + 53;
-                                        ** GOTO lbl40
-                                    }
-                                    case 2: {
-                                        v0 = var4_2 + 53;
-                                        ** GOTO lbl40
-                                    }
-                                    case 3: {
+                                        v0 = var4_2 + 53;}
+
+                                        v0 = var4_2 + 53;}
+
                                         var3_1 += 40;
-                                        v0 = var4_2 + 53;
-                                        ** GOTO lbl40
-                                    }
-                                    case 4: {
+                                        v0 = var4_2 + 53;}
+
                                         var3_1 += 40;
                                         break;
                                     }
-                                    case 5: {
-                                        v1 = var3_1 + 40;
-                                        ** GOTO lbl37
-                                    }
-                                    case 6: {
-                                        v2 = var4_2;
-                                        ** GOTO lbl39
-                                    }
-                                    case 7: {
+
+                                        v1 = var3_1 + 40;}
+
+                                        v2 = var4_2;}
+
                                         v1 = var3_1 - 40;
 lbl37:
                                         // 2 sources
@@ -21782,22 +21435,22 @@ lbl40:
             M[4] = M[4] & 0xFFFFFFFB;
             AudioManager.playFootstep(audioManager);
             block0 : switch (n) {
-                case 0: {
+
                     if (n3 == 4 && M[1] == 0) {
                         GameCanvas.audioMethod_ai(-1);
                     }
                     switch (n2) {
-                        case 1: {
+
                             if (n4 != 4) break;
                             GameCanvas.M[7] = 262144;
                             GameCanvas.triggerDamageFlash(true);
                             break;
                         }
-                        case 4: {
+
                             GameCanvas.audioMethod_aj(L[1]);
                             break;
                         }
-                        case 2: {
+
                             GameCanvas.update_206b();
                         }
                     }
@@ -21806,7 +21459,7 @@ lbl40:
                     AudioManager.triggerDamageFlash(0, audioManager);
                     return;
                 }
-                case 1: {
+
                     GameCanvas.M[7] = 262144;
                     GameCanvas.M[8] = 1458;
                     if (n2 == 2 || n2 == 3) {
@@ -21817,13 +21470,13 @@ lbl40:
                     GameCanvas.M[9] = M[1];
                     return;
                 }
-                case 2: {
+
                     M[4] = M[4] & 0xFFFFFFFD;
                     GameCanvas.M[3] = 0;
                     GameCanvas.M[5] = 0;
                     GameCanvas.M[6] = 0;
                     switch (n2) {
-                        case 0: {
+
                             if ((AudioManager.h & 0x32DA) != 0) {
                                 GameCanvas.M[5] = 868352 * AudioManager.n;
                             }
@@ -21831,37 +21484,37 @@ lbl40:
                             GameCanvas.M[6] = 868352 * AudioManager.o;
                             break block0;
                         }
-                        case 1: {
+
                             AudioManager.spawnEnemy(audioManager);
                             GameCanvas.renderTarget(300, 1, 1, 50);
                             GameCanvas.M[8] = 5832;
                             break block0;
                         }
-                        case 2: {
+
                             GameCanvas.update_2a26(true);
                             break block0;
                         }
-                        case 4: {
+
                             GameCanvas.audioMethod_aj(GameCanvas.update_83ef(M[0], 5));
                         }
                     }
                     return;
                 }
-                case 4: {
+
                     switch (n2) {
-                        case 0: {
+
                             if (M[5] != 0 && GameCanvas.renderTarget(M[5]) < 0x1A0000 || M[6] != 0 && GameCanvas.renderTarget(M[6]) < 0x1A0000) {
                                 M[4] = M[4] | 4;
                                 return;
                             }
                             break block26;
                         }
-                        case 4: {
+
                             int[] nArray = AudioManager.triggerDamageFlash(audioManager, true, true);
                             GameCanvas.triggerDamageFlash(audioManager, nArray, M[0]);
                             return;
                         }
-                        case 1: {
+
                             AudioManager.spawnEnemy(audioManager);
                         }
                     }
@@ -21881,15 +21534,11 @@ lbl40:
         var3_3 = 0;
         var4_4 = GameCanvas.update_83ef(var1_1, 0);
         switch (var0.g[1]) {
-            case 0: {
-                v0 = 424;
-                ** GOTO lbl12
-            }
-            case 9: {
-                v0 = 304;
-                ** GOTO lbl12
-            }
-            case 4: {
+
+                v0 = 424;}
+
+                v0 = 304;}
+
                 v0 = 126;
 lbl12:
                 // 3 sources
@@ -21899,19 +21548,13 @@ lbl12:
         }
         var5_5 = 0;
         switch (var2_2) {
-            case 2: {
-                v1 = 0;
-                ** GOTO lbl26
-            }
-            case 3: {
-                v1 = 2;
-                ** GOTO lbl26
-            }
-            case 4: {
-                v1 = 1;
-                ** GOTO lbl26
-            }
-            case 1: {
+
+                v1 = 0;}
+
+                v1 = 2;}
+
+                v1 = 1;}
+
                 v1 = 3;
 lbl26:
                 // 4 sources
@@ -21933,7 +21576,7 @@ lbl26:
             var4_4 = true;
         }
         switch (var3_3) {
-            case 0: {
+
                 if (!var4_4) {
                     if ((GameCanvas.M[4] & 2) == 0 || (GameCanvas.ey & 65536) == 0) break;
                     var6_5 = 0;
@@ -21961,20 +21604,18 @@ lbl26:
                     GameCanvas.X -= var6_5;
                     GameCanvas.Y -= var7_6;
                     break;
-                }
-                ** GOTO lbl47
-            }
-            case 1: {
+                }}
+
                 GameCanvas.triggerDamageFlash(true);
                 var2_2 = true;
                 GameCanvas.triggerDamageFlash(var0, null, var1_1);
                 break;
             }
-            case 2: {
+
                 GameCanvas.dispatch_7635();
                 break;
             }
-            case 4: {
+
                 var5_12 = GameCanvas.triggerDamageFlash(false);
                 if (var5_12 != null) {
                     GameCanvas.cu = GameCanvas.drawBackground(AudioManager.triggerDamageFlash(var0, var5_12, true));
@@ -22020,11 +21661,11 @@ lbl47:
         boolean bl = false;
         switch (n2) {
             case 2: 
-            case 3: {
+
                 bl = (ez & 0x10000) != 0 || (ez & 0x4020) != 0;
                 break;
             }
-            case 4: {
+
                 bl = ((ez | ey) & 0xFFFEFFFF) != 0;
                 break;
             }
@@ -22047,15 +21688,15 @@ lbl47:
         int n3 = GameCanvas.update_83ef(n, 5);
         int n4 = GameCanvas.update_83ef(n, 3);
         switch (n2) {
-            case 0: {
+
                 GameCanvas.playFootstep(audioManager.a.a, audioManager.a.b, audioManager.a.a + M[5], audioManager.a.b + M[6], nArray[0], nArray[1], n3 << 14);
                 break;
             }
-            case 1: {
+
                 AudioManager.triggerDamageFlash(M[7] >> 14, J);
                 break;
             }
-            case 4: {
+
                 int n5;
                 int n6;
                 AudioManager audioManager2;
@@ -22094,7 +21735,7 @@ lbl47:
         var3_3 = GameCanvas.update_83ef(var1_1, 1);
         var4_4 = null;
         switch (var3_3) {
-            case 0: {
+
                 var5_5 = (GameCanvas.M[4] & 4) != 0;
                 var4_4 = AudioManager.triggerDamageFlash(var0, true, false);
                 if (var4_4 != null && (GameCanvas.M[4] & 8) == 0) {
@@ -22102,26 +21743,20 @@ lbl47:
                     GameCanvas.M[4] = GameCanvas.M[4] | 8;
                 }
                 if (!var5_5 || var4_4 != null || (GameCanvas.M[4] & 8) == 0) break;
-                v0 = true;
-                ** GOTO lbl35
-            }
-            case 1: {
+                v0 = true;}
+
                 var6_6 = GameCanvas.M[8] > 0;
                 GameCanvas.M[8] = GameCanvas.M[8] + -14 * (int)GameCanvas.d;
                 if (var6_6 && GameCanvas.M[8] <= 0) {
                     GameCanvas.update_1f05();
                 }
                 GameCanvas.M[7] = GameCanvas.M[7] + GameCanvas.M[8] * (int)GameCanvas.d;
-                if (GameCanvas.M[7] < 1720320) ** GOTO lbl25
-                v1 = GameCanvas.M;
+                if (GameCanvas.M[7] < 1720320)v1 = GameCanvas.M;
                 v2 = 7;
-                v3 = 1720320;
-                ** GOTO lbl29
-lbl25:
+                v3 = 1720320;lbl25:
                 // 1 sources
 
-                if (GameCanvas.M[7] > 0) ** GOTO lbl31
-                v1 = GameCanvas.M;
+                if (GameCanvas.M[7] > 0)v1 = GameCanvas.M;
                 v2 = 7;
                 v3 = 16384;
 lbl29:
@@ -22135,7 +21770,7 @@ lbl31:
                 GameCanvas.triggerDamageFlash(var0, null, var1_1);
                 break;
             }
-            case 4: {
+
                 v0 = var0.a.triggerDamageFlash();
 lbl35:
                 // 2 sources
@@ -22149,7 +21784,7 @@ lbl35:
     private static void isPlayerDead(AudioManager audioManager, int n) {
         int n2 = GameCanvas.update_83ef(n, 1);
         switch (n2) {
-            case 1: {
+
                 M[7] = M[7] + M[8] * (int)d;
                 int n3 = (cq >> 1) + 8 << 14;
                 if (M[7] > n3) {
@@ -22164,7 +21799,7 @@ lbl35:
     private static void drawSprites(AudioManager audioManager, int n) {
         int n2 = GameCanvas.update_83ef(n, 1);
         switch (n2) {
-            case 2: {
+
                 if (l != null) {
                     cu = GameCanvas.drawBackground(AudioManager.triggerDamageFlash(audioManager, l, false));
                 }
@@ -22203,7 +21838,7 @@ lbl35:
                 GameCanvas.M[1] = var2_2;
             }
             switch (GameCanvas.M[2]) {
-                case 0: {
+
                     if (var1_1 == 0) {
                         var6_6 = (int)GameCanvas.d;
                         if (var0.g[25] == 1) {
@@ -22216,17 +21851,13 @@ lbl35:
                     GameCanvas.cu = GameCanvas.drawBackground(AudioManager.h);
                     AudioManager.triggerDamageFlash(18, var0);
                     v0 = var0;
-                    v1 = 1;
-                    ** GOTO lbl63
-                }
-                case 1: {
+                    v1 = 1;}
+
                     GameCanvas.isPlayerDead(var0, GameCanvas.M[0]);
                     if (!var0.a.triggerDamageFlash()) break;
                     v0 = var0;
-                    v1 = 2;
-                    ** GOTO lbl63
-                }
-                case 2: {
+                    v1 = 2;}
+
                     if (GameCanvas.createOffscreenBuffer(var0, GameCanvas.M[0])) break;
                     if (var5_5 != 0) {
                         v0 = var0;
@@ -22239,15 +21870,10 @@ lbl35:
                         }
                         v0 = var0;
                         v1 = 4;
-                    }
-                    ** GOTO lbl63
-                }
-                case 3: {
-                    if (var5_5 != 0) ** GOTO lbl49
-                    v0 = var0;
-                    v1 = 2;
-                    ** GOTO lbl63
-lbl49:
+                    }}
+
+                    if (var5_5 != 0)v0 = var0;
+                    v1 = 2;lbl49:
                     // 1 sources
 
                     if (GameCanvas.createOffscreenBuffer(var0, GameCanvas.M[0])) break;
@@ -22257,7 +21883,7 @@ lbl49:
                     GameCanvas.drawSprites(var0, GameCanvas.M[0]);
                     return;
                 }
-                case 4: {
+
                     if (!GameCanvas.isPlayerDead(var0, GameCanvas.M[0]) && !var0.a.triggerDamageFlash()) break;
                     if (var3_3 == 4 && (var1_1 == -1 || GameCanvas.M[1] >= var2_2)) {
                         v0 = var0;
@@ -22281,12 +21907,12 @@ lbl63:
             int n2 = GameCanvas.a.a.a + M[5] - T >> 14;
             int n3 = GameCanvas.a.a.b + M[6] - U >> 14;
             switch (n) {
-                case 0: {
+
                     if (M[2] != 2 || M[5] == 0 && M[6] == 0) break;
                     a[4].triggerDamageFlash(graphics, 24, n2, n3, 0);
                     return;
                 }
-                case 1: {
+
                     int n4 = (J[0] + (J[2] - J[0] >> 1) << 14) - T >> 14;
                     int n5 = (J[1] + (J[3] - J[1] >> 1) << 14) - U >> 14;
                     int n6 = 0;
@@ -22312,11 +21938,11 @@ lbl63:
                     GameCanvas.isPlayerDead(8);
                     return;
                 }
-                case 2: {
+
                     GameCanvas.stateOrRender_aY(graphics);
                     return;
                 }
-                case 4: {
+
                     GameCanvas.drawBuffer(graphics, true);
                 }
             }
@@ -22406,15 +22032,14 @@ lbl63:
         var12_13 = 4900;
         var13_14 = GameCanvas.spawnEnemy(var0, var1_1) >> 14;
         switch (GameCanvas.N[5]) {
-            case 1: {
+
                 var12_13 = GameCanvas.triggerDamageFlash(var0, var1_1);
                 if (var12_13 < 4900 && (var11_12 = 100 - 100 * var12_13 / 4900) > 30) {
                     var11_12 = 30;
                 }
             }
-            case 2: {
-                if (var7_8 <= var8_9) ** GOTO lbl52
-                var7_8 -= var13_14;
+
+                if (var7_8 <= var8_9)var7_8 -= var13_14;
                 if (var12_13 < 4900) {
                     var10_11 = var11_12 * var7_8 / 100;
                 }
@@ -22433,9 +22058,7 @@ lbl63:
                 v3 = var9_10;
                 v4 = 0;
                 v5 = var4_4[0] + (var8_9 >> 1);
-                v6 = var5_6;
-                ** GOTO lbl74
-lbl52:
+                v6 = var5_6;lbl52:
                 // 1 sources
 
                 var8_9 -= var13_14;
@@ -22454,10 +22077,8 @@ lbl52:
                     v9 = var9_10[0] - (var5_6 - var4_4[0]) + (var13_14 >> 1);
                 }
                 v7[v8] = v9;
-                v3 = var9_10;
-                ** GOTO lbl71
-            }
-            case 0: {
+                v3 = var9_10;}
+
                 var9_10[0] = var4_4[0] + (var8_9 >> 1) - var5_6;
                 v3 = var9_10;
 lbl71:
@@ -22482,10 +22103,10 @@ lbl74:
     private static int updateMainMenu() {
         int n = 0;
         switch (bF) {
-            case 0: {
+
                 return 400;
             }
-            case 1: {
+
                 return 200;
             }
         }
@@ -22502,7 +22123,7 @@ lbl74:
             GameCanvas.N[0] = GameCanvas.N[4];
         }
         switch (GameCanvas.N[5]) {
-            case 1: {
+
                 GameCanvas.N[8] = GameCanvas.N[8] + 13104 * var0 / 1000;
                 GameCanvas.N[6] = GameCanvas.N[6] + GameCanvas.N[8] * var0 / 1000;
                 if (GameCanvas.N[6] < 16384) break;
@@ -22517,10 +22138,8 @@ lbl74:
                     v0 = GameCanvas.N;
                     v1 = 6;
                     v2 = 16384;
-                }
-                ** GOTO lbl48
-            }
-            case 2: {
+                }}
+
                 if (GameCanvas.N[6] < 8192) {
                     v3 = 8;
                     v4 = GameCanvas.N;
@@ -22669,12 +22288,12 @@ lbl48:
         if (P[1] != 0) {
             P[6] = P[6] + (int)d;
             switch (P[1]) {
-                case 1: {
+
                     if (P[0] != 1 || P[6] < 4000) break;
                     GameCanvas.audioMethod_ak(2);
                     break;
                 }
-                case 2: {
+
                     P[9] = P[9] + P[10] * (int)d;
                 }
             }
@@ -22733,13 +22352,13 @@ lbl48:
     private static void audioMethod_ak(int n) {
         GameCanvas.P[1] = n;
         switch (n) {
-            case 0: {
+
                 return;
             }
-            case 1: {
+
                 return;
             }
-            case 2: {
+
                 GameCanvas.P[9] = 4177920;
                 GameCanvas.P[10] = P[9] / (P[6] - 8000);
             }
@@ -22756,12 +22375,12 @@ lbl48:
         if (P[1] != 0) {
             int n5 = 0;
             switch (P[1]) {
-                case 1: {
+
                     GameCanvas.spawnEnemy(0, P[2]);
                     n5 = 38;
                     break;
                 }
-                case 2: {
+
                     GameCanvas.spawnEnemy(0, P[4]);
                     n5 = 39;
                     GameCanvas.createOffscreenBuffer(128);
@@ -22835,16 +22454,14 @@ lbl48:
     private static void audioMethod_am(int var0) {
         GameCanvas.P[11] = var0;
         switch (var0) {
-            case 0: {
+
                 return;
             }
-            case 1: {
+
                 v0 = GameCanvas.P;
                 v1 = 18;
-                v2 = 0x3C0000;
-                ** GOTO lbl14
-            }
-            case 2: {
+                v2 = 0x3C0000;}
+
                 v0 = GameCanvas.P;
                 v1 = 18;
                 v2 = 0;
@@ -22860,7 +22477,7 @@ lbl14:
         if (P[11] != 0) {
             P[16] = P[16] + (int)d;
             switch (P[11]) {
-                case 1: {
+
                     P[18] = P[18] - 15728 * (int)d;
                     if (P[18] > 0) break;
                     P[17] = P[17] - 1;
@@ -22872,12 +22489,12 @@ lbl14:
                     GameCanvas.audioMethod_am(1);
                     break;
                 }
-                case 2: {
+
                     if (P[16] < 3500) break;
                     GameCanvas.audioMethod_am(3);
                     break;
                 }
-                case 3: {
+
                     P[19] = P[19] - 163 * (int)d;
                     if (P[19] > 0) break;
                     GameCanvas.P[19] = 0;
@@ -22894,12 +22511,12 @@ lbl14:
             int n5 = 49;
             switch (P[11]) {
                 case 1: 
-                case 2: {
+
                     n5 = 49;
                     GameCanvas.spawnEnemy(0, P[12] - (P[17] > 0 ? P[17] - 1 : 0));
                     break;
                 }
-                case 3: {
+
                     n5 = 39;
                     GameCanvas.spawnEnemy(0, P[14]);
                     int n6 = (P[16] - 3500) * 100 / 1000;
@@ -22945,11 +22562,11 @@ lbl14:
 
     private static void dispatch_b81f() {
         switch (G[0]) {
-            case 0: {
+
                 GameCanvas.calc_119c();
                 break;
             }
-            case 1: {
+
                 GameCanvas.G[0] = 0;
             }
         }
@@ -22958,12 +22575,12 @@ lbl14:
 
     private static void dispatch_485c() {
         switch (G[0]) {
-            case 0: {
+
                 GameCanvas.draw_9fc9(0);
                 GameCanvas.update_d4a5();
                 return;
             }
-            case 1: {
+
                 GameCanvas.stateOrRender_aV();
             }
         }
@@ -22972,13 +22589,13 @@ lbl14:
     private static void dispatch_1728(Graphics graphics) {
         byte[] byArray = null;
         switch (G[0]) {
-            case 0: {
+
                 GameCanvas.draw_9fc9(0);
                 byArray = a[19].triggerDamageFlash(49, 1);
                 GameCanvas.drawSprites(graphics, byArray[0] & 0xFF, byArray[1] & 0xFF, byArray[2] & 0xFF, byArray[3] & 0xFF);
                 return;
             }
-            case 1: {
+
                 GameCanvas.isPlayerDying(graphics);
             }
         }
@@ -23006,7 +22623,6 @@ lbl14:
         int n4 = 0;
         int n5 = 0;
         int n6 = 0;
-        do {
             block8: {
                 int n7;
                 block7: {
@@ -23333,11 +22949,9 @@ lbl14:
                     var4_4 = 0;
                     var5_5 = 0;
                     switch (var0.L) {
-                        case 3: {
-                            v0 = var4_4 = GameCanvas.drawBackground(var0.g[0], 20) * 16 / 2;
-                            ** GOTO lbl14
-                        }
-                        case 9: {
+
+                            v0 = var4_4 = GameCanvas.drawBackground(var0.g[0], 20) * 16 / 2;}
+
                             var4_4 = 0;
                             v0 = GameCanvas.stopParticles(var0.g[0], 7) * 16;
 lbl14:
@@ -23408,7 +23022,7 @@ lbl14:
         block8: for (n = 0; n < cg; ++n) {
             AudioManager audioManager = e[n];
             switch (audioManager.L) {
-                case 9: {
+
                     int n3 = GameCanvas.i.g[2] * 16;
                     int n4 = GameCanvas.i.g[3] * 16;
                     int n5 = GameCanvas.stopParticles(audioManager.g[0], 6) * 16;
@@ -23449,7 +23063,7 @@ lbl14:
                     audioManager.a.a += (cJ + 240) * (int)d / 1000 << 14;
                     continue block8;
                 }
-                case 3: {
+
                     if (GameCanvas.triggerDamageFlash(GameCanvas.i.a.triggerDamageFlash(), GameCanvas.i.a.spawnEnemy(), GameCanvas.i.a.triggerDamageFlash() + GameCanvas.i.g[2] * 16 - 1, GameCanvas.i.a.spawnEnemy() + GameCanvas.i.g[3] * 16 - 1, audioManager.a.triggerDamageFlash(), audioManager.a.spawnEnemy())) {
                         if (AudioManager.isPlayerDead(audioManager)) {
                             GameCanvas.update_cc20();
@@ -23523,15 +23137,11 @@ lbl14:
                 switch (GameCanvas.cE) {
                     case -1: {
                         v0 = GameCanvas.i.a;
-                        v1 = 8;
-                        ** GOTO lbl39
-                    }
-                    case 1: {
+                        v1 = 8;}
+
                         v0 = GameCanvas.i.a;
-                        v1 = 9;
-                        ** GOTO lbl39
-                    }
-                    case 0: {
+                        v1 = 9;}
+
                         v0 = GameCanvas.i.a;
                         v1 = 0;
 lbl39:
@@ -23585,7 +23195,7 @@ lbl39:
     private static void dispatch_4f0f() {
         if (i != null) {
             switch (cw) {
-                case 0: {
+
                     if (cB <= 0) {
                         if (!ab) {
                             GameCanvas.stateOrRender_aD();
@@ -23611,7 +23221,7 @@ lbl39:
                     GameCanvas.update_c5d6();
                     break;
                 }
-                case 1: {
+
                     if (GameCanvas.triggerDamageFlash(i)) {
                         a = null;
                         GameCanvas.dispatch_4a1a();
@@ -23634,7 +23244,7 @@ lbl39:
                     GameCanvas.draw_b0cd(2);
                     break;
                 }
-                case 2: {
+
                     GameCanvas.update_e683();
                     if (cx <= 1000 || ez == 0) break;
                     if (!ab) {
@@ -23653,7 +23263,7 @@ lbl39:
                     GameCanvas.triggerDamageFlash(5, true);
                     break;
                 }
-                case 3: {
+
                     int n;
                     if (!GameCanvas.update_2a26()) break;
                     if (GameCanvas.updatePausedSubmenu()) {
@@ -23668,7 +23278,7 @@ lbl39:
                     GameCanvas.draw_b0cd(4);
                     break;
                 }
-                case 4: {
+
                     GameCanvas.drawLevelSelect(0);
                     GameCanvas.spawnEnemy(cz);
                 }
@@ -23834,19 +23444,19 @@ lbl39:
         if (i != null) {
             GameCanvas.dispatch_b300(graphics);
             switch (cw) {
-                case 0: {
+
                     GameCanvas.draw_f0f7(graphics);
                     return;
                 }
-                case 1: {
+
                     GameCanvas.loadLevel(graphics);
                     return;
                 }
-                case 2: {
+
                     GameCanvas.draw_f220(graphics);
                     return;
                 }
-                case 3: {
+
                     GameCanvas.destroyBuffer(graphics);
                 }
             }
@@ -24210,8 +23820,8 @@ lbl39:
         c = new GameData(a[2], 0, 0, null);
         c.spawnEnemy(0);
         S = new int[6];
-        do = 0;
-        dp = -1;
+        varDo = 0;
+        varDp = -1;
         GameCanvas.setPaused(true);
         GameCanvas.draw_ad2c(0);
         GameCanvas.updateParticleSystem();
@@ -24247,25 +23857,25 @@ lbl39:
     private static void drawContinue(int n) {
         if (!N) {
             switch (n) {
-                case 0: {
+
                     dw = dx;
                     dA = 96;
                     break;
                 }
-                case 1: {
+
                     break;
                 }
-                case 2: {
+
                     dw = dx;
                     dA = 96;
                     break;
                 }
-                case 3: {
+
                     dw = 0;
                     dA = 96;
                     break;
                 }
-                case 4: {
+
                     dw = 0;
                 }
             }
@@ -24278,15 +23888,15 @@ lbl39:
         if (!N) {
             dy = (int)((long)dy + d);
             switch (dz) {
-                case 0: {
+
                     return;
                 }
-                case 1: {
+
                     if (dy <= 3000) break;
                     GameCanvas.drawContinue(2);
                     return;
                 }
-                case 2: {
+
                     if (dy > 30000) {
                         GameCanvas.drawContinue(3);
                         return;
@@ -24294,12 +23904,12 @@ lbl39:
                     dw = GameCanvas.drawForeground(dx, 0, (dy << 14) / 30000) >> 14;
                     return;
                 }
-                case 3: {
+
                     if (!af || dy <= 1000) break;
                     GameCanvas.drawContinue(4);
                     return;
                 }
-                case 4: {
+
                     if (dy > 5000) {
                         GameCanvas.drawContinue(1);
                         return;
@@ -24321,12 +23931,12 @@ lbl39:
     }
 
     private static boolean check_df73() {
-        return do == 3 && dp < 0;
+        return varDo == 3 && varDp < 0;
     }
 
     private static void update_dc26() {
-        do = 0;
-        dp = 0;
+        varDo = 0;
+        varDp = 0;
         for (int i = 0; i < 3; ++i) {
             GameCanvas.S[i * 2 + 0] = GameCanvas.triggerDamageFlash() % 240;
             GameCanvas.S[i * 2 + 1] = GameCanvas.triggerDamageFlash() % 320;
@@ -24338,13 +23948,13 @@ lbl39:
         if ((long)dp > d) {
             n = (int)((long)dp - d);
         } else if (dp >= 0) {
-            n = dp = 0;
+            n = varDp = 0;
         }
         if (dp == 0) {
             int n2;
-            if (do < 3) {
+            if (varDo < 3) {
                 GameCanvas.stopGame(false);
-                if (++do > 1) {
+                if (++varDo > 1) {
                     GameCanvas.triggerDamageFlash();
                 }
                 if (!GameCanvas.getEntityProperty(2)) {
@@ -24354,29 +23964,29 @@ lbl39:
             } else {
                 n2 = -1;
             }
-            dp = n2;
+            varDp = n2;
         }
     }
 
     private static void draw_ad2c(int n) {
         switch (n) {
-            case 0: {
+
                 GameCanvas.drawContinue(0);
                 break;
             }
-            case 1: {
+
                 GameCanvas.draw_f042(0);
                 break;
             }
-            case 3: {
+
                 if (dz != 0) break;
                 GameCanvas.drawContinue(1);
                 break;
             }
-            case 2: {
+
                 break;
             }
-            case 4: {
+
                 GameCanvas.updateOptions(1);
             }
         }
@@ -24456,24 +24066,20 @@ lbl39:
             GameCanvas.draw_ad2c(3);
         }
         switch (GameCanvas.dm) {
-            case 0: {
+
                 if (GameCanvas.dn < 2000) break;
-                v0 = 1;
-                ** GOTO lbl19
-            }
-            case 1: {
+                v0 = 1;}
+
                 if (GameCanvas.dn < 6000) {
                     GameCanvas.draw_f042(GameCanvas.drawForeground(-426, 0, (6000 - GameCanvas.dn << 14) / 6000) >> 14);
                     break;
                 }
                 GameCanvas.draw_f042(-426);
-                v0 = 2;
-                ** GOTO lbl19
-            }
-            case 2: {
+                v0 = 2;}
+
                 break;
             }
-            case 3: {
+
                 v0 = 4;
 lbl19:
                 // 3 sources
@@ -24527,8 +24133,8 @@ lbl19:
     }
 
     private static void audioMethod_ak(Graphics graphics) {
-        if (do > 0) {
-            for (int i = 0; i < do; ++i) {
+        if (varDo > 0) {
+            for (int i = 0; i < varDo; ++i) {
                 a[1].triggerDamageFlash(graphics, 4 + i % 3, S[i * 2 + 0], S[i * 2 + 1], 0);
             }
         }
@@ -24548,28 +24154,22 @@ lbl19:
             var12_7 = var0[var1_1++] & 255;
             var13_8 = 0;
             switch (var12_7) {
-                case 6: {
+
                     ++var3_3;
                     var13_8 = 32;
                     var1_1 += 2;
                     continue block14;
                 }
-                case 7: {
+
                     ++var2_2;
-                    v0 = 10;
-                    ** GOTO lbl31
-                }
-                case 8: {
+                    v0 = 10;}
+
                     ++var4_4;
-                    v0 = 2;
-                    ** GOTO lbl31
-                }
-                case 9: {
+                    v0 = 2;}
+
                     ++var5_5;
-                    v0 = 2;
-                    ** GOTO lbl31
-                }
-                case 10: {
+                    v0 = 2;}
+
                     ++var6_6;
                     v0 = 15;
 lbl31:
@@ -24599,7 +24199,7 @@ lbl31:
         while (var1_1 < var0.length) {
             var12_7 = var0[var1_1++] & 255;
             switch (var12_7) {
-                case 6: {
+
                     var14_14 = GameCanvas.triggerDamageFlash(var0, var1_1);
                     var1_1 += 2;
                     GameCanvas.m[var3_3][0] = var14_14;
@@ -24615,7 +24215,7 @@ lbl31:
                     ++var3_3;
                     break;
                 }
-                case 7: {
+
                     for (var14_14 = 0; var14_14 < 10; ++var14_14) {
                         GameCanvas.W[var9_11++] = GameCanvas.triggerDamageFlash(var0, var1_1);
                         var1_1 += 2;
@@ -24628,7 +24228,7 @@ lbl31:
                     ++var2_2;
                     break;
                 }
-                case 8: {
+
                     for (var14_14 = 0; var14_14 < 2; ++var14_14) {
                         GameCanvas.X[var10_12++] = GameCanvas.triggerDamageFlash(var0, var1_1);
                         var1_1 += 2;
@@ -24637,7 +24237,7 @@ lbl31:
                     GameCanvas.W[v2] = GameCanvas.W[v2] + 1;
                     break;
                 }
-                case 9: {
+
                     for (var14_14 = 0; var14_14 < 2; ++var14_14) {
                         GameCanvas.Y[var11_13++] = GameCanvas.triggerDamageFlash(var0, var1_1);
                         var1_1 += 2;
@@ -24645,7 +24245,7 @@ lbl31:
                     GameCanvas.W[(var2_2 - 1) * 13 + 12] = var5_5++;
                     break;
                 }
-                case 10: {
+
                     for (var14_14 = 0; var14_14 < 15; ++var14_14) {
                         GameCanvas.V[var8_10++] = GameCanvas.triggerDamageFlash(var0, var1_1);
                         var1_1 += 2;
@@ -24884,19 +24484,15 @@ lbl31:
             if (GameCanvas.g[var0].g[1] == 0) continue;
             GameCanvas.g[var0].a.triggerDamageFlash();
             switch (GameCanvas.g[var0].g[1]) {
-                case 1: {
+
                     if (GameCanvas.an) continue block5;
                     v0 = GameCanvas.g[var0].g;
                     v1 = 1;
-                    v2 = 2;
-                    ** GOTO lbl19
-                }
-                case 2: {
-                    if (!GameCanvas.g[var0].a.triggerDamageFlash()) continue block5;
-                    ** GOTO lbl16
-                }
+                    v2 = 2;}
+
+                    if (!GameCanvas.g[var0].a.triggerDamageFlash()) continue block5;}
                 case 4: 
-                case 5: {
+
                     if (!GameCanvas.g[var0].a.triggerDamageFlash()) continue block5;
 lbl16:
                     // 2 sources
@@ -25043,7 +24639,7 @@ lbl19:
 
     private static void updateContinue() {
         switch (b) {
-            case 0: {
+
                 a[8].triggerDamageFlash();
                 if (a[8].triggerDamageFlash()) {
                     GameCanvas.drawLevelSelect(1);
@@ -25052,23 +24648,23 @@ lbl19:
                 break;
             }
             case 1: 
-            case 3: {
+
                 GameCanvas.draw_9fc9(0);
                 GameCanvas.dispatch_9689();
                 break;
             }
             case 2: 
-            case 4: {
+
                 GameCanvas.draw_9fc9(1);
                 GameCanvas.update_2756();
                 break;
             }
             case 5: 
-            case 6: {
+
                 GameCanvas.update_e9ad();
                 break;
             }
-            case 11: {
+
                 a[8].triggerDamageFlash();
                 if (a[8].triggerDamageFlash()) {
                     GameCanvas.update_855b();
@@ -25076,7 +24672,7 @@ lbl19:
                 GameCanvas.setPaused();
                 break;
             }
-            case 7: {
+
                 if (GameCanvas.update_2a26()) {
                     GameCanvas.calc_119c();
                 }
@@ -25139,13 +24735,13 @@ lbl19:
         graphics.setClip(n2, n3, n4, n5);
         switch (b) {
             case 1: 
-            case 3: {
+
                 graphics2 = graphics;
                 n = K[dI];
                 break;
             }
             case 2: 
-            case 4: {
+
                 graphics2 = graphics;
                 n = I[dC];
                 break;
@@ -25161,30 +24757,30 @@ lbl19:
     private static int check_9d9d(int n) {
         if (n != -1) {
             switch (b[n][0]) {
-                case 5: {
+
                     return 3974748;
                 }
                 case 4: 
-                case 6: {
+
                     return 6594284;
                 }
                 case 3: 
-                case 7: {
+
                     return 16544340;
                 }
                 case 0: 
                 case 1: 
-                case 2: {
+
                     return 12359212;
                 }
-                case 9: {
+
                     return 2451001;
                 }
-                case 11: {
+
                     return 0xCBCBCB;
                 }
                 case 8: 
-                case 10: {
+
                     return 5963719;
                 }
             }
@@ -25221,7 +24817,7 @@ lbl19:
             GameCanvas.createOffscreenBuffer(graphics, false);
             switch (b) {
                 case 0: 
-                case 11: {
+
                     a[8].triggerDamageFlash(graphics);
                     break;
                 }
@@ -25353,13 +24949,11 @@ lbl19:
     private static void dispatch_daf0() {
         GameCanvas.dispatch_ef62();
         switch (GameCanvas.b) {
-            case 15: {
+
                 switch (GameCanvas.n[GameCanvas.dF][0]) {
-                    case 7: {
-                        v0 = 3;
-                        ** GOTO lbl10
-                    }
-                    case 12: {
+
+                        v0 = 3;}
+
                         v0 = 3;
 lbl10:
                         // 2 sources
@@ -25369,7 +24963,7 @@ lbl10:
                 }
                 return;
             }
-            case 28: {
+
                 while (GameCanvas.a != 6) {
                     GameCanvas.calc_119c();
                 }
@@ -25450,7 +25044,7 @@ lbl10:
                         ez |= 0x4020;
                     }
                     switch (b) {
-                        case 0: {
+
                             a[8].triggerDamageFlash();
                             a[9].triggerDamageFlash();
                             if (a[8].triggerDamageFlash()) {
@@ -25460,7 +25054,7 @@ lbl10:
                             GameCanvas.setPaused();
                             break;
                         }
-                        case 12: {
+
                             a[8].triggerDamageFlash();
                             if (a[8].triggerDamageFlash()) {
                                 GameCanvas.drawLevelSelect(4);
@@ -25468,7 +25062,7 @@ lbl10:
                             GameCanvas.setPaused();
                             break;
                         }
-                        case 13: {
+
                             a[8].triggerDamageFlash();
                             if (a[8].triggerDamageFlash()) {
                                 GameCanvas.calc_119c();
@@ -25476,7 +25070,7 @@ lbl10:
                             GameCanvas.setPaused();
                             break;
                         }
-                        case 26: {
+
                             a[8].triggerDamageFlash();
                             a[9].triggerDamageFlash();
                             if (a[8].triggerDamageFlash()) {
@@ -25485,9 +25079,8 @@ lbl10:
                             GameCanvas.setPaused();
                             break;
                         }
-                        case 1: {
+
                             if ((ez & 0x404) != 0) {
-                                do {
                                     if (--dF >= 0) continue;
                                     dF = n.length - 1;
                                 } while (!GameCanvas.setPaused(dF));
@@ -25495,7 +25088,6 @@ lbl10:
                                 break;
                             }
                             if ((ez & 0x900) != 0) {
-                                do {
                                     if (++dF < n.length) continue;
                                     dF = 0;
                                 } while (!GameCanvas.setPaused(dF));
@@ -25516,7 +25108,7 @@ lbl10:
                             GameCanvas.setPaused();
                             break;
                         }
-                        case 15: {
+
                             if ((ez & 0x404) != 0) {
                                 if (--dM < 0) {
                                     dM = 1;
@@ -25536,60 +25128,60 @@ lbl10:
                             GameCanvas.setPaused();
                             break;
                         }
-                        case 16: {
+
                             GameCanvas.update_817e();
                             break;
                         }
-                        case 17: {
+
                             GameCanvas.update_716b();
                             break;
                         }
-                        case 18: {
+
                             GameCanvas.update_1ce5();
                             break;
                         }
-                        case 19: {
+
                             GameCanvas.update_45d1();
                             break;
                         }
-                        case 20: {
+
                             GameCanvas.stateOrRender_aV();
                             break;
                         }
-                        case 21: {
+
                             GameCanvas.update_1711();
                             break;
                         }
-                        case 22: {
+
                             GameCanvas.dispatch_485c();
                             break;
                         }
                         case 2: 
-                        case 3: {
+
                             GameCanvas.dispatch_9689();
                             break;
                         }
-                        case 4: {
+
                             GameCanvas.update_1d79(false);
                             break;
                         }
-                        case 10: {
+
                             GameCanvas.update_1c71();
                             break;
                         }
-                        case 8: {
+
                             if (!GameCanvas.update_2a26()) break;
                             GameCanvas.dispatch_1728(1);
                             GameCanvas.calc_119c();
                             GameCanvas.drawLevelSelect(9);
                             break;
                         }
-                        case 6: {
+
                             if ((ez & 0x4020) == 0 || GameCanvas.drawLevelSelect(K[dI]) == -1) break;
                             GameCanvas.update_bbee();
                             break;
                         }
-                        case 9: {
+
                             if (!GameCanvas.update_2a26()) break;
                             if (GameCanvas.updatePausedSubmenu()) {
                                 byte by = K[dI];
@@ -25602,7 +25194,7 @@ lbl10:
                             GameCanvas.calc_119c();
                             break;
                         }
-                        case 11: {
+
                             if (!GameCanvas.update_2a26()) break;
                             if (GameCanvas.updatePausedSubmenu()) {
                                 int n = GameCanvas.triggerDamageFlash(bt, dI, dJ, false);
@@ -25621,18 +25213,18 @@ lbl10:
                             GameCanvas.calc_119c();
                             break;
                         }
-                        case 14: {
+
                             if (!GameCanvas.update_2a26() || !GameCanvas.updatePausedSubmenu()) break;
                             GameCanvas.triggerDamageFlash(bt, dI, dJ, true);
                             GameCanvas.calc_119c();
                             break;
                         }
-                        case 5: {
+
                             if (!GameCanvas.update_2a26()) break;
                             GameCanvas.calc_119c();
                             break;
                         }
-                        case 7: {
+
                             if (!GameCanvas.update_2a26()) break;
                             if (GameCanvas.updatePausedSubmenu()) {
                                 GameCanvas.calc_119c();
@@ -25644,7 +25236,7 @@ lbl10:
                             GameCanvas.calc_119c();
                             break;
                         }
-                        case 28: {
+
                             a[9].triggerDamageFlash();
                             a[8].triggerDamageFlash();
                             if (a[8].triggerDamageFlash()) {
@@ -25659,64 +25251,64 @@ lbl10:
                             GameCanvas.setPaused();
                             break;
                         }
-                        case 23: {
+
                             GameCanvas.calc_119c();
                             GameCanvas.check_4fbf();
                             GameCanvas.drawLevelSelect(24);
                             break;
                         }
-                        case 24: {
+
                             GameCanvas.dispatch_9ff5();
                             GameCanvas.update_cb0d();
                             break;
                         }
-                        case 27: {
+
                             GameCanvas.update_42ca();
                         }
                     }
                     GameCanvas.update_ab39();
                     if ((ez & 0x10000) == 0 || a != 10 || b <= 0 || b >= 28) break block66;
                     switch (b) {
-                        case 24: {
+
                             GameCanvas.update_6e75();
                             GameCanvas.calc_119c();
                             break block67;
                         }
                         case 12: 
-                        case 26: {
+
                             break block68;
                         }
-                        case 1: {
+
                             GameCanvas.update_27b4();
                             break block68;
                         }
-                        case 4: {
+
                             GameCanvas.calc_119c();
                             GameCanvas.calc_119c();
                             a[8].triggerDamageFlash(3, 0);
                             GameCanvas.renderTarget(10, 13);
                             break block67;
                         }
-                        case 27: {
+
                             GameCanvas.update_46bd();
                             GameCanvas.calc_119c();
                             break block67;
                         }
-                        case 16: {
+
                             GameCanvas.triggerDamageFlash(false, false);
                             GameCanvas.calc_119c();
                             break;
                         }
-                        case 18: {
+
                             GameCanvas.update_f6ba();
                             GameCanvas.calc_119c();
                             break block67;
                         }
-                        case 22: {
+
                             GameCanvas.dispatch_b81f();
                             break block68;
                         }
-                        case 3: {
+
                             GameCanvas.update_4e0e();
                         }
                         default: {
@@ -25744,46 +25336,46 @@ lbl10:
     private static void dispatch_771c() {
         GameCanvas.update_f7e8();
         switch (n[dF][0]) {
-            case 61: {
+
                 GameCanvas.update_4e0e();
                 GameCanvas.spawnEnemy(true, 2);
                 return;
             }
-            case 60: {
+
                 GameCanvas.update_8f48();
                 GameCanvas.update_4e0e();
                 GameCanvas.spawnEnemy(true, 3);
                 return;
             }
-            case 11: {
+
                 GameCanvas.update_27b4();
                 return;
             }
-            case 7: {
+
                 GameCanvas.createOffscreenBuffer(3, true);
                 GameCanvas.spawnEnemy(true, -1);
                 return;
             }
-            case 12: {
+
                 GameCanvas.createOffscreenBuffer(3, true);
                 GameCanvas.spawnEnemy(true, -1);
                 return;
             }
-            case 16: {
+
                 GameCanvas.update_cfb3();
                 GameCanvas.spawnEnemy(true, 17);
                 return;
             }
-            case 4: {
+
                 GameCanvas.update_e20d();
                 GameCanvas.spawnEnemy(true, 16);
                 return;
             }
-            case 14: {
+
                 GameCanvas.renderTarget(10, 23);
                 return;
             }
-            case 5: {
+
                 GameCanvas.stateOrRender_aN();
             }
         }
@@ -25797,47 +25389,47 @@ lbl10:
         if (bl) {
             a[19].triggerDamageFlash(graphics, 51, 0, 0, 0);
             block0 : switch (n[dF][0]) {
-                case 60: {
+
                     if (b == 27 || b == 6) {
                         switch (b) {
-                            case 27: {
+
                                 GameCanvas.stateOrRender_aN(graphics);
                                 break block0;
                             }
-                            case 6: {
+
                                 GameCanvas.triggerDamageFlash(graphics, (int)K[dI], true);
                             }
                         }
                         return;
                     }
                 }
-                case 61: {
+
                     GameCanvas.draw_ad2c(graphics);
                     return;
                 }
-                case 4: {
+
                     GameCanvas.getEntityProperty(graphics, true);
                     return;
                 }
-                case 16: {
+
                     switch (b) {
-                        case 21: {
+
                             GameCanvas.initAudio(graphics);
                             return;
                         }
-                        case 22: {
+
                             GameCanvas.dispatch_1728(graphics);
                             return;
                         }
-                        case 19: {
+
                             GameCanvas.draw_9fc9(graphics);
                             return;
                         }
-                        case 20: {
+
                             GameCanvas.isPlayerDying(graphics);
                             return;
                         }
-                        case 18: {
+
                             GameCanvas.draw_f54d(graphics);
                             return;
                         }
@@ -25846,7 +25438,7 @@ lbl10:
                     return;
                 }
                 case 7: 
-                case 12: {
+
                     GameCanvas.draw_d18c(graphics);
                 }
             }
@@ -25920,29 +25512,29 @@ lbl10:
             }
             block0 : switch (b) {
                 case 0: 
-                case 28: {
+
                     a[8].triggerDamageFlash(graphics);
                     a[9].triggerDamageFlash(graphics);
                     break;
                 }
-                case 26: {
+
                     a[8].triggerDamageFlash(graphics);
                     a[9].triggerDamageFlash(graphics);
                     GameCanvas.draw_f042(graphics);
                     break;
                 }
                 case 12: 
-                case 13: {
+
                     a[8].triggerDamageFlash(graphics);
                     GameCanvas.stopParticles(graphics, true);
                     break;
                 }
-                case 1: {
+
                     GameCanvas.stopParticles(graphics, false);
                     GameCanvas.draw_b0cd(graphics);
                     break;
                 }
-                case 24: {
+
                     GameCanvas.stateOrRender_aP(graphics);
                     break;
                 }
@@ -25952,12 +25544,12 @@ lbl10:
                         case 5: 
                         case 7: 
                         case 9: 
-                        case 11: {
+
                             GameCanvas.destroyBuffer(graphics);
                             break block0;
                         }
                         case 8: 
-                        case 14: {
+
                             GameCanvas.isPlayerDead(graphics, false);
                         }
                     }
@@ -25972,12 +25564,12 @@ lbl10:
             }
         }
         switch (b) {
-            case 24: {
+
                 GameCanvas.stateOrRender_aQ(graphics);
                 GameCanvas.update_2a26(graphics);
                 return;
             }
-            case 27: {
+
                 GameCanvas.stateOrRender_aO(graphics);
             }
         }
@@ -25985,7 +25577,6 @@ lbl10:
 
     private static void update_1d79(boolean bl) {
         if (ez != 0) {
-            do {
                 if ((ez & 0x404) != 0 && !bl) {
                     if (--dK < 0) {
                         dK = 3;
@@ -26009,7 +25600,6 @@ lbl10:
 
     private static void update_1c71() {
         int n = dJ;
-        do {
             int n2;
             int n3;
             int n4;
@@ -26071,12 +25661,12 @@ lbl10:
         byte by = K[dI];
         int n = 0;
         switch (b[by][0]) {
-            case 7: {
+
                 int n2 = 1;
                 break;
             }
             case 4: 
-            case 6: {
+
                 int n3 = GameCanvas.destroyBuffer(by);
                 if (n3 != -1 && GameCanvas.spawnEnemy(c, n3)) {
                     GameCanvas.initSprites(n3);
@@ -26088,7 +25678,7 @@ lbl10:
                 GameCanvas.audioMethod_ai(n4);
                 break;
             }
-            case 10: {
+
                 int n2 = n = 1;
             }
         }
@@ -26105,7 +25695,7 @@ lbl10:
             var0 = GameCanvas.K[GameCanvas.dI];
             if (var0 < 0) break block20;
             switch (GameCanvas.b) {
-                case 3: {
+
                     GameCanvas.dK = -1;
                     GameCanvas.update_1d79(true);
                     GameCanvas.a[8].triggerDamageFlash(2, 0);
@@ -26113,9 +25703,9 @@ lbl10:
                     GameCanvas.setPaused();
                     break;
                 }
-                case 4: {
+
                     switch (GameCanvas.dK) {
-                        case 0: {
+
                             if (GameCanvas.calc_d1c5(var0)) {
                                 GameCanvas.spawnEnemy(GameCanvas.triggerDamageFlash(GameCanvas.dI, GameCanvas.n[GameCanvas.dF][1], true));
                                 GameCanvas.stopParticles(var0, 11);
@@ -26130,19 +25720,13 @@ lbl10:
                                 }
                                 GameCanvas.stopParticles(v1, v2);
                                 v0 = 5;
-                            }
-                            ** GOTO lbl43
-                        }
-                        case 1: {
+                            }}
+
                             GameCanvas.dJ = GameCanvas.updateMainMenu(GameCanvas.dI, 1);
-                            v0 = 10;
-                            ** GOTO lbl43
-                        }
-                        case 2: {
-                            v0 = 6;
-                            ** GOTO lbl43
-                        }
-                        case 3: {
+                            v0 = 10;}
+
+                            v0 = 6;}
+
                             if (GameCanvas.handleWeaponSelect(GameCanvas.K[GameCanvas.dI])) {
                                 GameCanvas.spawnEnemy(GameCanvas.triggerDamageFlash(GameCanvas.dI, GameCanvas.n[GameCanvas.dF][1], true));
                                 GameCanvas.stopParticles(GameCanvas.K[GameCanvas.dI], 12);
@@ -26159,7 +25743,7 @@ lbl43:
                     }
                     break;
                 }
-                case 10: {
+
                     GameCanvas.calc_119c();
                     GameCanvas.calc_119c();
                     GameCanvas.calc_119c();
@@ -26231,7 +25815,7 @@ lbl43:
                                                     var0 = GameCanvas.dI;
                                                     var1_1 = true;
                                                     block0 : switch (GameCanvas.a) {
-                                                        case 10: {
+
                                                             if (GameCanvas.b != 2) {
                                                                 if ((GameCanvas.ez & 16416) == 0) break;
                                                                 GameCanvas.dispatch_4c00();
@@ -26261,9 +25845,9 @@ lbl43:
                                                             GameCanvas.L[GameCanvas.dI] = GameCanvas.o[GameCanvas.b[GameCanvas.K[GameCanvas.dI]][17]];
                                                             break;
                                                         }
-                                                        case 11: {
+
                                                             switch (GameCanvas.b) {
-                                                                case 1: {
+
                                                                     if ((GameCanvas.ez & 4112) != 0) {
                                                                         if (GameCanvas.dI % 4 == 0) {
                                                                             GameCanvas.b = 2;
@@ -26273,10 +25857,8 @@ lbl43:
                                                                         break block0;
                                                                     }
                                                                     if ((GameCanvas.ez & 16416) == 0) break block24;
-                                                                    GameCanvas.drawLevelSelect(4);
-                                                                    ** GOTO lbl44
-                                                                }
-                                                                case 3: {
+                                                                    GameCanvas.drawLevelSelect(4);}
+
                                                                     if ((GameCanvas.ez & 16416) == 0) break block24;
                                                                     GameCanvas.b = 5;
 lbl44:
@@ -26338,10 +25920,10 @@ lbl44:
         int[] nArray = null;
         int n2 = -1;
         switch (n) {
-            case 1: {
+
                 int n3;
                 switch (a) {
-                    case 11: {
+
                         n = 7;
                         n3 = 4;
                         break;
@@ -26353,15 +25935,15 @@ lbl44:
                 }
                 break;
             }
-            case 7: {
+
                 int n3 = 0;
                 break;
             }
-            case 34: {
+
                 int n3 = 0;
                 break;
             }
-            case 49: {
+
                 int n3 = n2 = 1;
             }
         }
@@ -26382,9 +25964,9 @@ lbl44:
         int n4 = -1;
         int n5 = 3;
         block0 : switch (n2) {
-            case 1: {
+
                 switch (a) {
-                    case 11: {
+
                         n2 = 7;
                         n3 = 5;
                         if (!GameCanvas.check_399f()) break block0;
@@ -26397,16 +25979,16 @@ lbl44:
                 n4 = 3;
                 break;
             }
-            case 7: {
+
                 int n6 = 2;
                 break;
             }
-            case 34: {
+
                 n3 = 2;
                 n5 = 9;
                 break;
             }
-            case 49: {
+
                 int n6 = n3 = 0;
             }
         }
@@ -26450,7 +26032,7 @@ lbl44:
         GraphicsEngine graphicsEngine;
         byte[] byArray = null;
         switch (a) {
-            case 11: {
+
                 graphicsEngine = a[19];
                 n3 = 7;
                 n2 = 6;
@@ -26468,7 +26050,7 @@ lbl44:
                 n2 = 1;
                 break;
             }
-            case 12: {
+
                 graphicsEngine = a[19];
                 n3 = 34;
                 n2 = 0;
@@ -26656,22 +26238,18 @@ lbl44:
             for (var9_9 = 0; var9_9 < 4; ++var9_9) {
                 var10_10 = 0;
                 switch (var9_9) {
-                    case 0: {
+
                         v0 = var10_10 = var2_2 == 4 || var2_2 == 6 ? 73 : 23;
                         if (var2_2 != 0 && var2_2 != 2 && var2_2 != 1) break;
                         GameCanvas.createOffscreenBuffer(128);
                         GameCanvas.isPlayerDead(5, 0, 128);
                         break;
                     }
-                    case 1: {
-                        v1 = 24;
-                        ** GOTO lbl26
-                    }
-                    case 2: {
-                        v1 = 25;
-                        ** GOTO lbl26
-                    }
-                    case 3: {
+
+                        v1 = 24;}
+
+                        v1 = 25;}
+
                         v1 = 125;
 lbl26:
                         // 3 sources
@@ -26810,27 +26388,27 @@ lbl26:
     private static void dispatch_695d() {
         int n = Z[2 + dM];
         block0 : switch (GameCanvas.n[dF][0]) {
-            case 7: {
+
                 switch (n) {
-                    case 24: {
+
                         GameCanvas.update_83ef(99);
                         break block0;
                     }
-                    case 25: {
+
                         GameCanvas.calc_119c();
                         GameCanvas.spawnEnemy(false, -1);
                     }
                 }
                 return;
             }
-            case 12: {
+
                 switch (n) {
-                    case 24: {
+
                         GameCanvas.triggerDamageFlash(0);
                         GameCanvas.triggerDamageFlash(5, true);
                         return;
                     }
-                    case 25: {
+
                         GameCanvas.calc_119c();
                         GameCanvas.spawnEnemy(false, -1);
                     }
@@ -26872,7 +26450,6 @@ lbl26:
     private static void updateOptions(boolean bl) {
         int n;
         int n2 = n = bl ? -1 : 1;
-        do {
             int n3;
             if ((dN += n) < 0) {
                 n3 = aa.length - 1;
@@ -26905,7 +26482,7 @@ lbl26:
 
     private static void dispatch_dac8() {
         switch (aa[dN]) {
-            case 29: {
+
                 boolean bl = h = !h;
                 if (h) {
                     if (GameCanvas.getEntityProperty(3)) break;
@@ -26923,7 +26500,7 @@ lbl26:
                 }
                 break;
             }
-            case 33: {
+
                 boolean bl = i = !i;
                 if (i) {
                     GameCanvas.draw_2c44();
@@ -26932,15 +26509,15 @@ lbl26:
                 GameCanvas.initSprites();
                 return;
             }
-            case 71: {
+
                 GameCanvas.drawSprites(false);
                 return;
             }
-            case 73: {
+
                 GameCanvas.drawBackground(false);
                 return;
             }
-            case 90: {
+
                 GameCanvas.drawForeground(false);
             }
         }
@@ -26970,27 +26547,19 @@ lbl26:
             var19_17 = GameCanvas.aa[var18_16];
             if (var19_17 == -1) continue;
             switch (GameCanvas.aa[var18_16]) {
-                case 29: {
+
                     if (GameCanvas.h) break;
-                    v0 = 30;
-                    ** GOTO lbl40
-                }
-                case 33: {
+                    v0 = 30;}
+
                     if (GameCanvas.i) break;
-                    v0 = 34;
-                    ** GOTO lbl40
-                }
-                case 71: {
+                    v0 = 34;}
+
                     if ((GameCanvas.e & 1) != 0) break;
-                    v0 = 72;
-                    ** GOTO lbl40
-                }
-                case 73: {
+                    v0 = 72;}
+
                     if ((GameCanvas.e & 2) != 0) break;
-                    v0 = 74;
-                    ** GOTO lbl40
-                }
-                case 90: {
+                    v0 = 74;}
+
                     if (!SensorHandler.triggerDamageFlash() || SensorHandler.spawnEnemy()) break;
                     v0 = 91;
 lbl40:
@@ -27049,28 +26618,22 @@ lbl40:
      */
     private static void dispatch_0d40() {
         switch (GameCanvas.ab[GameCanvas.dO]) {
-            case 19: {
+
                 GameCanvas.update_da50();
                 v0 = 10;
-                v1 = 18;
-                ** GOTO lbl22
-            }
-            case 18: {
+                v1 = 18;}
+
                 GameCanvas.update_b47f();
                 return;
             }
-            case 17: {
+
                 v0 = 10;
-                v1 = 21;
-                ** GOTO lbl22
-            }
-            case 68: {
+                v1 = 21;}
+
                 GameCanvas.update_70ab();
                 v0 = 10;
-                v1 = 22;
-                ** GOTO lbl22
-            }
-            case 14: {
+                v1 = 22;}
+
                 v0 = 10;
                 v1 = 23;
 lbl22:
@@ -27124,12 +26687,10 @@ lbl22:
     private static void update_45d1() {
         int n = dP;
         if ((ez & 0x404) != 0) {
-            do {
                 if (--n >= 0) continue;
                 n = k.length - 1;
             } while (k[n][3] <= -1);
         } else if ((ez & 0x900) != 0) {
-            do {
                 if (++n < k.length) continue;
                 n = 0;
             } while (k[n][3] <= -1);
@@ -27216,13 +26777,13 @@ lbl22:
             if (n2 == 6 || n2 == 7) {
                 ++n;
                 switch (n2) {
-                    case 6: {
+
                         n += 2;
                         ac[0] = ac[0] + 1;
                         n += 0;
                         break;
                     }
-                    case 7: {
+
                         ac[1] = ac[1] + 1;
                         n += 4;
                     }
@@ -27265,7 +26826,7 @@ lbl22:
                 var4_5 = 0;
                 var5_6 = null;
                 switch (var3_3) {
-                    case 6: {
+
                         GameCanvas.p[GameCanvas.ac[0]][0] = GameCanvas.triggerDamageFlash(var0, var1_1);
                         var1_1 += 2;
                         GameCanvas.p[GameCanvas.ac[0]][1] = GameCanvas.ac[0];
@@ -27273,10 +26834,8 @@ lbl22:
                         GameCanvas.q[GameCanvas.ac[0]][0] = GameCanvas.ac[1];
                         var5_6 = GameCanvas.q[GameCanvas.ac[0]];
                         v0 = GameCanvas.ac;
-                        v1 = 0;
-                        ** GOTO lbl43
-                    }
-                    case 7: {
+                        v1 = 0;}
+
                         var4_5 = 2;
                         v2 = GameCanvas.q[GameCanvas.ac[0] - 1];
                         v2[1] = v2[1] + 1;
@@ -27306,7 +26865,7 @@ lbl43:
             if (p != null) {
                 for (int i = 0; i < audioManagerArray.length; ++i) {
                     switch (audioManagerArray[i].L) {
-                        case 9: {
+
                             audioManagerArray[i].g[3] = GameCanvas.triggerDamageFlash(p, audioManagerArray[i].g[3]);
                         }
                     }
@@ -27314,7 +26873,7 @@ lbl43:
             } else {
                 for (int i = 0; i < audioManagerArray.length; ++i) {
                     switch (audioManagerArray[i].L) {
-                        case 9: {
+
                             audioManagerArray[i].g[3] = -1;
                         }
                     }
@@ -27497,7 +27056,7 @@ lbl43:
     private static void updateCredits() {
         a[16].triggerDamageFlash();
         switch (b) {
-            case 0: {
+
                 a[8].triggerDamageFlash();
                 if (a[8].triggerDamageFlash()) {
                     GameCanvas.drawLevelSelect(1);
@@ -27505,7 +27064,7 @@ lbl43:
                 GameCanvas.setPaused();
                 break;
             }
-            case 11: {
+
                 a[8].triggerDamageFlash();
                 if (a[8].triggerDamageFlash()) {
                     GameCanvas.update_f20a();
@@ -27513,12 +27072,12 @@ lbl43:
                 GameCanvas.setPaused();
                 break;
             }
-            case 1: {
+
                 GameCanvas.draw_9fc9(1);
                 GameCanvas.update_cdc2();
                 break;
             }
-            case 2: {
+
                 if (GameCanvas.update_2a26()) {
                     GameCanvas.dispatch_1728(1);
                     GameCanvas.calc_119c();
@@ -27526,7 +27085,7 @@ lbl43:
                 GameCanvas.setPaused();
                 break;
             }
-            case 3: {
+
                 if (GameCanvas.update_2a26()) {
                     boolean bl = false;
                     if (GameCanvas.updatePausedSubmenu()) {
@@ -27553,11 +27112,11 @@ lbl43:
                 GameCanvas.setPaused();
                 break;
             }
-            case 4: {
+
                 GameCanvas.update_9f74();
                 break;
             }
-            case 5: {
+
                 int n;
                 if ((ez & 0x4020) == 0 || GameCanvas.drawLevelSelect(n = t[s[dT][0] + dU][0]) == -1 || !GameCanvas.triggerDamageFlash(c, n)) break;
                 GameCanvas.drawLevelSelect(6);
@@ -27605,7 +27164,6 @@ lbl43:
     private static int updateOptions(int n, int n2) {
         int n3 = n;
         int n4 = 0;
-        do {
             int n5;
             if ((n += n2) >= s[dT][1]) {
                 n5 = 0;
@@ -27734,13 +27292,13 @@ lbl43:
             a[19].triggerDamageFlash(c, 35, 0, 0, 0);
             switch (b) {
                 case 0: 
-                case 11: {
+
                     a[8].triggerDamageFlash(c);
                     GameCanvas.drawBuffer(graphics);
                     break;
                 }
                 case 2: 
-                case 3: {
+
                     GameCanvas.updateParticleSystem(c);
                     GameCanvas.destroyBuffer(c);
                     break;
@@ -27772,11 +27330,11 @@ lbl43:
             n = t[s[dT][0] + dU][0];
         }
         switch (b) {
-            case 5: {
+
                 GameCanvas.triggerDamageFlash(graphics, n, true);
                 break;
             }
-            case 6: {
+
                 GameCanvas.drawBackground(graphics, n);
                 break;
             }
@@ -27831,11 +27389,11 @@ lbl43:
         int n2;
         switch (b[n][0]) {
             case 4: 
-            case 6: {
+
                 n2 = 0;
                 break;
             }
-            case 5: {
+
                 n2 = 1;
                 break;
             }
@@ -27985,7 +27543,6 @@ lbl43:
         graphicsEngine.triggerDamageFlash(graphics, 44, n8, n9, 0);
         GameCanvas.update_83ef(graphics);
         graphics.setClip(n8 += n5, n9, n3, graphics.getClipHeight());
-        do {
             graphicsEngine.triggerDamageFlash(graphics, 45, n8, n9, 0);
         } while ((n8 += n6) < n10 + n5 + n3);
         GameCanvas.drawLevelSelect(graphics);
@@ -28008,7 +27565,6 @@ lbl43:
             if (bl) {
                 n6 += 2;
             }
-            do {
                 graphicsEngine.triggerDamageFlash(graphics, 47, n6, n3, 0);
             } while ((n6 += n5) < n2);
         }
@@ -28059,12 +27615,12 @@ lbl43:
             if (n2 == 8 || n2 == 9) {
                 ++n;
                 switch (n2) {
-                    case 8: {
+
                         af[0] = af[0] + 1;
                         n += 0;
                         break;
                     }
-                    case 9: {
+
                         af[1] = af[1] + 1;
                         n += 12;
                     }
@@ -28100,16 +27656,14 @@ lbl43:
                 var5_5 = 0;
                 var6_6 = null;
                 switch (var4_4) {
-                    case 8: {
+
                         var5_5 = 0;
                         if (!var3_3) break;
                         var6_6 = GameCanvas.s[GameCanvas.af[0]];
                         GameCanvas.s[GameCanvas.af[0]][0] = (short)GameCanvas.af[1];
                         v0 = GameCanvas.af;
-                        v1 = 0;
-                        ** GOTO lbl35
-                    }
-                    case 9: {
+                        v1 = 0;}
+
                         var5_5 = 3;
                         if (!var3_3) break;
                         var6_6 = GameCanvas.t[GameCanvas.af[1]];
@@ -28217,9 +27771,8 @@ lbl35:
         for (var0 = 0; var0 < GameCanvas.i.length; ++var0) {
             if (GameCanvas.i[var0].g[0] == 0) continue;
             switch (GameCanvas.i[var0].g[0]) {
-                case 1: {
-                    if (!GameCanvas.updateMainMenu(var0)) ** GOTO lbl23
-                    if (GameCanvas.spawnEnemy(GameCanvas.spawnEnemy(GameCanvas.i[var0].a.triggerDamageFlash()), GameCanvas.spawnEnemy(GameCanvas.i[var0].a.spawnEnemy()), 2)) {
+
+                    if (!GameCanvas.updateMainMenu(var0))if (GameCanvas.spawnEnemy(GameCanvas.spawnEnemy(GameCanvas.i[var0].a.triggerDamageFlash()), GameCanvas.spawnEnemy(GameCanvas.i[var0].a.spawnEnemy()), 2)) {
                         v0 = GameCanvas.i[var0].g;
                         v1 = 0;
                         v2 = 0;
@@ -28235,21 +27788,19 @@ lbl35:
                     GameCanvas.stopParticles(GameCanvas.i[var0].g[8]);
                     v3 = GameCanvas.i[var0].g;
                     v4 = 8;
-                    v5 = -1;
-                    ** GOTO lbl36
-lbl23:
+                    v5 = -1;lbl23:
                     // 1 sources
 
                     GameCanvas.playFootstep(GameCanvas.i[var0].g[8], GameCanvas.i[var0].a.a, GameCanvas.i[var0].a.b + GameCanvas.i[var0].g[6]);
                     break;
                 }
-                case 3: {
+
                     if (!GameCanvas.i[var0].a.triggerDamageFlash() || GameCanvas.i[var0].g[12] == -1) break;
                     GameCanvas.i[var0].g[0] = 0;
                     GameCanvas.triggerDamageFlash(GameCanvas.i[var0].a.a, GameCanvas.i[var0].a.b, GameCanvas.i[var0].g[12], GameCanvas.i[var0].g[10], GameCanvas.i[var0].g[9]);
                     break;
                 }
-                case 4: {
+
                     if (!GameCanvas.i[var0].a.triggerDamageFlash()) break;
                     v3 = GameCanvas.i[var0].g;
                     v4 = 0;
@@ -28357,13 +27908,13 @@ lbl36:
             int n2;
             int n3;
             switch (audioManager.g[0]) {
-                case 4: {
+
                     AudioManager audioManager2 = audioManager;
                     n3 = (audioManager.a.spawnEnemy() + 320 << 8) + audioManager.a.triggerDamageFlash();
                     n2 = 240;
                     break;
                 }
-                case 3: {
+
                     AudioManager audioManager2 = audioManager;
                     n = (audioManager.a.spawnEnemy() << 8) + audioManager.a.triggerDamageFlash() >> 1;
                     break block4;
@@ -28419,12 +27970,12 @@ lbl36:
                                     n14 = audioManagerArray[i].a.triggerDamageFlash() / 16;
                                     n11 = audioManagerArray[i].a.spawnEnemy() / 16;
                                     switch (audioManagerArray[i].L) {
-                                        case 9: {
+
                                             n16 = GameCanvas.stopParticles(audioManagerArray[i].g[0], 6);
                                             n15 = GameCanvas.stopParticles(audioManagerArray[i].g[0], 7);
                                             break;
                                         }
-                                        case 16: {
+
                                             n16 = GameCanvas.spawnEnemy(audioManagerArray[i].g[5]);
                                             n15 = GameCanvas.spawnEnemy(audioManagerArray[i].g[6]);
                                             break;
@@ -28511,12 +28062,12 @@ lbl36:
         int n4 = 0;
         int n5 = 0;
         switch (audioManager.L) {
-            case 9: {
+
                 n4 = GameCanvas.stopParticles(audioManager.g[0], 6);
                 n = GameCanvas.stopParticles(audioManager.g[0], 7);
                 break;
             }
-            case 16: {
+
                 n4 = GameCanvas.spawnEnemy(audioManager.g[5]);
                 n = GameCanvas.spawnEnemy(audioManager.g[6]);
                 break;
@@ -28625,21 +28176,19 @@ lbl36:
      */
     private static void drawBackground(AudioManager var0, int var1_1) {
         switch (GameCanvas.dV) {
-            case 0: {
+
                 var0.a.a -= var1_1;
                 return;
             }
-            case 1: {
+
                 var0.a.a += var1_1;
                 return;
             }
-            case 2: {
+
                 v0 = var0.a;
                 v1 = v0;
-                v2 = v0.b - var1_1;
-                ** GOTO lbl17
-            }
-            case 3: {
+                v2 = v0.b - var1_1;}
+
                 v3 = var0.a;
                 v1 = v3;
                 v2 = v3.b + var1_1;
@@ -28747,7 +28296,7 @@ lbl17:
                     var6_9 = 131072;
                     switch (GameCanvas.dV) {
                         case 2: 
-                        case 3: {
+
                             if (!AudioManager.triggerDamageFlash(var4_5 - var6_9 >> 14, var5_7 >> 14)) {
                                 GameCanvas.c.a.a = var4_5 - var6_9;
                                 v2 = GameCanvas.c.a;
@@ -28757,11 +28306,9 @@ lbl17:
                                 GameCanvas.c.a.a = var4_5 + var6_9;
                                 v2 = GameCanvas.c.a;
                                 v3 = var5_7;
-                            }
-                            ** GOTO lbl86
-                        }
+                            }}
                         case 0: 
-                        case 1: {
+
                             if (!AudioManager.triggerDamageFlash(var4_5 >> 14, var5_7 - var6_9 >> 14)) {
                                 GameCanvas.c.a.a = var4_5;
                                 v2 = GameCanvas.c.a;
@@ -28852,12 +28399,12 @@ lbl86:
 
     private static void dispatch_7739() {
         switch (dZ) {
-            case 1: {
+
                 if (AudioManager.a != 0 && AudioManager.a != 1 && AudioManager.a != 3 && AudioManager.a != 6 && AudioManager.a != 10) break;
                 GameCanvas.updateMainMenu(j);
                 return;
             }
-            case 2: {
+
                 GameCanvas.update_1d79(j);
             }
         }
@@ -28872,12 +28419,12 @@ lbl86:
         var4_4 = 0;
         var5_5 = 0;
         switch (GameCanvas.j.L) {
-            case 9: {
+
                 var4_4 = GameCanvas.stopParticles(GameCanvas.j.g[0], 6);
                 v0 = GameCanvas.stopParticles(GameCanvas.j.g[0], 7);
                 break;
             }
-            case 16: {
+
                 var4_4 = GameCanvas.spawnEnemy(GameCanvas.j.g[5]);
                 v0 = GameCanvas.spawnEnemy(GameCanvas.j.g[6]);
                 break;
@@ -28889,22 +28436,18 @@ lbl86:
         }
         var5_5 = v0;
         switch (GameCanvas.dV) {
-            case 2: {
+
                 var2_2 += var4_4 * 16 >> 1 << 14;
                 v1 = var3_3 = var3_3 + (var5_5 * 16 - 8 << 14);
-                v2 = 262144;
-                ** GOTO lbl36
-            }
-            case 3: {
+                v2 = 262144;}
+
                 var2_2 += var4_4 * 16 >> 1 << 14;
                 v3 = var3_3 - 131072;
                 break;
             }
-            case 0: {
-                v4 = (var2_2 += var4_4 * 16 - 8 << 14) + 524288;
-                ** GOTO lbl33
-            }
-            case 1: {
+
+                v4 = (var2_2 += var4_4 * 16 - 8 << 14) + 524288;}
+
                 v4 = var2_2 - 393216;
 lbl33:
                 // 2 sources
@@ -29075,24 +28618,20 @@ lbl36:
                 if (GameCanvas.u[var5_5][4] > 0) continue;
                 var6_6 = 0;
                 switch (var3_3) {
-                    case 0: {
+
                         GameCanvas.u[var5_5][0] = GameCanvas.v[var0][0];
                         GameCanvas.u[var5_5][1] = GameCanvas.v[var0][1];
                         GameCanvas.u[var5_5][2] = (-15 + GameCanvas.triggerDamageFlash() % 30 << 14) / 1000;
                         GameCanvas.u[var5_5][3] = (-15 + GameCanvas.triggerDamageFlash() % 30 << 14) / 1000;
-                        v0 = 150 + GameCanvas.triggerDamageFlash() % 150;
-                        ** GOTO lbl36
-                    }
-                    case 1: {
+                        v0 = 150 + GameCanvas.triggerDamageFlash() % 150;}
+
                         GameCanvas.u[var5_5][0] = GameCanvas.v[var0][0] + -131072 + (GameCanvas.triggerDamageFlash() % 16 << 14);
                         GameCanvas.u[var5_5][1] = GameCanvas.v[var0][1] + -131072 + (GameCanvas.triggerDamageFlash() % 16 << 14);
                         var10_10 = 245 + GameCanvas.triggerDamageFlash() % 120;
                         var11_11 = 4 + GameCanvas.triggerDamageFlash() % 1;
                         GameCanvas.u[var5_5][2] = (var11_11 * GameCanvas.createOffscreenBuffer(var10_10) << 6) / 1000;
                         GameCanvas.u[var5_5][3] = (var11_11 * GameCanvas.isPlayerDead(var10_10) << 6) / 1000;
-                        v0 = 800 + GameCanvas.triggerDamageFlash() % 400;
-                        ** GOTO lbl36
-                    }
+                        v0 = 800 + GameCanvas.triggerDamageFlash() % 400;}
                     case -1: {
                         var7_7 = GameCanvas.j[var0];
                         var7_7.a.spawnEnemy(var7_7.g[2]);
@@ -29290,27 +28829,27 @@ lbl36:
             GameCanvas.k[i].a.triggerDamageFlash();
             if (GameCanvas.k[i].g[0] == 0) continue;
             switch (GameCanvas.k[i].g[0]) {
-                case 1: {
+
                     GameCanvas.stateOrRender_aC(i);
                     continue block8;
                 }
-                case 2: {
+
                     GameCanvas.stateOrRender_aD(i);
                     continue block8;
                 }
-                case 3: {
+
                     GameCanvas.stateOrRender_aF(i);
                     continue block8;
                 }
-                case 4: {
+
                     GameCanvas.stateOrRender_aG(i);
                     continue block8;
                 }
-                case 5: {
+
                     GameCanvas.stateOrRender_aH(i);
                     continue block8;
                 }
-                case 6: {
+
                     GameCanvas.stateOrRender_aB(i);
                 }
             }
@@ -29432,15 +28971,15 @@ lbl36:
             audioManager.a.a -= audioManager.g[9];
             audioManager.a.b -= audioManager.g[10];
             switch (audioManager.g[0]) {
-                case 3: {
+
                     GameCanvas.isPlayerDead(graphics, audioManager);
                     break;
                 }
-                case 4: {
+
                     GameCanvas.drawSprites(graphics, audioManager);
                     break;
                 }
-                case 5: {
+
                     GameCanvas.drawBackground(graphics, audioManager);
                     break;
                 }
@@ -29510,7 +29049,7 @@ lbl36:
         int n6 = GameCanvas.c.a.triggerDamageFlash() - 8;
         int n7 = GameCanvas.c.a.spawnEnemy() - 8;
         switch (GameCanvas.k[n].g[1]) {
-            case 0: {
+
                 GameCanvas.stateOrRender_aA(n);
                 if (!GameCanvas.playFootstep(n)) break;
                 GameCanvas.spawnEnemy(n, n2, n3, n4, n5, n6, n7, 16, 16);
@@ -29518,7 +29057,7 @@ lbl36:
                 GameCanvas.k[n].g[14] = -1;
                 return;
             }
-            case 1: {
+
                 GameCanvas.k[n].g[16] = GameCanvas.k[n].g[16] + (int)d;
                 if (GameCanvas.k[n].g[16] >= 10000) {
                     GameCanvas.k[n].g[0] = 0;
@@ -29582,13 +29121,13 @@ lbl36:
                         var11_11 = var0.a.b;
                         if (var1_1 == null) break block19;
                         switch (var1_1.L) {
-                            case 3: {
+
                                 var10_10 = GameCanvas.playFootstep(GameCanvas.spawnEnemy(var1_1.a.triggerDamageFlash())) + 8 << 14;
                                 var11_11 = GameCanvas.playFootstep(GameCanvas.spawnEnemy(var1_1.a.spawnEnemy())) + 8 << 14;
                                 var1_1.g[16] = var1_1.g[16] | 128;
                                 break;
                             }
-                            case 9: {
+
                                 var20_12 = GameCanvas.playFootstep(GameCanvas.stopParticles(var1_1.g[0], 6)) << 14;
                                 var21_13 = GameCanvas.playFootstep(GameCanvas.stopParticles(var1_1.g[0], 7)) << 14;
                                 var10_10 = var1_1.a.a + (var20_12 >> 1);
@@ -29601,13 +29140,11 @@ lbl36:
                     switch (GameCanvas.cu) {
                         case 0: 
                         case 1: 
-                        case 7: {
-                            v0 = var0.a.a + 0x3C0000;
-                            ** GOTO lbl33
-                        }
+
+                            v0 = var0.a.a + 0x3C0000;}
                         case 3: 
                         case 4: 
-                        case 5: {
+
                             v0 = var0.a.a - 0x3C0000;
 lbl33:
                             // 2 sources
@@ -29618,13 +29155,11 @@ lbl33:
                     switch (GameCanvas.cu) {
                         case 1: 
                         case 2: 
-                        case 3: {
-                            v1 = var0.a.b - 0x500000;
-                            ** GOTO lbl40
-                        }
+
+                            v1 = var0.a.b - 0x500000;}
                         case 5: 
                         case 6: 
-                        case 7: {
+
                             v1 = var0.a.b + 0x500000;
 lbl40:
                             // 2 sources
@@ -29644,14 +29179,14 @@ lbl40:
                     var2_2 = var15_17;
                 }
                 switch (var7_7) {
-                    case 7: {
+
                         GameCanvas.k[var6_6].a.spawnEnemy(21);
                         v2 = GameCanvas.k[var6_6].g;
                         v3 = 8;
                         v4 = 700;
                         break;
                     }
-                    case 5: {
+
                         GameCanvas.k[var6_6].a.spawnEnemy(13 + GameCanvas.cu);
                         GameCanvas.k[var6_6].g[8] = 500;
                         GameCanvas.renderTarget(GameCanvas.k[var6_6], 800);
@@ -29698,7 +29233,7 @@ lbl40:
         int n3 = GameCanvas.getEntityProperty(n2, 21);
         boolean bl3 = n3 != 7 && n3 != 0;
         block0 : switch (n3) {
-            case 5: {
+
                 boolean bl4;
                 if ((audioManager.L != 1 || audioManager.g[10] >= 0) && audioManager.L != 0) {
                     GameCanvas.calc_119c(audioManager.a.triggerDamageFlash(), audioManager.a.spawnEnemy());
@@ -29709,7 +29244,7 @@ lbl40:
             default: {
                 boolean bl4;
                 switch (audioManager.L) {
-                    case 3: {
+
                         int n4 = GameCanvas.spawnEnemy(audioManager.a.triggerDamageFlash());
                         int n5 = GameCanvas.spawnEnemy(audioManager.a.spawnEnemy());
                         int n6 = GameCanvas.createOffscreenBuffer(n4, n5);
@@ -29718,13 +29253,13 @@ lbl40:
                         GameCanvas.triggerDamageFlash(audioManager, n7, n6);
                         break block0;
                     }
-                    case 1: {
+
                         break block0;
                     }
-                    case 0: {
+
                         break block0;
                     }
-                    case 9: {
+
                         bl4 = bl2 = AudioManager.triggerDamageFlash(audioManager, n2);
                     }
                 }
@@ -29792,7 +29327,6 @@ lbl40:
             int n16 = GameCanvas.k[n].a.b;
             AudioManager audioManager = null;
             boolean bl = false;
-            do {
                 block25: {
                     int n17;
                     int n18;
@@ -29890,22 +29424,20 @@ lbl40:
      */
     private static void stateOrRender_aF(int var0) {
         switch (GameCanvas.k[var0].g[1]) {
-            case 0: {
+
                 GameCanvas.stateOrRender_aE(var0);
                 return;
             }
-            case 1: {
+
                 if (GameCanvas.k[var0].g[16] < 100) {
                     GameCanvas.k[var0].g[16] = GameCanvas.k[var0].g[16] + (int)GameCanvas.d;
                     if (GameCanvas.k[var0].g[16] >= 100) {
                         GameCanvas.k[var0].g[15] = GameCanvas.k[var0].g[15] & 0x7FFFFFFF;
                     }
                 }
-                if (!GameCanvas.k[var0].a.triggerDamageFlash()) break;
-                ** GOTO lbl15
-            }
+                if (!GameCanvas.k[var0].a.triggerDamageFlash()) break;}
             case 2: 
-            case 3: {
+
                 GameCanvas.k[var0].g[16] = GameCanvas.k[var0].g[16] + (int)GameCanvas.d;
                 if (GameCanvas.k[var0].g[16] < 100) break;
 lbl15:
@@ -29945,12 +29477,12 @@ lbl15:
                     var6_6 = v0 >> 14;
                 }
                 switch (var3_3) {
-                    case 2: {
+
                         var5_5 += 10 - GameCanvas.triggerDamageFlash() % 20;
                         var6_6 += 10 - GameCanvas.triggerDamageFlash() % 20;
                     }
                     case 1: 
-                    case 3: {
+
                         var9_9 = var1_1.g[4] - GameCanvas.T >> 14;
                         var10_10 = var1_1.g[5] - GameCanvas.U >> 14;
                         if (var3_3 == 3) {
@@ -29960,14 +29492,12 @@ lbl15:
                         GameCanvas.spawnEnemy(var0, var5_5, var6_6, var9_9, var10_10, 14990860, 191, 0);
                         continue block10;
                     }
-                    case 5: {
+
                         var1_1.a.triggerDamageFlash(var0);
                         GameCanvas.createOffscreenBuffer(8);
                         GameCanvas.a[15].triggerDamageFlash(var0, 29 + (var1_1.a.d - 13), var5_5, var6_6, 0);
-                        v1 = 8;
-                        ** GOTO lbl54
-                    }
-                    case 7: {
+                        v1 = 8;}
+
                         if (var1_1.g[1] == 1) continue block10;
                         var1_1.a.a -= var1_1.g[6] * 25;
                         var1_1.a.b -= var1_1.g[7] * 25;
@@ -29992,10 +29522,10 @@ lbl54:
         }
         switch (var1_1.g[1]) {
             case 2: 
-            case 3: {
+
                 return;
             }
-            case 1: {
+
                 var1_1.a.triggerDamageFlash(var0);
             }
         }
@@ -30145,17 +29675,17 @@ lbl54:
     private static boolean playFootstep(AudioManager audioManager, int n, int n2) {
         boolean bl = false;
         switch (audioManager.L) {
-            case 3: {
+
                 boolean bl2 = AudioManager.triggerDamageFlash(audioManager, n, -n2);
                 return bl2;
             }
-            case 1: {
+
                 return bl;
             }
-            case 0: {
+
                 return bl;
             }
-            case 9: {
+
                 boolean bl2 = AudioManager.triggerDamageFlash(audioManager, n);
                 return bl2;
             }
@@ -30213,7 +29743,7 @@ lbl54:
             switch (n10) {
                 case 1: 
                 case 2: 
-                case 3: {
+
                     GameCanvas.k[n11].a.a = n3;
                     GameCanvas.k[n11].a.b = n4;
                 }
@@ -30221,17 +29751,17 @@ lbl54:
             if (bl) {
                 if (bl2) {
                     switch (n10) {
-                        case 4: {
+
                             n12 = (n12 >> 14 >> 4) + 1 << 4 << 14;
                             n5 = 0;
                             break;
                         }
-                        case 0: {
+
                             n12 = n12 >> 14 >> 4 << 4 << 14;
                             n5 = 0;
                             break;
                         }
-                        case 6: {
+
                             GameCanvas.k[n11].a.b = (n13 >> 14 >> 4 << 4 << 14) - 16384;
                         }
                         default: {
@@ -30269,32 +29799,32 @@ lbl54:
         var9_9 = var7_7[1];
         var10_10 = 0x500000;
         switch (var3_3) {
-            case 0: {
+
                 var8_8 = 0;
                 var5_5 -= var7_7[0] << 14;
                 var1_1 -= var7_7[0] << 14;
                 var7_7[0] = 0;
             }
             case 1: 
-            case 7: {
+
                 var10_10 = GameCanvas.T + 0x3C0000 - var5_5;
                 var5_5 += var10_10;
                 break;
             }
-            case 4: {
+
                 var8_8 = 0;
                 var5_5 -= var7_7[0] << 14;
                 var1_1 -= var7_7[0] << 14;
                 var7_7[0] = 0;
             }
             case 3: 
-            case 5: {
+
                 var10_10 = var5_5 - GameCanvas.T;
                 var5_5 -= var10_10;
                 break;
             }
             case 2: 
-            case 6: {
+
                 var5_5 -= var7_7[0] << 14;
                 var1_1 -= var7_7[0] << 14;
                 var7_7[0] = 0;
@@ -30303,20 +29833,18 @@ lbl54:
         }
         var11_11 = var10_10;
         switch (var3_3) {
-            case 2: {
+
                 var11_11 = var6_6 - GameCanvas.U - 1;
             }
             case 1: 
-            case 3: {
-                v0 = var6_6 - var11_11;
-                ** GOTO lbl43
-            }
-            case 6: {
+
+                v0 = var6_6 - var11_11;}
+
                 var9_9 = 0;
                 var11_11 = GameCanvas.U + 0x500000 - var6_6;
             }
             case 5: 
-            case 7: {
+
                 v0 = var6_6 + var11_11;
 lbl43:
                 // 2 sources
@@ -30354,12 +29882,10 @@ lbl43:
                 var12_12 = 0;
                 switch (var1_1.g[15]) {
                     case 1: 
-                    case 5: {
-                        v0 = -1;
-                        ** GOTO lbl19
-                    }
+
+                        v0 = -1;}
                     case 3: 
-                    case 7: {
+
                         v0 = 1;
 lbl19:
                         // 2 sources
@@ -30413,7 +29939,7 @@ lbl19:
     private static boolean update_1d79(int n) {
         boolean bl = false;
         switch (n) {
-            case 1: {
+
                 bl = !aq;
                 break;
             }
@@ -30487,13 +30013,13 @@ lbl19:
     private static void dispatch_0aaf() {
         if (ap) {
             switch (ej) {
-                case 0: {
+
                     if ((ei += (int)d) < 150) break;
                     ei = 0;
                     ej = 1;
                     return;
                 }
-                case 1: {
+
                     GameCanvas.triggerDamageFlash(true);
                     if ((ei += (int)d) < 150) break;
                     if (++eh >= ai.length) {
@@ -30597,7 +30123,7 @@ lbl19:
         block6: {
             if (GameCanvas.aj[0] == 0) break block6;
             switch (GameCanvas.aj[0]) {
-                case 1: {
+
                     GameCanvas.aj[1] = GameCanvas.aj[1] + 136 * (int)GameCanvas.d;
                     if (GameCanvas.aj[1] >= 2048000) {
                         GameCanvas.aj[1] = 2048000;
@@ -30611,10 +30137,8 @@ lbl19:
                     GameCanvas.aj[0] = 2;
                     v0 = GameCanvas.aj;
                     v1 = 1;
-                    v2 = 2670592;
-                    ** GOTO lbl23
-                }
-                case 2: {
+                    v2 = 2670592;}
+
                     GameCanvas.aj[1] = GameCanvas.aj[1] + GameCanvas.aj[3] * (int)GameCanvas.d;
                     if ((GameCanvas.aj[3] >= 1 || GameCanvas.aj[1] > 1335296) && (GameCanvas.aj[3] <= 1 || GameCanvas.aj[1] < 2002944)) break;
                     v1 = 3;
@@ -30632,7 +30156,7 @@ lbl23:
     private static void stateOrRender_aH(Graphics graphics) {
         if (aj[0] != 0) {
             switch (aj[0]) {
-                case 1: {
+
                     int n = aj[2] >> 14;
                     int n2 = 320 - n;
                     GameCanvas.renderWorld(637599488);
@@ -30739,51 +30263,42 @@ lbl23:
         block27: {
             if (GameCanvas.k == null) break block27;
             switch (GameCanvas.eo) {
-                case 8: {
+
                     if ((GameCanvas.ez & 65536) != 0 && GameCanvas.ak[1] == 0) {
                         GameCanvas.drawLevelSelect(0);
                         return;
                     }
                     if (!GameCanvas.check_71af()) break;
                     GameCanvas.ak[4] = 0;
-                    v0 = GameCanvas.renderWorld() ? 9 : 10;
-                    ** GOTO lbl128
-                }
-                case 9: {
+                    v0 = GameCanvas.renderWorld() ? 9 : 10;}
+
                     if (!GameCanvas.check_28fb()) break;
                     GameCanvas.update_31af();
                     return;
                 }
-                case 10: {
+
                     if (!GameCanvas.check_28fb()) break;
-                    ** GOTO lbl-1000
                 }
-                case 0: {
-                    if (GameCanvas.k.g[14] == -1) ** GOTO lbl24
-                    GameCanvas.stateOrRender_aS();
+
+                    if (GameCanvas.k.g[14] == -1)GameCanvas.stateOrRender_aS();
                     GameCanvas.triggerDamageFlash(GameCanvas.b, 0, GameCanvas.k.g[13], GameCanvas.k.g[14], null, GameCanvas.a[7], -1);
-                    v0 = 1;
-                    ** GOTO lbl128
-lbl24:
+                    v0 = 1;lbl24:
                     // 1 sources
 
                     GameCanvas.drawLevelSelect(0);
                     GameCanvas.spawnEnemy(GameCanvas.k.g[16]);
                     return;
                 }
-                case 1: {
+
                     if (!GameCanvas.handleSpecialInput()) break;
                     GameCanvas.drawLevelSelect(0);
                     GameCanvas.spawnEnemy(GameCanvas.k.g[16]);
                     return;
                 }
-                case 2: {
-                    if (GameCanvas.k.g[17] == -1) ** GOTO lbl40
-                    GameCanvas.stateOrRender_aS();
+
+                    if (GameCanvas.k.g[17] == -1)GameCanvas.stateOrRender_aS();
                     GameCanvas.triggerDamageFlash(GameCanvas.b, 0, GameCanvas.k.g[13], GameCanvas.k.g[17], null, GameCanvas.a[7], -1);
-                    v0 = 3;
-                    ** GOTO lbl128
-lbl40:
+                    v0 = 3;lbl40:
                     // 1 sources
 
                     GameCanvas.eo = 5;
@@ -30793,7 +30308,7 @@ lbl40:
                     GameCanvas.spawnEnemy(GameCanvas.k.g[19]);
                     return;
                 }
-                case 3: {
+
                     if (!GameCanvas.handleSpecialInput()) break;
                     GameCanvas.eo = 5;
                     GameCanvas.k.a.spawnEnemy(GameCanvas.k.g[3]);
@@ -30802,41 +30317,33 @@ lbl40:
                     GameCanvas.spawnEnemy(GameCanvas.k.g[19]);
                     return;
                 }
-                case 4: {
+
                     GameCanvas.stateOrRender_aS();
                     GameCanvas.triggerDamageFlash(GameCanvas.b, 0, GameCanvas.k.g[13], GameCanvas.k.g[25], null, GameCanvas.a[7], -1);
-                    v0 = 1;
-                    ** GOTO lbl128
-                }
-                case 5: {
+                    v0 = 1;}
+
                     if (GameCanvas.k.a.a != null && !GameCanvas.k.a.triggerDamageFlash()) break;
                     GameCanvas.k.a.spawnEnemy(GameCanvas.k.g[4]);
                     GameCanvas.k.g[20] = 0;
                     if (GameCanvas.k.g[7] == 0) {
                         GameCanvas.renderTarget(GameCanvas.k);
                     }
-                    v0 = 6;
-                    ** GOTO lbl128
-                }
-                case 6: {
-                    if (!GameCanvas.stopParticles(GameCanvas.k)) ** GOTO lbl81
-                    v1 = 0;
+                    v0 = 6;}
+
+                    if (!GameCanvas.stopParticles(GameCanvas.k))v1 = 0;
                     while ((GameCanvas.k.g[28] & 8 << (GameCanvas.en = v1)) != 0 && GameCanvas.en < 6) {
                         v1 = GameCanvas.en + 1;
                     }
-                    if (GameCanvas.en >= 6) ** GOTO lbl81
-                    var0 = GameCanvas.updateCutscene(GameCanvas.en);
+                    if (GameCanvas.en >= 6)var0 = GameCanvas.updateCutscene(GameCanvas.en);
                     var1_2 = GameCanvas.k.g[var0];
                     GameCanvas.triggerDamageFlash(var1_2, false, -1);
-                    v0 = 7;
-                    ** GOTO lbl128
-lbl81:
+                    v0 = 7;lbl81:
                     // 2 sources
 
                     GameCanvas.drawLevelSelect(0);
                     return;
                 }
-                case 7: {
+
                     if (!GameCanvas.triggerDamageFlash(false, false)) break;
                     if (GameCanvas.drawLevelSelect()) {
                         if (GameCanvas.L[1] == -1) {
@@ -30860,35 +30367,32 @@ lbl81:
                     GameCanvas.drawLevelSelect(0);
                     return;
                 }
-                case 11: {
+
                     if (GameCanvas.en - 3 >= 3) {
                         GameCanvas.update_4b3a();
                         return;
                     }
                     var0_1 = GameCanvas.updateCutscene(GameCanvas.en);
                     var1_3 = GameCanvas.k.g[var0_1];
-                    if (var1_3 == -1) ** GOTO lbl119
-                    if (GameCanvas.handleWeaponSelect(var1_3, GameCanvas.bt) > 0) {
+                    if (var1_3 == -1)if (GameCanvas.handleWeaponSelect(var1_3, GameCanvas.bt) > 0) {
                         GameCanvas.check_4fbf(11);
                         GameCanvas.stopParticles(var1_3, 11);
                         GameCanvas.dispatch_1728(1);
                         v0 = 12;
                     } else {
                         v0 = 0;
-                    }
-                    ** GOTO lbl128
-lbl119:
+                    }lbl119:
                     // 1 sources
 
                     ++GameCanvas.en;
                     return;
                 }
-                case 12: {
+
                     if (!GameCanvas.update_2a26()) break;
                     if (GameCanvas.updatePausedSubmenu()) {
                         ++GameCanvas.en;
                         v0 = 11;
-                    } else lbl-1000:
+                    } else 
                     // 2 sources
 
                     {
@@ -30912,20 +30416,20 @@ lbl128:
             switch (eo) {
                 case 8: 
                 case 9: 
-                case 10: {
+
                     GameCanvas.stateOrRender_aJ(graphics);
                     return;
                 }
                 case 1: 
-                case 3: {
+
                     GameCanvas.update_1d79(graphics);
                     return;
                 }
-                case 7: {
+
                     GameCanvas.calc_d1c5(graphics);
                     return;
                 }
-                case 12: {
+
                     GameCanvas.destroyBuffer(graphics);
                 }
             }
@@ -31050,7 +30554,6 @@ lbl128:
     private static int check_4fbf(int n) {
         int n2 = 0;
         int n3 = 1;
-        do {
             ++n2;
         } while ((n /= (n3 *= 10)) > 0);
         return n2;
@@ -31128,15 +30631,15 @@ lbl128:
     private static void dispatch_e209() {
         boolean bl = false;
         switch (a) {
-            case 10: {
+
                 if (b == 1 || b == 16 || b == 15) break;
             }
-            case 6: {
+
                 if (GameCanvas.calc_88d7()) break;
             }
             case 11: 
             case 12: 
-            case 13: {
+
                 bl = true;
             }
         }
@@ -31189,7 +30692,7 @@ lbl128:
 
     private static boolean updateCutscene() {
         switch (ep) {
-            case 9: {
+
                 GameCanvas.updateParticleTrails();
                 if (GameCanvas.calc_dca5()) {
                     GameCanvas.stateOrRender_aM(c);
@@ -31213,7 +30716,7 @@ lbl128:
                 GameCanvas.setPaused();
                 break;
             }
-            case 6: {
+
                 eq += (int)d;
                 if ((ez & 0x4020) != 0) {
                     boolean bl = false;
@@ -31238,7 +30741,7 @@ lbl128:
                 GameCanvas.setPaused();
                 break;
             }
-            case 7: {
+
                 if (ds == 0) {
                     if ((eq += (int)d) > 1000) {
                         eq = 0;
@@ -31263,7 +30766,7 @@ lbl128:
                 GameCanvas.setPaused();
                 break;
             }
-            case 8: {
+
                 GameCanvas.setPaused();
                 if ((ez & 0x4020) == 0) break;
                 GameCanvas.update_2534();
@@ -31326,7 +30829,7 @@ lbl128:
 
     private static void stateOrRender_aM(Graphics graphics) {
         switch (ep) {
-            case 9: {
+
                 GameCanvas.drawBuffer(graphics);
                 GameCanvas.isPlayerDead(graphics, -67);
                 return;
@@ -31338,7 +30841,7 @@ lbl128:
                 return;
             }
             case 5: 
-            case 6: {
+
                 GameCanvas.drawBuffer(graphics);
                 if (ep == 6) {
                     GameCanvas.triggerDamageFlash(graphics, 0, 0, 10);
@@ -31348,7 +30851,7 @@ lbl128:
                 GameCanvas.audioMethod_ai(graphics);
                 return;
             }
-            case 7: {
+
                 GameCanvas.drawBuffer(graphics);
                 GameCanvas.stateOrRender_aL(graphics);
                 GameCanvas.audioMethod_ai(graphics);
@@ -31367,28 +30870,28 @@ lbl128:
         int n2 = 0;
         int n3 = 0;
         switch (n) {
-            case 4: {
+
                 if (al[n] <= 2500) {
                     return 3;
                 }
                 if (al[n] > 7000) return 1;
                 return 2;
             }
-            case 1: {
+
                 if (al[n] <= 0) {
                     return 3;
                 }
                 if (al[n] > 3) return 1;
                 return 2;
             }
-            case 2: {
+
                 if (al[n] >= 1400) {
                     return 3;
                 }
                 if (al[n] < 1080) return 1;
                 return 2;
             }
-            case 5: {
+
                 n3 = al[n] * 100 / GameCanvas.resetClipBuffer();
                 if (n3 >= 100) {
                     return 3;
@@ -31396,7 +30899,7 @@ lbl128:
                 if (n3 < 60) return 1;
                 return 2;
             }
-            case 3: {
+
                 if (al[n] >= 80) {
                     return 3;
                 }
@@ -31412,15 +30915,15 @@ lbl128:
         block5: for (int i = 1; i < 8; ++i) {
             int n2 = GameCanvas.dispatch_1728(i);
             switch (n2) {
-                case 3: {
+
                     n += 10;
                     continue block5;
                 }
-                case 2: {
+
                     n += 5;
                     continue block5;
                 }
-                case 1: {
+
                     n += 2;
                 }
             }
@@ -31457,7 +30960,7 @@ lbl128:
         var13_13 = true;
         var14_14 = false;
         switch (var6_6) {
-            case 0: {
+
                 var8_8 = 0;
                 var9_9 = 11;
                 var10_10 = 13;
@@ -31475,7 +30978,7 @@ lbl128:
                 GameCanvas.spawnEnemy(5, var23_17 - var23_17 / 10 * 10);
                 break;
             }
-            case 6: {
+
                 if (GameCanvas.al[7] == 0) {
                     var13_13 = false;
                 }
@@ -31483,19 +30986,13 @@ lbl128:
                 var11_11 = 75 + (var6_6 - 1);
                 var8_8 = 1;
                 switch (GameCanvas.al[var6_6]) {
-                    case 0: {
-                        v0 = 47;
-                        ** GOTO lbl44
-                    }
-                    case 1: {
-                        v0 = 48;
-                        ** GOTO lbl44
-                    }
-                    case 2: {
-                        v0 = 49;
-                        ** GOTO lbl44
-                    }
-                    case 3: {
+
+                        v0 = 47;}
+
+                        v0 = 48;}
+
+                        v0 = 49;}
+
                         v0 = 50;
 lbl44:
                         // 4 sources
@@ -31506,7 +31003,7 @@ lbl44:
                 var14_14 = true;
                 break;
             }
-            case 7: {
+
                 if (GameCanvas.al[7] == 0) {
                     var13_13 = false;
                 }
@@ -31554,7 +31051,7 @@ lbl44:
         for (int i = 0; i < al.length; ++i) {
             int n2;
             switch (i) {
-                case 0: {
+
                     n2 = GameCanvas.triggerDamageFlash(byArray, n, al[i]);
                     break;
                 }
@@ -31570,7 +31067,7 @@ lbl44:
     private static int stopParticles(byte[] byArray, int n) {
         block3: for (int i = 0; i < al.length; ++i) {
             switch (i) {
-                case 0: {
+
                     GameCanvas.al[i] = GameCanvas.createOffscreenBuffer(byArray, n);
                     n += 4;
                     continue block3;
@@ -31588,7 +31085,7 @@ lbl44:
         int n = 0;
         block3: for (int i = 0; i < al.length; ++i) {
             switch (i) {
-                case 0: {
+
                     n += 4;
                     continue block3;
                 }
@@ -31632,12 +31129,10 @@ lbl44:
                 var11_11 = GameCanvas.triggerDamageFlash(GameCanvas.am[7], GameCanvas.am[8 + var10_10], GameCanvas.am[5], GameCanvas.am[6]);
                 if (var11_11 == null || var11_11.L != 9) break block5;
                 switch (var0) {
-                    case 100: {
-                        v0 = var11_11.g[4] > 100 ? 105 : var11_11.g[4];
-                        ** GOTO lbl23
-                    }
+
+                        v0 = var11_11.g[4] > 100 ? 105 : var11_11.g[4];}
                     case 102: 
-                    case 104: {
+
                         if (var11_11.g[4] > 100 && var11_11.g[4] != 105 || var11_11.g[4] == 105 && var11_11.a.e == var11_11.a.a.triggerDamageFlash(var11_11.a.d) - 1) break;
                         v0 = 101;
 lbl23:
@@ -31668,26 +31163,24 @@ lbl23:
             var3_3 = 1;
             var4_4 = -1;
             switch (var0.g[4]) {
-                case 100: {
+
                     var2_2 = GameCanvas.stopParticles(var0.g[0], 3);
                     break;
                 }
-                case 101: {
-                    var2_2 = GameCanvas.stopParticles(var0.g[0], 14);
-                    ** GOTO lbl24
-                }
-                case 103: {
+
+                    var2_2 = GameCanvas.stopParticles(var0.g[0], 14);}
+
                     var0.g[6] = 0;
                 }
-                case 102: {
+
                     var2_2 = GameCanvas.stopParticles(var0.g[0], 4);
                     break;
                 }
-                case 104: {
+
                     var2_2 = GameCanvas.stopParticles(var0.g[0], 5);
                     break;
                 }
-                case 105: {
+
                     var2_2 = GameCanvas.stopParticles(var0.g[0], 14);
                     var3_3 = -1;
 lbl24:
@@ -31709,29 +31202,25 @@ lbl24:
         block8: {
             if (var0 == null || var0.L != 9) break block8;
             switch (var0.g[4]) {
-                case 100: {
+
                     return;
                 }
-                case 101: {
+
                     if (!var0.a.triggerDamageFlash()) break;
                     v0 = var0;
-                    v1 = GameCanvas.am[2];
-                    ** GOTO lbl24
-                }
-                case 102: {
+                    v1 = GameCanvas.am[2];}
+
                     return;
                 }
-                case 103: {
+
                     var0.g[6] = var0.g[6] + (int)GameCanvas.d;
                     if (var0.g[6] <= 1000) break;
                     v0 = var0;
-                    v1 = 104;
-                    ** GOTO lbl24
-                }
-                case 104: {
+                    v1 = 104;}
+
                     return;
                 }
-                case 105: {
+
                     if (!var0.a.triggerDamageFlash()) break;
                     v0 = var0;
                     v1 = 100;
@@ -31792,11 +31281,11 @@ lbl24:
         if (audioManager != null) {
             bl = false;
             switch (audioManager.L) {
-                case 9: {
+
                     bl = audioManager.g[4] == 103;
                     break;
                 }
-                case 3: {
+
                     bl = audioManager.g[12] == 101;
                 }
             }
@@ -31827,12 +31316,10 @@ lbl24:
                 var1_1 += 2;
                 var10_6 = 0;
                 switch (var9_5) {
-                    case 0: {
+
                         var2_2 += 28;
-                        v0 = 28;
-                        ** GOTO lbl18
-                    }
-                    case 1: {
+                        v0 = 28;}
+
                         var3_3 += 6;
                         v0 = 6;
 lbl18:
@@ -31858,7 +31345,7 @@ lbl18:
                 var1_1 += 2;
                 var5_7[var4_4][0] = var10_6;
                 switch (var9_5) {
-                    case 0: {
+
                         var5_7[var4_4][1] = var6_8++;
                         for (var11_10 = 0; var11_10 < 28; ++var11_10) {
                             GameCanvas.an[var2_2++] = GameCanvas.triggerDamageFlash(var0, var1_1);
@@ -31866,7 +31353,7 @@ lbl18:
                         }
                         break;
                     }
-                    case 1: {
+
                         var5_7[var4_4][1] = var7_9++;
                         for (var11_10 = 0; var11_10 < 6; ++var11_10) {
                             GameCanvas.ao[var3_3++] = GameCanvas.triggerDamageFlash(var0, var1_1);
@@ -31987,11 +31474,11 @@ lbl18:
         for (int i = 0; i < n2; ++i) {
             int n4 = GameCanvas.getEntityProperty(i, n);
             switch (n) {
-                case 3: {
+
                     int n5 = GameCanvas.updateLoading(i);
                     break;
                 }
-                case 14: {
+
                     int n5 = n4 = GameCanvas.updateConfirmDialog(i);
                 }
             }
@@ -32189,7 +31676,6 @@ lbl18:
     private static int renderInGame(int n, int n2) {
         int n3 = 0;
         boolean bl = false;
-        do {
             block5: {
                 int n4;
                 block4: {
@@ -32263,7 +31749,7 @@ lbl18:
             var17_17 = -1;
             var18_18 = false;
             switch (var13_13) {
-                case 0: {
+
                     var19_19 = GameCanvas.getEntityProperty(var1_1, 18);
                     var6_6 = 13;
                     var7_7 = GameCanvas.b[var19_19][5];
@@ -32275,13 +31761,13 @@ lbl18:
                     var18_18 = true;
                     break;
                 }
-                case 1: {
+
                     var7_7 = 63;
                     var9_9 = GameCanvas.getEntityProperty(var1_1, 1) == 0 ? 65 : 64;
                     var18_18 = true;
                     break;
                 }
-                case 2: {
+
                     var19_19 = GameCanvas.getEntityProperty(var1_1, 12);
                     var7_7 = 70;
                     if (var19_19 != -1) {
@@ -32291,7 +31777,7 @@ lbl18:
                     var18_18 = true;
                     break;
                 }
-                case 3: {
+
                     var7_7 = 67;
                     var20_20 = GameCanvas.getEntityProperty(var1_1, 4);
                     var23_23 = 65 / var20_20;
@@ -32300,10 +31786,8 @@ lbl18:
                     var9_9 = 76;
                     GameCanvas.spawnEnemy(0, var17_17);
                     v0 = 1;
-                    v1 = var17_17 + GameCanvas.getEntityProperty(var1_1, 6) * var20_20;
-                    ** GOTO lbl93
-                }
-                case 8: {
+                    v1 = var17_17 + GameCanvas.getEntityProperty(var1_1, 6) * var20_20;}
+
                     var7_7 = 73;
                     var16_16 = GameCanvas.loadLevel(20);
                     var17_17 = GameCanvas.getEntityProperty(var1_1, 20);
@@ -32312,19 +31796,15 @@ lbl18:
                     }
                     var9_9 = 9;
                     v0 = 0;
-                    v1 = var17_17;
-                    ** GOTO lbl93
-                }
-                case 6: {
+                    v1 = var17_17;}
+
                     var7_7 = 68;
                     var16_16 = GameCanvas.loadLevel(8);
                     var17_17 = var16_16 - GameCanvas.getEntityProperty(var1_1, 8);
                     var9_9 = 9;
                     v0 = 0;
-                    v1 = var17_17;
-                    ** GOTO lbl93
-                }
-                case 7: {
+                    v1 = var17_17;}
+
                     var7_7 = 69;
                     var16_16 = GameCanvas.loadLevel(11);
                     var17_17 = GameCanvas.getEntityProperty(var1_1, 11);
@@ -32332,13 +31812,11 @@ lbl18:
                     var9_9 = 9;
                     break;
                 }
-                case 4: {
+
                     var7_7 = 66;
                     var16_16 = GameCanvas.loadLevel(3);
-                    v2 = GameCanvas.updateLoading(var1_1);
-                    ** GOTO lbl88
-                }
-                case 5: {
+                    v2 = GameCanvas.updateLoading(var1_1);}
+
                     var7_7 = 72;
                     var16_16 = GameCanvas.loadLevel(14);
                     v2 = GameCanvas.updateConfirmDialog(var1_1);
@@ -32424,15 +31902,11 @@ lbl93:
             }
             var3_3 = GameCanvas.triggerDamageFlash() % 3;
             switch (var3_3) {
-                case 0: {
-                    v1 = 2304;
-                    ** GOTO lbl22
-                }
-                case 1: {
-                    v1 = 8256;
-                    ** GOTO lbl22
-                }
-                case 2: {
+
+                    v1 = 2304;}
+
+                    v1 = 8256;}
+
                     v1 = 4112;
 lbl22:
                     // 3 sources
@@ -32501,17 +31975,17 @@ lbl22:
     private static void dispatch_9ff5() {
         if (eu > -1) {
             switch (aq[0]) {
-                case 0: {
+
                     GameCanvas.update_2d02();
                     break;
                 }
                 case 1: 
-                case 2: {
+
                     GameCanvas.update_9336();
                     GameCanvas.setPaused();
                     break;
                 }
-                case 3: {
+
                     GameCanvas.update_ddb5();
                 }
             }
@@ -32533,13 +32007,13 @@ lbl22:
             block4: {
                 if (eu <= -1) break block4;
                 switch (aq[0]) {
-                    case 0: {
+
                         GameCanvas.triggerDamageFlash(graphics, aq[1], aq[1], false);
                         break block5;
                     }
                     case 1: 
                     case 2: 
-                    case 3: {
+
                         GameCanvas.stateOrRender_aV(graphics);
                     }
                     default: {
@@ -32554,13 +32028,13 @@ lbl22:
     private static void stateOrRender_aQ(Graphics graphics) {
         if (eu > -1) {
             switch (aq[0]) {
-                case 0: {
+
                     GameCanvas.stopParticles(graphics);
                     GameCanvas.stateOrRender_aS(graphics);
                     GameCanvas.stateOrRender_aT(graphics);
                     return;
                 }
-                case 3: {
+
                     GameCanvas.stopParticles(graphics);
                     GameCanvas.stateOrRender_aX(graphics);
                 }
@@ -32586,7 +32060,6 @@ lbl22:
         int n3 = ew;
         if (n != 0) {
             int n4 = 0;
-            do {
                 int n5;
                 if ((ew += n) >= y[n2][4]) {
                     n5 = 0;
@@ -32881,17 +32354,15 @@ lbl22:
         var8_8 = var0.a.triggerDamageFlash();
         var9_9 = var0.a.spawnEnemy();
         switch (var0.L) {
-            case 20: {
+
                 var8_8 += var0.g[2] >> 1;
                 v0 = var9_9;
-                v1 = var0.g[3] >> 1;
-                ** GOTO lbl19
-            }
-            case 23: {
+                v1 = var0.g[3] >> 1;}
+
                 var8_8 += var0.g[2] >> 1;
                 break;
             }
-            case 22: {
+
                 var8_8 += var0.g[11] + (var0.g[13] >> 1);
                 v0 = var9_9;
                 v1 = var0.g[12] + (var0.g[14] >> 1);
@@ -33215,17 +32686,13 @@ lbl19:
             var5_5 = var0[var1_1++] & 255;
             var6_6 = 0;
             switch (var5_5) {
-                case 0: {
+
                     ++var2_2;
-                    v0 = 0;
-                    ** GOTO lbl19
-                }
-                case 1: {
+                    v0 = 0;}
+
                     ++var3_3;
-                    v0 = 3;
-                    ** GOTO lbl19
-                }
-                case 2: {
+                    v0 = 3;}
+
                     ++var4_4;
                     v0 = 2;
 lbl19:
@@ -33247,14 +32714,14 @@ lbl19:
             var6_6 = 0;
             var7_7 = null;
             switch (var5_5) {
-                case 0: {
+
                     var7_7 = GameCanvas.x[var2_2];
                     var6_6 = 0;
                     GameCanvas.x[var2_2][0] = var3_3;
                     ++var2_2;
                     break;
                 }
-                case 1: {
+
                     var7_7 = GameCanvas.y[var3_3];
                     var6_6 = 3;
                     v1 = GameCanvas.x[var2_2 - 1];
@@ -33263,7 +32730,7 @@ lbl19:
                     ++var3_3;
                     break;
                 }
-                case 2: {
+
                     var7_7 = GameCanvas.z[var4_4];
                     var6_6 = 2;
                     v2 = GameCanvas.y[var3_3 - 1];
@@ -33414,7 +32881,7 @@ lbl19:
         var4_4 = GameCanvas.z[var0][4] - var3_3[0];
         var5_5 = GameCanvas.z[var0][5] - var3_3[1];
         switch (var1_1.g[4]) {
-            case 0: {
+
                 var3_3[1] = var3_3[1] + (var5_5 + 2);
                 if (!var2_2) break;
                 var3_3[1] = var3_3[1] - 2;
@@ -33423,10 +32890,8 @@ lbl19:
                 v1 = var3_3;
                 v2 = var3_3[0];
                 v3 = var1_1.g;
-                v4 = 13;
-                ** GOTO lbl45
-            }
-            case 1: {
+                v4 = 13;}
+
                 var3_3[1] = -2;
                 if (!var2_2) break;
                 var3_3[1] = var3_3[1] - 2;
@@ -33435,15 +32900,11 @@ lbl19:
                 v1 = var3_3;
                 v2 = var3_3[0];
                 v3 = var1_1.g;
-                v4 = 13;
-                ** GOTO lbl45
-            }
-            case 2: {
+                v4 = 13;}
+
                 var3_3[0] = var3_3[0] + (var4_4 + 2);
-                if (!var2_2) break;
-                ** GOTO lbl38
-            }
-            case 3: {
+                if (!var2_2) break;}
+
                 var3_3[0] = -2;
                 if (!var2_2) break;
 lbl38:
@@ -33524,7 +32985,6 @@ lbl45:
         for (n6 = 0; n6 < nArray2.length; ++n6) {
             nArray2[n6] = -1;
         }
-        do {
             nArray2[n15++] = n8;
             n6 = z[n8][0];
             n5 = z[n8][1];
@@ -33773,19 +33233,19 @@ lbl45:
         int n2 = GameCanvas.updateCamera(n, 0);
         boolean bl = false;
         switch (n2) {
-            case 0: {
+
                 int n3;
                 int n4 = GameCanvas.updateCamera(n, 3);
                 int n5 = GameCanvas.updateCamera(n, 4);
                 int n6 = 0;
                 int n7 = 0;
                 switch (audioManager.L) {
-                    case 3: {
+
                         n7 = GameCanvas.drawBackground(audioManager.g[0], 0);
                         n3 = GameCanvas.drawBackground(audioManager.g[0], 1);
                         break;
                     }
-                    case 9: {
+
                         n7 = GameCanvas.stopParticles(audioManager.g[0], 0);
                         n3 = GameCanvas.stopParticles(audioManager.g[0], 1);
                         break;
@@ -33805,7 +33265,7 @@ lbl45:
                 if (audioManager.a.d > n10) return false;
                 return true;
             }
-            case 1: {
+
                 int n11 = GameCanvas.updateCamera(n, 7);
                 int n12 = GameCanvas.updateCamera(n, 8);
                 if (n11 != by) return bl;
@@ -33817,7 +33277,7 @@ lbl45:
                 boolean bl2 = GameCanvas.triggerDamageFlash(n13, n14, n15, n16);
                 return bl2;
             }
-            case 2: {
+
                 if (audioManager.L != 3) return bl;
                 if (audioManager.g[12] >= 100) return bl;
                 if (audioManager.g[10] == 3) return bl;
@@ -34053,7 +33513,7 @@ lbl45:
         int n2 = GameCanvas.updateCamera(n, 0);
         int[] nArray2 = null;
         switch (n2) {
-            case 0: {
+
                 int n3 = GameCanvas.updateCamera(n, 6);
                 int n4 = GameCanvas.updateCamera(n, 5);
                 int n5 = n4 + (n3 == 0 ? 0 : n3 - 1);
@@ -34077,12 +33537,12 @@ lbl45:
                 }
                 break;
             }
-            case 2: {
+
                 nArray2 = GameCanvas.triggerDamageFlash(audioManager.a);
                 System.arraycopy(nArray2, 0, nArray, 0, nArray2.length);
                 break;
             }
-            case 1: {
+
                 nArray[0] = GameCanvas.updateCamera(n, 14);
                 nArray[1] = GameCanvas.updateCamera(n, 15);
                 nArray[2] = nArray[0] + GameCanvas.updateCamera(n, 9);
@@ -34172,21 +33632,19 @@ lbl45:
         GameCanvas.as[4] = var0.a.triggerDamageFlash();
         GameCanvas.as[5] = var0.a.spawnEnemy() - (GameCanvas.cq >> 1);
         switch (var1_1) {
-            case 0: {
+
                 GameCanvas.as[5] = GameCanvas.as[5] - (GameCanvas.at[3] >> 1);
             }
             case 1: 
-            case 7: {
+
                 v0 = 4;
                 v1 = GameCanvas.as;
-                v2 = GameCanvas.as[4] + 40;
-                ** GOTO lbl17
-            }
-            case 4: {
+                v2 = GameCanvas.as[4] + 40;}
+
                 GameCanvas.as[5] = GameCanvas.as[5] - (GameCanvas.at[3] >> 1);
             }
             case 3: 
-            case 5: {
+
                 v0 = 4;
                 v1 = GameCanvas.as;
                 v2 = GameCanvas.as[4] - (40 + GameCanvas.at[2]);
@@ -34197,21 +33655,19 @@ lbl17:
             }
         }
         switch (var1_1) {
-            case 2: {
+
                 GameCanvas.as[4] = GameCanvas.as[4] - (GameCanvas.at[2] >> 1);
             }
             case 1: 
-            case 3: {
+
                 v3 = 5;
                 v4 = GameCanvas.as;
-                v5 = GameCanvas.as[5] - (40 + GameCanvas.at[3]);
-                ** GOTO lbl32
-            }
-            case 6: {
+                v5 = GameCanvas.as[5] - (40 + GameCanvas.at[3]);}
+
                 GameCanvas.as[4] = GameCanvas.as[4] - (GameCanvas.at[2] >> 1);
             }
             case 5: 
-            case 7: {
+
                 v3 = 5;
                 v4 = GameCanvas.as;
                 v5 = GameCanvas.as[5] + 40;
@@ -34229,7 +33685,7 @@ lbl32:
             int n2 = GameCanvas.updateCamera(n, 0);
             switch (n2) {
                 case 0: 
-                case 2: {
+
                     int[] nArray = GameCanvas.triggerDamageFlash(GameCanvas.l.a);
                     GameCanvas.at[0] = nArray[0] + (nArray[2] - nArray[0] >> 1) - (at[2] >> 1);
                     GameCanvas.at[1] = nArray[1] + (nArray[3] - nArray[1] >> 1) - (at[3] >> 1);
@@ -34267,11 +33723,10 @@ lbl32:
             GameCanvas.dispatch_e99b();
             block0 : switch (GameCanvas.as[0]) {
                 case 1: 
-                case 2: {
-                    if (GameCanvas.l == null || !GameCanvas.triggerDamageFlash(GameCanvas.l) || !GameCanvas.drawSprites(GameCanvas.l, GameCanvas.as[1]) || !GameCanvas.triggerDamageFlash(GameCanvas.at[0], GameCanvas.at[1], GameCanvas.at[2], GameCanvas.at[3], GameCanvas.as[4], GameCanvas.as[5], GameCanvas.at[2], GameCanvas.at[3]) || !GameCanvas.drawLevelSelect(GameCanvas.l)) ** GOTO lbl58
-                    if (!(GameCanvas.as = GameCanvas.triggerDamageFlash(GameCanvas.at[0], GameCanvas.at[1], GameCanvas.at[2], GameCanvas.at[3], GameCanvas.as[4], GameCanvas.as[5], GameCanvas.at[2], GameCanvas.at[3], 30))) break;
+
+                    if (GameCanvas.l == null || !GameCanvas.triggerDamageFlash(GameCanvas.l) || !GameCanvas.drawSprites(GameCanvas.l, GameCanvas.as[1]) || !GameCanvas.triggerDamageFlash(GameCanvas.at[0], GameCanvas.at[1], GameCanvas.at[2], GameCanvas.at[3], GameCanvas.as[4], GameCanvas.as[5], GameCanvas.at[2], GameCanvas.at[3]) || !GameCanvas.drawLevelSelect(GameCanvas.l))if (!(GameCanvas.as = GameCanvas.triggerDamageFlash(GameCanvas.at[0], GameCanvas.at[1], GameCanvas.at[2], GameCanvas.at[3], GameCanvas.as[4], GameCanvas.as[5], GameCanvas.at[2], GameCanvas.at[3], 30))) break;
                     switch (GameCanvas.resetTimers()) {
-                        case 1: {
+
                             if (GameCanvas.as[0] == 2) {
                                 GameCanvas.as[6] = GameCanvas.as[6] + GameCanvas.as[9] * (int)GameCanvas.d;
                                 if (GameCanvas.as[6] >> 14 < GameCanvas.at[3]) break;
@@ -34283,26 +33738,19 @@ lbl32:
                                 v0 = GameCanvas.as;
                                 v1 = 6;
                                 v2 = 0;
-                            }
-                            ** GOTO lbl56
-                        }
-                        case 2: {
+                            }}
+
                             GameCanvas.as = false;
-                            if (GameCanvas.aw) ** GOTO lbl49
-                            GameCanvas.aw = true;
+                            if (GameCanvas.aw)GameCanvas.aw = true;
                             var1 = GameCanvas.T >> 14;
                             var2_1 = GameCanvas.U >> 14;
                             var3_2 = GameCanvas.X >> 14;
                             var4_3 = GameCanvas.Y >> 14;
-                            if (GameCanvas.at[0] >= var1) ** GOTO lbl34
-                            v3 = var3_2;
-                            v4 = var1 - GameCanvas.at[0] + 32;
-                            ** GOTO lbl37
-lbl34:
+                            if (GameCanvas.at[0] >= var1)v3 = var3_2;
+                            v4 = var1 - GameCanvas.at[0] + 32;lbl34:
                             // 1 sources
 
-                            if (GameCanvas.at[0] + GameCanvas.at[2] <= var1 + 240) ** GOTO lbl38
-                            v3 = var3_2;
+                            if (GameCanvas.at[0] + GameCanvas.at[2] <= var1 + 240)v3 = var3_2;
                             v4 = var1 + 240 - (GameCanvas.at[0] + GameCanvas.at[2] + 32);
 lbl37:
                             // 2 sources
@@ -34311,15 +33759,11 @@ lbl37:
 lbl38:
                             // 2 sources
 
-                            if (GameCanvas.at[1] >= var2_1) ** GOTO lbl42
-                            v5 = var4_3;
-                            v6 = var2_1 - GameCanvas.at[1] + 36;
-                            ** GOTO lbl45
-lbl42:
+                            if (GameCanvas.at[1] >= var2_1)v5 = var4_3;
+                            v6 = var2_1 - GameCanvas.at[1] + 36;lbl42:
                             // 1 sources
 
-                            if (GameCanvas.at[1] + GameCanvas.at[3] <= var2_1 + 320) ** GOTO lbl46
-                            v5 = var4_3;
+                            if (GameCanvas.at[1] + GameCanvas.at[3] <= var2_1 + 320)v5 = var4_3;
                             v6 = var2_1 + 320 - (GameCanvas.at[1] + GameCanvas.at[3] + 36);
 lbl45:
                             // 2 sources
@@ -34338,7 +33782,7 @@ lbl49:
                             GameCanvas.aw = false;
                             break block0;
                         }
-                        case 0: {
+
                             v0 = GameCanvas.as;
                             v1 = 0;
                             v2 = 1;
@@ -34355,7 +33799,7 @@ lbl58:
                     GameCanvas.update_206b();
                     return;
                 }
-                case 3: {
+
                     GameCanvas.update_b76b();
                     GameCanvas.update_206b();
                     GameCanvas.update_83ef(GameCanvas.as[1], 13, 0);
@@ -34390,7 +33834,7 @@ lbl58:
     private static void stateOrRender_aY(Graphics graphics) {
         switch (as[0]) {
             case 1: 
-            case 2: {
+
                 int n = T >> 14;
                 int n2 = U >> 14;
                 int n3 = at[0] + at[2];
@@ -34466,7 +33910,6 @@ lbl58:
         int n10 = n6 + 6;
         int n11 = n5 + 6;
         int n12 = n5 + n7 - 6;
-        do {
             GameCanvas.triggerDamageFlash(graphics, n11, n10, 3, 0xCFCFCF, true);
             GameCanvas.triggerDamageFlash(graphics, n12, n10, 3, 0xCFCFCF, true);
         } while ((n10 += 9) < n9);
@@ -34500,15 +33943,11 @@ lbl58:
         var1_1.drawImage(GameCanvas.b, 0, 0, 20);
         var2_2 = 0;
         switch (GameCanvas.as[8]) {
-            case 3: {
-                v0 = 45;
-                ** GOTO lbl18
-            }
-            case 2: {
-                v0 = 90;
-                ** GOTO lbl18
-            }
-            case 1: {
+
+                v0 = 45;}
+
+                v0 = 90;}
+
                 v0 = 115;
 lbl18:
                 // 3 sources
@@ -34576,7 +34015,7 @@ lbl18:
 
     private static void updateLevelSelect() {
         switch (au[0]) {
-            case 0: {
+
                 boolean bl = true;
                 if (!GameCanvas.createOffscreenBuffer(1, 5, 9)) {
                     bl = false;
@@ -34597,13 +34036,13 @@ lbl18:
                 GameCanvas.au[0] = 1;
                 return;
             }
-            case 1: {
+
                 if (ez == 0) break;
                 GameCanvas.stopParticles(-1, 21);
                 GameCanvas.au[0] = 2;
                 return;
             }
-            case 2: {
+
                 if (!GameCanvas.update_2a26()) break;
                 if (GameCanvas.updatePausedSubmenu()) {
                     GameCanvas.update_83ef(as[1], 13, 0);
@@ -34656,7 +34095,7 @@ lbl18:
         image = a;
         graphics2 = b;
         switch (au[0]) {
-            case 0: {
+
                 if (bl || as[8] == 1 || c % 2 == 0) {
                     GameCanvas.drawBuffer(graphics);
                     GameCanvas.createOffscreenBuffer(graphics, false);
@@ -34671,11 +34110,11 @@ lbl18:
                 GameCanvas.triggerDamageFlash(image, graphics2, graphics, at[0], at[1], at[2], at[3], au[1] >> 14, au[2] >> 14, au[3] >> 14, au[4] >> 14);
                 return;
             }
-            case 1: {
+
                 GameCanvas.spawnEnemy(graphics, 0);
                 return;
             }
-            case 2: {
+
                 GameCanvas.drawBuffer(graphics);
                 GameCanvas.destroyBuffer(graphics);
             }
@@ -34831,72 +34270,66 @@ lbl18:
             var5_5 = 0;
             if (var3_3 == 0 || var3_3 == 13) break block15;
             switch (var3_3) {
-                case 14: {
+
                     var4_4 = 0;
                     var5_5 = 0;
                     break;
                 }
-                case 3: {
+
                     var4_4 = 1;
                     var5_5 = 5;
                     var2_2 += 32;
                     break;
                 }
-                case 1: {
+
                     var4_4 = 1;
                     var5_5 = 4;
                     break;
                 }
-                case 2: {
+
                     var4_4 = 1;
                     var5_5 = 1;
                     var1_1 += 32;
                     break;
                 }
-                case 4: {
+
                     var4_4 = 1;
                     var5_5 = 0;
                     break;
                 }
-                case 7: {
+
                     var4_4 = 2;
                     var5_5 = 1;
                     var1_1 += 48;
                     break;
                 }
-                case 8: {
+
                     var4_4 = 2;
                     var5_5 = 0;
                     break;
                 }
-                case 5: {
-                    v0 = 2;
-                    ** GOTO lbl60
-                }
-                case 6: {
+
+                    v0 = 2;}
+
                     var4_4 = 2;
                     var5_5 = 3;
-                    var1_1 += 48;
-                    ** GOTO lbl62
-                }
-                case 9: {
+                    var1_1 += 48;}
+
                     var4_4 = 3;
                     var5_5 = 1;
                     var1_1 += 48;
                     break;
                 }
-                case 10: {
+
                     var4_4 = 3;
                     var5_5 = 0;
                     break;
                 }
-                case 12: {
+
                     var4_4 = 3;
                     var5_5 = 3;
-                    var1_1 += 48;
-                    ** GOTO lbl62
-                }
-                case 11: {
+                    var1_1 += 48;}
+
                     v0 = 3;
 lbl60:
                     // 2 sources
@@ -35049,61 +34482,61 @@ lbl62:
             n = -n;
         }
         switch (n) {
-            case 48: {
+
                 return 1;
             }
-            case 49: {
+
                 return 2;
             }
-            case 50: {
+
                 return 4;
             }
-            case 51: {
+
                 return 8;
             }
-            case 52: {
+
                 return 16;
             }
-            case 53: {
+
                 return 32;
             }
-            case 54: {
+
                 return 64;
             }
-            case 55: {
+
                 return 128;
             }
-            case 56: {
+
                 return 256;
             }
-            case 57: {
+
                 return 512;
             }
-            case 42: {
+
                 return 262144;
             }
-            case 35: {
+
                 return 524288;
             }
-            case 1: {
+
                 return 1024;
             }
-            case 2: {
+
                 return 2048;
             }
-            case 3: {
+
                 return 4096;
             }
-            case 4: {
+
                 return 8192;
             }
-            case 5: {
+
                 return 16384;
             }
-            case 6: {
+
                 return 32768;
             }
-            case 7: {
+
                 return 65536;
             }
         }
@@ -35126,14 +34559,12 @@ lbl62:
         GameCanvas.handleWeaponSelect();
         try {
             Thread.sleep(20L);
-        }
-        catch (Exception exception) {}
+        }/*         catch (Exception exception) */ {}
         Thread.yield();
         ax = false;
     }
 
     public final void gameLoop() {
-        do {
             long l;
             long l2;
             if ((d = (l2 = System.currentTimeMillis()) - c) > 166L || d <= 0L) {
@@ -35148,7 +34579,6 @@ lbl62:
                 this.repaint();
                 this.serviceRepaints();
             }
-            do {
                 l = System.currentTimeMillis() - c;
                 Thread.yield();
             } while (l >= 0L && l < 40L);

@@ -191,8 +191,7 @@ CommandListener {
                 a[n4] = a[n4] + ((inputStream.read() & 0xFF) << 24);
             }
             inputStream.close();
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             return false;
         }
         return true;
@@ -228,8 +227,7 @@ CommandListener {
                 n4 = n3 - inputStream.read(byArray);
             }
             inputStream.close();
-        }
-        catch (Exception exception) {}
+        }/*         catch (Exception exception) */ {}
         return byArray;
     }
 
@@ -372,7 +370,6 @@ CommandListener {
                     var10_8 = true;
                     continue;
                 }
-                if (!var10_8) ** GOTO lbl-1000
                 var10_8 = false;
                 var14_14 = var5_5.charAt(var8_11 - 2);
                 if (var14_14 == ' ') {
@@ -381,7 +378,7 @@ CommandListener {
                 if (var7_12 == ' ') {
                     v10 = var13_13;
                     v11 = GameController.method_9b6e(var7_12, GameController.C) + -1 >> 1;
-                } else lbl-1000:
+                } else 
                 // 2 sources
 
                 {
@@ -467,8 +464,7 @@ CommandListener {
                     }
                 }
             }
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             string4 = "";
         }
         return string4;
@@ -484,8 +480,7 @@ CommandListener {
                 GameController.a[n] = true;
             }
             return;
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             return;
         }
     }
@@ -522,9 +517,7 @@ CommandListener {
                             var8_8 = "";
                             if (var0 == 2 || var7_7 != var4_4 - 1) break block14;
                             if (GameController.e) break block15;
-                            v1 = GameController.b[var0];
-                            ** GOTO lbl35
-                        }
+                            v1 = GameController.b[var0];}
                         if (GameController.j.length() > 0) {
                             v2 = GameController.method_9b6e(GameController.method_9b6e("IGP-CATEGORIES"), var1_1[var7_7], GameController.j + "&ctg=XXXX");
                         }
@@ -619,13 +612,11 @@ lbl35:
                                     D = 5;
                                 }
                                 c.startsWith(a);
-                            }
-                            catch (Exception exception) {
+                            }/*                             catch (Exception exception) */ {
                                 m = false;
                             }
                             GameController.method_9b6e();
-                        }
-                        catch (Exception exception) {
+                        }/*                         catch (Exception exception) */ {
                             m = false;
                             return;
                         }
@@ -651,14 +642,12 @@ lbl35:
                                     throw new RuntimeException("Trying load Orange France but Resources are not present on dataIGP\nHave you checked include Orange France option at IGPDataConfig.properties file?");
                                 }
                                 c = a && n3 == 1;
-                            }
-                            catch (Exception exception) {}
+                            }/*                             catch (Exception exception) */ {}
                         }
                         try {
                             e = GameController.method_9b6e("URL-TEMPLATE-GAME").trim();
                             e = true;
-                        }
-                        catch (Exception exception) {}
+                        }/*                         catch (Exception exception) */ {}
                         for (int i = 0; i < H; ++i) {
                             GameController.method_9b6e(i, stringArray[i], 7, "IGP-PROMOS", e);
                         }
@@ -737,8 +726,7 @@ lbl35:
                             if (h != null && !GameController.method_9b6e(h = h.toUpperCase(), 7)) {
                                 h = null;
                             }
-                        }
-                        catch (Exception exception) {}
+                        }/*                         catch (Exception exception) */ {}
                     }
                     if (!c) {
                         if (e) {
@@ -776,8 +764,7 @@ lbl35:
                     GameController.g[7] = j;
                     GameController.a[7] = true;
                 }
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
         try {
             String string;
@@ -794,8 +781,7 @@ lbl35:
                 GameController.g[8] = null;
                 GameController.a[8] = false;
             }
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             GameController.g[8] = null;
             GameController.a[8] = false;
         }
@@ -927,11 +913,11 @@ lbl35:
                 GameController.a[2] = new Image[e.length];
                 return;
             }
-            case 0: {
+
                 GameController.loadIGPData();
                 return;
             }
-            case 1: {
+
                 int n5;
                 int n6;
                 byArray = GameController.method_9b6e(n3);
@@ -983,8 +969,7 @@ lbl35:
                             GameController.f[n6] = ((StringBuffer)serializable).toString().toUpperCase();
                         }
                         continue;
-                    }
-                    catch (Exception exception) {
+                    }/*                     catch (Exception exception) */ {
                         serializable = exception;
                         exception.printStackTrace();
                     }
@@ -995,7 +980,7 @@ lbl35:
                 GameController.method_9b6e(true, true);
                 return;
             }
-            case 2: {
+
                 Image image;
                 int n11;
                 Image[] imageArray;
@@ -1026,7 +1011,7 @@ lbl35:
                 z = a[32 * (4 + ap) + D];
                 return;
             }
-            case 3: {
+
                 byArray = GameController.method_9b6e(n3);
                 for (int i = 0; i < w; ++i) {
                     if (!GameConfig.h && (i == 13 || i == 12)) continue;
@@ -1037,7 +1022,7 @@ lbl35:
                 GameController.b[8] = c;
                 return;
             }
-            case 12: {
+
                 GameController.method_9b6e();
                 return;
             }
@@ -1060,21 +1045,19 @@ lbl35:
         var5_5 = 0;
         switch (var0) {
             case 4: 
-            case 6: {
+
                 v0 = GameController.c;
                 v1 = var2_2;
-                v2 = GameController.method_9b6e(GameController.method_9b6e(var1_1));
-                ** GOTO lbl59
-            }
-            case 5: {
+                v2 = GameController.method_9b6e(GameController.method_9b6e(var1_1));}
+
                 var3_3 = GameController.method_9b6e(var1_1);
                 GameController.e = GameController.method_9b6e(var3_3);
                 return;
             }
-            case 7: {
+
                 var5_5 = GameController.c.length - 1;
             }
-            case 8: {
+
                 if (var0 == 8) {
                     var5_5 = GameController.d.length - 1;
                 }
@@ -1085,10 +1068,8 @@ lbl35:
                 }
                 v0 = GameController.a[var4_4];
                 v1 = var6_6;
-                v2 = GameController.b[11];
-                ** GOTO lbl59
-            }
-            case 9: {
+                v2 = GameController.b[11];}
+
                 var1_1 = GameController.v = 4 + GameController.H;
                 var3_3 = GameController.method_9b6e(var1_1);
                 v0 = GameController.c;
@@ -1097,10 +1078,8 @@ lbl35:
                 v4 = 2;
                 v5 = var3_3.length - 2;
                 v6 = 0xFF3300;
-                v7 = 22923;
-                ** GOTO lbl58
-            }
-            case 10: {
+                v7 = 22923;}
+
                 if (!GameController.c) break;
                 var7_7 = GameController.x - 2;
                 var3_3 = GameController.method_9b6e(var7_7);
@@ -1108,7 +1087,7 @@ lbl35:
                 GameController.d = GameController.method_9b6e(var3_3);
                 return;
             }
-            case 11: {
+
                 var7_8 = GameController.x - 1 - (GameController.a != false ? 2 : 1);
                 var3_3 = GameController.method_9b6e(var7_8);
                 GameController.a = GameController.method_9b6e(var3_3);
@@ -1305,7 +1284,7 @@ lbl59:
             GameController.N = var0;
         }
         switch (GameController.M) {
-            case 0: {
+
                 if (GameController.Q >= GameController.R) {
                     GameController.M = 1;
                     GameController.isOnline();
@@ -1336,18 +1315,13 @@ lbl59:
                 ++GameController.Q;
                 break;
             }
-            case 1: {
+
                 switch (GameController.N) {
-                    case 26: {
-                        v0 = 4;
-                        ** GOTO lbl85
-                    }
-                    case 23: {
+
+                        v0 = 4;}
+
                         if (GameController.ac <= 1) break;
-                        if (GameController.O != 0) ** GOTO lbl43
-                        v1 = 8;
-                        ** GOTO lbl46
-lbl43:
+                        if (GameController.O != 0)v1 = 8;lbl43:
                         // 1 sources
 
                         v2 = GameController.O;
@@ -1365,13 +1339,9 @@ lbl43:
                         }
                         GameController.f = true;
                     }
-                    case 24: {
+
                         if (GameController.ac <= 1) break;
-                        if (GameController.f) ** GOTO lbl71
-                        if (GameController.O != 8) ** GOTO lbl60
-                        v3 = 0;
-                        ** GOTO lbl63
-lbl60:
+                        if (GameController.f)if (GameController.O != 8)v3 = 0;lbl60:
                         // 1 sources
 
                         v4 = GameController.O;
@@ -1396,18 +1366,18 @@ lbl71:
                         GameController.isOnline();
                         break;
                     }
-                    case 32: {
+
                         if (!GameController.o || GameController.W >= GameController.T - 1 || ++GameController.W - GameController.V < GameController.U) break;
                         ++GameController.V;
                         break;
                     }
-                    case 21: {
+
                         if (!GameController.o || GameController.W <= 0 || --GameController.W - GameController.V >= 0) break;
                         --GameController.V;
                         break;
                     }
                     case 25: 
-                    case 27: {
+
                         v0 = 6;
 lbl85:
                         // 2 sources
@@ -1417,7 +1387,7 @@ lbl85:
                 }
                 break;
             }
-            case 6: {
+
                 var1_3 = null;
                 var1_3 = GameController.g[GameController.O];
                 if (GameController.o) {
@@ -1431,7 +1401,7 @@ lbl85:
                 GameController.d = var1_3;
                 break;
             }
-            case 2: {
+
                 GameController.loadIGPData(false);
                 if (GameConfig.b == 1) {
                     GameController.loadIGPData();
@@ -1454,18 +1424,18 @@ lbl85:
                 GameController.M = 1;
                 break;
             }
-            case 5: {
+
                 break;
             }
-            case 3: {
+
                 switch (GameController.N) {
-                    case 26: {
+
                         GameController.M = 1;
                         GameController.f = null;
                         break;
                     }
                     case 25: 
-                    case 27: {
+
                         if (GameConfig.c == 2) {
                             GameController.g = GameController.f;
                             break;
@@ -1475,7 +1445,7 @@ lbl85:
                 }
                 break;
             }
-            case 4: {
+
                 GameController.loadIGPData(true);
                 if (GameController.k) {
                     GameController.a.setCommandListener(GameController.a);
@@ -1548,7 +1518,7 @@ lbl85:
         GameController.loadIGPData(var0, 0, 0, GameController.ak, GameController.al);
         GameController.loadIGPData(var1_1, 0, 0, GameController.ak, GameController.al);
         switch (GameController.M) {
-            case 0: {
+
                 var0.setColor(0);
                 var0.fillRect(0, 0, GameController.ak, GameController.al);
                 GameController.method_9b6e(var0, GameController.an, GameController.ak * 3 / 4, GameController.Q, GameController.R);
@@ -1561,7 +1531,7 @@ lbl85:
                 var0.drawString(GameController.i, GameController.am, GameController.an - 5, 33);
                 return;
             }
-            case 1: {
+
                 GameController.draw_de07();
                 if (GameConfig.j) {
                     var2_2 = 0;
@@ -1589,14 +1559,10 @@ lbl85:
                     GameController.method_9b6e(var1_1, 0, 0, GameController.ak, GameController.al, var2_2, var3_3);
                 }
                 GameController.draw_de07(var1_1);
-                if (!GameController.o) ** GOTO lbl47
-                GameController.loadIGPData(var1_1);
-                ** GOTO lbl176
-lbl47:
+                if (!GameController.o)GameController.loadIGPData(var1_1);lbl47:
                 // 1 sources
 
-                if (GameController.O != 7) ** GOTO lbl84
-                if (GameConfig.j) {
+                if (GameController.O != 7)if (GameConfig.j) {
                     var4_4 = GameController.ak / 2;
                     var5_6 = GameController.al * 8 / 100;
                     v1 = var1_1;
@@ -1623,25 +1589,19 @@ lbl47:
                 var7_8 = GameController.ai - GameController.c[GameController.O].getHeight();
                 var8_9 = Math.abs((var7_8 - var6_7) / 3);
                 v6 = var8_9 = var8_9 < 3 ? 3 : var8_9;
-                if (!GameConfig.j) ** GOTO lbl80
-                v7 = GameController.method_9b6e(GameController.g);
+                if (!GameConfig.j)v7 = GameController.method_9b6e(GameController.g);
                 v8 = var1_1;
                 v9 = GameController.ak - (GameController.b[4].getWidth() + 8) * 2;
                 v10 = GameController.ak / 2;
-                v11 = GameController.al * 60 / 100;
-                ** GOTO lbl174
-lbl80:
+                v11 = GameController.al * 60 / 100;lbl80:
                 // 1 sources
 
                 GameController.method_9b6e(GameController.method_9b6e(GameController.f), var1_1, GameController.ak - (GameController.b[4].getWidth() + 8) * 2, GameController.b[4].getWidth() + 8, GameController.c[GameController.O].getHeight() + var8_9, 20);
                 GameController.ai = GameController.c[GameController.O].getHeight() + var8_9 + GameController.F + GameController.ag / 2 + var8_9;
-                GameController.method_9b6e(var1_1, GameController.c[GameController.O], GameController.am, 2, 17);
-                ** GOTO lbl176
-lbl84:
+                GameController.method_9b6e(var1_1, GameController.c[GameController.O], GameController.am, 2, 17);lbl84:
                 // 1 sources
 
-                if (GameController.O != 3) ** GOTO lbl111
-                var4_4 = GameController.al >= 128 ? 1 : 0;
+                if (GameController.O != 3)var4_4 = GameController.al >= 128 ? 1 : 0;
                 var5_6 = GameController.h != null && GameController.h.length() > 0 ? 1 : 0;
                 var6_7 = var4_4 != 0 ? GameController.b[10].getHeight() : 0;
                 var7_8 = GameController.e.getHeight();
@@ -1658,17 +1618,14 @@ lbl84:
                 GameController.method_9b6e(var1_1, GameController.e, GameController.am - 1, var12_21, 3);
                 GameController.method_9b6e(GameController.method_9b6e(GameController.ad), var1_1, GameController.e.getWidth() * 9 / 20, GameController.am + 2, var12_21, 3);
                 var12_21 += GameController.e.getHeight() / 2;
-                if (var5_6 == 0) ** GOTO lbl176
-                GameController.E = 1;
+                if (var5_6 == 0)GameController.E = 1;
                 var13_23 = GameController.ai - var12_21 - GameController.b[8].getHeight();
                 v7 = GameController.h;
                 v8 = var1_1;
                 v9 = GameController.ak;
                 v10 = GameController.am;
                 v12 = var12_21;
-                v13 = var13_23;
-                ** GOTO lbl173
-lbl111:
+                v13 = var13_23;lbl111:
                 // 1 sources
 
                 if (GameController.O == 6) {
@@ -1781,7 +1738,7 @@ lbl176:
                 GameController.isOnline(var0);
                 return;
             }
-            case 2: {
+
                 var0.setFont(GameController.a);
                 var4_5 = GameController.a.getHeight();
                 var0.setColor(255);
@@ -1790,10 +1747,10 @@ lbl176:
                 var0.drawString(GameController.i, GameController.am, GameController.an, 65);
                 return;
             }
-            case 5: {
+
                 return;
             }
-            case 3: {
+
                 GameController.method_9b6e(var0, 0, 0, GameController.ak, GameController.al, 201756, 35031);
                 GameController.method_9b6e(GameController.s, var0, GameController.am, GameController.an, 33);
                 GameController.draw_de07(var0);
@@ -1947,13 +1904,11 @@ lbl176:
             case 0: 
             case 1: 
             case 2: 
-            case 7: {
-                v0 = GameController.d;
-                ** GOTO lbl16
-            }
+
+                v0 = GameController.d;}
             case 3: 
             case 6: 
-            case 8: {
+
                 v0 = GameController.e;
 lbl16:
                 // 2 sources
@@ -2005,22 +1960,17 @@ lbl16:
                                 var5_5 = GameController.b[12];
                                 var6_6 = GameController.b[12];
                                 if (GameController.ao != 26) break block12;
-                                if (GameConfig.a) ** GOTO lbl-1000
                                 var5_5 = GameController.b[13];
                                 break block13;
                             }
                             if (GameController.ao == 25 && GameController.q) {
                                 ** if (!GameConfig.a) goto lbl-1000
-lbl-1000:
                                 // 1 sources
 
                                 {
-                                    var5_5 = GameController.b[13];
-                                    ** GOTO lbl21
-                                }
+                                    var5_5 = GameController.b[13];}
                             }
                             break block13;
-lbl-1000:
                             // 2 sources
 
                             {
@@ -2247,8 +2197,7 @@ lbl-1000:
                         g = null;
                     }
                     Thread.sleep(1000L);
-                }
-                catch (Exception exception) {}
+                }/*                 catch (Exception exception) */ {}
             }
         }
     }
@@ -2259,8 +2208,7 @@ lbl-1000:
         RecordStore recordStore = null;
         try {
             recordStore = RecordStore.openRecordStore((String)"igp19", (boolean)false);
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             try {
                 recordStore = RecordStore.openRecordStore((String)"igp19", (boolean)true);
             }
@@ -2271,8 +2219,7 @@ lbl-1000:
                 recordStore.closeRecordStore();
             }
             return;
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             return;
         }
     }
@@ -2287,8 +2234,7 @@ lbl-1000:
                 recordStore = RecordStore.openRecordStore((String)"igp19", (boolean)false);
                 recordStore.closeRecordStore();
                 h = true;
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
             i = true;
         }
         return h;
@@ -2301,8 +2247,7 @@ lbl-1000:
             try {
                 a.platformRequest(string);
                 Thread.sleep(200L);
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
             int n = M = GameConfig.g ? 4 : 1;
             if (GameConfig.f) {
                 a.notifyDestroyed();

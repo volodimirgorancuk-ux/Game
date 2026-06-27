@@ -246,7 +246,7 @@ public final class AudioManager {
     private static void check_b825(AudioManager audioManager) {
         if (audioManager != null) {
             switch (audioManager.L) {
-                case 14: {
+
                     GameCanvas.update_bbd9(GameCanvas.d);
                     GameCanvas.check_9c24(0);
                     return;
@@ -254,15 +254,15 @@ public final class AudioManager {
                 case 0: 
                 case 1: 
                 case 2: 
-                case 11: {
+
                     GameCanvas.draw_c627(0);
                     return;
                 }
-                case 16: {
+
                     GameCanvas.check_9c24(audioManager);
                     return;
                 }
-                case 10: {
+
                     AudioManager.check_3437(GameCanvas.g[GameCanvas.by][GameCanvas.bz][audioManager.g[8]]);
                 }
             }
@@ -291,7 +291,7 @@ public final class AudioManager {
         var5_4 = AudioManager.draw_c627(var0, var1_1, var2_2);
         var6_5 = false;
         block0 : switch (AudioManager.a) {
-            case 5: {
+
                 if (AudioManager.m > 0) {
                     if ((AudioManager.m -= (int)GameCanvas.d) > 0) {
                         var6_5 = true;
@@ -300,7 +300,7 @@ public final class AudioManager {
                     }
                 }
             }
-            case 0: {
+
                 if (!var5_4) {
                     GameCanvas.draw_c627(var0, AudioManager.h, false, false);
                 }
@@ -326,14 +326,10 @@ public final class AudioManager {
                         break;
                     }
                     v1 = !AudioManager.b && GameCanvas.draw_c627(true) != null && GameCanvas.L[1] != -1 ? 6 : (!AudioManager.b && (GameCanvas.ez & 16416) != 0 && GameCanvas.L[1] != -1 ? 6 : (GameCanvas.W ? 17 : AudioManager.a));
-                }
-                ** GOTO lbl321
-            }
-            case 18: {
-                v1 = 18;
-                ** GOTO lbl321
-            }
-            case 6: {
+                }}
+
+                v1 = 18;}
+
                 GameCanvas.draw_c627(var0, AudioManager.h, true, true);
                 if (GameCanvas.update_bbd9()) {
                     if ((var3_3 & 16350) == 0) break;
@@ -401,10 +397,8 @@ public final class AudioManager {
                         AudioManager.draw_c627(var2_2);
                         v1 = 1;
                     }
-                }
-                ** GOTO lbl321
-            }
-            case 7: {
+                }}
+
                 GameCanvas.draw_c627(var0, AudioManager.h, true, false);
                 if (GameCanvas.update_bbd9()) {
                     if ((var2_2 | var3_3) != 0) {
@@ -430,14 +424,12 @@ public final class AudioManager {
                         AudioManager.draw_c627(var3_3);
                     }
                     v1 = 1;
-                }
-                ** GOTO lbl321
-            }
-            case 8: {
+                }}
+
                 var7_8 = GameCanvas.check_9c24(GameCanvas.L[1], 21);
                 GameCanvas.updateNPCTarget(false);
                 switch (var7_8) {
-                    case 4: {
+
                         var8_9 = GameCanvas.draw_c627(true);
                         if ((GameCanvas.ey & 16416) == 0 || GameCanvas.draw_c627()) {
                             v1 = 0;
@@ -446,7 +438,7 @@ public final class AudioManager {
                         GameCanvas.draw_c627(var0, var8_9, GameCanvas.L[1]);
                         break block0;
                     }
-                    case 6: {
+
                         if ((GameCanvas.ey & 16416) != 0) {
                             if (!var0.a.draw_c627()) break block0;
                             AudioManager.draw_c627(7, var0);
@@ -466,10 +458,8 @@ public final class AudioManager {
                         v1 = 6;
                         break;
                     }
-                }
-                ** GOTO lbl321
-            }
-            case 9: {
+                }}
+
                 if (var3_3 != 0 || var1_1 && var2_2 != 0) {
                     if (var1_1 && var2_2 != 0) {
                         AudioManager.draw_c627(var2_2);
@@ -481,47 +471,32 @@ public final class AudioManager {
                 } else {
                     if (!var0.a.draw_c627() && GameCanvas.X) break;
                     v1 = 0;
-                }
-                ** GOTO lbl321
-            }
-            case 12: {
+                }}
+
                 if (var3_3 != 0) {
                     AudioManager.draw_c627(var3_3);
                     v1 = 1;
                 } else {
                     if (!var0.a.draw_c627()) break;
                     v1 = 13;
-                }
-                ** GOTO lbl321
-            }
-            case 13: {
-                if (var3_3 == 0) ** GOTO lbl202
-                AudioManager.draw_c627(var3_3);
-                v1 = 1;
-                ** GOTO lbl321
-lbl202:
+                }}
+
+                if (var3_3 == 0)AudioManager.draw_c627(var3_3);
+                v1 = 1;lbl202:
                 // 1 sources
 
-                if (!var0.a.draw_c627()) break;
-                ** GOTO lbl320
-            }
-            case 1: {
+                if (!var0.a.draw_c627()) break;}
+
                 GameCanvas.updateNPCTarget(false);
-                if (!var1_1 || var2_2 == 0) ** GOTO lbl211
-                AudioManager.draw_c627(var2_2);
+                if (!var1_1 || var2_2 == 0)AudioManager.draw_c627(var2_2);
                 AudioManager.check_ceb1();
-                v1 = 2;
-                ** GOTO lbl321
-lbl211:
+                v1 = 2;lbl211:
                 // 1 sources
 
-                if (var3_3 == 0) ** GOTO lbl320
-                AudioManager.check_ceb1();
+                if (var3_3 == 0)AudioManager.check_ceb1();
                 AudioManager.draw_c627(var3_3);
-                v1 = (AudioManager.l += (int)GameCanvas.d) >= 300 || GameCanvas.ct >= 1 ? 3 : 1;
-                ** GOTO lbl321
-            }
-            case 2: {
+                v1 = (AudioManager.l += (int)GameCanvas.d) >= 300 || GameCanvas.ct >= 1 ? 3 : 1;}
+
                 GameCanvas.updateNPCTarget(false);
                 if (var0.a.draw_c627()) {
                     if (var3_3 != 0 && (var3_3 & AudioManager.h) != 0) {
@@ -534,10 +509,8 @@ lbl211:
                     }
                 } else {
                     v1 = 2;
-                }
-                ** GOTO lbl321
-            }
-            case 3: {
+                }}
+
                 GameCanvas.updateNPCTarget(false);
                 if ((GameCanvas.ez & 16416) != 0) {
                     if (GameCanvas.d != null) {
@@ -557,10 +530,8 @@ lbl211:
                     AudioManager.check_ceb1();
                     AudioManager.draw_c627(var3_3);
                     v1 = 3;
-                }
-                ** GOTO lbl321
-            }
-            case 4: {
+                }}
+
                 GameCanvas.updateNPCTarget(false);
                 if (var3_3 == 0) {
                     if (var2_2 != 0) {
@@ -590,44 +561,30 @@ lbl211:
                         AudioManager.k = 1474560;
                     }
                     v1 = 3;
-                }
-                ** GOTO lbl321
-            }
-            case 14: {
+                }}
+
                 if ((AudioManager.v += (int)GameCanvas.d) >= 400) {
                     AudioManager.check_4f9e(var0);
                 }
-                if (var0.a.draw_c627()) ** GOTO lbl320
-                v1 = 14;
-                ** GOTO lbl321
-            }
-            case 11: {
-                v1 = 11;
-                ** GOTO lbl321
-            }
-            case 15: {
+                if (var0.a.draw_c627())v1 = 14;}
+
+                v1 = 11;}
+
                 if ((GameCanvas.update_041b() || var0.a.draw_c627()) && GameCanvas.dZ != 2) {
                     GameCanvas.getEnemyTotalHealth(var0);
                 }
-                if (!var0.a.draw_c627()) break;
-                ** GOTO lbl320
-            }
-            case 17: {
+                if (!var0.a.draw_c627()) break;}
+
                 if ((AudioManager.v += (int)GameCanvas.d) >= 100) {
                     GameCanvas.update_0726(var0);
                     AudioManager.check_74f1(var0);
                 }
-                if (!var0.a.draw_c627()) break;
-                ** GOTO lbl320
-            }
-            case 100: {
+                if (!var0.a.draw_c627()) break;}
+
                 AudioManager.updateNPCTarget(var0);
                 GameCanvas.update_0726(var0);
-                if (!GameCanvas.draw_c627(GameCanvas.draw_c627(false, false), true)) ** GOTO lbl305
-                GameCanvas.W = true;
-                v1 = 17;
-                ** GOTO lbl321
-lbl305:
+                if (!GameCanvas.draw_c627(GameCanvas.draw_c627(false, false), true))GameCanvas.W = true;
+                v1 = 17;lbl305:
                 // 1 sources
 
                 if (!AudioManager.updateNPCTarget()) break;
@@ -635,17 +592,15 @@ lbl305:
                 AudioManager.update_bbd9(var0);
                 break;
             }
-            case 101: {
-                if (!var0.a.draw_c627()) break;
-                ** GOTO lbl320
-            }
-            case 666: {
+
+                if (!var0.a.draw_c627()) break;}
+
                 if (!var0.a.draw_c627()) break;
                 GameCanvas.draw_c627(0);
                 GameCanvas.draw_c627(20, true);
                 break;
             }
-            case 16: {
+
                 if ((AudioManager.w += (int)GameCanvas.d) < 800) break;
                 AudioManager.w = 0;
 lbl320:
@@ -748,11 +703,11 @@ lbl321:
                 AudioManager audioManager = GameCanvas.draw_c627(n4 + i, n5 + j);
                 if (audioManager == null) continue;
                 switch (audioManager.L) {
-                    case 3: {
+
                         AudioManager.update_ec14(audioManager);
                         continue block5;
                     }
-                    case 9: {
+
                         AudioManager.getEnemyCurrentHealth(audioManager);
                     }
                 }
@@ -820,31 +775,31 @@ lbl321:
         if (a != n || i != h) {
             switch (n) {
                 case 14: 
-                case 17: {
+
                     v = 0;
                     break;
                 }
                 case 1: 
-                case 7: {
+
                     if (n == a) break;
                     l = 0;
                     break;
                 }
-                case 100: {
+
                     r = 0;
                     s = 0;
                     break;
                 }
-                case 0: {
+
                     break;
                 }
-                case 8: {
+
                     int n2 = GameCanvas.check_9c24(GameCanvas.L[1], 12);
                     if (n2 == -1) break;
                     p |= 1;
                     break;
                 }
-                case 13: {
+
                     GameCanvas.update_6099();
                 }
             }
@@ -870,13 +825,13 @@ lbl321:
         int n8 = 0;
         int n9 = 16384 * n3 / 1000;
         switch (a) {
-            case 18: {
+
                 int n10 = AudioManager.draw_c627((GameCanvas.ez | GameCanvas.ey) & 0x3FDE);
                 if (!GameCanvas.updateNPCTarget() || n10 == 0) break;
                 AudioManager.draw_c627(n10);
             }
             case 1: 
-            case 7: {
+
                 n8 = n4;
                 int n11 = n6 = (h & 0x32DA) != 0 ? 983040 * n3 / 1000 : -j;
                 if ((h & 0xF8E) != 0) {
@@ -886,7 +841,7 @@ lbl321:
                 n7 = -k;
                 break;
             }
-            case 2: {
+
                 n8 = 2457;
                 int n12 = n6 = (h & 0x32DA) != 0 ? 0x1E0000 * n3 / 1000 : -j;
                 if ((h & 0xF8E) != 0) {
@@ -897,7 +852,7 @@ lbl321:
                 break;
             }
             case 3: 
-            case 14: {
+
                 int n13;
                 n8 = n5;
                 if ((h & 0x32DA) != 0) {
@@ -917,21 +872,21 @@ lbl321:
                 n7 = 0 - k;
                 break;
             }
-            case 4: {
+
                 n8 = n5;
                 n6 = -n9;
                 n7 = -n9;
                 break;
             }
-            case 10: {
+
                 GameCanvas.update_bbd9(audioManager, true);
                 break;
             }
-            case 11: {
+
                 GameCanvas.update_bbd9(audioManager, false);
                 break;
             }
-            case 16: {
+
                 int n14 = AudioManager.method_fb75(audioManager);
                 j = GameCanvas.method_fb75(audioManager.g[n14 + 11] * 80) / 1000;
                 AudioManager.n = audioManager.g[n14 + 11] < 0 ? -1 : 1;
@@ -1031,22 +986,18 @@ lbl321:
         var7_7 = true;
         var6_6 = AudioManager.updateNPCTarget(var3_3);
         switch (var1_1) {
-            case 8: {
-                v0 = AudioManager.c ? 116 : 88;
-                ** GOTO lbl95
-            }
+
+                v0 = AudioManager.c ? 116 : 88;}
             case 0: 
-            case 5: {
+
                 if (var4_4 > -1) {
                     v0 = 64;
                     v1 = GameCanvas.dispatch_6fca(var3_3);
                 } else {
                     v0 = 56;
                     v1 = GameCanvas.dispatch_6fca(var3_3);
-                }
-                ** GOTO lbl96
-            }
-            case 1: {
+                }}
+
                 if (var4_4 > -1) {
                     var6_6 += 72;
                     break;
@@ -1054,30 +1005,24 @@ lbl321:
                 var6_6 += 48;
                 break;
             }
-            case 2: {
+
                 var7_7 = false;
                 v0 = 24;
-                v1 = GameCanvas.dispatch_6fca(var3_3);
-                ** GOTO lbl96
-            }
-            case 14: {
+                v1 = GameCanvas.dispatch_6fca(var3_3);}
+
                 var7_7 = false;
                 v0 = 16;
-                v1 = GameCanvas.dispatch_6fca(var3_3);
-                ** GOTO lbl96
-            }
-            case 15: {
+                v1 = GameCanvas.dispatch_6fca(var3_3);}
+
                 var7_7 = false;
                 if (GameCanvas.k[var0.g[4]][6] == -1) {
                     var6_6 += 40;
                     break;
                 }
                 v0 = 16;
-                v1 = GameCanvas.dispatch_6fca(var3_3);
-                ** GOTO lbl96
-            }
+                v1 = GameCanvas.dispatch_6fca(var3_3);}
             case 3: 
-            case 4: {
+
                 if (var4_4 > -1) {
                     var6_6 += 76;
                     break;
@@ -1085,12 +1030,12 @@ lbl321:
                 var6_6 += 52;
                 break;
             }
-            case 16: {
+
                 var6_6 += AudioManager.update_0726(var0);
                 var7_7 = false;
                 break;
             }
-            case 100: {
+
                 var7_7 = false;
                 if (AudioManager.s == 0) {
                     var6_6 += 8;
@@ -1099,52 +1044,48 @@ lbl321:
                 var6_6 += 44;
                 break;
             }
-            case 666: {
+
                 var7_7 = false;
                 v2 = 7;
                 break;
             }
-            case 9: {
+
                 var6_6 += 104;
                 break;
             }
-            case 12: {
+
                 var6_6 += 108;
                 break;
             }
-            case 13: {
+
                 var6_6 += 112;
                 break;
             }
-            case 101: {
+
                 var7_7 = false;
                 var6_6 += 12;
                 break;
             }
-            case 6: {
-                v0 = 80;
-                ** GOTO lbl95
-            }
-            case 7: {
-                v0 = 96;
-                ** GOTO lbl95
-            }
-            case 10: {
+
+                v0 = 80;}
+
+                v0 = 96;}
+
                 var7_7 = false;
                 var6_6 += 36;
                 break;
             }
-            case 11: {
+
                 var7_7 = false;
                 var6_6 += 32;
                 break;
             }
-            case 17: {
+
                 var7_7 = false;
                 var6_6 += 40;
                 break;
             }
-            case 18: {
+
                 var7_7 = false;
                 v0 = GameCanvas.draw_c627(var0, var5_5);
 lbl95:
@@ -1220,7 +1161,7 @@ lbl96:
             GameCanvas.draw_c627(audioManager2, 1, true);
             switch (audioManager2.L) {
                 case 0: 
-                case 1: {
+
                     int n5 = AudioManager.method_fb75(audioManager2);
                     if (AudioManager.update_041b(audioManager2) != 2 && AudioManager.update_041b(audioManager2) != 4 || (audioManager2.g[n5 + 14] & 0x20) != 0 || !AudioManager.getEnemyTotalHealth(audioManager2)) break;
                     int n6 = n5 + 14;
@@ -1578,13 +1519,13 @@ lbl96:
     public static int draw_c627(AudioManager audioManager) {
         int n = -1;
         switch (audioManager.g[1]) {
-            case 0: {
+
                 return 499;
             }
-            case 4: {
+
                 return 210;
             }
-            case 9: {
+
                 return 356;
             }
         }
@@ -1598,13 +1539,13 @@ lbl96:
     private static int update_0726(AudioManager audioManager) {
         int n = -1;
         switch (audioManager.g[1]) {
-            case 0: {
+
                 return 500;
             }
-            case 4: {
+
                 return 211;
             }
-            case 9: {
+
                 return 358;
             }
         }
@@ -1636,27 +1577,27 @@ lbl96:
             block9: {
                 if (nArray[0] != 1) break block9;
                 switch (n) {
-                    case 20: {
+
                         AudioManager.draw_c627(nArray, n2, n3);
                         break block10;
                     }
-                    case 21: {
+
                         AudioManager.update_041b(nArray);
                         break block10;
                     }
-                    case 22: {
+
                         AudioManager.update_bbd9(nArray, n2, n3);
                         break block10;
                     }
-                    case 23: {
+
                         AudioManager.method_fb75(nArray, n2, n3);
                         break block10;
                     }
-                    case 24: {
+
                         AudioManager.update_0726(nArray);
                         break block10;
                     }
-                    case 25: {
+
                         AudioManager.update_041b(nArray, n2, n3);
                     }
                     default: {
@@ -1843,29 +1784,23 @@ lbl96:
             var11_11 = var9_9[3] - var9_9[1];
             var12_12 = 0;
             switch (var1_1[4]) {
-                case 0: {
+
                     var5_5 = var2_2 + var1_1[11];
                     var7_7 = var5_5 + var1_1[13];
                     var6_6 = var8_8 = var3_3 + var1_1[12];
                     v0 = var1_1[13];
-                    v1 = var10_10;
-                    ** GOTO lbl39
-                }
-                case 1: {
+                    v1 = var10_10;}
+
                     var5_5 = var2_2 + var1_1[11];
                     var7_7 = var5_5 + var1_1[13];
                     var6_6 = var8_8 = var3_3 + var1_1[12] + var1_1[14];
                     v0 = var1_1[13];
-                    v1 = var10_10;
-                    ** GOTO lbl39
-                }
-                case 2: {
+                    v1 = var10_10;}
+
                     v2 = var2_2;
                     v3 = var1_1;
-                    v4 = 11;
-                    ** GOTO lbl34
-                }
-                case 3: {
+                    v4 = 11;}
+
                     v2 = var2_2 + var1_1[11];
                     v3 = var1_1;
                     v4 = 13;
@@ -2109,14 +2044,13 @@ lbl39:
                 return;
             }
             GameCanvas.method_fb75(var4_4);
-            ** GOTO lbl-1000
         }
         if (var0[5] == 1) {
             var4_4.g[2] = GameCanvas.update_bbd9(var0[2]) + (var0[2] % 16 == 0 ? 0 : 1);
             v0 = var4_4.g;
             v1 = 3;
             v2 = GameCanvas.update_bbd9(var0[3]) + (var0[3] % 16 == 0 ? 0 : 1);
-        } else lbl-1000:
+        } else 
         // 2 sources
 
         {
@@ -2251,24 +2185,20 @@ lbl39:
             switch (var4_4 != false ? var5_5 : GameCanvas.cu) {
                 case 1: 
                 case 2: 
-                case 3: {
+
                     v1 = var8_9;
-                    v2 = 0;
-                    ** GOTO lbl37
-                }
+                    v2 = 0;}
                 case 5: 
                 case 6: 
-                case 7: {
+
                     var8_9.update_bbd9(1 + var3_3);
                     var0.g[16] = var0.g[16] | 2;
                     break;
                 }
-                case 4: {
+
                     v1 = var8_9;
-                    v2 = 2;
-                    ** GOTO lbl37
-                }
-                case 0: {
+                    v2 = 2;}
+
                     v1 = var8_9;
                     v2 = 3;
 lbl37:
@@ -2706,9 +2636,7 @@ lbl37:
                         if (var15_14 != var10_8) continue;
                         v0 = var0.g;
                         v1 = 30 + var8_6;
-                        v2 = AudioManager.a[var14_13];
-                        ** GOTO lbl37
-                    }
+                        v2 = AudioManager.a[var14_13];}
                     break block10;
                 }
                 if (var9_7 != 0) {
@@ -2882,7 +2810,7 @@ lbl37:
                             case 0: 
                             case 3: 
                             case 5: 
-                            case 7: {
+
                                 AudioManager.method_fb75(audioManager, bl);
                             }
                         }
@@ -2894,13 +2822,13 @@ lbl37:
                             case 0: 
                             case 3: 
                             case 5: 
-                            case 7: {
+
                                 break;
                             }
-                            case 1: {
+
                                 break;
                             }
-                            case 2: {
+
                                 AudioManager.dispatch_1506(audioManager);
                             }
                         }
@@ -3300,7 +3228,7 @@ lbl37:
             case 0: 
             case 3: 
             case 5: 
-            case 7: {
+
                 n3 = 8;
             }
         }
@@ -3323,24 +3251,20 @@ lbl37:
                 case 1: 
                 case 2: 
                 case 3: 
-                case 7: {
+
                     v0 = false;
                     break;
                 }
                 default: {
                     var6_6 = -1;
                     switch (GameCanvas.draw_c627() % 3) {
-                        case 0: {
+
                             v1 = var0;
-                            v2 = 8;
-                            ** GOTO lbl24
-                        }
-                        case 1: {
+                            v2 = 8;}
+
                             v1 = var0;
-                            v3 = 4;
-                            ** GOTO lbl23
-                        }
-                        case 2: {
+                            v3 = 4;}
+
                             v1 = var0;
                             v3 = 2;
 lbl23:
@@ -3401,7 +3325,7 @@ lbl24:
                         case 0: 
                         case 3: 
                         case 5: 
-                        case 7: {
+
                             if ((n7 & 1) == 0 || AudioManager.updateNPCTarget(audioManager, n8, n9) != 0) break;
                             bl3 = true;
                         }
@@ -3425,7 +3349,7 @@ lbl24:
                 case 0: 
                 case 3: 
                 case 5: 
-                case 7: {
+
                     if (!bl6 || bl3) break;
                     GameCanvas.update_bbd9(24);
                 }
@@ -3544,7 +3468,7 @@ lbl24:
                             case 0: 
                             case 3: 
                             case 5: 
-                            case 7: {
+
                                 if ((n15 & 1) == 0) break;
                                 bl2 = false;
                             }
@@ -3681,7 +3605,7 @@ lbl24:
                 case 0: 
                 case 3: 
                 case 5: 
-                case 7: {
+
                     GameCanvas.update_bbd9(11);
                 }
             }
@@ -3723,32 +3647,27 @@ lbl24:
                 GameCanvas.draw_c627(var0, 1, false);
                 break;
             }
-            case 0: {
+
                 var0.g[16] = var0.g[16] & -17;
                 v0 = 16;
                 v1 = var0.g;
-                v2 = var0.g[16] & -5;
-                ** GOTO lbl140
-            }
-            case 1: {
+                v2 = var0.g[16] & -5;}
+
                 break;
             }
-            case 2: {
+
                 break;
             }
-            case 4: {
+
                 var0.g[16] = var0.g[16] & -17;
                 var0.g[27] = AudioManager.g;
-                if (var0.g[10] != 1 && var0.g[10] != 5) ** GOTO lbl29
-                if (var0.g[10] == 5) {
+                if (var0.g[10] != 1 && var0.g[10] != 5)if (var0.g[10] == 5) {
                     AudioManager.update_0503(var0);
                     var1_1 = 11;
                 }
                 v1 = var0.g;
                 v0 = 10;
-                v2 = 0;
-                ** GOTO lbl140
-lbl29:
+                v2 = 0;lbl29:
                 // 1 sources
 
                 if (!AudioManager.update_4034(var0)) break;
@@ -3759,14 +3678,12 @@ lbl29:
                 AudioManager.dispatch_3f46(var0);
                 break;
             }
-            case 5: {
+
                 var0.g[27] = 0;
                 v1 = var0.g;
                 v0 = 28;
-                v2 = 0;
-                ** GOTO lbl140
-            }
-            case 14: {
+                v2 = 0;}
+
                 var4_4 = GameCanvas.dispatch_6fca(var0.g[0], 15) == 1;
                 if (var4_4 && var0.g[12] != 14) {
                     GameCanvas.updateNPCTarget(var0);
@@ -3776,59 +3693,51 @@ lbl29:
                 AudioManager.draw_c627(var0.a.draw_c627(), var0.a.update_bbd9(), 6);
                 break;
             }
-            case 17: {
+
                 AudioManager.update_0726(var0, GameCanvas.c.a.a, GameCanvas.c.a.b, 0);
                 break;
             }
-            case 15: {
+
                 AudioManager.check_ceb1(var0);
                 var0.g[15] = 0;
                 var0.g[16] = var0.g[16] | 16;
                 v1 = var0.g;
                 v0 = 17;
-                v2 = 0;
-                ** GOTO lbl140
-            }
-            case 16: {
+                v2 = 0;}
+
                 v1 = var0.g;
                 v0 = 15;
-                v2 = 0;
-                ** GOTO lbl140
-            }
+                v2 = 0;}
             case 103: 
-            case 104: {
+
                 v1 = var0.g;
                 v0 = 15;
-                v2 = 0;
-                ** GOTO lbl140
-            }
-            case 7: {
+                v2 = 0;}
+
                 switch (var2_2) {
-                    case 0: {
+
                         var0.g[16] = var0.g[16] & -257;
                         break;
                     }
-                    case 2: {
+
                         AudioManager.update_da74(var0);
                     }
                 }
                 break;
             }
-            case 8: {
+
                 break;
             }
-            case 12: {
+
                 v1 = var0.g;
                 v0 = 27;
-                v2 = AudioManager.g;
-                ** GOTO lbl140
-            }
-            case 13: {
+                v2 = AudioManager.g;}
+
                 break;
             }
-            case 9: {
+
                 switch (var2_2) {
-                    case 2: {
+
                         AudioManager.update_f157(var0);
                     }
                 }
@@ -3837,13 +3746,11 @@ lbl29:
                 }
                 v1 = var0.g;
                 v0 = 15;
-                v2 = 0;
-                ** GOTO lbl140
-            }
-            case 11: {
+                v2 = 0;}
+
                 break;
             }
-            case 100: {
+
                 if ((var0.g[16] & 4096) != 0) {
                     if ((var0.g[16] & 2048) == 0) {
                         var1_1 = 107;
@@ -3858,33 +3765,29 @@ lbl29:
                 var0.g[16] = var0.g[16] & -513;
                 v0 = 16;
                 v1 = var0.g;
-                v2 = var0.g[16] & -16385;
-                ** GOTO lbl140
-            }
-            case 101: {
+                v2 = var0.g[16] & -16385;}
+
                 if ((var0.g[16] & 64) != 0) break;
                 var0.g[16] = var0.g[16] | 64;
                 AudioManager.update_6099(var0);
                 break;
             }
-            case 106: {
+
                 AudioManager.update_0cdc(var0);
                 break;
             }
-            case 20: {
+
                 if (var3_3 == null) break;
                 var5_6 = GameCanvas.dispatch_6fca(var0.g[0], 12);
                 AudioManager.draw_c627(var0, var3_3.a.a, var3_3.a.b, var5_6);
                 break;
             }
-            case 22: {
+
                 var0.g[28] = 0;
                 v1 = var0.g;
                 v0 = 29;
-                v2 = 0;
-                ** GOTO lbl140
-            }
-            case 25: {
+                v2 = 0;}
+
                 v0 = 16;
                 v1 = var0.g;
                 v2 = var0.g[16] | 256;
@@ -4078,7 +3981,7 @@ lbl140:
         switch (n2) {
             case 0: 
             case 5: 
-            case 7: {
+
                 if ((audioManager.g[16] & 0x1000) == 0) return bl;
                 AudioManager audioManager2 = AudioManager.draw_c627(audioManager);
                 if (audioManager2 == null) return bl;
@@ -4087,31 +3990,31 @@ lbl140:
                 bl2 = bl2 && n <= 14400;
                 switch (n3) {
                     case 2: 
-                    case 3: {
+
                         bl = bl2 && GameCanvas.update_bbd9(audioManager.a.update_bbd9()) == GameCanvas.update_bbd9(audioManager2.a.update_bbd9());
                         return bl;
                     }
                     case 0: 
-                    case 1: {
+
                         bl = bl2 && GameCanvas.update_bbd9(audioManager.a.draw_c627()) == GameCanvas.update_bbd9(audioManager2.a.draw_c627());
                     }
                 }
                 return bl;
             }
-            case 1: {
+
                 if ((audioManager.g[16] & 0x100) != 0) return bl;
                 int n4 = GameCanvas.dispatch_6fca(audioManager.g[0], 24);
                 if (n4 == -1) return bl;
                 boolean bl3 = bl2;
                 return bl3;
             }
-            case 4: {
+
                 AudioManager audioManager3 = AudioManager.draw_c627(audioManager);
                 if (audioManager3 == null) return bl;
                 if (GameCanvas.draw_c627(audioManager.a.a, audioManager.a.b, audioManager3.a.a, audioManager3.a.b, null, false, 197)) return bl;
                 return true;
             }
-            case 6: {
+
                 if (audioManager.g[29] < 15000) return bl;
                 return true;
             }
@@ -4159,22 +4062,20 @@ lbl140:
                             var10_11 = GameCanvas.dispatch_6fca(var0.g[0], 15) == 1;
                             AudioManager.g = AudioManager.update_bbd9(var0.g[0], var0.a.a >> 14, var0.a.b >> 14);
                             switch (var3_4) {
-                                case 6: {
+
                                     v0 = 29;
                                     v1 = var0.g;
                                     v2 = var0.g[29] + (int)GameCanvas.d;
                                     break;
                                 }
-                                case 0: {
+
                                     if ((var0.g[16] & 256) == 0) break;
                                     var4_5 += var4_5 * 120 / 100;
                                     break;
                                 }
-                                case 1: {
+
                                     var9_10 = AudioManager.draw_c627(var0, var2_3, var9_10);
-                                    if (GameCanvas.dispatch_6fca(var0.g[0], 29) == -1) ** GOTO lbl50
-                                    if ((var0.g[16] & 256) == 0) ** GOTO lbl47
-                                    var0.g[29] = var0.g[29] + (int)GameCanvas.d;
+                                    if (GameCanvas.dispatch_6fca(var0.g[0], 29) == -1)if ((var0.g[16] & 256) == 0)var0.g[29] = var0.g[29] + (int)GameCanvas.d;
                                     if (var0.g[29] >= 5000) {
                                         var0.g[29] = 0;
                                     } else {
@@ -4211,7 +4112,7 @@ lbl50:
                             }
                             v3[v4] = v5;
                             switch (var0.g[12]) {
-                                case 0: {
+
                                     if (AudioManager.update_ecd2(var0)) {
                                         AudioManager.updateNPCTarget(var0, 4);
                                         break;
@@ -4224,7 +4125,7 @@ lbl50:
                                     }
                                     break block97;
                                 }
-                                case 1: {
+
                                     if (AudioManager.update_ecd2(var0)) {
                                         AudioManager.updateNPCTarget(var0, 4);
                                         break;
@@ -4255,14 +4156,14 @@ lbl50:
                                     }
                                     break block97;
                                 }
-                                case 2: {
+
                                     if (var0.a.draw_c627()) {
                                         AudioManager.updateNPCTarget(var0, 3);
                                         break;
                                     }
                                     break block97;
                                 }
-                                case 3: {
+
                                     if (var0.a.draw_c627()) {
                                         var0.g[13] = 0;
                                         var0.g[14] = 0;
@@ -4271,7 +4172,7 @@ lbl50:
                                     }
                                     break block97;
                                 }
-                                case 4: {
+
                                     if (var2_3 == GameCanvas.c) {
                                         ++AudioManager.E;
                                     }
@@ -4308,21 +4209,17 @@ lbl50:
                                         AudioManager.updateNPCTarget(var0, 6);
                                         break;
                                     }
-                                    if (!AudioManager.update_bbd9(var0, var9_10)) ** GOTO lbl149
-                                    if (var3_4 == 6) {
+                                    if (!AudioManager.update_bbd9(var0, var9_10))if (var3_4 == 6) {
                                         v6 = var0;
                                         v7 = 21;
                                     } else {
                                         v6 = var0;
                                         v7 = 12;
-                                    }
-                                    ** GOTO lbl157
-lbl149:
+                                    }lbl149:
                                     // 1 sources
 
                                     AudioManager.update_0726(var0, var2_3.a.a, var2_3.a.b, 0);
-                                    if (AudioManager.method_fb75(var0, var4_5)) ** GOTO lbl158
-                                    if (AudioManager.draw_c627(var0, var2_3.a.a, var2_3.a.b, var4_5)) {
+                                    if (AudioManager.method_fb75(var0, var4_5))if (AudioManager.draw_c627(var0, var2_3.a.a, var2_3.a.b, var4_5)) {
                                         v6 = var0;
                                         v7 = 5;
                                     } else {
@@ -4339,11 +4236,10 @@ lbl158:
                                     AudioManager.updateNPCTarget(var0);
                                     break;
                                 }
-                                case 5: {
+
                                     var0.g[28] = var0.g[28] + (int)GameCanvas.d;
                                     var2_3 = AudioManager.updateNPCTarget(var0);
-                                    if (var2_3 == null) ** GOTO lbl185
-                                    var11_12 = var0.g[13];
+                                    if (var2_3 == null)var11_12 = var0.g[13];
                                     var12_14 = var0.g[14];
                                     AudioManager.update_0726(var0, var2_3.a.a, var2_3.a.b, 0);
                                     if (AudioManager.method_fb75(var0, var4_5) || AudioManager.draw_c627(var0, var2_3, true)) {
@@ -4372,7 +4268,7 @@ lbl185:
                                     AudioManager.updateNPCTarget(var0, 0);
                                     break;
                                 }
-                                case 6: {
+
                                     var2_3 = AudioManager.updateNPCTarget(var0);
                                     if (var2_3 != null) {
                                         AudioManager.update_0726(var0, var2_3.a.a, var2_3.a.b, 0);
@@ -4391,14 +4287,14 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 14: {
+
                                     if (var0.a.draw_c627() || !var10_11) {
                                         AudioManager.update_bbd9(var0, true);
                                         break;
                                     }
                                     break block97;
                                 }
-                                case 15: {
+
                                     var0.g[15] = var0.g[15] + (int)GameCanvas.d;
                                     if (AudioManager.a != 8 || GameCanvas.draw_c627(true) != var0) {
                                         if (var0.g[15] >= 200) {
@@ -4419,7 +4315,7 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 17: {
+
                                     AudioManager.method_fb75(var0, -40);
                                     if (var0.a.draw_c627()) {
                                         AudioManager.update_88b5(var0);
@@ -4428,7 +4324,7 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 16: {
+
                                     var0.g[15] = var0.g[15] + (int)GameCanvas.d;
                                     if (var0.g[15] >= 1000 && var0.a.draw_c627()) {
                                         var0.g[16] = var0.g[16] & -17;
@@ -4437,7 +4333,7 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 104: {
+
                                     var0.g[15] = var0.g[15] + (int)GameCanvas.d;
                                     if (var0.a.draw_c627()) {
                                         AudioManager.update_88b5(var0);
@@ -4448,7 +4344,7 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 103: {
+
                                     var0.g[15] = var0.g[15] + (int)GameCanvas.d;
                                     if (var0.a.draw_c627()) {
                                         AudioManager.update_88b5(var0);
@@ -4459,7 +4355,7 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 9: {
+
                                     if (var3_4 == 2) {
                                         AudioManager.dispatch_911d(var0);
                                         break;
@@ -4472,14 +4368,14 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 11: {
+
                                     if (var0.a.draw_c627()) {
                                         AudioManager.updateNPCTarget(var0, 4);
                                         break;
                                     }
                                     break block97;
                                 }
-                                case 23: {
+
                                     var0.g[15] = var0.g[15] + (int)GameCanvas.d;
                                     if (var0.g[15] >= 1500) {
                                         AudioManager.updateNPCTarget(var0, 11);
@@ -4487,21 +4383,21 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 100: {
+
                                     if (var0.a.draw_c627()) {
                                         AudioManager.updateNPCTarget(var0, 101);
                                         break;
                                     }
                                     break block97;
                                 }
-                                case 105: {
+
                                     if (var0.a.draw_c627()) {
                                         AudioManager.updateNPCTarget(var0, 106);
                                         break;
                                     }
                                     break block97;
                                 }
-                                case 106: {
+
                                     if (var0.a.draw_c627()) {
                                         var0.g[25] = var0.g[25] | var0.g[26];
                                         var0.g[26] = 0;
@@ -4510,7 +4406,7 @@ lbl185:
                                     }
                                     break block97;
                                 }
-                                case 107: {
+
                                     if (var0.a.draw_c627()) {
                                         AudioManager.update_c64b(var0);
                                         AudioManager.updateNPCTarget(var0, 100);
@@ -4546,20 +4442,20 @@ lbl185:
             case 0: 
             case 3: 
             case 5: 
-            case 7: {
+
                 AudioManager.check_ceb1(audioManager, n);
                 return;
             }
-            case 1: {
+
                 AudioManager.getEnemyTotalHealth(audioManager, n);
                 return;
             }
-            case 2: {
+
                 AudioManager.dispatch_911d(audioManager);
                 return;
             }
             case 4: 
-            case 6: {
+
                 AudioManager.getEnemyCurrentHealth(audioManager, n);
             }
         }
@@ -4641,7 +4537,7 @@ lbl185:
                 block0 : switch (audioManager.g[12]) {
                     case 0: 
                     case 6: 
-                    case 28: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 0);
@@ -4650,7 +4546,7 @@ lbl185:
                         n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 2);
                         break;
                     }
-                    case 1: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 1);
@@ -4659,13 +4555,13 @@ lbl185:
                         n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 3);
                         break;
                     }
-                    case 5: {
+
                         if (audioManager.g[28] < 100) {
                             bl = false;
                         }
                     }
                     case 4: 
-                    case 20: {
+
                         int n5;
                         if (bl3) {
                             n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 30);
@@ -4678,7 +4574,7 @@ lbl185:
                         n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 4);
                         break;
                     }
-                    case 7: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 3);
@@ -4687,7 +4583,7 @@ lbl185:
                         n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 5);
                         break;
                     }
-                    case 8: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 4);
@@ -4696,7 +4592,7 @@ lbl185:
                         n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 6);
                         break;
                     }
-                    case 12: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 7);
@@ -4705,10 +4601,10 @@ lbl185:
                         n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 23);
                         break;
                     }
-                    case 13: {
+
                         int n5;
                         switch (n3) {
-                            case 1: {
+
                                 if (bl2) {
                                     n5 = n + (GameCanvas.check_ceb1(audioManager.g[0], 8) + audioManager.g[28] * 4);
                                     break block0;
@@ -4728,7 +4624,7 @@ lbl185:
                     case 9: 
                     case 17: 
                     case 103: 
-                    case 104: {
+
                         int n5;
                         if ((audioManager.g[16] & 0x1000) != 0) {
                             if (bl2) {
@@ -4745,12 +4641,12 @@ lbl185:
                         n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 7);
                         break;
                     }
-                    case 23: {
+
                         bl4 = true;
                     }
                     case 3: 
                     case 11: 
-                    case 105: {
+
                         int n5;
                         if ((audioManager.g[16] & 0x1000) != 0) {
                             if (bl2) {
@@ -4768,7 +4664,7 @@ lbl185:
                         break;
                     }
                     case 15: 
-                    case 16: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 9);
@@ -4778,7 +4674,7 @@ lbl185:
                         break;
                     }
                     case 14: 
-                    case 18: {
+
                         int n5;
                         if (n2 != 0 || audioManager.g[12] == 18) {
                             if (bl2) {
@@ -4791,7 +4687,7 @@ lbl185:
                         n5 = -1;
                         break;
                     }
-                    case 100: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 10);
@@ -4804,7 +4700,7 @@ lbl185:
                         n5 = n + GameCanvas.method_fb75(audioManager.g[0], audioManager.g[17], 3);
                         break;
                     }
-                    case 101: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 11);
@@ -4817,14 +4713,14 @@ lbl185:
                         n5 = n + GameCanvas.method_fb75(audioManager.g[0], audioManager.g[17], 4);
                         break;
                     }
-                    case 19: {
+
                         n += 28;
                         break;
                     }
-                    case 107: {
+
                         n4 = -1;
                     }
-                    case 106: {
+
                         int n5;
                         if (bl2) {
                             n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 12);
@@ -4837,25 +4733,25 @@ lbl185:
                         n5 = n + GameCanvas.check_ceb1(audioManager.g[0], 13);
                         break;
                     }
-                    case 22: {
+
                         n += 43;
                         break;
                     }
-                    case 21: {
+
                         n += 51;
                         break;
                     }
                     case 24: 
-                    case 25: {
+
                         int n5 = n + GameCanvas.dispatch_6fca(audioManager.g[0], 29);
                         break;
                     }
-                    case 26: {
+
                         int n5 = 77;
                         break;
                     }
                     case 27: 
-                    case 108: {
+
                         int n5 = 87;
                         break;
                     }
@@ -5076,9 +4972,7 @@ lbl185:
                                                                         if (var10_10 == 0 || AudioManager.draw_c627(var0.g[0], var7_7 + var11_11 >> 14, var8_8 + var12_12 + (var10_10 > 0 ? var13_13 : -var13_13) >> 14) && AudioManager.draw_c627(var0.g[0], var7_7 >> 14, var8_8 + (var10_10 > 0 ? var13_13 : -var13_13) >> 14)) break block14;
                                                                         var9_9 = 0;
                                                                         v0 = var10_10 > 0 ? 1 : -1;
-                                                                        v1 = 14;
-                                                                        ** GOTO lbl74
-                                                                    }
+                                                                        v1 = 14;}
                                                                     if (var9_9 == 0 || AudioManager.draw_c627(var0.g[0], var7_7 + var11_11 + (var9_9 > 0 ? var13_13 : -var13_13) >> 14, var8_8 + var12_12 >> 14) && AudioManager.draw_c627(var0.g[0], var7_7 + (var9_9 > 0 ? var13_13 : -var13_13) >> 14, var8_8 >> 14)) break block15;
                                                                     var9_9 = (var9_9 > 0 ? 1 : -1) << 14;
                                                                     v2 = 0;
@@ -5096,9 +4990,7 @@ lbl185:
                                                         }
                                                         var9_9 = 0;
                                                         v0 = GameCanvas.draw_c627() % 100 < 50 ? 1 : -1;
-                                                        v1 = 14;
-                                                        ** GOTO lbl74
-                                                    }
+                                                        v1 = 14;}
                                                     if (GameCanvas.method_fb75(var9_9) >= GameCanvas.method_fb75(var10_10)) break block19;
                                                     if (var9_9 == 0 || AudioManager.draw_c627(var0.g[0], var7_7 + var11_11 + (var9_9 > 0 ? var13_13 : -var13_13) >> 14, var8_8 + var12_12 >> 14) && AudioManager.draw_c627(var0.g[0], var7_7 + (var9_9 > 0 ? var13_13 : -var13_13) >> 14, var8_8 >> 14)) break block20;
                                                     var9_9 = (var9_9 > 0 ? 1 : -1) << 14;
@@ -5108,9 +5000,7 @@ lbl185:
                                                 if (var10_10 == 0 || AudioManager.draw_c627(var0.g[0], var7_7 + var11_11 >> 14, var8_8 + var12_12 + (var10_10 > 0 ? var13_13 : -var13_13) >> 14) && AudioManager.draw_c627(var0.g[0], var7_7 >> 14, var8_8 + (var10_10 > 0 ? var13_13 : -var13_13) >> 14)) break block21;
                                                 var9_9 = 0;
                                                 v0 = var10_10 > 0 ? 1 : -1;
-                                                v1 = 14;
-                                                ** GOTO lbl74
-                                            }
+                                                v1 = 14;}
                                             if (var9_9 > 0) {
                                                 var9_9 = 16384;
                                                 v2 = 0;
@@ -5295,13 +5185,11 @@ lbl74:
                             if (var2_2 == null) break block12;
                             switch (AudioManager.update_bbd9(var0)) {
                                 case 1: 
-                                case 2: {
+
                                     v5 = var0;
-                                    v6 = var2_2.a.update_bbd9() - 1;
-                                    ** GOTO lbl31
-                                }
+                                    v6 = var2_2.a.update_bbd9() - 1;}
                                 case 0: 
-                                case 3: {
+
                                     v5 = var0;
                                     v6 = var2_2.a.update_bbd9() + 1;
 lbl31:
@@ -5386,19 +5274,13 @@ lbl31:
             if (var3_3 == -1 || var2_2 != 0 || GameCanvas.dispatch_6fca(var0.g[0], 34) != -1 || (var0.g[16] & 4356) != 0) break block6;
             var4_4 = 20;
             switch (GameCanvas.bF) {
-                case 0: {
-                    v0 = 20;
-                    ** GOTO lbl18
-                }
-                case 1: {
-                    v0 = 35;
-                    ** GOTO lbl18
-                }
-                case 2: {
-                    v0 = 50;
-                    ** GOTO lbl18
-                }
-                case 3: {
+
+                    v0 = 20;}
+
+                    v0 = 35;}
+
+                    v0 = 50;}
+
                     v0 = 65;
 lbl18:
                     // 4 sources
@@ -5416,7 +5298,7 @@ lbl18:
         int n3 = GameCanvas.dispatch_6fca(audioManager.g[0], 17);
         AudioManager audioManager2 = AudioManager.draw_c627(audioManager);
         switch (audioManager.g[12]) {
-            case 7: {
+
                 AudioManager.method_fb75(audioManager, n2);
                 if (!audioManager.a.draw_c627()) break;
                 if (audioManager2 != null && n <= n3 && !GameCanvas.draw_c627(audioManager.a.a, audioManager.a.b, audioManager2.a.a, audioManager2.a.b, null, false, 197) && (audioManager2 == GameCanvas.c && a != 100 && a != 14 && a != 17 && (a != 18 || GameCanvas.calc_fe8d(audioManager2.g[29], 1) != 1) || audioManager2 != GameCanvas.c && AudioManager.calc_fe8d(audioManager2) < 555)) {
@@ -5445,7 +5327,7 @@ lbl18:
                 AudioManager.updateNPCTarget(audioManager, 0);
                 return;
             }
-            case 8: {
+
                 if (audioManager2 != null && !GameCanvas.draw_c627(audioManager.a.a, audioManager.a.b, audioManager2.a.a, audioManager2.a.b, null, false, 197)) {
                     audioManager.g[15] = audioManager.g[15] + (int)GameCanvas.d;
                     if (audioManager.g[15] < 1000) break;
@@ -5475,7 +5357,7 @@ lbl18:
                 AudioManager.updateNPCTarget(audioManager, 4);
                 return;
             }
-            case 12: {
+
                 if (!audioManager.a.draw_c627()) break;
                 AudioManager.updateNPCTarget(audioManager, 13);
                 if (audioManager2 == null || (!AudioManager.update_bbd9(audioManager, n) || audioManager2 != GameCanvas.c || a == 100 || a == 14 || a == 17) && (audioManager2 == GameCanvas.c || AudioManager.calc_fe8d(audioManager2) >= 555)) break;
@@ -5488,12 +5370,12 @@ lbl18:
                 AudioManager.update_8b24(audioManager2, n5);
                 return;
             }
-            case 13: {
+
                 if (!audioManager.a.draw_c627()) break;
                 AudioManager.updateNPCTarget(audioManager, 4);
                 return;
             }
-            case 24: {
+
                 if (!audioManager.a.draw_c627()) break;
                 audioManager.g[16] = audioManager.g[16] | 0x100;
                 AudioManager.updateNPCTarget(audioManager, 4);
@@ -5502,7 +5384,7 @@ lbl18:
             case 26: 
             case 27: 
             case 28: 
-            case 108: {
+
                 AudioManager.dispatch_6bbe(audioManager);
             }
         }
@@ -5561,7 +5443,7 @@ lbl18:
                 }
                 if (audioManager.g[10] != 6) break block17;
                 switch (audioManager.g[12]) {
-                    case 26: {
+
                         i = true;
                         if (audioManager.a.draw_c627()) {
                             AudioManager.updateNPCTarget(audioManager, 27);
@@ -5571,10 +5453,10 @@ lbl18:
                         }
                         break block17;
                     }
-                    case 27: {
+
                         return;
                     }
-                    case 28: {
+
                         if (h || !i && audioManager.a.draw_c627()) {
                             AudioManager.updateNPCTarget(audioManager, 27);
                             AudioManager.updateNPCTarget(audioManager);
@@ -5582,7 +5464,7 @@ lbl18:
                         }
                         break block17;
                     }
-                    case 108: {
+
                         int n3 = audioManager.a.a.draw_c627(audioManager.a.d);
                         if (audioManager.a.e >= n3 / 4) {
                             AudioManager.updateNPCTarget(audioManager, 100);
@@ -5592,7 +5474,7 @@ lbl18:
                         }
                         break block17;
                     }
-                    case 14: {
+
                         AudioManager.updateNPCTarget(audioManager);
                         if (audioManager.a.draw_c627()) {
                             int n4 = AudioManager.update_bbd9(audioManager, false);
@@ -5616,7 +5498,7 @@ lbl18:
                     }
                     case -1: 
                     case 100: 
-                    case 101: {
+
                         audioManager.g[10] = 0;
                         return;
                     }
@@ -5650,27 +5532,21 @@ lbl18:
                 var9_8 = GameCanvas.draw_c627() % 3 - 1 << 14;
             }
             switch (AudioManager.update_bbd9(var0)) {
-                case 0: {
+
                     var3_3[0] = var6_5;
                     v0 = var3_3;
                     v1 = 1;
-                    v2 = var7_6 + (var8_7 >> 1) + var9_8;
-                    ** GOTO lbl36
-                }
-                case 1: {
+                    v2 = var7_6 + (var8_7 >> 1) + var9_8;}
+
                     var3_3[0] = var6_5;
                     v0 = var3_3;
                     v1 = 1;
-                    v2 = var7_6 - var8_7 + var9_8;
-                    ** GOTO lbl36
-                }
-                case 2: {
+                    v2 = var7_6 - var8_7 + var9_8;}
+
                     v3 = var3_3;
                     v4 = 0;
-                    v5 = var6_5 + var8_7;
-                    ** GOTO lbl32
-                }
-                case 3: {
+                    v5 = var6_5 + var8_7;}
+
                     v3 = var3_3;
                     v4 = 0;
                     v5 = var6_5 - var8_7;
@@ -5724,13 +5600,10 @@ lbl36:
         var4_3 = GameCanvas.dispatch_6fca(var0.g[0], 17);
         var5_4 = AudioManager.draw_c627(var0);
         block0 : switch (var0.g[12]) {
-            case 12: {
-                if (AudioManager.g - var0.g[27] <= 1500 || var1_1 > 14400) ** GOTO lbl11
-                var0.g[28] = 0;
+
+                if (AudioManager.g - var0.g[27] <= 1500 || var1_1 > 14400)var0.g[28] = 0;
                 v0 = var0;
-                v1 = 13;
-                ** GOTO lbl48
-lbl11:
+                v1 = 13;lbl11:
                 // 1 sources
 
                 if (AudioManager.g - var0.g[27] >= 0 && var1_1 <= 14400) break;
@@ -5738,44 +5611,37 @@ lbl11:
                 var0.g[28] = 1;
                 return;
             }
-            case 13: {
+
                 switch (var0.g[28]) {
-                    case 0: {
+
                         if (!var0.a.draw_c627() || var5_4 == null) break;
                         GameCanvas.draw_c627(var0.a.a, GameCanvas.dispatch_6fca(var0.g[0], 25), var0.a.a, var0.a.b, var5_4.a.a, var5_4.a.b, 50, 200);
                         var0.g[28] = var0.g[28] + 1;
                         break block0;
                     }
-                    case 1: {
+
                         if (!var0.a.draw_c627()) break;
                         AudioManager.updateNPCTarget(var0, 4);
                     }
                 }
                 return;
             }
-            case 7: {
+
                 AudioManager.method_fb75(var0, var2_2);
                 if (!var0.a.draw_c627()) break;
-                if (var1_1 > var4_3 || AudioManager.a == 100) ** GOTO lbl38
-                AudioManager.update_0726(var0, var5_4.a.a, var5_4.a.b, 0);
+                if (var1_1 > var4_3 || AudioManager.a == 100)AudioManager.update_0726(var0, var5_4.a.a, var5_4.a.b, 0);
                 var0.g[15] = 0;
                 if (var5_4 == GameCanvas.c) {
                     AudioManager.update_bbd9(GameCanvas.c, GameCanvas.dispatch_6fca(var0.g[0], 14));
                 }
                 v0 = var0;
-                v1 = 8;
-                ** GOTO lbl48
-lbl38:
+                v1 = 8;lbl38:
                 // 1 sources
 
-                v0 = var0;
-                ** GOTO lbl47
-            }
-            case 8: {
-                if (!var0.a.draw_c627()) break;
-                ** GOTO lbl46
-            }
-            case 25: {
+                v0 = var0;}
+
+                if (!var0.a.draw_c627()) break;}
+
                 if (!var0.a.draw_c627()) break;
                 var0.g[29] = 0;
 lbl46:
@@ -5799,23 +5665,19 @@ lbl48:
      */
     private static void dispatch_1506(AudioManager var0) {
         switch (var0.g[12]) {
-            case 7: {
+
                 v0 = var0.a;
                 v1 = v0;
                 v2 = v0.b;
                 v3 = GameCanvas.k[var0.g[28]].g;
-                v4 = 10;
-                ** GOTO lbl22
-            }
-            case 8: {
+                v4 = 10;}
+
                 var1_1 = GameCanvas.c.a.a.draw_c627(0, var0.g[27]);
                 var0.a.a += var1_1[0] + (var1_1[2] >> 1) << 14;
                 v5 = var0.a;
                 v1 = v5;
-                v6 = v5.b + (var1_1[1] + (var1_1[3] >> 1) << 14);
-                ** GOTO lbl23
-            }
-            case 9: {
+                v6 = v5.b + (var1_1[1] + (var1_1[3] >> 1) << 14);}
+
                 v7 = var0.a;
                 v1 = v7;
                 v2 = v7.b;
@@ -5835,7 +5697,6 @@ lbl23:
 
     private static void update_f157(AudioManager audioManager) {
         int n = 0;
-        do {
             audioManager.a.a = GameCanvas.c.a.a + (GameCanvas.draw_c627() % 131072 - 65536);
             audioManager.a.b = GameCanvas.c.a.b + (GameCanvas.draw_c627() % 131072 - 65536);
         } while (AudioManager.draw_c627(audioManager.g[0], audioManager.a.draw_c627(), audioManager.a.update_bbd9()) && ++n < 10);
@@ -5866,7 +5727,7 @@ lbl23:
     private static void dispatch_911d(AudioManager audioManager) {
         int n = GameCanvas.dispatch_6fca(audioManager.g[0], 12);
         switch (audioManager.g[12]) {
-            case 9: {
+
                 audioManager.g[15] = audioManager.g[15] + (int)GameCanvas.d;
                 if (audioManager.g[28] > 0) {
                     audioManager.g[28] = audioManager.g[28] - 0x320000 * (int)GameCanvas.d / 1000;
@@ -5876,13 +5737,13 @@ lbl23:
                 AudioManager.updateNPCTarget(audioManager, 10);
                 return;
             }
-            case 10: {
+
                 audioManager.g[15] = audioManager.g[15] + (int)GameCanvas.d;
                 if (audioManager.g[15] < 3000) break;
                 AudioManager.updateNPCTarget(audioManager, 11);
                 return;
             }
-            case 7: {
+
                 GameCanvas.draw_c627(audioManager, 1, false);
                 audioManager.g[15] = audioManager.g[15] + (int)GameCanvas.d;
                 audioManager.a.a = GameCanvas.k[audioManager.g[28]].a.a;
@@ -5908,7 +5769,7 @@ lbl23:
                 AudioManager.updateNPCTarget(audioManager, 4);
                 return;
             }
-            case 8: {
+
                 b = true;
                 GameCanvas.update_bbd9();
                 audioManager.a.a = GameCanvas.c.a.a;
@@ -5948,13 +5809,11 @@ lbl23:
         var2_2 = GameCanvas.dispatch_6fca(var0.g[0], 10);
         var4_3 = AudioManager.draw_c627(var0);
         switch (var0.g[12]) {
-            case 18: {
+
                 if (!var0.a.draw_c627()) break;
                 v0 = var0;
-                v1 = 1;
-                ** GOTO lbl102
-            }
-            case 12: {
+                v1 = 1;}
+
                 if (!var0.a.draw_c627()) break;
                 if (var4_3 != null) {
                     AudioManager.update_0726(var0, var4_3.a.a, var4_3.a.b, 0);
@@ -5964,56 +5823,38 @@ lbl23:
                     return;
                 }
                 v0 = var0;
-                v1 = 0;
-                ** GOTO lbl102
-            }
-            case 13: {
+                v1 = 0;}
+
                 if ((var0.g[16] & 256) == 0) {
                     AudioManager.dispatch_22cf(var0);
                 }
                 if (!var0.a.draw_c627()) break;
-                if (var2_2 != 6) ** GOTO lbl33
-                if (GameCanvas.draw_c627() % 100 >= 40) ** GOTO lbl30
-                if (AudioManager.draw_c627(var0, var4_3, true)) ** GOTO lbl100
-                v0 = var0;
-                v1 = 20;
-                ** GOTO lbl102
-lbl30:
+                if (var2_2 != 6)if (GameCanvas.draw_c627() % 100 >= 40)if (AudioManager.draw_c627(var0, var4_3, true))v0 = var0;
+                v1 = 20;lbl30:
                 // 1 sources
 
                 v0 = var0;
-                v1 = 19;
-                ** GOTO lbl102
-lbl33:
+                v1 = 19;lbl33:
                 // 1 sources
 
                 v0 = var0;
-                v1 = 19;
-                ** GOTO lbl102
-            }
-            case 19: {
+                v1 = 19;}
+
                 if (!var0.a.draw_c627() || var4_3 == null) break;
                 AudioManager.update_0726(var0, var4_3.a.a, var4_3.a.b, 0);
-                if (AudioManager.draw_c627(var0, var4_3, true)) ** GOTO lbl100
-                v0 = var0;
-                v1 = 20;
-                ** GOTO lbl102
-            }
-            case 20: {
+                if (AudioManager.draw_c627(var0, var4_3, true))v0 = var0;
+                v1 = 20;}
+
                 if (var4_3 == null) break;
                 var5_4 = GameCanvas.dispatch_6fca(var0.g[0], 12);
-                if (!AudioManager.method_fb75(var0, var5_4)) ** GOTO lbl100
-                if (!AudioManager.draw_c627(var0, var4_3, true)) break;
+                if (!AudioManager.method_fb75(var0, var5_4))if (!AudioManager.draw_c627(var0, var4_3, true)) break;
                 AudioManager.update_0726(var0, var4_3.a.a, var4_3.a.b, 0);
                 v0 = var0;
-                v1 = 12;
-                ** GOTO lbl102
-            }
-            case 7: {
+                v1 = 12;}
+
                 var5_5 = GameCanvas.dispatch_6fca(var0.g[0], 12);
                 AudioManager.method_fb75(var0, var5_5);
-                if (var1_1 > 2500) ** GOTO lbl78
-                AudioManager.update_0726(var0, var4_3.a.a, var4_3.a.b, 0);
+                if (var1_1 > 2500)AudioManager.update_0726(var0, var4_3.a.a, var4_3.a.b, 0);
                 var0.g[15] = 0;
                 if (var4_3 == GameCanvas.c) {
                     if (AudioManager.a != 16) {
@@ -6035,25 +5876,17 @@ lbl33:
                     AudioManager.method_fb75(var4_3, 102);
                     v0 = var0;
                     v1 = 8;
-                }
-                ** GOTO lbl102
-lbl78:
+                }lbl78:
                 // 1 sources
 
-                v0 = var0;
-                ** GOTO lbl101
-            }
-            case 8: {
-                if (!var0.a.draw_c627()) break;
-                ** GOTO lbl100
-            }
-            case 21: {
+                v0 = var0;}
+
+                if (!var0.a.draw_c627()) break;}
+
                 if (!var0.a.draw_c627()) break;
                 v0 = var0;
-                v1 = 22;
-                ** GOTO lbl102
-            }
-            case 22: {
+                v1 = 22;}
+
                 if (var4_3 != null && var0.g[28] < 6 && GameCanvas.bv < 5) {
                     var0.g[28] = var0.g[28] + 1;
                     var5_6 = GameCanvas.draw_c627() % 60 - 30;
@@ -6097,7 +5930,6 @@ lbl102:
         AudioManager audioManager2 = null;
         boolean bl = false;
         boolean bl2 = false;
-        do {
             AudioManager audioManager3;
             int n8;
             bl = GameCanvas.draw_c627(n2, n3, n2 + n6, n3 + n7, nArray, false, 13, 2, 136);
@@ -6118,16 +5950,16 @@ lbl102:
                 if (audioManager2 != null) {
                     if (audioManager2.L < 9) {
                         switch (audioManager2.L) {
-                            case 3: {
+
                                 int n10 = GameCanvas.dispatch_6fca(audioManager2.g[0], 10);
                                 if (n10 != 0 && n10 != 3 && n10 != 7 && n10 != 2) break;
                                 AudioManager.check_9c24(audioManager2, n10);
                                 break;
                             }
-                            case 1: {
+
                                 break;
                             }
-                            case 0: {
+
                                 if (audioManager2 != GameCanvas.c || a == 16) break;
                                 AudioManager.update_bbd9(audioManager2, GameCanvas.dispatch_6fca(audioManager.g[0], 14));
                                 if (a == 11 || a == 10) {
@@ -6141,7 +5973,7 @@ lbl102:
                         continue;
                     }
                     switch (audioManager2.L) {
-                        case 9: {
+
                             if (AudioManager.draw_c627(audioManager2, 0)) break;
                         }
                         default: {
@@ -6414,11 +6246,11 @@ lbl102:
         }
         audioManager.g[n2 + 1] = n;
         switch (audioManager.g[n2 + 1]) {
-            case 7: {
+
                 AudioManager.update_2e8a(audioManager);
                 return;
             }
-            case 8: {
+
                 AudioManager.update_1d6d(audioManager);
             }
         }
@@ -6452,13 +6284,11 @@ lbl102:
             var2_3 = null;
             var3_4 = GameCanvas.draw_c627(var0, AudioManager.update_bbd9(var0));
             switch (var0.g[var1_1 + 1]) {
-                case 4: {
+
                     if (var3_4 <= 2560) break;
                     v0 = var0;
-                    v1 = 5;
-                    ** GOTO lbl93
-                }
-                case 5: {
+                    v1 = 5;}
+
                     if (var3_4 <= 2048) {
                         v0 = var0;
                         v1 = 4;
@@ -6466,59 +6296,42 @@ lbl102:
                         if (var3_4 < 6656) break;
                         v0 = var0;
                         v1 = 6;
-                    }
-                    ** GOTO lbl93
-                }
-                case 6: {
+                    }}
+
                     if (var3_4 >= 6144) break;
                     v0 = var0;
-                    v1 = 5;
-                    ** GOTO lbl93
-                }
-                case 101: {
+                    v1 = 5;}
+
                     if (!var0.a.draw_c627()) break;
                     v0 = var0;
-                    v1 = 0;
-                    ** GOTO lbl93
-                }
-                case 8: {
+                    v1 = 0;}
+
                     if (AudioManager.check_33dd(var0)) break;
                     v0 = var0;
-                    v1 = 7;
-                    ** GOTO lbl93
-                }
-                case 7: {
+                    v1 = 7;}
+
                     if (!AudioManager.check_33dd(var0)) break;
                     v0 = var0;
-                    v1 = 8;
-                    ** GOTO lbl93
-                }
-                case 102: {
+                    v1 = 8;}
+
                     if (!var0.a.draw_c627()) break;
-                    if (!AudioManager.getEnemyTotalHealth(var0)) ** GOTO lbl52
-                    v0 = var0;
-                    v1 = 104;
-                    ** GOTO lbl93
-lbl52:
+                    if (!AudioManager.getEnemyTotalHealth(var0))v0 = var0;
+                    v1 = 104;lbl52:
                     // 1 sources
 
-                    v0 = var0;
-                    ** GOTO lbl92
-                }
-                case 104: {
+                    v0 = var0;}
+
                     if (!var0.a.draw_c627()) break;
                     v0 = var0;
-                    v1 = 0;
-                    ** GOTO lbl93
-                }
-                case 555: {
+                    v1 = 0;}
+
                     if (!var0.a.draw_c627()) break;
                     AudioManager.method_fb75(var0, 556);
                     var5_5 = GameCanvas.draw_c627(var0.a.draw_c627(), var0.a.update_bbd9() + 1, true, AudioManager.draw_c627(var0, false), false);
                     var0.g[var1_1 + 14] = GameCanvas.draw_c627(var0.g[var1_1 + 14], 0xFF0000, var5_5);
                     return;
                 }
-                case 103: {
+
                     if (!var0.a.draw_c627()) break;
                     v2 = var1_1 + 13;
                     var0.g[v2] = var0.g[v2] + 1;
@@ -6534,17 +6347,15 @@ lbl52:
                     }
                     v3[v4] = v5;
                     v0 = var0;
-                    v1 = 9;
-                    ** GOTO lbl93
-                }
-                case 556: {
+                    v1 = 9;}
+
                     var4_6 = GameCanvas.draw_c627(var0.g[var1_1 + 14], 0xFF0000);
                     if (!GameCanvas.g[var4_6].a.draw_c627()) break;
                     AudioManager.j = true;
                     GameCanvas.draw_c627(var0.a.draw_c627(), var0.a.update_bbd9() + 1, false, AudioManager.draw_c627(var0, false), false);
                     return;
                 }
-                case 666: {
+
                     if (!var0.a.draw_c627()) break;
                     v0 = var0;
 lbl92:
@@ -6566,19 +6377,19 @@ lbl93:
         int n3 = 0;
         if ((audioManager.g[n + 14] & 2) == 0 || AudioManager.update_041b(audioManager) == 1) {
             switch (n2) {
-                case 5: {
+
                     int n4 = 80;
                     break;
                 }
-                case 4: {
+
                     int n4 = 60;
                     break;
                 }
-                case 3: {
+
                     int n4 = 40;
                     break;
                 }
-                case 2: {
+
                     int n4 = n3 = 20;
                 }
             }
@@ -6700,7 +6511,7 @@ lbl93:
                 int n9 = audioManager3.a.b;
                 int n10 = 0;
                 switch (audioManager3.L) {
-                    case 3: {
+
                         if (audioManager3.g[10] == 3 || audioManager3.g[10] == 6 || audioManager3.g[10] == 4 || audioManager3.g[10] == 5 || audioManager3.g[12] >= 100) break;
                         n10 = 10;
                         if (audioManager.L != 0) break;
@@ -6711,7 +6522,7 @@ lbl93:
                         break;
                     }
                     case 0: 
-                    case 1: {
+
                         if (audioManager3 != audioManager2) break;
                         int n11 = n + 14;
                         audioManager.g[n11] = audioManager.g[n11] | 2;
@@ -7003,11 +6814,11 @@ lbl93:
         switch (n2) {
             case 3: 
             case 6: 
-            case 7: {
+
                 n5 = 80;
             }
             case 1: 
-            case 5: {
+
                 if ((audioManager.g[n + 14] & 1) == 0) {
                     if (bl) {
                         AudioManager.update_6099(audioManager, audioManager2.a.a, audioManager2.a.b, 0);
@@ -7043,7 +6854,7 @@ lbl93:
                 audioManager.g[n9] = audioManager.g[n9] & 0xFFFFFFFE;
                 return;
             }
-            case 102: {
+
                 AudioManager.update_041b(audioManager, 100);
             }
         }
@@ -7142,9 +6953,7 @@ lbl93:
                                 }
                                 var11_11 = 0;
                                 v1 = GameCanvas.draw_c627() % 100 < 50 ? 1 : -1;
-                                v2 = 14;
-                                ** GOTO lbl69
-                            }
+                                v2 = 14;}
                             if (GameCanvas.method_fb75(var11_11) < GameCanvas.method_fb75(var12_12)) {
                                 if (!AudioManager.draw_c627(var7_7 + var9_9 + var13_13 >> 14, var8_8 + var10_10 >> 14, var5_5, var6_6, var0.L == 0)) {
                                     var11_11 = 16384;
@@ -7315,27 +7124,21 @@ lbl69:
         }
         var2_2 = AudioManager.method_fb75(var0);
         switch (var1_1) {
-            case 0: {
+
                 var0.g[var2_2 + 11] = 0;
                 v0 = var0.g;
                 v1 = var2_2 + 12;
-                v2 = -16384;
-                ** GOTO lbl33
-            }
-            case 1: {
+                v2 = -16384;}
+
                 var0.g[var2_2 + 11] = 0;
                 v0 = var0.g;
                 v1 = var2_2 + 12;
-                v2 = 16384;
-                ** GOTO lbl33
-            }
-            case 2: {
+                v2 = 16384;}
+
                 v3 = var0.g;
                 v4 = var2_2 + 11;
-                v5 = -16384;
-                ** GOTO lbl29
-            }
-            case 3: {
+                v5 = -16384;}
+
                 v3 = var0.g;
                 v4 = var2_2 + 11;
                 v5 = 16384;
@@ -7366,7 +7169,7 @@ lbl33:
                 var5_4 = false;
                 if (var0.L != 1) break block33;
                 switch (var4_3) {
-                    case 0: {
+
                         if (AudioManager.check_58e2(var0)) {
                             v0 = var2_2 + 13;
                             var0.g[v0] = var0.g[v0] + (int)GameCanvas.d;
@@ -7382,18 +7185,18 @@ lbl33:
                 switch (var4_3) {
                     case 3: 
                     case 6: 
-                    case 7: {
+
                         var1_1 += 4;
                         break;
                     }
                     case 1: 
-                    case 5: {
+
                         var1_1 += 8;
                         break;
                     }
                     case 0: 
                     case 4: 
-                    case 8: {
+
                         if (var5_4) {
                             var1_1 = 16;
                             break;
@@ -7401,26 +7204,26 @@ lbl33:
                         var1_1 += 0;
                         break;
                     }
-                    case 100: {
+
                         var1_1 = 19;
                         break;
                     }
-                    case 101: {
+
                         var1_1 = 20;
                         break;
                     }
                     case 102: 
                     case 555: 
-                    case 666: {
+
                         var1_1 += 12;
                         break;
                     }
                     case 556: 
-                    case 667: {
+
                         var1_1 += 22;
                         break;
                     }
-                    case 104: {
+
                         var1_1 += 29;
                     }
                 }
@@ -7433,13 +7236,13 @@ lbl33:
             switch (var4_3) {
                 case 3: 
                 case 6: 
-                case 7: {
+
                     var6_5 = 1;
                     var1_1 += 76;
                     break;
                 }
                 case 1: 
-                case 5: {
+
                     if (var7_6 == 255) {
                         var6_5 = 1;
                         var1_1 += 72;
@@ -7450,7 +7253,7 @@ lbl33:
                 }
                 case 0: 
                 case 4: 
-                case 8: {
+
                     if (var7_6 == 255) {
                         var6_5 = 1;
                         v1 = 64 + AudioManager.draw_c627(var0, true);
@@ -7459,29 +7262,27 @@ lbl33:
                     v1 = GameCanvas.draw_c627(var0, var7_6, 2) + AudioManager.draw_c627(var0, true);
                     break;
                 }
-                case 100: {
+
                     var1_1 += 8;
                     break;
                 }
-                case 101: {
+
                     var1_1 += 12;
                     break;
                 }
                 case 102: 
                 case 555: 
-                case 666: {
+
                     v1 = 7;
                     break;
                 }
-                case 104: {
+
                     break;
                 }
-                case 103: {
+
                     v2 = var0;
-                    v3 = 8;
-                    ** GOTO lbl86
-                }
-                case 9: {
+                    v3 = 8;}
+
                     v2 = var0;
                     v3 = 6;
 lbl86:
@@ -7617,15 +7418,15 @@ lbl86:
         audioManager.a.draw_c627();
         if (audioManager.g[4] != -1) {
             switch (audioManager.g[4]) {
-                case 0: {
+
                     break;
                 }
-                case 2: {
+
                     if (!audioManager.a.draw_c627()) break;
                     AudioManager.update_bbd9(audioManager, true);
                     break;
                 }
-                case 1: {
+
                     if (!audioManager.a.draw_c627()) break;
                     int n = GameCanvas.getEnemyCurrentHealth(audioManager.g[0], 6);
                     int n2 = GameCanvas.getEnemyCurrentHealth(audioManager.g[0], 7);
@@ -7637,7 +7438,7 @@ lbl86:
                     AudioManager.update_bbd9(audioManager, true);
                     break;
                 }
-                case 3: {
+
                     break;
                 }
                 default: {
@@ -7684,16 +7485,16 @@ lbl86:
         int n;
         int n2 = 0;
         switch (audioManager.g[4]) {
-            case 0: {
+
                 n = GameCanvas.getEnemyCurrentHealth(audioManager.g[0], 3);
                 break;
             }
             case 1: 
-            case 2: {
+
                 n = GameCanvas.getEnemyCurrentHealth(audioManager.g[0], 5);
                 break;
             }
-            case 3: {
+
                 n = GameCanvas.getEnemyCurrentHealth(audioManager.g[0], 4);
                 break;
             }
@@ -7711,26 +7512,24 @@ lbl86:
      */
     private static void draw_c627(int var0, int var1_1, AudioManager var2_2, int var3_3, int var4_4) {
         switch (var2_2.L) {
-            case 9: {
+
                 if (var2_2.g[4] != 0) break;
                 AudioManager.draw_c627(var1_1, var2_2);
                 return;
             }
-            case 3: {
+
                 if (var2_2.g[12] == -1) break;
                 AudioManager.update_2ab0(var2_2);
                 AudioManager.draw_c627(var2_2, var0, var1_1, var3_3 << 14, var4_4 << 14);
                 return;
             }
-            case 0: {
+
                 if (var2_2 == GameCanvas.c) {
                     AudioManager.draw_c627(var2_2, var1_1, true);
                     return;
                 }
-                v0 = var2_2;
-                ** GOTO lbl20
-            }
-            case 1: {
+                v0 = var2_2;}
+
                 v0 = var2_2;
 lbl20:
                 // 2 sources
@@ -7900,15 +7699,15 @@ lbl20:
             if (!(audioManager2.g[12] >= 100 || audioManager2.g[12] == -1 && (audioManager2.g[16] & 0x40) != 0 || AudioManager.dispatch_456d(audioManager2))) {
                 int n3;
                 switch (n) {
-                    case 2: {
+
                         n3 = 4;
                         break;
                     }
-                    case 1: {
+
                         n3 = 0;
                         break;
                     }
-                    case 3: {
+
                         n3 = -1;
                         break;
                     }
@@ -8005,13 +7804,13 @@ lbl20:
         return GameCanvas.draw_c627(audioManager.a.draw_c627(), audioManager.a.update_bbd9(), audioManager.g[3], 174, 3, 2, 16);
     }
 
-    public dispatch_a0aa(int n, int[] nArray) {
+    public dispatch_dispatch_a0aa (int n, int[] nArray) {
         this.a = new GameData(null, 0, 0, null);
         this.L = n;
         this.g = nArray;
     }
 
-    public dispatch_a0aa(GameData gameData, int n, int n2, int[] nArray) {
+    public dispatch_dispatch_a0aa (GameData gameData, int n, int n2, int[] nArray) {
         this.a = gameData;
         this.K = n;
         this.L = n2;
@@ -8019,18 +7818,18 @@ lbl20:
         this.M = (this.a.update_bbd9() << 8) + this.a.draw_c627();
     }
 
-    public dispatch_a0aa(int n, int n2, int n3, int n4, int[] nArray) {
+    public dispatch_dispatch_a0aa (int n, int n2, int n3, int n4, int[] nArray) {
         this.K = n;
         this.L = n2;
         this.g = nArray;
         this.a = new GameData(null, n3, n4, null);
         if (n2 < 9) {
             switch (n2) {
-                case 0: {
+
                     this.a.update_bbd9(66);
                     return;
                 }
-                case 3: {
+
                     this.a.update_bbd9(GameCanvas.dispatch_6fca(this.g[0], 2));
                     return;
                 }
@@ -8040,11 +7839,11 @@ lbl20:
         }
         if (n2 < 20) {
             switch (n2) {
-                case 16: {
+
                     this.a.update_bbd9(this.g[2]);
                     return;
                 }
-                case 15: {
+
                     this.a.draw_c627(GameCanvas.a[GameCanvas.x[this.g[3]]]);
                     if (this.g[0] >= 0) {
                         GameCanvas.draw_c627(this.a, this.g[0]);
@@ -8053,18 +7852,18 @@ lbl20:
                     this.a.update_bbd9(this.g[1]);
                     return;
                 }
-                case 12: {
+
                     return;
                 }
-                case 9: {
+
                     this.a.update_bbd9(GameCanvas.getEnemyCurrentHealth(this.g[0], 3));
                     return;
                 }
-                case 18: {
+
                     this.a.draw_c627(GameCanvas.a[16]);
                     return;
                 }
-                case 26: {
+
                     this.a.update_bbd9(this.g[2]);
                     return;
                 }
@@ -8100,7 +7899,7 @@ lbl20:
 
     public final void dispatch_6fca() {
         switch (this.L) {
-            case 0: {
+
                 AudioManager.draw_c627(this.a);
                 return;
             }
@@ -8109,27 +7908,27 @@ lbl20:
             case 22: 
             case 23: 
             case 24: 
-            case 25: {
+
                 AudioManager.draw_c627(this.L, this.g, this.a.draw_c627(), this.a.update_bbd9());
                 return;
             }
-            case 14: {
+
                 GameCanvas.draw_c627(this);
                 return;
             }
-            case 18: {
+
                 AudioManager.update_9067(this);
                 return;
             }
-            case 9: {
+
                 AudioManager.dispatch_0bfa(this);
                 return;
             }
-            case 1: {
+
                 AudioManager.update_ecd2(this);
                 return;
             }
-            case 3: {
+
                 AudioManager.draw_c627(this, true);
                 return;
             }
@@ -8156,7 +7955,7 @@ lbl20:
         boolean bl2 = false;
         switch (this.L) {
             case 0: 
-            case 1: {
+
                 if (this == GameCanvas.c) {
                     AudioManager.updateNPCTarget(graphics, this);
                     return true;
@@ -8165,15 +7964,15 @@ lbl20:
                 }
                 return true;
             }
-            case 3: {
+
                 AudioManager.update_041b(graphics, this, bl);
                 return true;
             }
-            case 14: {
+
                 GameCanvas.draw_c627(graphics, this);
                 return true;
             }
-            case 9: {
+
                 AudioManager.update_0726(graphics, this);
                 return true;
             }
@@ -8181,14 +7980,14 @@ lbl20:
                 GameCanvas.method_fb75(graphics, this);
                 return true;
             }
-            case 18: {
+
                 return true;
             }
-            case 26: {
+
                 GameCanvas.updateNPCTarget(graphics, this);
                 return true;
             }
-            case 22: {
+
                 AudioManager.update_bbd9(graphics, this.g, this.a.draw_c627(), this.a.update_bbd9());
                 return bl2;
             }
@@ -8222,11 +8021,9 @@ lbl20:
                         }
                         if (this.L != 15) break block14;
                         switch (this.g[2]) {
-                            case 1: {
-                                v0 = 8;
-                                ** GOTO lbl18
-                            }
-                            case 2: {
+
+                                v0 = 8;}
+
                                 v0 = 16;
 lbl18:
                                 // 2 sources
@@ -8245,7 +8042,7 @@ lbl18:
                         GameCanvas.draw_c627(var1_1, this.g[8]);
                         break;
                     }
-                    case 16: {
+
                         if (this.g[24] != 1 || (this.g[28] & 8) != 0 || (var6_5 = this.g[21]) < 0) break;
                         var7_7 = GameCanvas.b[var6_5][2];
                         if (var7_7 != GameCanvas.a.d) {
@@ -8282,28 +8079,22 @@ lbl18:
         var1_1 = var0.a.b;
         var2_2 = null;
         switch (var0.L) {
-            case 14: {
+
                 v0 = var1_1;
-                v1 = var0.g[12] << 14;
-                ** GOTO lbl66
-            }
-            case 3: {
+                v1 = var0.g[12] << 14;}
+
                 var3_3 = GameCanvas.dispatch_6fca(var0.g[0], 10);
                 block6 : switch (var3_3) {
-                    case 2: {
+
                         switch (var0.g[12]) {
-                            case 7: {
+
                                 v2 = var1_1;
                                 v3 = GameCanvas.k[var0.g[28]].g;
-                                v4 = 10;
-                                ** GOTO lbl26
-                            }
-                            case 8: {
+                                v4 = 10;}
+
                                 var7_4 = GameCanvas.c.a.a.draw_c627(0, var0.g[27]);
-                                v5 = var1_1 - (var7_4[1] + (var7_4[3] >> 1) << 14);
-                                ** GOTO lbl27
-                            }
-                            case 9: {
+                                v5 = var1_1 - (var7_4[1] + (var7_4[3] >> 1) << 14);}
+
                                 v2 = var1_1;
                                 v3 = var0.g;
                                 v4 = 28;
@@ -8319,7 +8110,7 @@ lbl27:
                         }
                         break;
                     }
-                    case 1: {
+
                         var2_2 = GameCanvas.update_bbd9(var0.a);
                         var4_6 = GameCanvas.update_bbd9(var2_2[3] - (var1_1 >> 14)) + 1;
                         var5_7 = GameCanvas.update_bbd9(var0.a.draw_c627());
@@ -8341,17 +8132,13 @@ lbl27:
                 var1_1 = var0.g[5];
                 switch (var0.g[15]) {
                     case 0: 
-                    case 4: {
-                        v6 = var0;
-                        ** GOTO lbl58
-                    }
-                    case 6: {
-                        v7 = var1_1 - 131072;
-                        ** GOTO lbl59
-                    }
+
+                        v6 = var0;}
+
+                        v7 = var1_1 - 131072;}
                     case 1: 
                     case 2: 
-                    case 3: {
+
                         if (GameCanvas.draw_c627(var0.a.a, var0.a.b, var0.g[4] + var0.g[9], var0.g[5] + var0.g[10], GameCanvas.s, false, 1)) {
                             v7 = GameCanvas.s[1] + 262144;
                         } else {
@@ -8445,24 +8232,20 @@ lbl66:
             }
             if (var0.L != -101) break block17;
             switch (var0.g[0]) {
-                case 5: {
+
                     var1_1[0] = (Math.min(var0.g[4], var0.g[2]) >> 14) - 16;
                     var1_1[1] = (Math.min(var0.g[5], var0.g[3]) >> 14) - 16;
                     var1_1[2] = (Math.max(var0.g[4], var0.g[2]) >> 14) + 16;
                     v0 = var1_1;
                     v1 = 3;
                     v2 = Math.max(var0.g[5], var0.g[3]) >> 14;
-                    v3 = 16;
-                    ** GOTO lbl72
-                }
-                case 4: {
+                    v3 = 16;}
+
                     var1_1[1] = var1_1[1] - (var0.g[10] >> 14);
                     v1 = 3;
                     v0 = var1_1;
-                    v4 = var1_1[3] - (var0.g[10] >> 14);
-                    ** GOTO lbl73
-                }
-                case 3: {
+                    v4 = var1_1[3] - (var0.g[10] >> 14);}
+
                     if (var0.g[1] != 3 || (var3_3 = GameCanvas.check_9c24(var2_2 = GameCanvas.draw_c627(var0.g[15], 255), 21)) == 0) break;
                     var4_4 = var0.a.draw_c627() - (var0.g[9] >> 14);
                     var5_5 = var0.a.update_bbd9() - (var0.g[10] >> 14);

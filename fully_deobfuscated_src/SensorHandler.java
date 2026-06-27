@@ -56,8 +56,7 @@ implements DataListener {
             this.a = (SensorConnection)Connector.open((String)this.a);
             this.a.setDataListener((DataListener)this, 1);
             return;
-        }
-        catch (Exception exception) {
+        }/*         catch (Exception exception) */ {
             return;
         }
     }
@@ -109,8 +108,7 @@ implements DataListener {
                     return;
                 }
                 this.c = false;
-            }
-            catch (Exception exception) {}
+            }/*             catch (Exception exception) */ {}
         }
     }
 
