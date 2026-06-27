@@ -1,0 +1,71 @@
+# GameCanvas (GameCanvas -> g)
+GameCanvas -> g:
+    gameLoop -> run
+    startGame -> t
+    stopGame -> u
+    setPaused -> s
+    setState -> d
+    drawHUD -> f
+    hasFlag -> l
+    clearScreen -> a
+    createOffscreenBuffer -> e
+    drawBuffer -> j
+    destroyBuffer -> H
+    resetClipBuffer -> I
+    initTimers -> J
+    resetTimers -> K
+    updateMainMenu -> v
+    updateOptions -> x
+    updateLoading -> F
+    updateCutscene -> V
+    updateInGame -> z
+    updatePaused -> bK
+    updateGameOver -> B
+    updateVictory -> dH
+    updateContinue -> dA
+    updateCredits -> eh
+    updateLevelSelect -> fE
+    updateCharacterSelect -> aO
+    updateTutorial -> cd
+    updatePausedSubmenu -> E
+    updateConfirmDialog -> G
+    drawForeground -> b
+    drawBackground -> c
+    drawSprites -> g
+    updateParticles -> h
+    handleWeaponSelect -> p
+    handleSpecialInput -> q
+    setTile -> m
+    setLayer -> n
+    releaseParticleFocus -> ax
+    updateParticleSystem -> ay
+    stopParticles -> k
+    spawnParticle -> az
+    initAudio -> aw
+    initSprites -> af
+    initLevel -> ah
+    drawUI -> ai
+    playSound -> aj
+    spawnEnemy -> b(int,int,int,boolean)
+    spawnWave -> ck
+
+# GameController (GameController -> b)
+GameController -> b:
+    loadIGPData -> b
+    isOnline -> c
+    openURL -> g
+    onCommand -> commandAction
+
+# AudioManager (AudioManager -> f)
+AudioManager -> f:
+    getEnemyTotalHealth -> j
+    getEnemyCurrentHealth -> k
+    updateNPCTarget -> c
+
+# GraphicsEngine (GraphicsEngine -> a)
+GraphicsEngine -> a:
+
+# SensorHandler (SensorHandler -> e)
+SensorHandler -> e:
+    initSensor -> a
+    onSensorData -> dataReceived

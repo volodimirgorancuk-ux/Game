@@ -1,0 +1,88 @@
+{
+  "GameCanvas.void b(int n, int n2, int n3, int n4, int n5, int n6, boo)": {
+    "obfuscated": "b",
+    "suggested": "spawnEnemy",
+    "categories": [
+      "warning/log",
+      "enemy"
+    ],
+    "strings": [
+      "WARNING: SpawnArea: Cannot find a free position for enemy."
+    ],
+    "line": 20143
+  },
+  "GameCanvas.void ax(int n)": {
+    "obfuscated": "ax",
+    "suggested": "updateParticleSystem",
+    "categories": [
+      "warning/log",
+      "particles"
+    ],
+    "strings": [
+      "WARNING: GameParticles: Releasing no reserved focus "
+    ],
+    "line": 28971
+  },
+  "GameCanvas.void c(int n, int n2, int n3)": {
+    "obfuscated": "c",
+    "suggested": "updateParticleSystem",
+    "categories": [
+      "warning/log",
+      "particles"
+    ],
+    "strings": [
+      "WARNING: GameParticles: Cannot position no reserved focus "
+    ],
+    "line": 29026
+  },
+  "GameCanvas.void k(int n)": {
+    "obfuscated": "k",
+    "suggested": "updateParticleSystem",
+    "categories": [
+      "warning/log",
+      "cleanup",
+      "particles"
+    ],
+    "strings": [
+      "WARNING: GameParticles: Cannot stop no reserved focus "
+    ],
+    "line": 29051
+  },
+  "GameController.void a(int n, String string, int n2, String string2, Stri)": {
+    "obfuscated": "a",
+    "suggested": "resolveIGPURL",
+    "categories": [
+      "network"
+    ],
+    "strings": [
+      "NO",
+      "0",
+      "URL-"
+    ],
+    "line": 477
+  },
+  "GameController.void b()": {
+    "obfuscated": "b",
+    "suggested": "resolveIGPURL",
+    "categories": [
+      "init",
+      "persistence",
+      "network"
+    ],
+    "strings": [
+      "",
+      "IGP-CATEGORIES",
+      " "
+    ],
+    "line": 587
+  },
+  "GameController.void g()": {
+    "obfuscated": "g",
+    "suggested": "resolveIGPURL",
+    "categories": [
+      "network"
+    ],
+    "strings": [],
+    "line": 2297
+  }
+}
