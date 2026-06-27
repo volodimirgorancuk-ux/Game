@@ -1,0 +1,1164 @@
+# Auto-generated method mapping
+# Format: deobfuscated_name -> obfuscated_name
+
+
+# GameCanvas
+    calc_10() -> m
+    method_0(boolean bl) -> a
+    check_34() -> a
+    calc_11() -> n
+    calc_12() -> o
+    calc_13() -> p
+    calc_14() -> q
+    calc_15() -> r
+    check_10(int n, int n2) -> d
+    calc_38(int n) -> m
+    calc_49(int n) -> n
+    calc_16() -> s
+    render_0(Graphics graphics) -> a
+    calc_18() -> t
+    calc_19() -> u
+    calc_20() -> v
+    render_1(Graphics graphics) -> b
+    calc_21() -> w
+    calc_22() -> x
+    render_2(Graphics graphics) -> c
+    calc_24() -> y
+    update_1(boolean bl) -> f
+    check_11(int n) -> o
+    calc_25() -> z
+    calc_26() -> A
+    calc_27() -> B
+    render_3(Graphics graphics) -> d
+    update_167() -> f
+    render_4(Graphics graphics) -> e
+    render_0(Graphics graphics, int n) -> b
+    render_42(Graphics graphics, int n, int n2, int n3) -> a
+    calc_28() -> C
+    render_5(Graphics graphics) -> f
+    calc_29() -> D
+    calc_30() -> E
+    render_6(Graphics graphics) -> g
+    check_12(int n) -> p
+    check_15(int n) -> q
+    calc_31() -> F
+    render_7(Graphics graphics) -> h
+    render_8(Graphics graphics) -> i
+    calc_32() -> G
+    check_11(int n, int n2) -> e
+    check_13(int n) -> a
+    render_9(Graphics graphics) -> j
+    calc_33() -> H
+    calc_34() -> I
+    calc_35() -> J
+    calc_36() -> K
+    check_2(int n, int n2, int n3, int n4) -> c
+    update_0(GameData gameData) -> b
+    render_10(Graphics graphics) -> k
+    calc_37() -> L
+    initAudioChannels(AudioManager[] audioManagerArray) -> a
+    check_33() -> M
+    log_0(AudioManager audioManager) -> o
+    check_37() -> N
+    check_39() -> O
+    update_0(byte[] var0) -> a
+    calc_2(int n, boolean bl) -> c
+    check_16(int n) -> r
+    check_40() -> P
+    update_0(int var0, int var1_1) -> f
+    calc_12(int n) -> d
+    check_17(int n) -> s
+    check_18(int n) -> t
+    check_19(int n) -> u
+    check_20(int n) -> v
+    update_31(int n) -> e
+    check_41() -> Q
+    playSound_11(AudioManager audioManager, int n, int n2) -> b
+    audio_5(AudioManager audioManager, int n) -> b
+    audio_6(AudioManager audioManager, int n) -> c
+    getAudio_1(AudioManager audioManager, int n, int n2) -> a
+    check_4(int n, int n2) -> g
+    check_42() -> R
+    check_0(int n, boolean bl) -> a
+    update_0(int[][] nArray, boolean bl) -> a
+    update_0(int n, boolean bl, int n2, int n3) -> a
+    update_0(int[][] nArray, boolean bl, int n, int n) -> a
+    update_171() -> g
+    render_0(Graphics graphics, boolean bl) -> a
+    check_22(int n) -> w
+    render_5(GraphicsEngine graphicsEngine, int n) -> a
+    render_6(GraphicsEngine graphicsEngine, int n, in) -> a
+    render_0(int n, int n2, int n3, int n4, int n5, G) -> a
+    check_44() -> S
+    render_5(GraphicsEngine graphicsEngine, int n, in) -> b
+    render_0(GraphicsEngine graphicsEngine, int n, in) -> f
+    check_4(int n, int n2, int n3) -> e
+    render_1(Graphics graphics, int n) -> c
+    check_45() -> T
+    update_0(int n, int n2, boolean bl) -> c
+    update_0(int var0) -> x
+    calc_12(int n, int n2) -> f
+    check_24(int n) -> y
+    check_43() -> e
+    check_46() -> U
+    check_47() -> V
+    check_48() -> W
+    render_11(Graphics graphics) -> l
+    render_2(Graphics graphics, int n) -> d
+    update_174() -> h
+    update_32(int n) -> f
+    render_0(Graphics graphics, int n, boolean bl, bo) -> a
+    render_36(Graphics graphics, int n, int n2, int n3) -> b
+    update_1(int var0) -> z
+    calc_18(int n) -> A
+    update_37() -> X
+    update_183() -> i
+    update_276() -> j
+    update_343() -> k
+    update_2(boolean bl) -> g
+    update_3(boolean bl) -> h
+    update_4(boolean bl) -> i
+    update_38() -> Y
+    update_344() -> l
+    update_39() -> Z
+    update_40() -> aa
+    update_41() -> ab
+    update_0(String string) -> a
+    update_42() -> ac
+    persist_14(int n) -> B
+    update_0(int n, byte[] byArray) -> a
+    calc_19(int n) -> C
+    update_0(byte[] byArray, int n, int n2, int n3, b) -> a
+    update_43() -> ad
+    calc_21(int n) -> D
+    calc_20(int n) -> g
+    calc_26(int n) -> E
+    calc_22(int n) -> h
+    calc_23(int n) -> i
+    calc_27(int n) -> F
+    update_52(int n) -> j
+    log_71(int n) -> k
+    check_14(int n) -> b
+    method_0(int n, int n2) -> a
+    update_44() -> ae
+    update_45() -> af
+    playSound_46() -> ag
+    check_21(int n) -> c
+    update_48() -> ah
+    update_49() -> ai
+    update_50() -> aj
+    update_51() -> ak
+    update_52() -> al
+    update_53() -> am
+    update_84(int n) -> l
+    update_1(int n, byte[] byArray) -> b
+    calc_28(int n) -> G
+    update_11(int n, int n2) -> n
+    update_2(int n, int n2, int n3) -> f
+    calc_29(int n) -> H
+    method_1(int n, int n2) -> b
+    update_54() -> an
+    update_55() -> ao
+    render_0(GraphicsEngine[] graphicsEngineArray, Gr) -> a
+    render_1(Graphics graphics, GraphicsEngine[] grap) -> a
+    render_3(GraphicsEngine[] graphicsEngineArray, Gr) -> b
+    render_0(GraphicsEngine[] var0, GraphicsEngine va) -> a
+    update_56() -> ap
+    update_57() -> aq
+    calc_31(int n) -> I
+    log_58() -> ar
+    log_59() -> as
+    render_1(GraphicsEngine graphicsEngine, int n) -> b
+    render_0(GraphicsEngine graphicsEngine) -> b
+    render_2(GraphicsEngine graphicsEngine, int n, in) -> g
+    render_1(GraphicsEngine graphicsEngine) -> a
+    render_3(GraphicsEngine graphicsEngine, byte[] by) -> a
+    update_3(int n, int n2, int n3) -> g
+    method_0(byte[] byArray, int n) -> a
+    calc_1(byte[] byArray, int n) -> b
+    calc_2(byte[] byArray, int n) -> c
+    calc_3(byte[] byArray, int n) -> d
+    calc_0(int n, int n2, int n3, byte[] byArray) -> a
+    calc_1(int n, int n2, int n3, byte[] byArray) -> b
+    drawSprite_0(Graphics graphics, short[][] sArray, Gra) -> a
+    render_3(short[][] sArray, GraphicsEngine graphic) -> a
+    calc_15(int n, int n2) -> h
+    update_60() -> at
+    update_61() -> au
+    render_21(Graphics graphics, int n, int n2, int n3) -> c
+    calc_32(int n) -> J
+    update_62() -> av
+    calc_33(int n) -> K
+    calc_34(int n) -> L
+    calc_35(int n) -> M
+    update_63() -> aw
+    update_64() -> ax
+    update_65() -> ay
+    calc_0(byte[] byArray, int n, short s) -> a
+    calc_0(byte[] byArray, int n, int n2) -> a
+    calc_4(byte[] byArray, int n) -> e
+    calc_1(int n, int n2, int n3, int n4, int n5, i) -> a
+    update_23(int n, int n2, int n3, int n4, int n5, i) -> b
+    check_3(int n, int n2, int n3, int n4, int n5, i) -> d
+    update_1(int[] nArray) -> a
+    update_3(int n, int n2, int n3, int n4) -> a
+    check_0(GameData gameData, GameData gameData2) -> a
+    update_1(GameData gameData) -> a
+    audio_0(AudioManager var0) -> a
+    update_0(GameData gameData, int n, int n2) -> a
+    getAudio_1(AudioManager audioManager, AudioManager ) -> a
+    calc_0(GameData gameData, int n) -> a
+    render_0(byte[][] byArray, GraphicsEngine graphic) -> a
+    render_2(GraphicsEngine graphicsEngine) -> c
+    render_4(GraphicsEngine graphicsEngine, int n, in) -> h
+    render_6(GraphicsEngine graphicsEngine, int n) -> c
+    render_9(GraphicsEngine graphicsEngine, int n, in) -> c
+    render_10(GraphicsEngine graphicsEngine, int n, in) -> d
+    render_11(GraphicsEngine graphicsEngine, int n, in) -> e
+    render_0(boolean[] blArray, GraphicsEngine graphi) -> a
+    render_1(boolean[] blArray, GraphicsEngine graphi) -> b
+    update_12(int n, int n2) -> o
+    update_5(int n, int n2, int n3) -> h
+    update_4(int n, int n2, int n3) -> a
+    render_11(Graphics graphics, GraphicsEngine graphi) -> a
+    render_12(Graphics graphics) -> m
+    render_13(Graphics graphics) -> n
+    update_66() -> az
+    update_6(int n, int n2, int n3) -> b
+    log_7(int n, int n2, int n3) -> c
+    update_8(int n, int n2, int n3) -> i
+    check_23(int n) -> x
+    update_2(int n, boolean bl) -> b
+    check_1(int n, int n2, int n3, int n4) -> b
+    render_7(Graphics graphics, int n, int n2) -> a
+    update_2(int n, int n2, int n3, int n4) -> e
+    update_9(int n, int n2, int n3) -> j
+    update_67() -> aA
+    calc_36(int n) -> N
+    playSound_1(AudioManager audioManager) -> p
+    playSound_3(AudioManager audioManager, int n) -> d
+    update_68() -> aB
+    calc_16(int n, int n2) -> i
+    update_69() -> aC
+    calc_5(int n, int n2, int n3, int n4) -> d
+    update_70() -> aD
+    update_71() -> aE
+    update_72() -> aF
+    update_73() -> aG
+    update_0(byte[] byArray) -> b
+    update_5(boolean bl) -> j
+    update_74() -> aH
+    update_0(int[][][] nArray) -> a
+    initAudioChannels(AudioManager[] audioManagerArray) -> b
+    update_75() -> aI
+    update_76() -> aJ
+    initAudioChannels(AudioManager[][][] audioManagerArray) -> a
+    method_0(int n, int n2, int n3, int[] nArray, int) -> a
+    playSound_2(AudioManager audioManager) -> q
+    audio_8(AudioManager audioManager, int n, int n2) -> c
+    calc_37(int n) -> O
+    update_77() -> aK
+    update_0(byte[] byArray, byte[] byArray2, int n, ) -> a
+    update_1(int n, int n2, int n3, boolean bl) -> a
+    update_13(int n, int n2) -> p
+    update_14(int n, int n2) -> q
+    update_10(int n, int n2, int n3) -> k
+    check_3(int n, int n2) -> c
+    update_15(int n, int n2) -> r
+    update_16(int n, int n2) -> s
+    calc_17(int n) -> z
+    update_17(int n, int n2) -> t
+    render_6(Graphics graphics, AudioManager audioMan) -> a
+    getAudio_1(AudioManager audioManager) -> a
+    check_0(int n, boolean bl, boolean bl2) -> a
+    check_1(int n, boolean bl, boolean bl2, int n2) -> a
+    audio_0(int n, int n2, int n3, AudioManager audi) -> a
+    getAudio_0(AudioManager audioManager, int n) -> a
+    playSound_12(AudioManager audioManager, int n, boolea) -> a
+    getAudio_4(AudioManager audioManager) -> b
+    update_0(int n, boolean bl, int n2) -> a
+    method_0(boolean bl, boolean bl2) -> a
+    calc_0(boolean var0, boolean var1_1) -> a
+    render_14(Graphics graphics) -> o
+    check_3(int n, int n2, int n3) -> d
+    audio_1(AudioManager audioManager) -> c
+    update_0(int[] nArray, int n, int n2, int n3, int) -> a
+    check_8(int n, int n2, int n3, int n4, int[] nAr) -> a
+    initAudioChannels(AudioManager[] audioManagerArray) -> c
+    initAudioChannels(AudioManager[] audioManagerArray, int n,) -> a
+    playSound_0(AudioManager var0, int var1_1, boolean v) -> a
+    audio_0(AudioManager audioManager, boolean bl) -> a
+    getAudio_2(AudioManager audioManager) -> d
+    playSound_8(AudioManager audioManager, int n, boolea) -> b
+    update_0(int[][] nArray) -> a
+    calc_0(int n, int n2, int n3, int n4, int n5) -> a
+    update_78() -> aL
+    calc_39(int n) -> P
+    update_11(int n, int n2, int n3) -> l
+    check_35() -> b
+    render_14(Graphics graphics, int n, int n2, int[] ) -> a
+    update_0(int n, int[] nArray, int n2) -> a
+    update_1(int n, int[] nArray, int n2) -> b
+    render_27(Graphics graphics, int n, int n2, int n3) -> d
+    render_28(Graphics graphics, int n, int n2, int n3) -> e
+    update_0(int[] nArray, int[] nArray2, int n, int ) -> a
+    update_1(int[] nArray, int[] nArray2, int n, int ) -> b
+    update_2(int n, int n2, int n3, int n4, int n5) -> b
+    render_15(Graphics graphics, int n, int n2) -> b
+    update_79() -> aM
+    calc_4(int n, int n2, int n3, int n4) -> f
+    render_1(Graphics graphics, int[] nArray, int n, ) -> a
+    render_1(Graphics graphics, Image image, int n, i) -> a
+    render_15(Graphics graphics) -> p
+    update_2(int n, int[] nArray, int n2) -> c
+    render_0(Image image, Graphics graphics, Graphics) -> a
+    update_0(Image image, int n, int n2, int n3, int ) -> a
+    calc_40(int n) -> Q
+    update_80() -> aN
+    update_81() -> aO
+    render_16(Graphics graphics) -> q
+    update_82() -> aP
+    update_83() -> aQ
+    render_17(Graphics graphics) -> r
+    update_6(boolean bl) -> k
+    render_1(Graphics graphics, boolean bl) -> b
+    update_84() -> aR
+    render_18(Graphics graphics) -> s
+    render_19(Graphics graphics) -> t
+    render_20(Graphics graphics) -> u
+    update_85() -> aS
+    audio_0(int n, AudioManager audioManager) -> a
+    render_3(int n, int n2, int n3, int n4, GraphicsE) -> a
+    render_0(int var0, int var1_1, int var2_2, Graphi) -> a
+    update_86() -> aT
+    render_3(GraphicsEngine[] graphicsEngineArray, in) -> a
+    update_87() -> aU
+    render_21(Graphics graphics) -> v
+    render_22(Graphics graphics) -> w
+    update_0(int n, int n2, int n3, boolean bl, boole) -> a
+    render_23(Graphics graphics) -> x
+    update_1(int n, int n2, boolean bl) -> d
+    update_88() -> aV
+    render_24(Graphics graphics) -> y
+    calc_41(int n) -> R
+    update_89() -> aW
+    calc_42(int n) -> S
+    update_4(int n, int n2, int n3, int n4, int n5) -> c
+    update_90() -> aX
+    render_3(Graphics graphics, int n) -> e
+    render_8(Graphics graphics, GraphicsEngine graphi) -> b
+    update_91() -> aY
+    calc_17(int n, int n2) -> j
+    render_25(Graphics graphics) -> z
+    update_92() -> aZ
+    update_12(boolean bl) -> b
+    calc_43(int n) -> T
+    check_36() -> c
+    update_95() -> ba
+    update_96() -> bb
+    update_97() -> bc
+    render_2(Graphics graphics, boolean bl) -> c
+    render_26(Graphics graphics) -> A
+    render_3(Graphics graphics, boolean bl) -> d
+    render_4(Graphics graphics, boolean bl) -> e
+    update_98() -> bd
+    render_27(Graphics graphics) -> B
+    update_99() -> be
+    update_100() -> bf
+    render_28(Graphics graphics) -> C
+    update_101() -> bg
+    calc_44(int n) -> U
+    update_102() -> bh
+    update_103() -> bi
+    update_104() -> bj
+    render_29(Graphics graphics) -> D
+    update_105() -> bk
+    render_30(Graphics graphics) -> E
+    update_106() -> bl
+    update_6(int n, int n2, int n3, int n4) -> g
+    update_107() -> bm
+    render_31(Graphics graphics) -> F
+    render_0(Graphics var0, int var1_1) -> f
+    update_7(int n, int n2, int n3, int n4) -> h
+    update_108() -> bn
+    render_24(Graphics graphics, int n, int n2) -> c
+    render_32(Graphics graphics) -> G
+    calc_45(int n) -> V
+    update_1(int var0, int var1_1) -> k
+    calc_46(int n) -> W
+    update_0(int[] nArray) -> b
+    check_9(int n, int n2) -> l
+    update_2(int var0) -> X
+    update_109() -> bo
+    update_110() -> bp
+    calc_0(int var0) -> B
+    render_26(Graphics graphics, int n, int n2) -> d
+    render_5(Graphics graphics, boolean bl) -> f
+    render_33(Graphics graphics) -> H
+    update_111() -> bq
+    update_112() -> br
+    render_34(Graphics graphics) -> I
+    update_113() -> bs
+    render_35(Graphics graphics) -> J
+    update_114() -> bt
+    update_115() -> bu
+    render_36(Graphics graphics) -> K
+    update_116() -> bv
+    update_117() -> bw
+    update_118() -> bx
+    update_119() -> by
+    calc_23() -> d
+    render_37(Graphics graphics) -> L
+    render_38(Graphics graphics) -> M
+    update_121() -> bz
+    update_8(int n, int n2, int n3, int n4) -> i
+    calc_48(int n) -> Y
+    update_122() -> bA
+    render_0(Graphics var0) -> N
+    update_123() -> bB
+    update_124() -> bC
+    update_0(int var0, byte[] var1_1) -> c
+    calc_50(int n) -> Z
+    calc_23(int n, int n2) -> m
+    playSound_7(AudioManager audioManager) -> r
+    update_2(int n, int n2, boolean bl) -> a
+    update_3(int n, int n2, boolean bl) -> b
+    calc_51(int n) -> aa
+    update_125() -> bD
+    update_126() -> bE
+    calc_3(int n, boolean bl) -> d
+    update_127() -> bF
+    update_128() -> bG
+    update_129() -> bH
+    update_130() -> bI
+    calc_0(int var0, int var1_1, int var2_2) -> m
+    initAudioChannels(AudioManager[] var0, int[][][] var1_1, i) -> a
+    update_1(int[][][] nArray) -> b
+    calc_0(int[][] nArray, int n) -> a
+    update_131() -> bJ
+    getAudio_3(AudioManager audioManager) -> e
+    update_7(boolean bl) -> l
+    playSound_0(AudioManager var0, AudioManager var1_1) -> a
+    update_0(boolean bl, boolean bl2, boolean bl3, in) -> a
+    update_132() -> bK
+    calc_1(byte[] byArray, int n, byte[][][] byArra) -> a
+    update_133() -> bL
+    initAudioChannels(boolean[] var0, AudioManager[] var1_1, i) -> a
+    update_4(int var0, int var1_1, int var2_2, int va) -> a
+    update_134() -> bM
+    update_8(boolean bl) -> m
+    update_135() -> bN
+    update_136() -> bO
+    update_137() -> bP
+    render_39(Graphics graphics) -> O
+    update_138() -> bQ
+    update_139() -> bR
+    update_140() -> bS
+    update_141() -> bT
+    update_142() -> bU
+    calc_1(byte[] var0, int var1_1, int[] var2_2, i) -> a
+    update_0(int[] nArray, int n) -> a
+    update_143() -> bV
+    log_144() -> bW
+    update_145() -> bX
+    getAudio_5(AudioManager audioManager) -> f
+    update_146() -> bY
+    audio_2(AudioManager audioManager, boolean bl) -> c
+    update_147() -> bZ
+    update_148() -> ca
+    calc_11(int n, int n2, int n3) -> n
+    update_9(boolean bl) -> n
+    render_6(Graphics graphics, boolean bl) -> g
+    update_2(int var0, int var1_1, int var2_2, int va) -> c
+    update_8(int n, int n2, int n3, int n4, int n5, b) -> b
+    update_1(int var0, int var1_1, int var2_2, int va) -> j
+    update_9(int n, int n2, int n3, int n4) -> k
+    update_9(int n, int n2, int n3, int n4, int n5) -> d
+    update_10(int n, int n2, int n3, int n4, int n5) -> e
+    update_22(int n, int n2, int n3, int n4, int n5, i) -> c
+    update_4(int n, int n2, boolean bl) -> e
+    update_47(int n) -> ab
+    update_15(int n, int n2, int n3, int n4, boolean b) -> a
+    update_3(int var0, int var1_1, int var2_2, int va) -> f
+    update_149() -> cb
+    update_2(int n, int n2, int n3, boolean bl) -> b
+    check_11(int n, int n2, int n3, int n4, boolean b) -> b
+    update_151() -> cc
+    update_152() -> cd
+    render_40(Graphics graphics) -> P
+    render_7(Graphics graphics, boolean bl) -> h
+    update_153() -> ce
+    update_154() -> cf
+    render_41(Graphics graphics) -> Q
+    update_155() -> cg
+    update_156() -> ch
+    update_48(int n) -> ac
+    update_157() -> ci
+    update_49(int n) -> ad
+    update_0(boolean bl, int n) -> a
+    update_158() -> cj
+    render_0(Graphics var0, int var1_1, int var2_2) -> a
+    render_42(Graphics graphics) -> R
+    update_159() -> ck
+    update_10(boolean bl) -> o
+    playSound_0(AudioManager var0) -> s
+    playSound_1(AudioManager var0) -> t
+    update_160() -> cl
+    initAudioChannels(AudioManager[] audioManagerArray, int n) -> a
+    update_161() -> cm
+    render_43(Graphics graphics) -> S
+    render_8(Graphics graphics, boolean bl) -> i
+    update_11(boolean bl) -> p
+    update_162() -> cn
+    update_163() -> co
+    update_164() -> cp
+    update_165() -> cq
+    render_44(Graphics graphics) -> T
+    update_166() -> cr
+    update_50(int n) -> ae
+    initAudioChannels(int n, int n2, AudioManager[] audioManag) -> a
+    render_45(Graphics graphics) -> U
+    playSound_2(AudioManager audioManager, boolean bl) -> d
+    calc_0(byte[] byArray, int n, boolean bl) -> a
+    update_168() -> cs
+    update_169() -> ct
+    audio_5(AudioManager audioManager) -> g
+    update_170() -> cu
+    update_51(int n) -> af
+    update_172() -> cv
+    update_53(int n) -> ag
+    update_173() -> cw
+    getAudio_3(AudioManager audioManager, AudioManager ) -> b
+    update_54(int n) -> ah
+    update_175() -> cx
+    update_13(boolean bl) -> c
+    render_9(Graphics graphics, boolean bl) -> j
+    update_176() -> cy
+    update_55(int n) -> ai
+    audio_7(AudioManager audioManager, int n) -> e
+    playSound_1(AudioManager var0, int var1_1, int var2_) -> a
+    audio_0(AudioManager var0, int var1_1) -> d
+    playSound_14(AudioManager audioManager, int[] nArray,) -> a
+    audio_1(AudioManager var0, int var1_1) -> f
+    playSound_15(AudioManager audioManager, int n) -> f
+    audio_9(AudioManager audioManager, int n) -> g
+    update_177() -> cz
+    playSound_2(AudioManager var0) -> h
+    render_46(Graphics graphics) -> V
+    update_56(int n) -> aj
+    audio_7(AudioManager audioManager) -> i
+    update_178() -> cA
+    render_1(Graphics graphics, AudioManager audioMan) -> e
+    render_47(Graphics graphics) -> W
+    update_179() -> cB
+    update_14(boolean bl) -> q
+    update_180() -> cC
+    update_181() -> cD
+    update_15(boolean bl) -> d
+    update_182() -> cE
+    update_57(int n) -> ak
+    update_58(int n) -> al
+    update_184() -> cF
+    update_185() -> cG
+    update_3(int var0) -> am
+    update_186() -> cH
+    update_187() -> cI
+    update_188() -> cJ
+    update_189() -> cK
+    update_190() -> cL
+    update_191() -> cM
+    update_192() -> cN
+    render_48(Graphics graphics) -> X
+    update_193() -> cO
+    render_35(Graphics graphics, int n, int n2, int n3) -> f
+    render_39(Graphics graphics, int n, int n2, int n3) -> g
+    calc_1(byte[] byArray, int n, boolean bl) -> b
+    update_194() -> cP
+    update_59(int n) -> an
+    update_195() -> cQ
+    update_196() -> cR
+    update_60(int n) -> ao
+    update_197() -> cS
+    update_16(boolean bl) -> r
+    update_61(int n) -> ap
+    update_198() -> cT
+    update_17(AudioManager audioManager, int n, byte[]) -> a
+    playSound_0(AudioManager var0, boolean var1_1) -> e
+    update_199() -> cU
+    update_200() -> cV
+    update_201() -> cW
+    update_202() -> cX
+    update_203() -> cY
+    update_204() -> cZ
+    update_205() -> da
+    render_49(Graphics graphics) -> Y
+    render_50(Graphics graphics) -> Z
+    render_51(Graphics graphics) -> aa
+    render_52(Graphics graphics) -> ab
+    render_53(Graphics graphics) -> ac
+    update_206() -> db
+    render_54(Graphics graphics) -> ad
+    update_207() -> dc
+    update_208() -> dd
+    update_209() -> de
+    render_31(Graphics graphics, int n, int n2) -> e
+    update_18(int n, int n2) -> u
+    calc_12(int n, int n2, int n3) -> o
+    calc_21(int n, int n2) -> k
+    render_55(Graphics graphics) -> ae
+    update_210() -> df
+    update_62(int n) -> aq
+    render_56(Graphics graphics) -> af
+    update_17(boolean bl) -> s
+    update_63(int n) -> ar
+    update_211() -> dg
+    update_212() -> dh
+    update_213() -> di
+    update_214() -> dj
+    update_64(int n) -> as
+    update_215() -> dk
+    update_65(int n) -> at
+    render_57(Graphics graphics) -> ag
+    update_216() -> dl
+    update_18(boolean bl) -> t
+    update_217() -> dm
+    render_58(Graphics graphics) -> ah
+    update_218() -> dn
+    update_219() -> do
+    update_220() -> dp
+    update_221() -> dq
+    update_19(boolean bl) -> u
+    render_59(Graphics graphics) -> ai
+    render_60(Graphics graphics) -> aj
+    render_61(Graphics graphics) -> ak
+    update_222() -> dr
+    update_223() -> ds
+    calc_2(int n, int n2, int n3, byte[] byArray, i) -> a
+    update_224() -> dt
+    update_225() -> du
+    calc_0(int n, int n2, boolean bl, int n3, boole) -> a
+    update_19(int n, int n2, int n3, int n4, int n5, b) -> a
+    update_3(int n, int n2, int n3, boolean bl, boole) -> b
+    update_226() -> dv
+    update_227() -> dw
+    update_228() -> dx
+    update_66(int n) -> au
+    update_229() -> dy
+    update_230() -> dz
+    update_231() -> dA
+    render_62(Graphics graphics) -> al
+    render_63(Graphics graphics) -> am
+    render_64(Graphics graphics) -> an
+    render_0(Graphics graphics, byte[] byArray, byte[) -> a
+    render_65(Graphics graphics) -> ao
+    update_232() -> dB
+    update_233() -> dC
+    update_234() -> dD
+    update_235() -> dE
+    update_236() -> dF
+    update_20(boolean bl) -> v
+    update_237() -> dG
+    update_1(boolean bl, int n) -> b
+    update_238() -> dH
+    update_239() -> dI
+    render_10(Graphics graphics, boolean bl) -> k
+    render_66(Graphics graphics) -> ap
+    render_67(Graphics graphics) -> aq
+    render_68(Graphics graphics) -> ar
+    update_21(boolean bl) -> w
+    update_240() -> dJ
+    update_241() -> dK
+    update_242() -> dL
+    update_243() -> dM
+    update_19(int n, int n2) -> v
+    update_20(int n, int n2) -> w
+    update_244() -> dN
+    render_1(Graphics graphics, int n, boolean bl) -> a
+    render_1(Graphics var0, int var1_1) -> g
+    render_69(Graphics graphics) -> as
+    update_245() -> dO
+    update_67(int n) -> av
+    update_68(int n) -> aw
+    update_246() -> dP
+    update_4(int n, boolean bl) -> e
+    update_247() -> dQ
+    render_70(Graphics graphics) -> at
+    update_248() -> dR
+    update_22(boolean bl) -> x
+    update_249() -> dS
+    update_250() -> dT
+    render_0(Graphics var0, boolean var1_1) -> l
+    update_251() -> dU
+    update_252() -> dV
+    update_253() -> dW
+    render_11(Graphics graphics, boolean bl) -> m
+    update_254() -> dX
+    render_71(Graphics graphics) -> au
+    update_255() -> dY
+    update_256() -> dZ
+    render_72(Graphics graphics) -> av
+    update_257() -> ea
+    render_73(Graphics graphics) -> aw
+    calc_5(byte[] byArray, int n) -> f
+    calc_0(byte[] var0, int var1_1) -> g
+    initAudioChannels(AudioManager[] audioManagerArray) -> d
+    update_258() -> eb
+    update_1(int[][] nArray) -> b
+    playSound_0(int n, int n2, AudioManager audioManager) -> a
+    calc_2(byte[] byArray, int n, boolean bl) -> c
+    update_259() -> ec
+    update_260() -> ed
+    update_261() -> ee
+    update_262() -> ef
+    update_263() -> eg
+    update_264() -> eh
+    update_265() -> ei
+    update_21(int n, int n2) -> x
+    update_266() -> ej
+    update_267() -> ek
+    update_268() -> el
+    render_74(Graphics graphics) -> ax
+    render_4(Graphics graphics, int n) -> h
+    render_75(Graphics graphics) -> ay
+    render_76(Graphics graphics) -> az
+    render_77(Graphics graphics) -> aA
+    render_78(Graphics graphics) -> aB
+    render_79(Graphics graphics) -> aC
+    render_80(Graphics graphics) -> aD
+    update_269() -> em
+    calc_3(byte[] byArray, int n, boolean bl) -> d
+    calc_6(byte[] byArray, int n) -> h
+    calc_1(byte[] var0, int var1_1) -> i
+    update_270() -> en
+    update_271() -> eo
+    render_2(Graphics graphics, AudioManager audioMan) -> b
+    update_272() -> ep
+    update_273() -> eq
+    playSound_12(AudioManager audioManager) -> u
+    audio_6(AudioManager audioManager) -> h
+    update_274() -> er
+    audio_1(AudioManager audioManager, boolean bl) -> b
+    audio_8(AudioManager audioManager) -> j
+    playSound_14(AudioManager audioManager) -> v
+    playSound_0(AudioManager var0, int var1_1) -> h
+    update_275() -> es
+    playSound_3(AudioManager var0) -> w
+    audio_9(AudioManager audioManager) -> k
+    playSound_3(AudioManager audioManager, boolean bl) -> f
+    update_23(boolean bl) -> e
+    update_277() -> et
+    update_278() -> eu
+    playSound_1(AudioManager var0, boolean var1_1) -> b
+    update_279() -> ev
+    update_280() -> ew
+    update_281() -> ex
+    log_69(int n) -> ax
+    update_70(int n) -> ay
+    update_0(int n, boolean bl, int n2, boolean bl2, ) -> a
+    update_4(int var0) -> az
+    render_5(Graphics graphics, int n) -> a
+    render_0(Graphics graphics, int n, int[] nArray) -> a
+    playSound_16(AudioManager audioManager) -> x
+    render_3(Graphics graphics, AudioManager audioMan) -> c
+    update_282() -> ey
+    update_283() -> ez
+    update_284() -> eA
+    playSound_17(AudioManager audioManager) -> y
+    update_285() -> eB
+    update_72(int n) -> aA
+    render_4(Graphics graphics, AudioManager audioMan) -> d
+    update_73(int n) -> aB
+    update_74(int n) -> aC
+    update_75(int n) -> aD
+    playSound_1(AudioManager var0, AudioManager var1_1, ) -> a
+    playSound_1(int n, AudioManager audioManager, int n2) -> a
+    update_0(int n, int[] nArray, int n2, int n3, int) -> a
+    update_76(int n) -> aE
+    update_5(int var0) -> aF
+    render_0(Graphics var0, AudioManager var1_1) -> f
+    update_77(int n) -> aG
+    render_5(Graphics graphics, AudioManager audioMan) -> g
+    update_286() -> eC
+    update_78(int n) -> aH
+    render_1(Graphics var0, AudioManager var1_1) -> h
+    update_287() -> eD
+    update_288() -> eE
+    render_81(Graphics graphics) -> aE
+    update_289() -> eF
+    update_290() -> eG
+    update_291() -> eH
+    render_82(Graphics graphics) -> aF
+    update_292() -> eI
+    update_293() -> eJ
+    update_294() -> eK
+    update_295() -> eL
+    render_83(Graphics graphics) -> aG
+    update_296() -> eM
+    update_297() -> eN
+    update_298() -> eO
+    update_299() -> eP
+    render_84(Graphics graphics) -> aH
+    playSound_18(AudioManager audioManager) -> z
+    update_300() -> eQ
+    update_301() -> eR
+    audio_10(AudioManager audioManager) -> l
+    update_302() -> eS
+    render_85(Graphics graphics) -> aI
+    update_303() -> eT
+    render_86(Graphics graphics) -> aJ
+    update_24(boolean bl) -> y
+    update_304() -> eU
+    update_305() -> eV
+    update_306() -> eW
+    render_44(Graphics graphics, int n, int n2, int n3) -> h
+    render_87(Graphics graphics) -> aK
+    render_6(Graphics graphics, int n) -> i
+    render_88(Graphics graphics) -> aL
+    render_89(Graphics graphics) -> aM
+    calc_47(int n) -> X
+    update_5(int n, int n2, boolean bl) -> f
+    update_6(int n, int n2, boolean bl) -> g
+    render_0(Graphics var0, int var1_1, int var2_2, i) -> a
+    calc_7(byte[] byArray, int n) -> j
+    calc_8(byte[] byArray, int n) -> k
+    update_307() -> eX
+    audio_11(AudioManager audioManager) -> m
+    playSound_1(AudioManager var0, int var1_1) -> i
+    playSound_4(AudioManager var0) -> n
+    update_308() -> eY
+    update_25(boolean bl) -> z
+    update_309() -> eZ
+    update_79(int n) -> aI
+    calc_24(int n, int n2) -> y
+    calc_4(byte[] byArray, int n, boolean bl) -> e
+    update_310() -> fa
+    update_311() -> fb
+    calc_25(int n, int n2) -> z
+    update_312() -> fc
+    render_90(Graphics graphics) -> aN
+    render_0(Graphics var0, int var1_1, int var2_2, i) -> i
+    update_313() -> fd
+    update_314() -> fe
+    update_315() -> ff
+    update_316() -> fg
+    render_91(Graphics graphics) -> aO
+    update_317() -> fh
+    update_318() -> fi
+    update_319() -> fj
+    update_320() -> fk
+    render_92(Graphics graphics) -> aP
+    render_93(Graphics graphics) -> aQ
+    update_26(boolean bl) -> A
+    update_321() -> fl
+    render_41(Graphics graphics, int n, int n2, boolea) -> a
+    render_94(Graphics graphics) -> aR
+    render_95(Graphics graphics) -> aS
+    render_96(Graphics graphics) -> aT
+    render_97(Graphics graphics) -> aU
+    check_2(GameData gameData, AudioManager audioMan) -> a
+    update_322() -> fm
+    update_323() -> fn
+    render_98(Graphics graphics) -> aV
+    render_99(Graphics graphics) -> aW
+    render_100(Graphics graphics) -> aX
+    update_27(boolean bl) -> B
+    update_324() -> fo
+    update_325() -> fp
+    update_1(byte[] var0) -> c
+    update_28(boolean bl) -> C
+    calc_14(int n, int n2, int n3) -> p
+    calc_15(int n, int n2, int n3) -> q
+    update_80(int n) -> aJ
+    update_326() -> fq
+    update_0(int n, byte[][] byArray) -> a
+    update_0(int n, int n2, byte[][] byArray) -> a
+    calc_5(byte[] byArray, int n, boolean bl) -> f
+    update_327() -> fr
+    update_328() -> fs
+    calc_26(int n, int n2) -> A
+    update_12(int n, int n2, int n3) -> m
+    calc_27(int n, int n2) -> B
+    update_329() -> ft
+    update_330() -> fu
+    update_331() -> fv
+    render_43(Graphics graphics, int n, int n2, int n3) -> j
+    calc_6(byte[] byArray, int n, boolean bl) -> g
+    update_332() -> fw
+    update_29(boolean bl) -> D
+    update_333() -> fx
+    playSound_18(AudioManager audioManager, int n, int[] ) -> a
+    audio_12(AudioManager audioManager) -> n
+    playSound_2(AudioManager var0, int var1_1) -> j
+    update_334() -> fy
+    update_335() -> fz
+    update_336() -> fA
+    update_337() -> fB
+    render_101(Graphics graphics) -> aY
+    render_102(Graphics graphics) -> aZ
+    calc_16(int n, int n2, int n3) -> r
+    calc_17(int n, int n2, int n3) -> s
+    update_338() -> fC
+    update_339() -> fD
+    update_340() -> fE
+    render_103(Graphics graphics) -> ba
+    render_12(Graphics graphics, boolean bl) -> n
+    update_341() -> fF
+    update_342() -> fG
+    update_24(int n, int n2, int n3, int n4, int n5) -> g
+    check_0(int n, int n2, byte by, boolean bl) -> a
+    calc_28(int n, int n2) -> C
+    update_25(int n, int n2, int n3, int n4, byte by, ) -> a
+    render_104(Graphics graphics) -> bb
+    render_1(Graphics var0, int var1_1, int var2_2, i) -> b
+    render_45(Graphics graphics, int n, int n2, int n3) -> k
+    method_0() -> GameCanvas
+    update_345() -> hideNotify
+    update_346() -> showNotify
+    update_5(int n, boolean bl) -> f
+    update_81(int n) -> keyPressed
+    update_82(int n) -> keyReleased
+    update_83(int n) -> keyRepeated
+    update_347() -> fH
+    render_105(Graphics graphics) -> paint
+    gameLoop() -> run
+
+# GameController
+    calc_1() -> b
+    check_1() -> a
+    method_0(byte[] byArray) -> a
+    calc_0(byte[] byArray, int n, int n2) -> a
+    update_0(int n) -> a
+    calc_0(int n, int n2) -> a
+    render_0(int n, Graphics graphics, int n2, int n3) -> a
+    render_0(String string, Graphics graphics, int n,) -> a
+    render_0(String var0, Graphics var1_1, int var2_2) -> a
+    update_1(MIDlet mIDlet, Canvas canvas, int n, int) -> a
+    update_0(String string, int n) -> a
+    method_0(String string, String string2, String st) -> a
+    resolveURL_0(int n, String string, int n2, String str) -> a
+    update_0(int var0, String[] var1_1, int var2_2, S) -> a
+    update_0(String[] stringArray) -> a
+    update_1(String string, int n) -> b
+    persist_2() -> c
+    calc_1(int n, int n2) -> b
+    update_0(int var0, int var1_1, int var2_2) -> a
+    update_0(boolean bl) -> b
+    update_1(boolean bl) -> a
+    calc_0(byte[] byArray, int n, int n2, String st) -> a
+    method_0(byte[] byArray, int n, int n2, int n3, i) -> a
+    update_0(byte[] byArray, int n, int n2, int n3) -> a
+    check_0(int var0) -> a
+    render_0(Graphics var0) -> a
+    render_0(Graphics graphics) -> b
+    render_2(Graphics graphics, int n, int n2, int n3) -> a
+    update_3() -> d
+    render_1(Graphics graphics) -> c
+    render_1(Graphics var0) -> d
+    update_0(boolean bl, boolean bl2) -> a
+    update_4() -> e
+    method_1(byte[] byArray, int n, int n2, int n3, i) -> b
+    render_4(Graphics graphics, int n, int n2, int n3) -> b
+    render_0(Graphics graphics, Image image, int n, i) -> a
+    gameLoop() -> run
+    persist_6() -> f
+    resolveURL_7() -> g
+    onCommand(Command command, Displayable displayable) -> commandAction
+    resolveURL_8() -> h
+    method_0(String string) -> a
+
+# AudioManager
+    calc_0() -> a
+    update_0(GameData gameData) -> a
+    update_0(int n) -> a
+    calc_1() -> b
+    audio_7(AudioManager audioManager, int n) -> a
+    audio_1(AudioManager audioManager) -> a
+    update_1() -> i
+    check_1(int n, int n2) -> b
+    playSound_2(AudioManager audioManager, boolean bl, i) -> a
+    update_3() -> c
+    audio_15(AudioManager audioManager) -> w
+    audio_0(AudioManager var0) -> a
+    audio_2(AudioManager audioManager) -> b
+    getAudio_12(AudioManager audioManager) -> m
+    audio_16(AudioManager audioManager) -> x
+    audio_17(AudioManager audioManager) -> y
+    update_0(int n, int[] nArray) -> a
+    audio_3(AudioManager audioManager, int n) -> b
+    update_0(int n, int n2) -> a
+    audio_2(AudioManager audioManager, int n, boolea) -> a
+    getAudio_13(AudioManager audioManager) -> n
+    update_1(int n) -> b
+    audio_1(int n, AudioManager audioManager) -> a
+    getAudio_4(AudioManager audioManager) -> c
+    calc_2(int n) -> c
+    audio_1(AudioManager var0, int var1_1, int var2_) -> a
+    playSound_5(AudioManager audioManager, AudioManager ) -> a
+    getAudio_3(AudioManager audioManager, int n, int n2) -> b
+    getAudio_14(AudioManager audioManager) -> o
+    audio_0(AudioManager audioManager, int n, int n2) -> a
+    render_3(Graphics graphics, AudioManager audioMan) -> c
+    render_11(Graphics graphics, AudioManager audioMan) -> a
+    playSound_3(AudioManager audioManager, AudioManager ) -> b
+    render_8(Graphics graphics, AudioManager audioMan) -> b
+    update_4() -> d
+    update_6() -> e
+    audio_18(AudioManager audioManager) -> z
+    audio_11(AudioManager audioManager) -> f
+    audio_3(AudioManager audioManager) -> d
+    update_0(int n, int[] nArray, int n2, int n3) -> a
+    calc_0(int[] nArray) -> a
+    check_0(int[] nArray, int n, int n2) -> a
+    render_2(Graphics graphics, int[] nArray, int n, ) -> a
+    update_1(int[] nArray) -> e
+    update_2(int[] nArray) -> b
+    render_1(Graphics graphics, int[] nArray) -> a
+    update_1(int[] nArray, int n, int n2) -> b
+    update_2(int[] nArray, int n, int n2) -> c
+    render_0(Graphics var0, int[] var1_1, int var2_2,) -> b
+    audio_19(AudioManager audioManager) -> A
+    method_0(int n, int n2, int[] nArray, int n3) -> a
+    check_0(int n, int n2, int n3, int n4) -> a
+    update_3(int[] nArray, int n, int n2) -> d
+    update_3(int[] nArray) -> c
+    update_0(int[] nArray, int n, boolean bl, boolean) -> a
+    update_0(int[] var0, int var1_1, int var2_2, int ) -> a
+    update_4(int[] nArray) -> f
+    update_0(int[] nArray, int n, int n2, boolean bl,) -> a
+    update_4(int[] nArray, int n, int n2) -> e
+    getAudio_11(AudioManager audioManager) -> e
+    update_5() -> j
+    update_7() -> f
+    audio_20(AudioManager audioManager) -> B
+    playSound_32(AudioManager audioManager) -> p
+    playSound_11(AudioManager audioManager) -> C
+    playSound_12(AudioManager audioManager) -> D
+    render_7(Graphics graphics, AudioManager audioMan) -> d
+    playSound_20(AudioManager audioManager, int n, int n2) -> c
+    update_5(int[] nArray) -> g
+    audio_12(AudioManager audioManager) -> g
+    playSound_0(AudioManager var0, int var1_1) -> g
+    audio_21(AudioManager audioManager) -> h
+    render_9(Graphics graphics, AudioManager audioMan) -> e
+    playSound_9(AudioManager audioManager, int n, int n2) -> d
+    playSound_3(AudioManager audioManager, boolean bl) -> b
+    playSound_16(AudioManager audioManager) -> E
+    playSound_17(AudioManager audioManager) -> F
+    audio_22(AudioManager audioManager) -> i
+    playSound_19(AudioManager audioManager) -> G
+    playSound_0(AudioManager audioManager, boolean bl) -> c
+    audio_23(AudioManager audioManager) -> j
+    playSound_21(AudioManager audioManager) -> H
+    playSound_45(AudioManager audioManager) -> q
+    audio_4(AudioManager audioManager, AudioManager ) -> d
+    audio_0(int n, AudioManager audioManager) -> b
+    audio_24(AudioManager audioManager) -> k
+    playSound_23(AudioManager audioManager) -> I
+    playSound_24(AudioManager audioManager) -> J
+    playSound_25(AudioManager audioManager) -> K
+    playSound_1(AudioManager var0, int var1_1) -> c
+    playSound_12(AudioManager audioManager, int n, int n2) -> e
+    playSound_26(AudioManager audioManager) -> L
+    audio_25(AudioManager audioManager) -> l
+    playSound_28(AudioManager audioManager) -> M
+    audio_4(AudioManager audioManager, int n) -> c
+    playSound_47(AudioManager audioManager) -> r
+    playSound_29(AudioManager audioManager) -> N
+    playSound_0(AudioManager var0, boolean var1_1) -> a
+    playSound_13(AudioManager audioManager, int n) -> h
+    audio_9(AudioManager audioManager) -> s
+    getAudio_1(AudioManager audioManager, boolean bl, b) -> a
+    playSound_14(AudioManager audioManager, int n, int n2) -> f
+    check_2(int n, int n2) -> c
+    check_0(int n, int n2, int n3) -> b
+    check_1(int n, int n2, int n3) -> c
+    check_3(int n, int n2) -> d
+    update_0(int n, int n2, int n3) -> a
+    log_4(AudioManager audioManager, AudioManager ) -> c
+    playSound_18(AudioManager audioManager, int n) -> d
+    playSound_0(AudioManager var0) -> n
+    audio_1(AudioManager var0) -> t
+    playSound_15(AudioManager audioManager, int n) -> i
+    playSound_51(AudioManager audioManager) -> u
+    playSound_1(AudioManager audioManager, boolean bl) -> d
+    playSound_2(AudioManager var0, int var1_1) -> j
+    playSound_1(AudioManager var0) -> O
+    playSound_33(AudioManager audioManager) -> P
+    playSound_34(AudioManager audioManager) -> Q
+    playSound_35(AudioManager audioManager) -> R
+    playSound_36(AudioManager audioManager) -> S
+    playSound_52(AudioManager audioManager) -> v
+    playSound_3(AudioManager var0, int var1_1) -> k
+    playSound_37(AudioManager audioManager) -> T
+    playSound_16(AudioManager audioManager, int n) -> l
+    update_6(int[] nArray) -> d
+    playSound_17(AudioManager audioManager, int n) -> m
+    playSound_19(AudioManager audioManager, int n) -> n
+    playSound_2(AudioManager var0) -> U
+    playSound_38(AudioManager audioManager) -> V
+    playSound_39(AudioManager audioManager) -> W
+    playSound_40(AudioManager audioManager) -> X
+    playSound_41(AudioManager audioManager) -> Y
+    playSound_42(AudioManager audioManager) -> Z
+    playSound_43(AudioManager audioManager) -> aa
+    playSound_21(AudioManager audioManager, int n, boolea) -> b
+    playSound_44(AudioManager audioManager) -> ab
+    playSound_22(AudioManager audioManager, int n, int n2) -> g
+    playSound_46(AudioManager audioManager) -> ac
+    playSound_23(AudioManager audioManager, int n) -> e
+    audio_1(AudioManager audioManager, boolean bl, i) -> b
+    audio_2(AudioManager var0, int var1_1, boolean v) -> a
+    getAudio_2(AudioManager audioManager, boolean bl) -> a
+    check_0(int n, int n2, boolean bl, boolean bl2, ) -> a
+    playSound_3(AudioManager var0) -> s
+    playSound_4(AudioManager var0) -> ad
+    playSound_24(AudioManager audioManager, int n) -> o
+    playSound_48(AudioManager audioManager) -> ae
+    playSound_49(AudioManager audioManager) -> af
+    playSound_0(int var0, int var1_1, AudioManager var2_) -> a
+    initAudioChannels(int n, int n2, int n3, int n4, AudioMana) -> a
+    render_10(Graphics graphics, AudioManager audioMan) -> f
+    playSound_50(AudioManager audioManager) -> t
+    playSound_25(AudioManager audioManager, int n) -> f
+    playSound_26(AudioManager audioManager, int n) -> p
+    playSound_53(AudioManager audioManager) -> ag
+    playSound_6(AudioManager audioManager, AudioManager ) -> e
+    playSound_54(AudioManager audioManager) -> ah
+    method_0(int n, int[] nArray) -> AudioManager
+    method_0(GameData gameData, int n, int n2, int[] ) -> AudioManager
+    method_0(int n, int n2, int n3, int n4, int[] nAr) -> AudioManager
+    update_8() -> g
+    render_0(GraphicsEngine graphicsEngine) -> a
+    update_9() -> h
+    render_0(Graphics graphics, int n, int n2, int n3) -> a
+    render_0(Graphics graphics, boolean bl) -> a
+    render_0(Graphics var1_1, boolean var2_2) -> a
+    getAudio_0(AudioManager var0) -> p
+
+# GraphicsEngine
+    update_0(byte[] byArray, int n) -> a
+    update_0(int n, int n2, int n3, int n4, int n5, i) -> a
+    update_0(int n, int n2, int n3) -> a
+    calc_0() -> a
+    update_1() -> b
+    update_0(int n, byte[] byArray) -> a
+    calc_0(int n, int n2) -> a
+    update_0(int n) -> a
+    calc_1(int n) -> b
+    calc_1(int n, int n2) -> b
+    update_1(int[] nArray, int n, int n2, int n3, int) -> a
+    update_3(int[] nArray, int n, int n2, int n3, int) -> b
+    render_0(Graphics graphics) -> a
+    render_1(Graphics graphics, int n, int n2, int n3) -> a
+    update_5(int[] nArray, int n, int n2, int n3, int) -> c
+    update_0(int var1_1, int var2_2, int var3_3, int ) -> a
+    update_0(int n, int n2, int n3, int n4) -> a
+    update_1(int n, int n2, int n3, int n4, int n5) -> b
+    update_1(int n, int n2, int n3, int n4) -> b
+
+# SensorHandler
+    check_0() -> a
+    update_1() -> b
+    update_0(boolean bl) -> a
+    onSensorData(SensorConnection sensorConnection, Data[) -> dataReceived
+    check_2() -> c
