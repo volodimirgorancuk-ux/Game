@@ -45,11 +45,11 @@
       "GameCanvas.P"
     ],
     "callees": [
-      "H",
-      "setColor",
-      "fillRect",
-      "GameCanvas.S",
-      "j"
+      "e",
+      "GameCanvas.e",
+      "j",
+      "S",
+      "fillRect"
     ],
     "strings": []
   },
@@ -181,8 +181,8 @@
     ],
     "callees": [
       "GameCanvas.a",
-      "a",
-      "b"
+      "b",
+      "a"
     ],
     "strings": []
   },
@@ -199,10 +199,10 @@
       "GameCanvas.dL"
     ],
     "callees": [
-      "l",
+      "GameCanvas.l",
       "GameCanvas.n",
       "n",
-      "GameCanvas.l"
+      "l"
     ],
     "strings": []
   },
@@ -236,11 +236,11 @@
       "GameCanvas.dN"
     ],
     "callees": [
-      "fq",
-      "GameCanvas.a",
-      "GameCanvas.fq",
       "aJ",
-      "a"
+      "fq",
+      "GameCanvas.aJ",
+      "a",
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -257,8 +257,8 @@
       "GameCanvas.eh"
     ],
     "callees": [
-      "GameCanvas.fF",
-      "fF"
+      "fF",
+      "GameCanvas.fF"
     ],
     "strings": []
   },
@@ -275,11 +275,11 @@
       "GameCanvas.aC"
     ],
     "callees": [
+      "GameCanvas.f",
+      "GameCanvas.n",
       "j",
-      "A",
-      "GameCanvas.a",
-      "GameCanvas.j",
-      "f"
+      "GameCanvas.A",
+      "GameCanvas.j"
     ],
     "strings": []
   },
@@ -320,10 +320,10 @@
       "GameCanvas.fc"
     ],
     "callees": [
-      "GameCanvas.n",
+      "GameCanvas.a",
       "n",
-      "a",
-      "GameCanvas.a"
+      "GameCanvas.n",
+      "a"
     ],
     "strings": []
   },
@@ -355,11 +355,11 @@
       "GameCanvas.fn"
     ],
     "callees": [
-      "A",
-      "GameCanvas.A",
-      "a",
       "GameCanvas.h",
-      "h"
+      "GameCanvas.A",
+      "I",
+      "A",
+      "a"
     ],
     "strings": []
   },
@@ -394,8 +394,8 @@
       "GameCanvas.eW"
     ],
     "callees": [
-      "l",
-      "GameCanvas.l"
+      "GameCanvas.l",
+      "l"
     ],
     "strings": []
   },
@@ -474,11 +474,11 @@
       "GameCanvas.ds"
     ],
     "callees": [
-      "m",
-      "GameCanvas.c",
-      "setClip",
+      "GameCanvas.m",
+      "c",
       "j",
-      "n"
+      "GameCanvas.A",
+      "I"
     ],
     "strings": []
   },
@@ -496,10 +496,10 @@
     ],
     "callees": [
       "Z",
-      "l",
+      "GameCanvas.F",
       "GameCanvas.l",
-      "GameCanvas.S",
-      "GameCanvas.Z"
+      "x",
+      "GameCanvas.x"
     ],
     "strings": []
   },
@@ -513,9 +513,9 @@
       "GameCanvas.Z"
     ],
     "callees": [
-      "d",
-      "GameCanvas.d",
       "GameCanvas.a",
+      "GameCanvas.d",
+      "d",
       "a"
     ],
     "strings": []
@@ -533,8 +533,8 @@
       "GameCanvas.ao"
     ],
     "callees": [
-      "a",
-      "b"
+      "b",
+      "a"
     ],
     "strings": []
   },
@@ -577,8 +577,8 @@
       "GameCanvas.bG"
     ],
     "callees": [
-      "GameCanvas.I",
-      "I"
+      "I",
+      "GameCanvas.I"
     ],
     "strings": []
   },
@@ -681,10 +681,10 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "GameCanvas.n",
+      "GameCanvas.a",
       "n",
-      "a",
-      "GameCanvas.a"
+      "GameCanvas.n",
+      "a"
     ],
     "strings": []
   },
@@ -736,8 +736,8 @@
       "GameCanvas.eS"
     ],
     "callees": [
-      "GameCanvas.B",
-      "B"
+      "B",
+      "GameCanvas.B"
     ],
     "strings": []
   },
@@ -763,11 +763,11 @@
       "GameCanvas.eS"
     ],
     "callees": [
-      "eW",
-      "s",
-      "dp",
-      "GameCanvas.s",
-      "GameCanvas.aM"
+      "GameCanvas.a",
+      "GameCanvas.C",
+      "GameCanvas.eW",
+      "u",
+      "eW"
     ],
     "strings": []
   },
@@ -783,11 +783,11 @@
       "GameCanvas.eT"
     ],
     "callees": [
-      "GameCanvas.S",
-      "p",
+      "GameCanvas.a",
+      "GameCanvas.K",
       "GameCanvas.q",
-      "S",
-      "A"
+      "K",
+      "GameCanvas.p"
     ],
     "strings": []
   },
@@ -817,8 +817,8 @@
       "GameCanvas.eS"
     ],
     "callees": [
-      "GameCanvas.I",
-      "I"
+      "I",
+      "GameCanvas.I"
     ],
     "strings": []
   },
@@ -848,11 +848,11 @@
       "GameCanvas.ad"
     ],
     "callees": [
-      "l",
-      "GameCanvas.l",
+      "GameCanvas.F",
       "E",
+      "GameCanvas.l",
       "GameCanvas.E",
-      "G"
+      "l"
     ],
     "strings": []
   },
@@ -878,11 +878,11 @@
       "GameCanvas.ad"
     ],
     "callees": [
-      "GameCanvas.Y",
       "e",
-      "GameCanvas.a",
-      "f",
-      "GameCanvas.e"
+      "GameCanvas.e",
+      "GameCanvas.f",
+      "b",
+      "Y"
     ],
     "strings": []
   },
@@ -895,10 +895,10 @@
       "GameCanvas.ad"
     ],
     "callees": [
-      "e",
-      "GameCanvas.a",
-      "f",
       "GameCanvas.e",
+      "e",
+      "GameCanvas.f",
+      "b",
       "a"
     ],
     "strings": []
@@ -910,11 +910,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "aa",
       "Z",
-      "H",
-      "GameCanvas.Z",
       "GameCanvas.ab",
-      "aa"
+      "ac",
+      "GameCanvas.aa"
     ],
     "strings": []
   },
@@ -929,11 +929,11 @@
       "GameCanvas.eK"
     ],
     "callees": [
-      "getClipY",
       "getClipX",
-      "setClip",
-      "GameCanvas.d",
-      "d"
+      "getClipHeight",
+      "GameCanvas.f",
+      "getClipWidth",
+      "getClipY"
     ],
     "strings": []
   },
@@ -949,11 +949,11 @@
       "GameCanvas.dT"
     ],
     "callees": [
-      "setColor",
-      "fillRect",
-      "GameCanvas.S",
+      "i",
+      "GameCanvas.i",
       "S",
-      "GameCanvas.a"
+      "fillRect",
+      "GameCanvas.S"
     ],
     "strings": []
   },
@@ -964,9 +964,9 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "S",
-      "GameCanvas.S",
       "GameCanvas.a",
+      "GameCanvas.S",
+      "S",
       "a"
     ],
     "strings": []
@@ -978,10 +978,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "c",
       "GameCanvas.a",
-      "a",
-      "GameCanvas.c"
+      "GameCanvas.c",
+      "c",
+      "a"
     ],
     "strings": []
   },
@@ -998,9 +998,9 @@
       "GameCanvas.dy"
     ],
     "callees": [
-      "S",
-      "GameCanvas.S",
       "GameCanvas.a",
+      "GameCanvas.S",
+      "S",
       "a"
     ],
     "strings": []
@@ -1014,11 +1014,11 @@
       "GameCanvas.bG"
     ],
     "callees": [
-      "setColor",
+      "dh",
       "fillRect",
       "af",
-      "GameCanvas.a",
-      "GameCanvas.ak"
+      "GameCanvas.ak",
+      "GameCanvas.dh"
     ],
     "strings": []
   },
@@ -1047,11 +1047,11 @@
       "GameCanvas.fE"
     ],
     "callees": [
-      "an",
-      "GameCanvas.av",
       "av",
+      "am",
       "GameCanvas.an",
-      "GameCanvas.a"
+      "GameCanvas.am",
+      "GameCanvas.av"
     ],
     "strings": []
   },
@@ -1067,9 +1067,9 @@
       "GameCanvas.cH"
     ],
     "callees": [
+      "GameCanvas.a",
       "H",
       "GameCanvas.H",
-      "GameCanvas.a",
       "a"
     ],
     "strings": []
@@ -1084,11 +1084,11 @@
       "GameCanvas.cY"
     ],
     "callees": [
-      "getClipY",
       "getClipX",
-      "setClip",
-      "GameCanvas.a",
-      "getClipHeight"
+      "getClipHeight",
+      "getClipWidth",
+      "getClipY",
+      "a"
     ],
     "strings": []
   },
@@ -1102,10 +1102,10 @@
       "GameCanvas.cY"
     ],
     "callees": [
-      "H",
-      "GameCanvas.al",
-      "al",
-      "GameCanvas.av",
+      "av",
+      "as",
+      "e",
+      "GameCanvas.e",
       "j"
     ],
     "strings": []
@@ -1120,11 +1120,11 @@
       "GameCanvas.cZ"
     ],
     "callees": [
-      "GameCanvas.N",
-      "GameCanvas.a",
+      "b",
       "N",
+      "GameCanvas.N",
       "a",
-      "GameCanvas.b"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -1138,11 +1138,11 @@
       "GameCanvas.dq"
     ],
     "callees": [
-      "GameCanvas.S",
-      "s",
-      "GameCanvas.s",
       "S",
-      "GameCanvas.a"
+      "b",
+      "a",
+      "GameCanvas.S",
+      "GameCanvas.s"
     ],
     "strings": []
   },
@@ -1156,11 +1156,11 @@
       "GameCanvas.dg"
     ],
     "callees": [
-      "GameCanvas.ap",
-      "GameCanvas.j",
-      "k",
-      "GameCanvas.b",
-      "aQ"
+      "GameCanvas.k",
+      "aP",
+      "b",
+      "aQ",
+      "aq"
     ],
     "strings": []
   },
@@ -1175,11 +1175,11 @@
       "GameCanvas.dq"
     ],
     "callees": [
-      "getClipY",
+      "GameCanvas.Q",
       "getClipX",
+      "getClipHeight",
       "Q",
-      "setClip",
-      "GameCanvas.a"
+      "getClipWidth"
     ],
     "strings": []
   },
@@ -1190,11 +1190,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "GameCanvas.H",
+      "b",
       "H",
-      "GameCanvas.a",
       "a",
-      "GameCanvas.b",
-      "GameCanvas.H"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -1207,11 +1207,11 @@
       "GameCanvas.dl"
     ],
     "callees": [
-      "GameCanvas.av",
       "av",
       "GameCanvas.h",
+      "h",
       "a",
-      "h"
+      "GameCanvas.av"
     ],
     "strings": []
   },
@@ -1228,11 +1228,11 @@
       "GameCanvas.cN"
     ],
     "callees": [
-      "m",
-      "GameCanvas.av",
-      "setClip",
       "av",
-      "GameCanvas.a"
+      "GameCanvas.m",
+      "GameCanvas.f",
+      "GameCanvas.n",
+      "GameCanvas.av"
     ],
     "strings": []
   },
@@ -1244,8 +1244,8 @@
     "callers": [],
     "callees": [
       "g",
-      "a",
-      "GameCanvas.g"
+      "GameCanvas.g",
+      "a"
     ],
     "strings": []
   },
@@ -1261,8 +1261,8 @@
       "GameCanvas.ew"
     ],
     "callees": [
-      "f",
       "AudioManager.f",
+      "f",
       "println"
     ],
     "strings": [
@@ -1280,10 +1280,10 @@
       "GameCanvas.ex"
     ],
     "callees": [
-      "GameCanvas.az",
       "GameCanvas.ax",
-      "ax",
-      "az"
+      "GameCanvas.az",
+      "az",
+      "ax"
     ],
     "strings": []
   },
@@ -1297,9 +1297,9 @@
     ],
     "callees": [
       "e",
-      "GameCanvas.a",
-      "f",
       "GameCanvas.e",
+      "GameCanvas.f",
+      "b",
       "a"
     ],
     "strings": []
@@ -1327,11 +1327,11 @@
       "GameCanvas.eA"
     ],
     "callees": [
-      "GameCanvas.c",
-      "GameCanvas.aA",
-      "GameCanvas.a",
       "c",
-      "a"
+      "aA",
+      "GameCanvas.c",
+      "AudioManager.a",
+      "GameCanvas.aA"
     ],
     "strings": []
   },
@@ -1345,11 +1345,11 @@
       "GameCanvas.eA"
     ],
     "callees": [
-      "GameCanvas.c",
-      "GameCanvas.aA",
       "c",
-      "GameCanvas.b",
-      "a"
+      "aA",
+      "GameCanvas.c",
+      "b",
+      "GameCanvas.aA"
     ],
     "strings": []
   },
@@ -1364,8 +1364,8 @@
     ],
     "callees": [
       "GameCanvas.aA",
-      "c",
       "GameCanvas.c",
+      "c",
       "aA"
     ],
     "strings": []
@@ -1377,11 +1377,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.aG",
-      "p",
       "e",
-      "GameCanvas.p",
-      "f"
+      "GameCanvas.e",
+      "GameCanvas.f",
+      "aG",
+      "GameCanvas.p"
     ],
     "strings": []
   },
@@ -1395,8 +1395,8 @@
       "GameCanvas.eA"
     ],
     "callees": [
-      "d",
-      "GameCanvas.d"
+      "GameCanvas.d",
+      "d"
     ],
     "strings": []
   },
@@ -1410,8 +1410,8 @@
       "GameCanvas.eA"
     ],
     "callees": [
-      "e",
-      "GameCanvas.e"
+      "GameCanvas.e",
+      "e"
     ],
     "strings": []
   },
@@ -1424,9 +1424,9 @@
       "GameCanvas.eA"
     ],
     "callees": [
-      "S",
-      "GameCanvas.S",
       "GameCanvas.a",
+      "GameCanvas.S",
+      "S",
       "a"
     ],
     "strings": []
@@ -1440,11 +1440,11 @@
       "GameCanvas.bF"
     ],
     "callees": [
-      "d",
       "E",
       "GameCanvas.E",
-      "GameCanvas.a",
-      "a"
+      "d",
+      "a",
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -1458,10 +1458,10 @@
       "GameCanvas.bF"
     ],
     "callees": [
-      "GameCanvas.a",
-      "a",
       "q",
-      "GameCanvas.q"
+      "GameCanvas.a",
+      "GameCanvas.q",
+      "a"
     ],
     "strings": []
   },
@@ -1474,10 +1474,10 @@
       "GameCanvas.aM"
     ],
     "callees": [
-      "GameCanvas.C",
       "GameCanvas.a",
-      "a",
-      "C"
+      "GameCanvas.C",
+      "C",
+      "a"
     ],
     "strings": []
   },
@@ -1491,9 +1491,9 @@
     ],
     "callees": [
       "GameCanvas.a",
-      "a",
       "GameCanvas.b",
-      "b"
+      "b",
+      "a"
     ],
     "strings": []
   },
@@ -1506,11 +1506,11 @@
       "GameCanvas.V"
     ],
     "callees": [
-      "aL",
-      "GameCanvas.aK",
+      "i",
+      "GameCanvas.f",
+      "GameCanvas.i",
       "j",
-      "GameCanvas.j",
-      "GameCanvas.a"
+      "aK"
     ],
     "strings": []
   },
@@ -1523,11 +1523,11 @@
       "GameCanvas.dI"
     ],
     "callees": [
-      "m",
-      "GameCanvas.z",
-      "setClip",
-      "z",
-      "GameCanvas.n"
+      "i",
+      "GameCanvas.m",
+      "GameCanvas.i",
+      "GameCanvas.n",
+      "z"
     ],
     "strings": []
   },
@@ -1540,11 +1540,11 @@
       "GameCanvas.ar"
     ],
     "callees": [
-      "getClipY",
       "getClipX",
-      "setClip",
-      "j",
-      "GameCanvas.j"
+      "getClipHeight",
+      "getClipWidth",
+      "getClipY",
+      "j"
     ],
     "strings": []
   },
@@ -1557,10 +1557,10 @@
       "GameCanvas.ar"
     ],
     "callees": [
-      "aV",
       "GameCanvas.a",
-      "a",
-      "GameCanvas.aV"
+      "aV",
+      "GameCanvas.aV",
+      "a"
     ],
     "strings": []
   },
@@ -1573,11 +1573,11 @@
       "GameCanvas.ar"
     ],
     "callees": [
-      "aX",
       "GameCanvas.k",
-      "k",
-      "GameCanvas.aT",
-      "aT"
+      "aS",
+      "GameCanvas.aS",
+      "aX",
+      "GameCanvas.aT"
     ],
     "strings": []
   },
@@ -1588,9 +1588,9 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "setColor",
-      "fillRect",
       "GameCanvas.a",
+      "fillRect",
+      "setColor",
       "a"
     ],
     "strings": []
@@ -1605,10 +1605,10 @@
       "GameCanvas.eS"
     ],
     "callees": [
-      "setColor",
       "GameCanvas.p",
       "drawRect",
-      "p"
+      "p",
+      "setColor"
     ],
     "strings": []
   },
@@ -1621,11 +1621,11 @@
       "GameCanvas.aQ"
     ],
     "callees": [
-      "p",
+      "GameCanvas.a",
       "GameCanvas.q",
       "GameCanvas.p",
-      "GameCanvas.a",
-      "AudioManager.h"
+      "AudioManager.h",
+      "p"
     ],
     "strings": []
   },
@@ -1636,11 +1636,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "l",
-      "setColor",
-      "fillRect",
+      "GameCanvas.a",
+      "GameCanvas.q",
       "GameCanvas.l",
-      "p"
+      "GameCanvas.p",
+      "AudioManager.h"
     ],
     "strings": []
   },
@@ -1656,10 +1656,10 @@
       "GameCanvas.fm"
     ],
     "callees": [
-      "setColor",
       "GameCanvas.a",
       "drawRect",
-      "aW",
+      "GameCanvas.aW",
+      "setColor",
       "a"
     ],
     "strings": []
@@ -1673,11 +1673,11 @@
       "GameCanvas.aV"
     ],
     "callees": [
-      "l",
       "GameCanvas.l",
-      "GameCanvas.a",
       "AudioManager.h",
-      "a"
+      "l",
+      "b",
+      "h"
     ],
     "strings": []
   },
@@ -1690,11 +1690,11 @@
       "GameCanvas.aQ"
     ],
     "callees": [
-      "GameCanvas.a",
       "AudioManager.h",
+      "b",
+      "h",
       "a",
-      "GameCanvas.b",
-      "h"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -1707,11 +1707,11 @@
       "GameCanvas.bG"
     ],
     "callees": [
-      "setColor",
-      "getClipY",
-      "fillRect",
       "getClipX",
-      "setClip"
+      "getClipHeight",
+      "getClipWidth",
+      "getClipY",
+      "S"
     ],
     "strings": []
   },
@@ -1724,11 +1724,11 @@
       "GameCanvas.fC"
     ],
     "callees": [
-      "setColor",
-      "getClipY",
       "getClipX",
-      "fillRect",
-      "setClip"
+      "getClipHeight",
+      "getClipWidth",
+      "getClipY",
+      "fillRect"
     ],
     "strings": []
   },
@@ -1741,11 +1741,11 @@
       "GameCanvas.fE"
     ],
     "callees": [
-      "H",
-      "setColor",
+      "GameCanvas.A",
       "fillRect",
-      "A",
-      "GameCanvas.a"
+      "GameCanvas.H",
+      "b",
+      "GameCanvas.g"
     ],
     "strings": []
   },
@@ -1758,11 +1758,11 @@
       "GameCanvas.bG"
     ],
     "callees": [
-      "getClipY",
-      "getClipX",
-      "setClip",
       "GameCanvas.k",
-      "k"
+      "getClipX",
+      "getClipHeight",
+      "getClipWidth",
+      "getClipY"
     ],
     "strings": []
   },
@@ -1775,11 +1775,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "l",
-      "s",
+      "i",
+      "GameCanvas.K",
       "GameCanvas.l",
-      "GameCanvas.s",
-      "GameCanvas.a"
+      "GameCanvas.i",
+      "K"
     ],
     "strings": []
   },
@@ -1790,11 +1790,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
-      "l",
       "GameCanvas.l",
-      "d",
-      "GameCanvas.a"
+      "GameCanvas.m",
+      "c",
+      "l",
+      "b"
     ],
     "strings": []
   },
@@ -1814,10 +1814,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "l",
       "GameCanvas.l",
-      "GameCanvas.a",
-      "g",
+      "l",
+      "b",
+      "GameCanvas.g",
       "a"
     ],
     "strings": []
@@ -1860,10 +1860,10 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "GameCanvas.bi",
+      "GameCanvas.L",
       "bi",
       "L",
-      "GameCanvas.L"
+      "GameCanvas.bi"
     ],
     "strings": []
   },
@@ -1962,9 +1962,9 @@
     "callers": [],
     "callees": [
       "GameCanvas.L",
-      "L",
       "GameCanvas.bs",
-      "bs"
+      "bs",
+      "L"
     ],
     "strings": []
   },
@@ -2009,8 +2009,8 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "bx",
-      "GameCanvas.bx"
+      "GameCanvas.bx",
+      "bx"
     ],
     "strings": []
   },
@@ -2034,11 +2034,11 @@
       "GameCanvas.bv"
     ],
     "callees": [
-      "l",
-      "GameCanvas.l",
       "E",
+      "GameCanvas.l",
+      "GameCanvas.n",
       "GameCanvas.E",
-      "GameCanvas.a"
+      "l"
     ],
     "strings": []
   },
@@ -2113,11 +2113,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.c",
-      "d",
-      "GameCanvas.a",
+      "GameCanvas.F",
       "c",
-      "a"
+      "GameCanvas.c",
+      "b",
+      "d"
     ],
     "strings": []
   },
@@ -2128,11 +2128,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
+      "GameCanvas.a",
+      "aJ",
+      "GameCanvas.d",
       "ed",
-      "GameCanvas.aI",
-      "GameCanvas.ed",
-      "d"
+      "GameCanvas.eb"
     ],
     "strings": []
   },
@@ -2143,11 +2143,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.m",
-      "GameCanvas.da",
-      "GameCanvas.ez",
-      "V",
-      "GameCanvas.bI"
+      "GameCanvas.dt",
+      "c",
+      "b",
+      "GameCanvas.bD",
+      "bl"
     ],
     "strings": []
   },
@@ -2158,11 +2158,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
-      "l",
+      "GameCanvas.a",
+      "w",
       "GameCanvas.l",
-      "GameCanvas.o",
-      "GameCanvas.D"
+      "GameCanvas.m",
+      "GameCanvas.o"
     ],
     "strings": []
   },
@@ -2175,8 +2175,8 @@
       "GameCanvas.bG"
     ],
     "callees": [
-      "b",
-      "GameCanvas.b"
+      "GameCanvas.b",
+      "b"
     ],
     "strings": []
   },
@@ -2187,8 +2187,8 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "e",
-      "GameCanvas.e"
+      "GameCanvas.e",
+      "e"
     ],
     "strings": []
   },
@@ -2199,11 +2199,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "cE",
-      "GameCanvas.c",
-      "GameCanvas.a",
+      "GameCanvas.ay",
       "c",
-      "GameCanvas.P"
+      "GameCanvas.c",
+      "ay",
+      "b"
     ],
     "strings": []
   },
@@ -2226,11 +2226,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "x",
       "dv",
-      "GameCanvas.ep",
-      "GameCanvas.eA",
-      "eA",
-      "GameCanvas.x"
+      "GameCanvas.x",
+      "GameCanvas.dv",
+      "GameCanvas.ec"
     ],
     "strings": []
   },
@@ -2264,8 +2264,8 @@
     ],
     "callees": [
       "GameCanvas.a",
-      "a",
-      "b"
+      "b",
+      "a"
     ],
     "strings": []
   },
@@ -2296,10 +2296,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "bT",
       "AudioManager.c",
       "GameCanvas.bT",
-      "c"
+      "c",
+      "bT"
     ],
     "strings": []
   },
@@ -2374,11 +2374,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.c",
-      "GameCanvas.d",
-      "d",
+      "GameCanvas.f",
       "c",
-      "f"
+      "GameCanvas.c",
+      "b",
+      "d"
     ],
     "strings": []
   },
@@ -2424,8 +2424,8 @@
     ],
     "callees": [
       "GameCanvas.k",
-      "k",
       "GameCanvas.b",
+      "k",
       "b"
     ],
     "strings": []
@@ -2437,11 +2437,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.s",
-      "setClip",
+      "I",
+      "cf",
+      "GameCanvas.cf",
       "L",
-      "h",
-      "GameCanvas.n"
+      "GameCanvas.cc"
     ],
     "strings": []
   },
@@ -2453,9 +2453,9 @@
     "callers": [],
     "callees": [
       "GameCanvas.ax",
+      "GameCanvas.ai",
       "ai",
-      "ax",
-      "GameCanvas.ai"
+      "ax"
     ],
     "strings": []
   },
@@ -2468,11 +2468,11 @@
       "GameCanvas.cd"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
       "GameCanvas.a",
-      "ci",
-      "GameCanvas.ci"
+      "M",
+      "GameCanvas.o",
+      "GameCanvas.M",
+      "GameCanvas.s"
     ],
     "strings": []
   },
@@ -2497,11 +2497,11 @@
       "GameCanvas.cg"
     ],
     "callees": [
-      "m",
-      "d",
-      "GameCanvas.a",
+      "GameCanvas.K",
+      "GameCanvas.m",
       "c",
-      "GameCanvas.m"
+      "K",
+      "b"
     ],
     "strings": []
   },
@@ -2514,11 +2514,11 @@
       "GameCanvas.cf"
     ],
     "callees": [
-      "SensorHandler.a",
-      "GameCanvas.c",
-      "GameCanvas.B",
       "GameCanvas.k",
-      "GameCanvas.a"
+      "c",
+      "GameCanvas.c",
+      "B",
+      "SensorHandler.a"
     ],
     "strings": []
   },
@@ -2529,11 +2529,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "W",
-      "s",
+      "GameCanvas.W",
+      "GameCanvas.o",
+      "b",
       "GameCanvas.s",
-      "o",
-      "GameCanvas.b"
+      "s"
     ],
     "strings": []
   },
@@ -2546,8 +2546,8 @@
       "GameCanvas.bG"
     ],
     "callees": [
-      "b",
-      "GameCanvas.b"
+      "GameCanvas.b",
+      "b"
     ],
     "strings": []
   },
@@ -2572,11 +2572,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.dw",
-      "fG",
+      "GameCanvas.a",
+      "GameCanvas.t",
       "GameCanvas.eq",
-      "GameCanvas.cl",
-      "dw"
+      "GameCanvas.eB",
+      "GameCanvas.o"
     ],
     "strings": []
   },
@@ -2615,10 +2615,10 @@
     "callers": [],
     "callees": [
       "System.arraycopy",
+      "arraycopy",
+      "b",
       "d",
-      "GameCanvas.a",
-      "a",
-      "GameCanvas.b"
+      "a"
     ],
     "strings": []
   },
@@ -2640,10 +2640,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "l",
       "GameCanvas.p",
-      "p",
-      "GameCanvas.l"
+      "GameCanvas.l",
+      "l",
+      "p"
     ],
     "strings": []
   },
@@ -2654,11 +2654,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "l",
-      "GameCanvas.l",
-      "GameCanvas.c",
       "E",
-      "GameCanvas.E"
+      "GameCanvas.l",
+      "c",
+      "GameCanvas.c",
+      "l"
     ],
     "strings": []
   },
@@ -2692,10 +2692,10 @@
       "GameCanvas.eS"
     ],
     "callees": [
-      "af",
-      "GameCanvas.af",
+      "GameCanvas.u",
       "u",
-      "GameCanvas.u"
+      "GameCanvas.af",
+      "af"
     ],
     "strings": []
   },
@@ -2706,11 +2706,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "eG",
-      "GameCanvas.eG",
-      "d",
-      "GameCanvas.a",
-      "a"
+      "i",
+      "GameCanvas.i",
+      "GameCanvas.h",
+      "b",
+      "d"
     ],
     "strings": []
   },
@@ -2721,11 +2721,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.Y",
-      "GameCanvas.a",
-      "a",
       "GameCanvas.ai",
-      "Y"
+      "ai",
+      "Y",
+      "GameCanvas.Y",
+      "a"
     ],
     "strings": []
   },
@@ -2736,8 +2736,8 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
-      "GameCanvas.m"
+      "GameCanvas.m",
+      "m"
     ],
     "strings": []
   },
@@ -2781,11 +2781,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "cH",
-      "GameCanvas.ak",
       "i",
-      "ak",
-      "GameCanvas.i"
+      "GameCanvas.i",
+      "GameCanvas.cH",
+      "GameCanvas.ak",
+      "cH"
     ],
     "strings": []
   },
@@ -2884,8 +2884,8 @@
       "GameCanvas.dW"
     ],
     "callees": [
-      "L",
-      "GameCanvas.L"
+      "GameCanvas.L",
+      "L"
     ],
     "strings": []
   },
@@ -2898,10 +2898,10 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "GameCanvas.s",
-      "s",
       "GameCanvas.r",
-      "r"
+      "r",
+      "GameCanvas.s",
+      "s"
     ],
     "strings": []
   },
@@ -2914,10 +2914,10 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "GameCanvas.cO",
-      "GameCanvas.av",
       "av",
       "aV",
+      "GameCanvas.cO",
+      "cO",
       "GameCanvas.aV"
     ],
     "strings": []
@@ -2931,11 +2931,11 @@
       "GameCanvas.cN"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "GameCanvas.bn",
-      "d",
-      "L"
+      "GameCanvas.L",
+      "GameCanvas.t",
+      "GameCanvas.K",
+      "K",
+      "t"
     ],
     "strings": []
   },
@@ -2947,9 +2947,9 @@
     "callers": [],
     "callees": [
       "f",
+      "b",
       "GameCanvas.f",
-      "a",
-      "b"
+      "a"
     ],
     "strings": []
   },
@@ -3009,11 +3009,11 @@
       "GameCanvas.cY"
     ],
     "callees": [
-      "ae",
-      "k",
-      "GameCanvas.b",
-      "GameCanvas.d",
-      "GameCanvas.ae"
+      "GameCanvas.k",
+      "c",
+      "b",
+      "N",
+      "AudioManager.f"
     ],
     "strings": []
   },
@@ -3028,8 +3028,8 @@
     "callees": [
       "AudioManager.k",
       "a",
-      "b",
-      "k"
+      "k",
+      "b"
     ],
     "strings": []
   },
@@ -3043,11 +3043,11 @@
       "GameCanvas.cZ"
     ],
     "callees": [
-      "GameCanvas.c",
-      "GameCanvas.a",
       "c",
-      "cR",
-      "a"
+      "GameCanvas.c",
+      "b",
+      "cS",
+      "GameCanvas.cS"
     ],
     "strings": []
   },
@@ -3073,10 +3073,10 @@
       "GameCanvas.cZ"
     ],
     "callees": [
-      "cW",
-      "an",
       "GameCanvas.ao",
-      "cX",
+      "GameCanvas.an",
+      "GameCanvas.cU",
+      "cU",
       "GameCanvas.cW"
     ],
     "strings": []
@@ -3088,11 +3088,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.ap",
-      "GameCanvas.cW",
+      "GameCanvas.k",
       "aD",
-      "E",
-      "k"
+      "b",
+      "GameCanvas.M",
+      "cW"
     ],
     "strings": []
   },
@@ -3105,10 +3105,10 @@
       "GameCanvas.bG"
     ],
     "callees": [
-      "GameCanvas.k",
-      "k",
       "q",
-      "GameCanvas.q"
+      "GameCanvas.k",
+      "GameCanvas.q",
+      "k"
     ],
     "strings": []
   },
@@ -3144,11 +3144,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.N",
-      "d",
+      "b",
       "N",
-      "a",
-      "GameCanvas.d"
+      "d",
+      "AudioManager.a",
+      "GameCanvas.N"
     ],
     "strings": []
   },
@@ -3168,11 +3168,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "s",
-      "GameCanvas.s",
+      "as",
+      "GameCanvas.ay",
+      "ay",
       "GameCanvas.dn",
-      "GameCanvas.as",
-      "GameCanvas.ay"
+      "dn"
     ],
     "strings": []
   },
@@ -3202,11 +3202,11 @@
       "GameCanvas.aj"
     ],
     "callees": [
-      "e",
-      "f",
       "GameCanvas.e",
+      "e",
+      "GameCanvas.f",
       "a",
-      "GameCanvas.f"
+      "f"
     ],
     "strings": []
   },
@@ -3231,10 +3231,10 @@
       "GameCanvas.dq"
     ],
     "callees": [
-      "l",
       "GameCanvas.l",
-      "GameCanvas.a",
-      "GameCanvas.u",
+      "u",
+      "l",
+      "b",
       "a"
     ],
     "strings": []
@@ -3319,11 +3319,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.do",
-      "dg",
-      "dp",
+      "as",
+      "i",
+      "do",
       "GameCanvas.aq",
-      "i"
+      "GameCanvas.i"
     ],
     "strings": []
   },
@@ -3334,9 +3334,9 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "GameCanvas.a",
       "GameCanvas.ds",
       "ds",
-      "GameCanvas.a",
       "a"
     ],
     "strings": []
@@ -3350,11 +3350,11 @@
       "GameCanvas.dr"
     ],
     "callees": [
-      "d",
-      "GameCanvas.a",
       "GameCanvas.h",
+      "d",
+      "h",
       "a",
-      "h"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -3426,11 +3426,11 @@
       "GameCanvas.dA"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "p",
       "e",
-      "GameCanvas.p"
+      "GameCanvas.e",
+      "GameCanvas.p",
+      "GameCanvas.r",
+      "r"
     ],
     "strings": []
   },
@@ -3443,11 +3443,11 @@
       "GameCanvas.dA"
     ],
     "callees": [
-      "s",
+      "GameCanvas.Q",
+      "GameCanvas.t",
       "Q",
-      "GameCanvas.s",
-      "GameCanvas.P",
-      "GameCanvas.t"
+      "GameCanvas.n",
+      "t"
     ],
     "strings": []
   },
@@ -3458,11 +3458,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.s",
-      "r",
-      "GameCanvas.d",
-      "GameCanvas.n",
-      "dB"
+      "GameCanvas.dy",
+      "dy",
+      "dP",
+      "GameCanvas.dP",
+      "b"
     ],
     "strings": []
   },
@@ -3475,11 +3475,11 @@
       "GameCanvas.dA"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "dC",
       "GameCanvas.k",
-      "GameCanvas.a"
+      "GameCanvas.dC",
+      "GameCanvas.r",
+      "r",
+      "dC"
     ],
     "strings": []
   },
@@ -3513,10 +3513,10 @@
     "callers": [],
     "callees": [
       "e",
-      "dF",
-      "r",
       "bo",
-      "GameCanvas.v"
+      "GameCanvas.e",
+      "v",
+      "dF"
     ],
     "strings": []
   },
@@ -3541,10 +3541,10 @@
       "GameCanvas.dI"
     ],
     "callees": [
-      "p",
-      "GameCanvas.p",
-      "a",
       "GameCanvas.n",
+      "GameCanvas.p",
+      "p",
+      "a",
       "n"
     ],
     "strings": []
@@ -3556,11 +3556,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "dZ",
-      "GameCanvas.n",
-      "V",
-      "X",
-      "GameCanvas.fu"
+      "w",
+      "fj",
+      "b",
+      "fb",
+      "dV"
     ],
     "strings": []
   },
@@ -3573,11 +3573,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "dO",
-      "GameCanvas.b",
-      "GameCanvas.d",
-      "GameCanvas.dG",
-      "dU"
+      "dR",
+      "b",
+      "GameCanvas.dD",
+      "GameCanvas.aN",
+      "GameCanvas.e"
     ],
     "strings": []
   },
@@ -3590,11 +3590,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "Q",
-      "s",
+      "GameCanvas.Q",
+      "w",
       "dL",
-      "GameCanvas.s",
-      "GameCanvas.w"
+      "GameCanvas.t",
+      "v"
     ],
     "strings": []
   },
@@ -3607,11 +3607,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "H",
-      "af",
-      "ai",
+      "c",
+      "I",
       "GameCanvas.c",
-      "c"
+      "GameCanvas.H",
+      "af"
     ],
     "strings": []
   },
@@ -3625,11 +3625,11 @@
       "GameCanvas.dN"
     ],
     "callees": [
-      "GameCanvas.s",
-      "k",
-      "r",
-      "GameCanvas.v",
-      "GameCanvas.t"
+      "GameCanvas.k",
+      "w",
+      "p",
+      "b",
+      "GameCanvas.n"
     ],
     "strings": []
   },
@@ -3658,11 +3658,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "s",
+      "GameCanvas.Q",
       "dL",
-      "Q",
-      "GameCanvas.s",
-      "GameCanvas.w"
+      "w",
+      "GameCanvas.t",
+      "v"
     ],
     "strings": []
   },
@@ -3692,8 +3692,8 @@
       "GameCanvas.eh"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s"
+      "GameCanvas.s",
+      "s"
     ],
     "strings": []
   },
@@ -3706,10 +3706,10 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "m",
-      "GameCanvas.a",
-      "r",
       "GameCanvas.m",
+      "GameCanvas.r",
+      "r",
+      "b",
       "a"
     ],
     "strings": []
@@ -3737,11 +3737,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "dT",
-      "s",
-      "GameCanvas.s",
+      "x",
       "GameCanvas.x",
-      "x"
+      "GameCanvas.dT",
+      "GameCanvas.s",
+      "s"
     ],
     "strings": []
   },
@@ -3754,11 +3754,11 @@
       "GameCanvas.dS"
     ],
     "callees": [
-      "l",
-      "af",
+      "GameCanvas.k",
+      "i",
+      "GameCanvas.ae",
       "GameCanvas.l",
-      "GameCanvas.c",
-      "GameCanvas.k"
+      "GameCanvas.i"
     ],
     "strings": []
   },
@@ -3782,10 +3782,10 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "s",
       "dW",
       "GameCanvas.dW",
-      "GameCanvas.s"
+      "GameCanvas.s",
+      "s"
     ],
     "strings": []
   },
@@ -3798,11 +3798,11 @@
       "GameCanvas.dV"
     ],
     "callees": [
-      "GameCanvas.ft",
-      "GameCanvas.dY",
+      "dY",
+      "GameCanvas.cL",
       "d",
       "cL",
-      "dY"
+      "GameCanvas.dY"
     ],
     "strings": []
   },
@@ -3816,9 +3816,9 @@
     ],
     "callees": [
       "av",
+      "fv",
       "GameCanvas.fv",
-      "GameCanvas.av",
-      "fv"
+      "GameCanvas.av"
     ],
     "strings": []
   },
@@ -3831,10 +3831,10 @@
       "GameCanvas.dW"
     ],
     "callees": [
-      "dO",
       "GameCanvas.d",
-      "GameCanvas.dO",
-      "d"
+      "dO",
+      "d",
+      "GameCanvas.dO"
     ],
     "strings": []
   },
@@ -3847,11 +3847,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "d",
       "GameCanvas.t",
-      "t"
+      "t",
+      "d",
+      "GameCanvas.s",
+      "s"
     ],
     "strings": []
   },
@@ -3864,8 +3864,8 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s"
+      "GameCanvas.s",
+      "s"
     ],
     "strings": []
   },
@@ -3878,9 +3878,9 @@
       "GameCanvas.bF"
     ],
     "callees": [
-      "GameCanvas.h",
-      "h",
       "GameCanvas.a",
+      "h",
+      "GameCanvas.h",
       "a"
     ],
     "strings": []
@@ -3929,11 +3929,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "GameCanvas.dO",
+      "ei",
+      "b",
       "d",
-      "GameCanvas.ei"
+      "a",
+      "GameCanvas.dO"
     ],
     "strings": []
   },
@@ -3946,11 +3946,11 @@
       "GameCanvas.eh"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "p",
       "e",
-      "GameCanvas.p"
+      "GameCanvas.e",
+      "GameCanvas.p",
+      "GameCanvas.r",
+      "r"
     ],
     "strings": []
   },
@@ -3961,11 +3961,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.s",
-      "GameCanvas.eg",
-      "ek",
-      "E",
-      "GameCanvas.ek"
+      "GameCanvas.k",
+      "dP",
+      "GameCanvas.x",
+      "l",
+      "GameCanvas.dP"
     ],
     "strings": []
   },
@@ -3978,8 +3978,8 @@
       "GameCanvas.ef"
     ],
     "callees": [
-      "GameCanvas.T",
-      "T"
+      "T",
+      "GameCanvas.T"
     ],
     "strings": []
   },
@@ -3992,11 +3992,11 @@
       "GameCanvas.eh"
     ],
     "callees": [
+      "GameCanvas.n",
+      "GameCanvas.r",
       "el",
-      "s",
-      "GameCanvas.s",
       "r",
-      "GameCanvas.el"
+      "GameCanvas.s"
     ],
     "strings": []
   },
@@ -4009,11 +4009,11 @@
       "GameCanvas.eh"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "GameCanvas.dO",
+      "GameCanvas.t",
+      "x",
+      "GameCanvas.n",
       "GameCanvas.x",
-      "x"
+      "u"
     ],
     "strings": []
   },
@@ -4026,11 +4026,11 @@
       "GameCanvas.ej"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
       "GameCanvas.k",
-      "GameCanvas.a",
-      "k"
+      "GameCanvas.n",
+      "a",
+      "k",
+      "GameCanvas.s"
     ],
     "strings": []
   },
@@ -4075,11 +4075,11 @@
       "GameCanvas.bM"
     ],
     "callees": [
-      "GameCanvas.c",
       "GameCanvas.k",
-      "GameCanvas.a",
+      "v",
       "c",
-      "k"
+      "GameCanvas.c",
+      "GameCanvas.v"
     ],
     "strings": []
   },
@@ -4104,11 +4104,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.c",
-      "d",
-      "e",
       "GameCanvas.k",
-      "k"
+      "e",
+      "GameCanvas.e",
+      "c",
+      "GameCanvas.h"
     ],
     "strings": []
   },
@@ -4119,11 +4119,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "d",
       "e",
       "GameCanvas.e",
-      "a",
-      "GameCanvas.d"
+      "d",
+      "AudioManager.a",
+      "a"
     ],
     "strings": []
   },
@@ -4135,8 +4135,8 @@
     "callers": [],
     "callees": [
       "GameCanvas.e",
-      "e",
       "w",
+      "e",
       "GameCanvas.w"
     ],
     "strings": []
@@ -4148,9 +4148,9 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.v",
       "w",
       "GameCanvas.w",
+      "GameCanvas.v",
       "v"
     ],
     "strings": []
@@ -4200,10 +4200,10 @@
     "callers": [],
     "callees": [
       "GameCanvas.k",
-      "GameCanvas.a",
+      "b",
       "k",
       "a",
-      "b"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -4227,11 +4227,11 @@
       "GameCanvas.bM"
     ],
     "callees": [
-      "GameCanvas.aG",
-      "GameCanvas.aH",
+      "aC",
+      "aG",
       "GameCanvas.aC",
       "aD",
-      "aB"
+      "GameCanvas.aB"
     ],
     "strings": []
   },
@@ -4285,11 +4285,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "eH",
-      "GameCanvas.a",
-      "GameCanvas.eM",
-      "eL",
-      "GameCanvas.eP"
+      "GameCanvas.eP",
+      "GameCanvas.eH",
+      "eM",
+      "b",
+      "eH"
     ],
     "strings": []
   },
@@ -4330,11 +4330,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "eG",
+      "b",
       "GameCanvas.eG",
-      "GameCanvas.a",
       "a",
-      "b"
+      "GameCanvas.a",
+      "eG"
     ],
     "strings": []
   },
@@ -4345,8 +4345,8 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "eG",
-      "GameCanvas.eG"
+      "GameCanvas.eG",
+      "eG"
     ],
     "strings": []
   },
@@ -4357,11 +4357,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "d",
+      "b",
       "ae",
-      "GameCanvas.a",
+      "d",
       "a",
-      "GameCanvas.b"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -4375,9 +4375,9 @@
     ],
     "callees": [
       "GameCanvas.a",
-      "a",
       "GameCanvas.b",
-      "b"
+      "b",
+      "a"
     ],
     "strings": []
   },
@@ -4446,11 +4446,11 @@
       "GameCanvas.eS"
     ],
     "callees": [
-      "GameCanvas.z",
+      "GameCanvas.k",
       "j",
       "z",
-      "GameCanvas.k",
-      "GameCanvas.j"
+      "GameCanvas.j",
+      "k"
     ],
     "strings": []
   },
@@ -4461,11 +4461,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.eR",
-      "GameCanvas.q",
-      "GameCanvas.aS",
-      "E",
-      "eQ"
+      "GameCanvas.k",
+      "U",
+      "V",
+      "eR",
+      "p"
     ],
     "strings": []
   },
@@ -4488,8 +4488,8 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.N",
-      "N"
+      "N",
+      "GameCanvas.N"
     ],
     "strings": []
   },
@@ -4501,10 +4501,10 @@
     "callers": [],
     "callees": [
       "eW",
-      "GameCanvas.S",
-      "GameCanvas.eW",
       "S",
-      "GameCanvas.a"
+      "GameCanvas.g",
+      "GameCanvas.S",
+      "a"
     ],
     "strings": []
   },
@@ -4519,8 +4519,8 @@
     ],
     "callees": [
       "f",
-      "GameCanvas.f",
       "GameCanvas.C",
+      "GameCanvas.f",
       "C"
     ],
     "strings": []
@@ -4543,11 +4543,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
-      "GameCanvas.eX",
-      "eX",
-      "GameCanvas.a",
-      "GameCanvas.m"
+      "i",
+      "GameCanvas.b",
+      "GameCanvas.m",
+      "GameCanvas.i",
+      "GameCanvas.eX"
     ],
     "strings": []
   },
@@ -4558,11 +4558,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
+      "GameCanvas.F",
+      "GameCanvas.m",
       "j",
-      "GameCanvas.a",
       "GameCanvas.j",
-      "GameCanvas.m"
+      "a"
     ],
     "strings": []
   },
@@ -4576,10 +4576,10 @@
     ],
     "callees": [
       "fg",
-      "GameCanvas.a",
       "fd",
-      "GameCanvas.fd",
-      "a"
+      "GameCanvas.n",
+      "GameCanvas.fg",
+      "GameCanvas.fd"
     ],
     "strings": []
   },
@@ -4592,11 +4592,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "p",
       "GameCanvas.p",
-      "fe",
       "GameCanvas.fe",
-      "a"
+      "p",
+      "a",
+      "fe"
     ],
     "strings": []
   },
@@ -4610,10 +4610,10 @@
     ],
     "callees": [
       "fg",
-      "s",
       "GameCanvas.ff",
-      "GameCanvas.z",
-      "GameCanvas.s"
+      "fd",
+      "ff",
+      "GameCanvas.fg"
     ],
     "strings": []
   },
@@ -4628,9 +4628,9 @@
     ],
     "callees": [
       "fe",
+      "b",
       "GameCanvas.fe",
-      "a",
-      "b"
+      "a"
     ],
     "strings": []
   },
@@ -4656,8 +4656,8 @@
     ],
     "callees": [
       "fg",
-      "a",
-      "GameCanvas.fg"
+      "GameCanvas.fg",
+      "a"
     ],
     "strings": []
   },
@@ -4672,11 +4672,11 @@
       "GameCanvas.ff"
     ],
     "callees": [
-      "AudioManager.a",
-      "GameCanvas.a",
-      "a",
       "GameCanvas.n",
-      "n"
+      "b",
+      "AudioManager.a",
+      "a",
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -4700,9 +4700,9 @@
       "GameCanvas.dH"
     ],
     "callees": [
+      "p",
       "GameCanvas.p",
-      "a",
-      "p"
+      "a"
     ],
     "strings": []
   },
@@ -4715,11 +4715,11 @@
       "GameCanvas.dH"
     ],
     "callees": [
-      "s",
-      "GameCanvas.fo",
       "GameCanvas.fl",
-      "GameCanvas.s",
-      "GameCanvas.fn"
+      "GameCanvas.fn",
+      "GameCanvas.fo",
+      "fn",
+      "fl"
     ],
     "strings": []
   },
@@ -4732,11 +4732,11 @@
       "GameCanvas.fl"
     ],
     "callees": [
-      "GameCanvas.S",
-      "p",
-      "S",
+      "GameCanvas.K",
       "GameCanvas.p",
-      "GameCanvas.a"
+      "K",
+      "S",
+      "p"
     ],
     "strings": []
   },
@@ -4749,11 +4749,11 @@
       "GameCanvas.fj"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
-      "fk",
-      "GameCanvas.B",
-      "A"
+      "x",
+      "GameCanvas.x",
+      "GameCanvas.A",
+      "GameCanvas.fk",
+      "y"
     ],
     "strings": []
   },
@@ -4766,10 +4766,10 @@
       "GameCanvas.fo"
     ],
     "callees": [
-      "aV",
       "GameCanvas.a",
-      "a",
-      "GameCanvas.aV"
+      "aV",
+      "GameCanvas.aV",
+      "a"
     ],
     "strings": []
   },
@@ -4782,8 +4782,8 @@
       "GameCanvas.fj"
     ],
     "callees": [
-      "GameCanvas.B",
-      "B"
+      "B",
+      "GameCanvas.B"
     ],
     "strings": []
   },
@@ -4797,9 +4797,9 @@
     ],
     "callees": [
       "fm",
-      "L",
+      "GameCanvas.L",
       "GameCanvas.fm",
-      "GameCanvas.L"
+      "L"
     ],
     "strings": []
   },
@@ -4810,10 +4810,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "c",
       "GameCanvas.a",
-      "a",
-      "GameCanvas.c"
+      "GameCanvas.c",
+      "c",
+      "a"
     ],
     "strings": []
   },
@@ -4844,11 +4844,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
-      "A",
-      "GameCanvas.a",
       "GameCanvas.m",
-      "GameCanvas.A"
+      "GameCanvas.A",
+      "I",
+      "GameCanvas.I",
+      "A"
     ],
     "strings": []
   },
@@ -4891,11 +4891,11 @@
       "GameCanvas.dX"
     ],
     "callees": [
-      "s",
-      "GameCanvas.s",
+      "GameCanvas.t",
       "GameCanvas.bn",
-      "GameCanvas.B",
-      "bn"
+      "bn",
+      "t",
+      "B"
     ],
     "strings": []
   },
@@ -4917,11 +4917,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "m",
-      "GameCanvas.c",
-      "GameCanvas.a",
+      "GameCanvas.m",
       "c",
-      "f"
+      "GameCanvas.f",
+      "GameCanvas.c",
+      "a"
     ],
     "strings": []
   },
@@ -4934,8 +4934,8 @@
       "GameCanvas.fA"
     ],
     "callees": [
-      "A",
       "GameCanvas.A",
+      "A",
       "GameCanvas.a",
       "a"
     ],
@@ -4950,10 +4950,10 @@
       "GameCanvas.fA"
     ],
     "callees": [
-      "d",
       "GameCanvas.d",
-      "GameCanvas.p",
-      "p"
+      "d",
+      "p",
+      "GameCanvas.p"
     ],
     "strings": []
   },
@@ -4964,11 +4964,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.j",
       "GameCanvas.m",
-      "GameCanvas.d",
-      "GameCanvas.n",
-      "GameCanvas.fz"
+      "GameCanvas.fz",
+      "fy",
+      "i",
+      "GameCanvas.n"
     ],
     "strings": []
   },
@@ -4981,8 +4981,8 @@
       "GameCanvas.fA"
     ],
     "callees": [
-      "A",
-      "GameCanvas.A"
+      "GameCanvas.A",
+      "A"
     ],
     "strings": []
   },
@@ -4995,11 +4995,11 @@
       "GameCanvas.fA"
     ],
     "callees": [
-      "m",
-      "s",
-      "GameCanvas.s",
+      "aZ",
+      "GameCanvas.m",
+      "GameCanvas.p",
       "GameCanvas.aZ",
-      "p"
+      "GameCanvas.r"
     ],
     "strings": []
   },
@@ -5012,10 +5012,10 @@
       "GameCanvas.fE"
     ],
     "callees": [
-      "A",
-      "GameCanvas.a",
-      "r",
       "GameCanvas.A",
+      "GameCanvas.r",
+      "r",
+      "A",
       "a"
     ],
     "strings": []
@@ -5027,11 +5027,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "E",
-      "k",
+      "GameCanvas.k",
       "GameCanvas.m",
-      "GameCanvas.b",
-      "GameCanvas.n"
+      "fD",
+      "b",
+      "al"
     ],
     "strings": []
   },
@@ -5044,11 +5044,11 @@
       "GameCanvas.x"
     ],
     "callees": [
-      "g",
+      "GameCanvas.g",
+      "b",
       "a",
       "GameCanvas.b",
-      "GameCanvas.g",
-      "b"
+      "g"
     ],
     "strings": []
   },
@@ -5061,11 +5061,11 @@
       "GameCanvas.cm"
     ],
     "callees": [
-      "GameCanvas.a",
       "GameCanvas.t",
-      "a",
       "t",
-      "b"
+      "b",
+      "a",
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -5076,11 +5076,11 @@
     "return": "public",
     "callers": [],
     "callees": [
+      "getDisplay",
+      "setCurrent",
       "SensorHandler.a",
-      "GameController.a",
       "setFullScreenMode",
-      "start",
-      "setCurrent"
+      "GameCanvas.bU"
     ],
     "strings": [
       "MIDlet-Version"
@@ -5094,9 +5094,9 @@
     "callers": [],
     "callees": [
       "GameCanvas.t",
+      "t",
       "GameController.a",
-      "a",
-      "t"
+      "a"
     ],
     "strings": []
   },
@@ -5119,10 +5119,10 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "aa",
       "f",
       "GameCanvas.aa",
-      "GameCanvas.f",
-      "aa"
+      "GameCanvas.f"
     ],
     "strings": []
   },
@@ -5133,10 +5133,10 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "aa",
       "f",
       "GameCanvas.aa",
-      "GameCanvas.f",
-      "aa"
+      "GameCanvas.f"
     ],
     "strings": []
   },
@@ -5167,11 +5167,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "GameCanvas.o",
+      "GameCanvas.p",
       "Thread.sleep",
-      "GameCanvas.fH",
-      "fH",
       "p",
-      "GraphicsEngine.a"
+      "yield"
     ],
     "strings": []
   },
@@ -5182,11 +5182,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "currentTimeMillis",
-      "Thread.yield",
-      "repaint",
+      "GameData.a",
+      "serviceRepaints",
+      "destroyApp",
       "yield",
-      "a"
+      "repaint"
     ],
     "strings": []
   },
@@ -5197,11 +5197,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "Math.min",
       "Math.max",
-      "setClip",
       "min",
       "max",
-      "Math.min"
+      "setClip"
     ],
     "strings": []
   },
@@ -5218,8 +5218,8 @@
       "GameController.commandAction"
     ],
     "callees": [
-      "getAppProperty",
-      "get"
+      "get",
+      "getAppProperty"
     ],
     "strings": [
       ""
@@ -5232,8 +5232,8 @@
     "return": "boolean",
     "callers": [],
     "callees": [
-      "closeRecordStore",
       "RecordStore.openRecordStore",
+      "closeRecordStore",
       "openRecordStore"
     ],
     "strings": [
@@ -5247,10 +5247,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameController.a",
       "getWidth",
-      "a",
-      "getHeight"
+      "getHeight",
+      "GameController.a",
+      "a"
     ],
     "strings": []
   },
@@ -5272,10 +5272,10 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "Thread.sleep",
       "sleep",
-      "GameController.g",
       "g",
-      "Thread.sleep"
+      "GameController.g"
     ],
     "strings": []
   },
@@ -5286,8 +5286,8 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "closeRecordStore",
       "RecordStore.openRecordStore",
+      "closeRecordStore",
       "openRecordStore"
     ],
     "strings": [
@@ -5304,10 +5304,10 @@
     ],
     "callees": [
       "Thread.sleep",
-      "notifyDestroyed",
-      "length",
       "platformRequest",
-      "sleep"
+      "sleep",
+      "length",
+      "notifyDestroyed"
     ],
     "strings": []
   },
@@ -5333,9 +5333,9 @@
       "put"
     ],
     "strings": [
-      "URL-ORANGE",
-      "IGP-VERSION",
-      "URL-OPERATOR"
+      "IGP-WN",
+      "IGP-CATEGORIES",
+      "URL-TEMPLATE-GAME"
     ]
   },
   "AudioManager.a": {
@@ -5351,11 +5351,11 @@
       "GameCanvas.cU"
     ],
     "callees": [
-      "l",
+      "e",
+      "GameCanvas.e",
       "GameCanvas.l",
-      "p",
-      "d",
-      "e"
+      "GameCanvas.f",
+      "AudioManager.p"
     ],
     "strings": []
   },
@@ -5372,11 +5372,11 @@
       "AudioManager.F"
     ],
     "callees": [
-      "GameCanvas.c",
-      "d",
       "GameCanvas.k",
-      "GameCanvas.a",
-      "c"
+      "GameCanvas.b",
+      "c",
+      "GameCanvas.c",
+      "b"
     ],
     "strings": []
   },
@@ -5405,8 +5405,8 @@
       "GameCanvas.dK"
     ],
     "callees": [
-      "d",
-      "AudioManager.d"
+      "AudioManager.d",
+      "d"
     ],
     "strings": []
   },
@@ -5417,9 +5417,9 @@
     "return": "boolean",
     "callers": [],
     "callees": [
+      "GameCanvas.d",
       "d",
       "h",
-      "GameCanvas.d",
       "GameCanvas.h"
     ],
     "strings": []
@@ -5434,8 +5434,8 @@
       "AudioManager.q"
     ],
     "callees": [
-      "d",
-      "AudioManager.d"
+      "AudioManager.d",
+      "d"
     ],
     "strings": []
   },
@@ -5448,11 +5448,11 @@
       "AudioManager.U"
     ],
     "callees": [
-      "AudioManager.e",
-      "d",
       "e",
-      "GameCanvas.a",
-      "a"
+      "AudioManager.d",
+      "d",
+      "a",
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -5465,8 +5465,8 @@
       "AudioManager.U"
     ],
     "callees": [
-      "d",
-      "AudioManager.d"
+      "AudioManager.d",
+      "d"
     ],
     "strings": []
   },
@@ -5480,11 +5480,11 @@
       "AudioManager.V"
     ],
     "callees": [
-      "l",
-      "AudioManager.e",
-      "d",
       "e",
-      "AudioManager.b"
+      "AudioManager.l",
+      "AudioManager.d",
+      "l",
+      "b"
     ],
     "strings": []
   },
@@ -5497,10 +5497,10 @@
       "AudioManager.U"
     ],
     "callees": [
-      "m",
-      "AudioManager.e",
-      "d",
       "e",
+      "m",
+      "AudioManager.d",
+      "d",
       "AudioManager.m"
     ],
     "strings": []
@@ -5518,10 +5518,10 @@
       "AudioManager.y"
     ],
     "callees": [
-      "d",
       "AudioManager.b",
-      "b",
-      "AudioManager.d"
+      "d",
+      "AudioManager.d",
+      "b"
     ],
     "strings": []
   },
@@ -5538,8 +5538,8 @@
       "AudioManager.M"
     ],
     "callees": [
-      "i",
       "AudioManager.i",
+      "i",
       "d",
       "AudioManager.d"
     ],
@@ -5554,11 +5554,11 @@
       "AudioManager.U"
     ],
     "callees": [
+      "b",
       "AudioManager.b",
-      "GameCanvas.a",
       "a",
-      "GameCanvas.b",
-      "b"
+      "GameCanvas.a",
+      "GameCanvas.b"
     ],
     "strings": []
   },
@@ -5575,11 +5575,11 @@
       "AudioManager.I"
     ],
     "callees": [
+      "GameCanvas.h",
       "AudioManager.D",
       "AudioManager.C",
-      "C",
-      "D",
-      "a"
+      "b",
+      "D"
     ],
     "strings": []
   },
@@ -5616,8 +5616,8 @@
       "AudioManager.ad"
     ],
     "callees": [
-      "d",
-      "AudioManager.d"
+      "AudioManager.d",
+      "d"
     ],
     "strings": []
   },
@@ -5632,11 +5632,11 @@
       "AudioManager.ah"
     ],
     "callees": [
-      "GameCanvas.a",
       "GameCanvas.h",
+      "b",
+      "h",
       "a",
-      "GameCanvas.b",
-      "h"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -5650,10 +5650,10 @@
     ],
     "callees": [
       "AudioManager.B",
-      "p",
-      "B",
       "GameCanvas.h",
-      "h"
+      "AudioManager.p",
+      "B",
+      "p"
     ],
     "strings": []
   },
@@ -5696,11 +5696,11 @@
       "AudioManager.q"
     ],
     "callees": [
-      "AudioManager.q",
-      "ae",
       "GameCanvas.a",
+      "AudioManager.q",
+      "AudioManager.ae",
       "AudioManager.ah",
-      "AudioManager.ae"
+      "b"
     ],
     "strings": []
   },
@@ -5711,11 +5711,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "d",
+      "i",
       "AudioManager.G",
       "c",
-      "f",
-      "AudioManager.i"
+      "GameCanvas.h",
+      "AudioManager.d"
     ],
     "strings": []
   },
@@ -5726,11 +5726,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "AudioManager.b",
+      "AudioManager.M",
       "c",
-      "AudioManager.c",
       "M",
-      "AudioManager.M"
+      "b",
+      "AudioManager.b"
     ],
     "strings": []
   },
@@ -5757,11 +5757,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "l",
       "GameCanvas.l",
-      "AudioManager.b",
       "GameCanvas.h",
-      "a"
+      "l",
+      "b",
+      "AudioManager.b"
     ],
     "strings": []
   },
@@ -5774,11 +5774,11 @@
       "AudioManager.h"
     ],
     "callees": [
-      "m",
+      "AudioManager.U",
+      "e",
+      "U",
       "AudioManager.ad",
-      "ad",
-      "AudioManager.e",
-      "AudioManager.ab"
+      "ac"
     ],
     "strings": []
   },
@@ -5794,8 +5794,8 @@
     "callees": [
       "GameCanvas.k",
       "AudioManager.a",
-      "a",
-      "k"
+      "k",
+      "a"
     ],
     "strings": []
   },
@@ -5806,11 +5806,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "AudioManager.b",
+      "GameCanvas.h",
       "c",
-      "f",
-      "AudioManager.f",
-      "AudioManager.c"
+      "b",
+      "AudioManager.b",
+      "h"
     ],
     "strings": []
   },
@@ -5821,10 +5821,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.h",
+      "GameCanvas.b",
       "h",
-      "b",
-      "GameCanvas.b"
+      "GameCanvas.h",
+      "b"
     ],
     "strings": []
   },
@@ -5835,9 +5835,9 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "GameCanvas.b",
       "a",
-      "b",
-      "GameCanvas.b"
+      "b"
     ],
     "strings": []
   },
@@ -5848,10 +5848,10 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "j",
-      "d",
-      "GameCanvas.j",
       "GameCanvas.h",
+      "j",
+      "GameCanvas.j",
+      "d",
       "h"
     ],
     "strings": []
@@ -5880,11 +5880,11 @@
       "AudioManager.F"
     ],
     "callees": [
-      "AudioManager.e",
-      "j",
-      "d",
       "e",
-      "GameCanvas.j"
+      "c",
+      "j",
+      "GameCanvas.h",
+      "AudioManager.e"
     ],
     "strings": []
   },
@@ -5897,11 +5897,11 @@
       "AudioManager.N"
     ],
     "callees": [
-      "AudioManager.e",
       "e",
-      "a",
+      "b",
       "AudioManager.a",
-      "b"
+      "a",
+      "AudioManager.e"
     ],
     "strings": []
   },
@@ -5912,11 +5912,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "GameCanvas.h",
       "c",
       "r",
-      "AudioManager.c",
-      "GameCanvas.h",
-      "h"
+      "h",
+      "AudioManager.r"
     ],
     "strings": []
   },
@@ -5927,9 +5927,9 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "d",
+      "AudioManager.d",
       "GameCanvas.d",
-      "AudioManager.d"
+      "d"
     ],
     "strings": []
   },
@@ -5974,11 +5974,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "b",
       "d",
-      "GameCanvas.a",
+      "AudioManager.a",
       "a",
-      "GameCanvas.d",
-      "AudioManager.a"
+      "GameCanvas.a"
     ],
     "strings": []
   },
@@ -5989,9 +5989,9 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "GameCanvas.a",
       "AudioManager.c",
       "c",
-      "GameCanvas.a",
       "a"
     ],
     "strings": []
@@ -6003,11 +6003,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "GameCanvas.c",
-      "AudioManager.e",
-      "d",
       "e",
-      "AudioManager.G"
+      "GameCanvas.b",
+      "AudioManager.G",
+      "c",
+      "GameCanvas.h"
     ],
     "strings": []
   },
@@ -6018,11 +6018,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "AudioManager.e",
-      "d",
       "e",
       "AudioManager.G",
-      "GameCanvas.a"
+      "c",
+      "GameCanvas.h",
+      "AudioManager.d"
     ],
     "strings": []
   },
@@ -6033,8 +6033,8 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "a",
-      "b"
+      "b",
+      "a"
     ],
     "strings": []
   },
@@ -6045,11 +6045,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "l",
-      "d",
       "e",
-      "AudioManager.b",
-      "AudioManager.l"
+      "AudioManager.l",
+      "GameCanvas.e",
+      "GameCanvas.h",
+      "l"
     ],
     "strings": []
   },
@@ -6062,11 +6062,11 @@
       "AudioManager.q"
     ],
     "callees": [
-      "y",
-      "AudioManager.y",
-      "AudioManager.W",
-      "AudioManager.n",
-      "AudioManager.z"
+      "l",
+      "b",
+      "AudioManager.x",
+      "AudioManager.X",
+      "AudioManager.o"
     ],
     "strings": []
   },
@@ -6077,11 +6077,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "l",
-      "AudioManager.a",
       "GameCanvas.l",
-      "g",
-      "a"
+      "GameCanvas.n",
+      "l",
+      "GameCanvas.g",
+      "AudioManager.a"
     ],
     "strings": []
   },
@@ -6094,8 +6094,8 @@
       "AudioManager.U"
     ],
     "callees": [
-      "d",
-      "AudioManager.d"
+      "AudioManager.d",
+      "d"
     ],
     "strings": []
   },
@@ -6108,11 +6108,11 @@
       "AudioManager.U"
     ],
     "callees": [
-      "GameCanvas.c",
-      "d",
-      "AudioManager.b",
       "aa",
-      "GameCanvas.a"
+      "c",
+      "GameCanvas.c",
+      "AudioManager.d",
+      "b"
     ],
     "strings": []
   },
@@ -6123,11 +6123,11 @@
     "return": "void",
     "callers": [],
     "callees": [
+      "b",
       "AudioManager.b",
-      "GameCanvas.a",
-      "GameCanvas.b",
       "a",
-      "b"
+      "GameCanvas.a",
+      "GameCanvas.b"
     ],
     "strings": []
   },
@@ -6140,11 +6140,11 @@
       "AudioManager.ac"
     ],
     "callees": [
-      "GameCanvas.c",
-      "AudioManager.b",
       "c",
+      "GameCanvas.c",
       "AudioManager.g",
-      "g"
+      "b",
+      "AudioManager.b"
     ],
     "strings": []
   },
@@ -6157,11 +6157,11 @@
       "AudioManager.X"
     ],
     "callees": [
-      "d",
+      "AudioManager.d",
+      "b",
       "AudioManager.b",
-      "GameCanvas.a",
-      "a",
-      "b"
+      "d",
+      "a"
     ],
     "strings": []
   },
@@ -6174,11 +6174,11 @@
       "AudioManager.q"
     ],
     "callees": [
+      "GameCanvas.f",
+      "AudioManager.d",
+      "b",
       "d",
-      "f",
-      "a",
-      "GameCanvas.b",
-      "GameCanvas.f"
+      "a"
     ],
     "strings": []
   },
@@ -6192,10 +6192,10 @@
     ],
     "callees": [
       "Z",
-      "AudioManager.e",
+      "e",
+      "AudioManager.d",
       "AudioManager.Z",
-      "d",
-      "e"
+      "AudioManager.g"
     ],
     "strings": []
   },
@@ -6208,11 +6208,11 @@
       "AudioManager.q"
     ],
     "callees": [
-      "AudioManager.B",
-      "d",
       "GameCanvas.k",
-      "GameCanvas.a",
-      "B"
+      "AudioManager.B",
+      "AudioManager.d",
+      "B",
+      "b"
     ],
     "strings": []
   },
@@ -6225,11 +6225,11 @@
       "AudioManager.h"
     ],
     "callees": [
-      "af",
-      "AudioManager.b",
       "GameCanvas.k",
-      "GameCanvas.a",
-      "k"
+      "GameCanvas.n",
+      "af",
+      "b",
+      "AudioManager.b"
     ],
     "strings": []
   },
@@ -6257,9 +6257,9 @@
       "AudioManager.ah"
     ],
     "callees": [
+      "GameCanvas.b",
       "a",
-      "b",
-      "GameCanvas.b"
+      "b"
     ],
     "strings": []
   },
@@ -6272,11 +6272,11 @@
       "AudioManager.h"
     ],
     "callees": [
-      "AudioManager.e",
-      "p",
+      "e",
       "ag",
-      "d",
-      "e"
+      "AudioManager.p",
+      "AudioManager.d",
+      "p"
     ],
     "strings": []
   },
@@ -6287,11 +6287,11 @@
     "return": "public",
     "callers": [],
     "callees": [
-      "AudioManager.b",
       "GameCanvas.k",
-      "GameCanvas.a",
-      "k",
-      "GameCanvas.h"
+      "GameCanvas.h",
+      "b",
+      "AudioManager.b",
+      "k"
     ],
     "strings": []
   },
@@ -6313,11 +6313,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "setColor",
-      "getClipY",
       "getClipX",
-      "fillRect",
-      "Image.createRGBImage"
+      "drawRegion",
+      "getClipHeight",
+      "getClipWidth",
+      "getClipY"
     ],
     "strings": []
   },
@@ -6364,11 +6364,11 @@
     "return": "void",
     "callers": [],
     "callees": [
-      "getIntValues",
       "getName",
+      "b",
+      "getIntValues",
       "getChannelInfo",
-      "compareTo",
-      "b"
+      "compareTo"
     ],
     "strings": []
   },
