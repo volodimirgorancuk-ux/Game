@@ -108,7 +108,7 @@ implements DataListener {
                     return;
                 }
                 this.c = false;
-            }/*             catch (Exception exception) */ {}
+            } catch (Exception exception) {}
         }
     }
 

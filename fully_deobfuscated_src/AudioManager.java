@@ -483,16 +483,14 @@ public final class AudioManager {
 
                 if (var3_3 == 0)AudioManager.draw_c627(var3_3);
                 v1 = 1;lbl202:
-                // 1 sources
-
+                
                 if (!var0.a.draw_c627()) break;}
 
                 GameCanvas.updateNPCTarget(false);
                 if (!var1_1 || var2_2 == 0)AudioManager.draw_c627(var2_2);
                 AudioManager.check_ceb1();
                 v1 = 2;lbl211:
-                // 1 sources
-
+                
                 if (var3_3 == 0)AudioManager.check_ceb1();
                 AudioManager.draw_c627(var3_3);
                 v1 = (AudioManager.l += (int)GameCanvas.d) >= 300 || GameCanvas.ct >= 1 ? 3 : 1;}
@@ -585,8 +583,7 @@ public final class AudioManager {
                 GameCanvas.update_0726(var0);
                 if (!GameCanvas.draw_c627(GameCanvas.draw_c627(false, false), true))GameCanvas.W = true;
                 v1 = 17;lbl305:
-                // 1 sources
-
+                
                 if (!AudioManager.updateNPCTarget()) break;
                 AudioManager.draw_c627(101, var0);
                 AudioManager.update_bbd9(var0);
@@ -603,13 +600,11 @@ public final class AudioManager {
 
                 if ((AudioManager.w += (int)GameCanvas.d) < 800) break;
                 AudioManager.w = 0;
-lbl320:
-                // 7 sources
 
+                
                 v1 = 0;
-lbl321:
-                // 52 sources
 
+                
                 AudioManager.draw_c627(v1, var0);
             }
         }
@@ -1088,13 +1083,11 @@ lbl321:
 
                 var7_7 = false;
                 v0 = GameCanvas.draw_c627(var0, var5_5);
-lbl95:
-                // 4 sources
 
+                
                 v1 = var2_2;
-lbl96:
-                // 6 sources
 
+                
                 v2 = var6_6 = v0 + v1;
             }
         }
@@ -1804,17 +1797,15 @@ lbl96:
                     v2 = var2_2 + var1_1[11];
                     v3 = var1_1;
                     v4 = 13;
-lbl34:
-                    // 2 sources
 
+                    
                     var5_5 = var7_7 = v2 + v3[v4];
                     var6_6 = var3_3 + var1_1[12];
                     var8_8 = var6_6 + var1_1[14];
                     v0 = var1_1[14];
                     v1 = var11_11;
-lbl39:
-                    // 3 sources
 
+                    
                     var12_12 = v0 / v1;
                 }
             }
@@ -2051,8 +2042,7 @@ lbl39:
             v1 = 3;
             v2 = GameCanvas.update_bbd9(var0[3]) + (var0[3] % 16 == 0 ? 0 : 1);
         } else 
-        // 2 sources
-
+        
         {
             var4_4.g[2] = 0;
             v0 = var4_4.g;
@@ -2201,9 +2191,8 @@ lbl39:
 
                     v1 = var8_9;
                     v2 = 3;
-lbl37:
-                    // 3 sources
 
+                    
                     v1.update_bbd9(v2 + var3_3);
                 }
             }
@@ -2648,9 +2637,8 @@ lbl37:
                     v0 = var0.g;
                     v1 = 30 + var8_6;
                     v2 = GameCanvas.method_fb75(var0.g[0], var8_6, 0);
-lbl37:
-                    // 2 sources
 
+                    
                     v0[v1] = v2;
                 }
             }
@@ -3267,13 +3255,11 @@ lbl37:
 
                             v1 = var0;
                             v3 = 2;
-lbl23:
-                            // 2 sources
 
+                            
                             v2 = v3 & ~var0.g[25];
-lbl24:
-                            // 2 sources
 
+                            
                             var6_6 = AudioManager.update_bbd9(v1, v2);
                         }
                     }
@@ -3668,8 +3654,7 @@ lbl24:
                 v1 = var0.g;
                 v0 = 10;
                 v2 = 0;lbl29:
-                // 1 sources
-
+                
                 if (!AudioManager.update_4034(var0)) break;
                 if (var3_3 != null) {
                     AudioManager.update_0726(var0, var3_3.a.a, var3_3.a.b, 0);
@@ -3791,9 +3776,8 @@ lbl24:
                 v0 = 16;
                 v1 = var0.g;
                 v2 = var0.g[16] | 256;
-lbl140:
-                // 11 sources
 
+                
                 v1[v0] = v2;
             }
         }
@@ -4081,16 +4065,14 @@ lbl140:
                                     } else {
                                         var4_5 += var4_5 * 100 / 100;
                                         break;
-lbl47:
-                                        // 1 sources
 
+                                        
                                         if (var0.g[29] < 3 || var0.g[12] != 4) break;
                                         AudioManager.updateNPCTarget(var0, 25);
                                         break;
                                     }
-lbl50:
-                                    // 2 sources
 
+                                    
                                     v0 = 16;
                                     v1 = var0.g;
                                     v2 = v1[v0] = var0.g[16] & -257;
@@ -4216,8 +4198,7 @@ lbl50:
                                         v6 = var0;
                                         v7 = 12;
                                     }lbl149:
-                                    // 1 sources
-
+                                    
                                     AudioManager.update_0726(var0, var2_3.a.a, var2_3.a.b, 0);
                                     if (AudioManager.method_fb75(var0, var4_5))if (AudioManager.draw_c627(var0, var2_3.a.a, var2_3.a.b, var4_5)) {
                                         v6 = var0;
@@ -4226,13 +4207,11 @@ lbl50:
                                         v6 = var0;
                                         v7 = 6;
                                     }
-lbl157:
-                                    // 4 sources
 
+                                    
                                     AudioManager.updateNPCTarget(v6, v7);
-lbl158:
-                                    // 2 sources
 
+                                    
                                     AudioManager.updateNPCTarget(var0);
                                     break;
                                 }
@@ -4262,9 +4241,8 @@ lbl158:
                                         break;
                                     }
                                     break block97;
-lbl185:
-                                    // 1 sources
 
+                                    
                                     AudioManager.updateNPCTarget(var0, 0);
                                     break;
                                 }
@@ -5020,9 +4998,8 @@ lbl185:
                                             var9_9 = 0;
                                             v0 = var10_10 >= 0 ? 1 : -1;
                                             v1 = 14;
-lbl74:
-                                            // 4 sources
 
+                                            
                                             v2 = v0 << v1;
                                         }
                                     }
@@ -5192,9 +5169,8 @@ lbl74:
 
                                     v5 = var0;
                                     v6 = var2_2.a.update_bbd9() + 1;
-lbl31:
-                                    // 2 sources
 
+                                    
                                     v5.M = (v6 << 8) + var2_2.a.draw_c627();
                                 }
                             }
@@ -5282,9 +5258,8 @@ lbl31:
                     v0 = 50;}
 
                     v0 = 65;
-lbl18:
-                    // 4 sources
 
+                    
                     var4_4 = v0;
                 }
             }
@@ -5550,16 +5525,14 @@ lbl18:
                     v3 = var3_3;
                     v4 = 0;
                     v5 = var6_5 - var8_7;
-lbl32:
-                    // 2 sources
 
+                    
                     v3[v4] = v5 + var9_8;
                     v0 = var3_3;
                     v1 = 1;
                     v2 = var7_6;
-lbl36:
-                    // 3 sources
 
+                    
                     v0[v1] = v2;
                 }
             }
@@ -5604,8 +5577,7 @@ lbl36:
                 if (AudioManager.g - var0.g[27] <= 1500 || var1_1 > 14400)var0.g[28] = 0;
                 v0 = var0;
                 v1 = 13;lbl11:
-                // 1 sources
-
+                
                 if (AudioManager.g - var0.g[27] >= 0 && var1_1 <= 14400) break;
                 AudioManager.updateNPCTarget(var0, 13);
                 var0.g[28] = 1;
@@ -5636,25 +5608,21 @@ lbl36:
                 }
                 v0 = var0;
                 v1 = 8;lbl38:
-                // 1 sources
-
+                
                 v0 = var0;}
 
                 if (!var0.a.draw_c627()) break;}
 
                 if (!var0.a.draw_c627()) break;
                 var0.g[29] = 0;
-lbl46:
-                // 2 sources
 
+                
                 v0 = var0;
-lbl47:
-                // 2 sources
 
+                
                 v1 = 4;
-lbl48:
-                // 3 sources
 
+                
                 AudioManager.updateNPCTarget(v0, v1);
             }
         }
@@ -5683,13 +5651,11 @@ lbl48:
                 v2 = v7.b;
                 v3 = var0.g;
                 v4 = 28;
-lbl22:
-                // 2 sources
 
+                
                 v6 = v2 - v3[v4];
-lbl23:
-                // 2 sources
 
+                
                 v1.b = v6;
             }
         }
@@ -5831,12 +5797,10 @@ lbl23:
                 if (!var0.a.draw_c627()) break;
                 if (var2_2 != 6)if (GameCanvas.draw_c627() % 100 >= 40)if (AudioManager.draw_c627(var0, var4_3, true))v0 = var0;
                 v1 = 20;lbl30:
-                // 1 sources
-
+                
                 v0 = var0;
                 v1 = 19;lbl33:
-                // 1 sources
-
+                
                 v0 = var0;
                 v1 = 19;}
 
@@ -5877,8 +5841,7 @@ lbl23:
                     v0 = var0;
                     v1 = 8;
                 }lbl78:
-                // 1 sources
-
+                
                 v0 = var0;}
 
                 if (!var0.a.draw_c627()) break;}
@@ -5899,17 +5862,14 @@ lbl23:
                 if (!var0.a.draw_c627()) break;
                 var0.g[28] = 0;
                 var0.g[29] = 0;
-lbl100:
-                // 5 sources
 
+                
                 v0 = var0;
-lbl101:
-                // 2 sources
 
+                
                 v1 = 4;
-lbl102:
-                // 12 sources
 
+                
                 AudioManager.updateNPCTarget(v0, v1);
             }
         }
@@ -6317,8 +6277,7 @@ lbl102:
                     if (!var0.a.draw_c627()) break;
                     if (!AudioManager.getEnemyTotalHealth(var0))v0 = var0;
                     v1 = 104;lbl52:
-                    // 1 sources
-
+                    
                     v0 = var0;}
 
                     if (!var0.a.draw_c627()) break;
@@ -6358,13 +6317,11 @@ lbl102:
 
                     if (!var0.a.draw_c627()) break;
                     v0 = var0;
-lbl92:
-                    // 2 sources
 
+                    
                     v1 = 667;
-lbl93:
-                    // 11 sources
 
+                    
                     AudioManager.method_fb75(v0, v1);
                 }
             }
@@ -6978,9 +6935,8 @@ lbl93:
                                 var11_11 = 0;
                                 v1 = GameCanvas.draw_c627() % 100 < 50 ? 1 : -1;
                                 v2 = 14;
-lbl69:
-                                // 2 sources
 
+                                
                                 v0 = v1 << v2;
                             }
                         }
@@ -7142,16 +7098,14 @@ lbl69:
                 v3 = var0.g;
                 v4 = var2_2 + 11;
                 v5 = 16384;
-lbl29:
-                // 2 sources
 
+                
                 v3[v4] = v5;
                 v0 = var0.g;
                 v1 = var2_2 + 12;
                 v2 = 0;
-lbl33:
-                // 3 sources
 
+                
                 v0[v1] = v2;
             }
         }
@@ -7285,9 +7239,8 @@ lbl33:
 
                     v2 = var0;
                     v3 = 6;
-lbl86:
-                    // 2 sources
 
+                    
                     v1 = var1_1 = AudioManager.draw_c627(v2, v3, AudioManager.draw_c627(var0, true), 0, var0.g[28], var0.g[29]);
                 }
             }
@@ -7531,9 +7484,8 @@ lbl86:
                 v0 = var2_2;}
 
                 v0 = var2_2;
-lbl20:
-                // 2 sources
 
+                
                 AudioManager.update_041b(v0, var1_1);
                 AudioManager.update_6099(var2_2, var3_3 << 14, var4_4 << 14, 1);
                 AudioManager.method_fb75(var2_2, 102);
@@ -8025,9 +7977,8 @@ lbl20:
                                 v0 = 8;}
 
                                 v0 = 16;
-lbl18:
-                                // 2 sources
 
+                                
                                 GameCanvas.update_041b(v0);
                             }
                         }
@@ -8098,13 +8049,11 @@ lbl18:
                                 v2 = var1_1;
                                 v3 = var0.g;
                                 v4 = 28;
-lbl26:
-                                // 2 sources
 
+                                
                                 v5 = v2 + v3[v4];
-lbl27:
-                                // 2 sources
 
+                                
                                 var1_1 = v5;
                             }
                         }
@@ -8143,14 +8092,12 @@ lbl27:
                             v7 = GameCanvas.s[1] + 262144;
                         } else {
                             v6 = var0;
-lbl58:
-                            // 2 sources
 
+                            
                             v7 = v6.a.b;
                         }
-lbl59:
-                        // 3 sources
 
+                        
                         var1_1 = v7;
                     }
                 }
@@ -8161,9 +8108,8 @@ lbl59:
                 if (!GameCanvas.draw_c627(var0.a.a, var0.a.b, var0.a.a, var2_2[3] << 14, GameCanvas.s, false, 1)) break;
                 v0 = GameCanvas.s[1];
                 v1 = 262144;
-lbl66:
-                // 2 sources
 
+                
                 var1_1 = v0 + v1;
             }
         }
@@ -8256,13 +8202,11 @@ lbl66:
                     v1 = 3;
                     v2 = var5_5;
                     v3 = 32;
-lbl72:
-                    // 2 sources
 
+                    
                     v4 = v2 + v3;
-lbl73:
-                    // 2 sources
 
+                    
                     v0[v1] = v4;
                 }
             }

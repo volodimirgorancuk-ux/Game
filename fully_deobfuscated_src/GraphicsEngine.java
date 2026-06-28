@@ -549,9 +549,8 @@ public final class GraphicsEngine {
                 v1 = var4_4 - this.j[var6_6];
             } else {
                 v2 = var4_4;
-lbl18:
-                // 2 sources
 
+                
                 v1 = var4_4 = v2 + this.j[var6_6];
             }
         }
@@ -772,7 +771,7 @@ lbl18:
                 } else if ((GameCanvas.ag & 0x18) != 0) {
                     try {
                         GameCanvas.update_4aca(a, n2, n3, nArray, n6, n5, n4);
-                    }/*                     catch (Exception exception) */ {}
+                    } catch (Exception exception) {}
                 } else {
                     nArray = GameCanvas.update_4aca(a, nArray, n2, n3, n6, n5, n4, this.a);
                 }

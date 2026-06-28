@@ -1761,13 +1761,11 @@ implements Runnable {
                                 v5 = var1_1;}
 
                                 v5 = var1_1;
-lbl115:
-                                // 11 sources
 
+                                
                                 v6 = 4;
-lbl116:
-                                // 9 sources
 
+                                
                                 var1_1 = (short)(v5 + v6);
                             }
                         }
@@ -1958,9 +1956,8 @@ lbl116:
                                 var6_5 += 2;
                                 continue block33;
                             }
-lbl102:
-                            // 2 sources
 
+                            
                                 v0 = var0;
                                 GameCanvas.c[v0] = GameCanvas.c[v0] | 2;
                             }
@@ -1997,8 +1994,7 @@ lbl102:
                             v5 = var0;
                             v6 = var12_12 - var14_15.b;
                             v7 = var10_10 - var9_9;lbl136:
-                            // 1 sources
-
+                            
                             GameCanvas.f[var0] = 0;
                             v4 = GameCanvas.g;
                             v5 = var0;
@@ -2013,13 +2009,11 @@ lbl102:
                             v5 = var0;
                             v6 = var12_12 - var14_15.b;
                             v7 = var10_10 - var9_9 + 1;
-lbl151:
-                            // 2 sources
 
+                            
                             v8 = v6 / v7;
-lbl152:
-                            // 2 sources
 
+                            
                             v4[v5] = v8;
                         }
                     }
@@ -2807,7 +2801,7 @@ lbl152:
                 }
                 System.out.println();
             }
-        }/*         catch (Exception exception) */ {}
+        } catch (Exception exception) {}
         System.gc();
     }
 
@@ -2916,9 +2910,8 @@ lbl152:
                     }
 
                         GameCanvas.triggerDamageFlash(0);
-lbl15:
-                        // 2 sources
 
+                        
                         GameCanvas.setPaused();
                     }
                 }
@@ -2940,9 +2933,8 @@ lbl15:
                 }
             }
         }
-lbl27:
-        // 7 sources
 
+        
         GameCanvas.x = var0;
     }
 
@@ -3641,9 +3633,8 @@ lbl27:
                         v1 = true;}
 
                         v1 = false;
-lbl80:
-                        // 2 sources
 
+                        
                         GameCanvas.h = v1;
                     }
                 }
@@ -4011,7 +4002,7 @@ lbl80:
             }
             B = 0;
             System.out.println("DEBUG loaded resource: " + string + " size=" + A + " offsets=" + h[0] + "," + h[1] + "," + h[2] + "...");
-        }/*         catch (Exception exception) */ {}
+        } catch (Exception exception) {}
         System.gc();
     }
 
@@ -4041,7 +4032,7 @@ lbl80:
             byArray = new byte[n2];
             a.read(byArray);
             B = n + 1;
-        }/*         catch (Exception exception) */ {}
+        } catch (Exception exception) {}
         System.gc();
         return byArray;
     }
@@ -4051,7 +4042,7 @@ lbl80:
             try {
                 a.close();
                 a = null;
-            }/*             catch (Exception exception) */ {}
+            } catch (Exception exception) {}
         }
         h = null;
         A = 0;
@@ -4074,7 +4065,7 @@ lbl80:
             if (recordStore == null) break block13;
             try {
                 recordStore.closeRecordStore();
-            }/*             catch (Exception exception) */ {}
+            } catch (Exception exception) {}
         }
         return;
         catch (Exception exception) {
@@ -4115,7 +4106,7 @@ lbl80:
         try {
             recordStore.closeRecordStore();
             return byArray;
-        }/*         catch (Exception exception) */ {}
+        } catch (Exception exception) {}
         return byArray;
         catch (Exception exception) {
             try {
@@ -4152,7 +4143,7 @@ lbl80:
             if (recordStore == null) break block11;
             try {
                 recordStore.closeRecordStore();
-            }/*             catch (Exception exception) */ {}
+            } catch (Exception exception) {}
         }
         return;
         catch (Exception exception) {
@@ -4216,7 +4207,7 @@ lbl80:
                     a[n].prefetch();
                 }
                 return;
-            }/*             catch (Exception exception) */ {}
+            } catch (Exception exception) {}
         }
     }
 
@@ -4278,7 +4269,7 @@ lbl80:
                 if (player.getState() == 400) {
                     return true;
                 }
-            }/*             catch (Exception exception) */ {}
+            } catch (Exception exception) {}
         }
         return false;
     }
@@ -4415,7 +4406,7 @@ lbl80:
                 b[n].stop();
                 GameCanvas.b[n] = null;
                 return;
-            }/*             catch (Exception exception) */ {}
+            } catch (Exception exception) {}
         }
     }
 
@@ -4443,7 +4434,7 @@ lbl80:
                     }
                     b[i].stop();
                     GameCanvas.b[i] = null;
-                }/*                 catch (Exception exception) */ {}
+                } catch (Exception exception) {}
                 continue;
             }
             C = 80000;
@@ -5042,8 +5033,7 @@ lbl80:
                                     GameCanvas.k[GameCanvas.J] = ++var22_22;
                                     var19_19 = true;
                                 } else 
-                                // 2 sources
-
+                                
                                 {
                                     var8_8 = GraphicsEngine.a[var8_8] & 255;
                                     var9_9 = var0[GameCanvas.a].c[var8_8] & 255;
@@ -5053,9 +5043,8 @@ lbl80:
                                     v7 = GameCanvas.l[v17];
                                     v8 = GameCanvas.spawnEnemy(var0[GameCanvas.a], var9_9);
                                     v9 = var0[GameCanvas.a].f[var8_8];
-lbl160:
-                                    // 2 sources
 
+                                    
                                     v6[v5] = v7 + (v8 - v9 + var0[GameCanvas.a].f[0]);
                                 }
                             }
@@ -6295,9 +6284,8 @@ lbl160:
                     v1 = var1_2;
                     v2 = var1_2[3];
                     v3 = var0.g[1] >> 1;
-lbl28:
-                    // 2 sources
 
+                    
                     v1[v0] = v2 + v3;
                 }
             }
@@ -6398,9 +6386,8 @@ lbl28:
                     v1 = var1_1;
                     v2 = var1_1[3];
                     v3 = var0.g[1] >> 1;
-lbl23:
-                    // 2 sources
 
+                    
                     v1[v0] = v2 + v3;
                 }
             }
@@ -8232,8 +8219,7 @@ lbl23:
                     GameCanvas.ae = 4;
                     break;
                 }lbl23:
-                // 1 sources
-
+                
                 if (var0) {
                     GameCanvas.drawLevelSelect(0);
                 }
@@ -8291,9 +8277,8 @@ lbl23:
                     GameCanvas.drawLevelSelect(0);
                 }
                 GameCanvas.update_83ef();
-lbl69:
-                // 2 sources
 
+                
                 v0 = var2_2 = 3;
             }
         }
@@ -8655,9 +8640,8 @@ lbl69:
                         v2 = v6;
                         v3 = v5;
                         v4 = v5[v6] & ~var3_3;
-lbl23:
-                        // 2 sources
 
+                        
                         v3[v2] = (byte)v4;
                     }
                 }
@@ -10513,9 +10497,8 @@ lbl23:
                     v1 = GameCanvas.f[var2_2];
                     v2 = 7;
                     v3 = (GameCanvas.f[var2_2][4] << 14) / 500;
-lbl35:
-                    // 3 sources
 
+                    
                     v1[v2] = v3;
                 }
             }
@@ -10560,9 +10543,8 @@ lbl35:
                             v1 = GameCanvas.f[var2_2];
                             v2 = 1;
                             v3 = 3;
-lbl32:
-                            // 2 sources
 
+                            
                             v1[v2] = v3;
                         }
                     }
@@ -11009,8 +10991,7 @@ lbl32:
                 v0 = GameCanvas.aC;
                 v1 = var6_5 == 0 ? 1 : 0;
                 v2 = 0;lbl25:
-                // 1 sources
-
+                
                 if ((GameCanvas.ez & 16416) == 0) break;
                 GameCanvas.aC = GameCanvas.drawBackground(GameCanvas.aC, GameCanvas.drawForeground(), 1);
                 GameCanvas.aC = GameCanvas.drawBackground(GameCanvas.aC, GameCanvas.drawForeground(), 2);
@@ -11034,9 +11015,8 @@ lbl32:
                 v0 = GameCanvas.aC;
                 v1 = var7_10 == 0 ? 1 : 0;
                 v2 = 3;
-lbl46:
-                // 2 sources
 
+                
                 GameCanvas.aC = GameCanvas.drawBackground(v0, v1, v2);
             }
         }
@@ -12251,9 +12231,8 @@ lbl46:
                 v0 = GameCanvas.B;
                 v1 = 0;
                 v2 = 0;
-lbl46:
-                // 5 sources
 
+                
                 v0[v1] = v2;
             }
         }
@@ -12323,13 +12302,11 @@ lbl46:
                 }
 
                     var7_7 = false;
-lbl53:
-                    // 2 sources
 
+                    
                     var8_8 = false;
-lbl54:
-                    // 2 sources
 
+                    
                     var9_9 = false;
                 }
             }
@@ -12405,9 +12382,8 @@ lbl54:
                 v0 = -GameCanvas.be;
                 v1 = 0;
                 v2 = GameCanvas.bg;
-lbl36:
-                // 2 sources
 
+                
                 GameCanvas.bf = GameCanvas.drawForeground(v0, v1, (v2 << 14) / GameCanvas.bh) >> 14;
             }
         }
@@ -12490,9 +12466,8 @@ lbl36:
                 v0 = 0;}
 
                 v0 = 0;
-lbl39:
-                // 11 sources
 
+                
                 GameCanvas.dispatch_1728(v0);
             }
         }
@@ -12584,9 +12559,8 @@ lbl39:
 
                     v0 = var2_2;
                     v1 = 3;
-lbl59:
-                    // 3 sources
 
+                    
                     v0.spawnEnemy(v1);
                 }
             }
@@ -12681,16 +12655,14 @@ lbl59:
                             v0 = true;}
 
                             v0 = true;
-lbl46:
-                            // 2 sources
 
+                            
                             var0 = v0;
                         }
                     }
                     break;
-lbl49:
-                    // 1 sources
 
+                    
                     GameCanvas.H = false;
                     switch (GameCanvas.C[2]) {
                         case 10: 
@@ -12758,13 +12730,11 @@ lbl49:
                     if ((GameCanvas.ez & 16416) == 0) break;}
 
                     if (!var2_2.triggerDamageFlash()) break;
-lbl105:
-                    // 4 sources
 
+                    
                     v1 = true;
-lbl106:
-                    // 2 sources
 
+                    
                     var0 = v1;
                 }
             }
@@ -12794,9 +12764,8 @@ lbl106:
                         v0 = 1;}
 
                         v0 = 2;
-lbl13:
-                        // 3 sources
 
+                        
                         var1_1 = v0;
                     }
                 }
@@ -12812,9 +12781,8 @@ lbl13:
                         v1 = 1;}
 
                         v1 = 3;
-lbl28:
-                        // 4 sources
 
+                        
                         var1_1 = v1;
                     }
                 }
@@ -12845,9 +12813,8 @@ lbl28:
                         v2 = 0;}
 
                         v2 = 1;
-lbl47:
-                        // 2 sources
 
+                        
                         var1_1 = v2;
                     }
                 }
@@ -13451,9 +13418,8 @@ lbl47:
                         v1 = 0;
                         v2 = 0;
                     }
-lbl38:
-                    // 5 sources
 
+                    
                     v0[v1] = v2;
                 }
             }
@@ -13504,9 +13470,8 @@ lbl38:
                     var6_6 = 39;
                     var8_8 = var4_4;
                     v0 = 240 - (var3_3 + 20);
-lbl35:
-                    // 2 sources
 
+                    
                     var5_5 = v0;
                     var7_7 = var3_3 + 20;
                 }
@@ -13584,9 +13549,8 @@ lbl35:
                     case 101: 
 
                         v0 = GameCanvas.triggerDamageFlash(var1_1, var3_3 - (var4_4 << 1) - 8, null, 1, false, var0);
-lbl22:
-                        // 2 sources
 
+                        
                         var3_3 = v0;
                     }
                 }
@@ -13611,9 +13575,8 @@ lbl22:
                     case 101: 
 
                         v2 = GameCanvas.triggerDamageFlash(var1_1, var3_3 - (var4_4 << 1) - 8, null, 1, false, var0);
-lbl43:
-                        // 2 sources
 
+                        
                         var3_3 = v2;
                     }
                 }
@@ -14939,9 +14902,8 @@ lbl43:
                         v0 = 0;}
 
                         v0 = 1;
-lbl10:
-                        // 2 sources
 
+                        
                         var3_3 = v0;
                     }
                 }
@@ -14955,9 +14917,8 @@ lbl10:
                         v1 = 6;}
 
                         v1 = 7;
-lbl22:
-                        // 3 sources
 
+                        
                         var3_3 = v1;
                     }
                 }
@@ -14970,9 +14931,8 @@ lbl22:
                         v2 = 2;}
 
                         v2 = 4;
-lbl35:
-                        // 4 sources
 
+                        
                         var3_3 = v2;
                     }
                 }
@@ -15079,9 +15039,8 @@ lbl35:
                                 var0[var3_3].g[21] = 1;
                                 break block18;
                             }
-lbl82:
-                            // 2 sources
 
+                            
                             default: {
                                 var5_5 = true;
                                 var6_6 = 8;
@@ -15637,9 +15596,8 @@ lbl82:
 
                 var4_4 += (var2_2 + 16 >> 1) + 1;
                 v0 = 8256;
-lbl22:
-                // 4 sources
 
+                
                 var6_6 = AudioManager.triggerDamageFlash(v0);
             }
         }
@@ -16079,13 +16037,11 @@ lbl22:
                     v1 = var16_16;
                     v2 = var6_6.g;
                     v3 = 2;
-lbl69:
-                    // 3 sources
 
+                    
                     v4 = v2[v3];
-lbl70:
-                    // 3 sources
 
+                    
                     GameCanvas.spawnEnemy(v0, v1, v4);
                 }
             }
@@ -16131,18 +16087,15 @@ lbl70:
 
                     if (var1_1 >= GameCanvas.k[var2_2][var3_3].length) break;
                     v0 = GameCanvas.k;
-lbl30:
-                    // 3 sources
 
+                    
                     v2 = v0[var2_2];
                     v3 = var3_3;
-lbl32:
-                    // 2 sources
 
+                    
                     v1 = v2[v3];
-lbl33:
-                    // 3 sources
 
+                    
                     var4_4 = v1[var1_1];
                 }
             }
@@ -16554,9 +16507,8 @@ lbl33:
 
                             v0 = var2_2;
                             v1 = 11;
-lbl26:
-                            // 3 sources
 
+                            
                             v0[v1] = v0[v1] + 1;
                         }
                     }
@@ -16566,9 +16518,8 @@ lbl26:
                     if (var4_4) {
                         var2_2[6] = var2_2[6] + 1;
                     }
-lbl31:
-                    // 4 sources
 
+                    
                     var1_1 += var8_8;
                     continue block15;
                 }
@@ -16585,9 +16536,8 @@ lbl31:
 
                             v2 = var2_2;
                             v3 = 12;
-lbl48:
-                            // 3 sources
 
+                            
                             v2[v3] = v2[v3] + 1;
                         }
                     }
@@ -16667,9 +16617,8 @@ lbl48:
                                 v0 = 13 + var5_5 * 2;}
 
                                 v0 = 11;
-lbl28:
-                                // 3 sources
 
+                                
                                 var8_8 = v0;
                             }
                         }
@@ -16700,9 +16649,8 @@ lbl28:
                                 v4 = 14 + var5_5 * 2;}
 
                                 v4 = 12;
-lbl56:
-                                // 3 sources
 
+                                
                                 var8_8 = v4;
                             }
                         }
@@ -17384,19 +17332,15 @@ lbl56:
                         GameCanvas.ay = 0;
                         var9_13 = var8_11 = GameCanvas.triggerDamageFlash(GameCanvas.z, var1_1 + 0);
                         if (var8_11 != -1)v3 = GameCanvas.c.g[4];lbl215:
-                        // 1 sources
-
+                        
                         if (var8_11 != -2)v3 = GameCanvas.d.g[4];lbl218:
-                        // 1 sources
-
+                        
                         if (var8_11 != -3)v3 = -1;
-lbl220:
-                        // 3 sources
 
+                        
                         var8_11 = v3;
-lbl221:
-                        // 2 sources
 
+                        
                         GameCanvas.stateOrRender_aS();
                         if (GameCanvas.b[0] == null && var9_13 != -3) {
                             GameCanvas.triggerDamageFlash(0, GameCanvas.c);
@@ -17726,13 +17670,11 @@ lbl221:
                 v0 = GameCanvas.e;}
 
                 v0 = GameCanvas.h;
-lbl26:
-                // 7 sources
 
+                
                 v1 = v0[var1_1][var2_2];
-lbl27:
-                // 2 sources
 
+                
                 var3_3 = v1;
             }
         }
@@ -17782,17 +17724,14 @@ lbl27:
                 v1 = GameCanvas.g;}
 
                 v1 = GameCanvas.b;
-lbl54:
-                // 13 sources
 
+                
                 v2 = v1[var1_1][var2_2];
-lbl55:
-                // 2 sources
 
+                
                 v0 = v2[var3_3];
-lbl56:
-                // 3 sources
 
+                
                 var4_4 = v0;
             }
         }
@@ -17939,9 +17878,8 @@ lbl56:
 
                 v0 = GameCanvas.g[var0][var1_1][var2_2].g;
                 v1 = 2;
-lbl23:
-                // 5 sources
 
+                
                 v0[v1] = var3_3;
             }
         }
@@ -18049,9 +17987,8 @@ lbl23:
                         GameCanvas.triggerDamageFlash(var8_8, 1, true);}
 
                         var6_6 = 5;
-lbl24:
-                        // 4 sources
 
+                        
                         GameCanvas.playFootstep(var8_8);
                     }
                 }
@@ -18348,9 +18285,8 @@ lbl24:
                                 v0 = 1028;}
 
                                 v0 = 2304;
-lbl17:
-                                // 4 sources
 
+                                
                                 var6_6 = v0;
                             }
                         }
@@ -18373,9 +18309,8 @@ lbl17:
                             v1 = 1028;}
 
                             v1 = 2304;
-lbl39:
-                            // 5 sources
 
+                            
                             var6_6 = v1;
                         }
                     }
@@ -19718,9 +19653,8 @@ lbl39:
                 v1 = 79;}
 
                 v1 = 80;
-lbl38:
-                // 5 sources
 
+                
                 var3_3 = v1;
                 v0 = var4_4 = 1;
             }
@@ -19949,13 +19883,11 @@ lbl38:
                     if (var0.g[0] != 3 || (var2_3 = GameCanvas.getEntityProperty(var1_2 = GameCanvas.triggerDamageFlash(var0.g[15], 255), 21)) != 5) break;}
 
                     if (var0.g[3] <= -1) break;
-lbl22:
-                    // 5 sources
 
+                    
                     v0 = true;
-lbl23:
-                    // 2 sources
 
+                    
                     GameCanvas.triggerDamageFlash(v0);
                 }
             }
@@ -20008,13 +19940,11 @@ lbl23:
                     v0 = var0;
                     v1 = var0.a.spawnEnemy() << 8;
                     v2 = var0.a.triggerDamageFlash();
-lbl45:
-                    // 3 sources
 
+                    
                     v3 = v1 + v2;
-lbl46:
-                    // 2 sources
 
+                    
                     v0.M = v3;
                 }
             }
@@ -20419,21 +20349,18 @@ lbl46:
 
                                                                                     v4 = GameCanvas.I;
                                                                                     v5 = 0;
-lbl43:
-                                                                                    // 2 sources
 
+                                                                                    
                                                                                     v1 = v5;
                                                                                     v2 = v4;
                                                                                     v3 = v4[v5] - 9;
-lbl46:
-                                                                                    // 3 sources
 
+                                                                                    
                                                                                     v2[v1] = v3;
                                                                                 }
                                                                             }
-lbl47:
-                                                                            // 3 sources
 
+                                                                            
                                                                             GameCanvas.I[2] = GameCanvas.I[0] + var7_7.g[2];
                                                                             GameCanvas.I[3] = GameCanvas.I[1] + var7_7.g[3];
                                                                             break;
@@ -21239,18 +21166,15 @@ lbl47:
                                         v2 = var4_2;}
 
                                         v1 = var3_1 - 40;
-lbl37:
-                                        // 2 sources
 
+                                        
                                         var3_1 = v1;
                                         v2 = var4_2;
-lbl39:
-                                        // 2 sources
 
+                                        
                                         v0 = v2 - 53;
-lbl40:
-                                        // 4 sources
 
+                                        
                                         var4_2 = v0;
                                     }
                                 }
@@ -21549,9 +21473,8 @@ lbl40:
                 v0 = 304;}
 
                 v0 = 126;
-lbl12:
-                // 3 sources
 
+                
                 var3_3 = v0;
             }
         }
@@ -21565,9 +21488,8 @@ lbl12:
                 v1 = 1;}
 
                 v1 = 3;
-lbl26:
-                // 4 sources
 
+                
                 var5_5 = v1;
             }
         }
@@ -21632,9 +21554,8 @@ lbl26:
                 GameCanvas.renderTarget(var0, true);
                 GameCanvas.dispatch_0cb3();
                 if ((GameCanvas.ez & 65536) == 0) break;
-lbl47:
-                // 2 sources
 
+                
                 var2_2 = true;
             }
         }
@@ -21763,27 +21684,23 @@ lbl47:
                 if (GameCanvas.M[7] < 1720320)v1 = GameCanvas.M;
                 v2 = 7;
                 v3 = 1720320;lbl25:
-                // 1 sources
-
+                
                 if (GameCanvas.M[7] > 0)v1 = GameCanvas.M;
                 v2 = 7;
                 v3 = 16384;
-lbl29:
-                // 2 sources
 
+                
                 v1[v2] = v3;
                 var2_2 = true;
-lbl31:
-                // 2 sources
 
+                
                 GameCanvas.triggerDamageFlash(var0, null, var1_1);
                 break;
             }
 
                 v0 = var0.a.triggerDamageFlash();
-lbl35:
-                // 2 sources
 
+                
                 var2_2 = v0;
             }
         }
@@ -21883,8 +21800,7 @@ lbl35:
 
                     if (var5_5 != 0)v0 = var0;
                     v1 = 2;lbl49:
-                    // 1 sources
-
+                    
                     if (GameCanvas.createOffscreenBuffer(var0, GameCanvas.M[0])) break;
                     AudioManager.playFootstep(var0);
                     AudioManager.triggerDamageFlash(var5_5);
@@ -21901,9 +21817,8 @@ lbl35:
                         v0 = var0;
                         v1 = 0;
                     }
-lbl63:
-                    // 7 sources
 
+                    
                     GameCanvas.createOffscreenBuffer(v0, v1);
                 }
             }
@@ -22068,8 +21983,7 @@ lbl63:
                 v4 = 0;
                 v5 = var4_4[0] + (var8_9 >> 1);
                 v6 = var5_6;lbl52:
-                // 1 sources
-
+                
                 var8_9 -= var13_14;
                 if (var12_13 < 4900) {
                     var10_11 = var11_12 * var8_9 / 100;
@@ -22090,15 +22004,13 @@ lbl63:
 
                 var9_10[0] = var4_4[0] + (var8_9 >> 1) - var5_6;
                 v3 = var9_10;
-lbl71:
-                // 2 sources
 
+                
                 v4 = 1;
                 v5 = var4_4[1] + (var7_8 >> 1);
                 v6 = var6_7;
-lbl74:
-                // 2 sources
 
+                
                 v3[v4] = v5 - v6;
             }
         }
@@ -22177,9 +22089,8 @@ lbl74:
                 v0 = GameCanvas.N;
                 v1 = 8;
                 v2 = 1638;
-lbl48:
-                // 3 sources
 
+                
                 v0[v1] = v2;
             }
         }
@@ -22474,9 +22385,8 @@ lbl48:
                 v0 = GameCanvas.P;
                 v1 = 18;
                 v2 = 0;
-lbl14:
-                // 2 sources
 
+                
                 v0[v1] = v2;
             }
         }
@@ -22963,9 +22873,8 @@ lbl14:
 
                             var4_4 = 0;
                             v0 = GameCanvas.stopParticles(var0.g[0], 7) * 16;
-lbl14:
-                            // 2 sources
 
+                            
                             var5_5 = v0;
                         }
                     }
@@ -23153,9 +23062,8 @@ lbl14:
 
                         v0 = GameCanvas.i.a;
                         v1 = 0;
-lbl39:
-                        // 3 sources
 
+                        
                         v0.triggerDamageFlash(v1, -1);
                     }
                 }
@@ -24090,9 +23998,8 @@ lbl39:
             }
 
                 v0 = 4;
-lbl19:
-                // 3 sources
 
+                
                 GameCanvas.draw_ad2c(v0);
             }
         }
@@ -24181,9 +24088,8 @@ lbl19:
 
                     ++var6_6;
                     v0 = 15;
-lbl31:
-                    // 4 sources
 
+                    
                     var13_8 = v0;
                 }
             }
@@ -24503,15 +24409,13 @@ lbl31:
                 case 4: 
 
                     if (!GameCanvas.g[var0].a.triggerDamageFlash()) continue block5;
-lbl16:
-                    // 2 sources
 
+                    
                     v0 = GameCanvas.g[var0].g;
                     v1 = 1;
                     v2 = 0;
-lbl19:
-                    // 2 sources
 
+                    
                     v0[v1] = v2;
                 }
             }
@@ -24964,9 +24868,8 @@ lbl19:
                         v0 = 3;}
 
                         v0 = 3;
-lbl10:
-                        // 2 sources
 
+                        
                         GameCanvas.createOffscreenBuffer(v0, false);
                     }
                 }
@@ -25744,9 +25647,8 @@ lbl10:
                                 GameCanvas.stopParticles(GameCanvas.K[GameCanvas.dI], 14);
                                 v0 = 5;
                             }
-lbl43:
-                            // 6 sources
 
+                            
                             GameCanvas.drawLevelSelect(v0);
                         }
                     }
@@ -25870,9 +25772,8 @@ lbl43:
 
                                                                     if ((GameCanvas.ez & 16416) == 0) break block24;
                                                                     GameCanvas.b = 5;
-lbl44:
-                                                                    // 2 sources
 
+                                                                    
                                                                     GameCanvas.setPaused();
                                                                 }
                                                             }
@@ -26260,9 +26161,8 @@ lbl44:
                         v1 = 25;}
 
                         v1 = 125;
-lbl26:
-                        // 3 sources
 
+                        
                         var10_10 = v1;
                     }
                 }
@@ -26571,9 +26471,8 @@ lbl26:
 
                     if (!SensorHandler.triggerDamageFlash() || SensorHandler.spawnEnemy()) break;
                     v0 = 91;
-lbl40:
-                    // 5 sources
 
+                    
                     var19_17 = v0;
                 }
             }
@@ -26645,9 +26544,8 @@ lbl40:
 
                 v0 = 10;
                 v1 = 23;
-lbl22:
-                // 4 sources
 
+                
                 GameCanvas.renderTarget(v0, v1);
             }
         }
@@ -26851,9 +26749,8 @@ lbl22:
                         var5_6 = GameCanvas.r[GameCanvas.ac[1]];
                         v0 = GameCanvas.ac;
                         v1 = 1;
-lbl43:
-                        // 2 sources
 
+                        
                         v0[v1] = v0[v1] + 1;
                     }
                 }
@@ -27680,9 +27577,8 @@ lbl43:
                         v2[1] = v2[1] + 1;
                         v0 = GameCanvas.af;
                         v1 = 1;
-lbl35:
-                        // 2 sources
 
+                        
                         v0[v1] = v0[v1] + 1;
                     }
                 }
@@ -27798,8 +27694,7 @@ lbl35:
                     v3 = GameCanvas.i[var0].g;
                     v4 = 8;
                     v5 = -1;lbl23:
-                    // 1 sources
-
+                    
                     GameCanvas.playFootstep(GameCanvas.i[var0].g[8], GameCanvas.i[var0].a.a, GameCanvas.i[var0].a.b + GameCanvas.i[var0].g[6]);
                     break;
                 }
@@ -27814,9 +27709,8 @@ lbl35:
                     v3 = GameCanvas.i[var0].g;
                     v4 = 0;
                     v5 = 0;
-lbl36:
-                    // 2 sources
 
+                    
                     v3[v4] = v5;
                 }
             }
@@ -28201,9 +28095,8 @@ lbl36:
                 v3 = var0.a;
                 v1 = v3;
                 v2 = v3.b + var1_1;
-lbl17:
-                // 2 sources
 
+                
                 v1.b = v2;
             }
         }
@@ -28328,9 +28221,8 @@ lbl17:
                                 v2 = GameCanvas.c.a;
                                 v3 = var5_7 + var6_9;
                             }
-lbl86:
-                            // 4 sources
 
+                            
                             v2.b = v3;
                         }
                     }
@@ -28458,15 +28350,13 @@ lbl86:
                 v4 = (var2_2 += var4_4 * 16 - 8 << 14) + 524288;}
 
                 v4 = var2_2 - 393216;
-lbl33:
-                // 2 sources
 
+                
                 var2_2 = v4;
                 v1 = var3_3;
                 v2 = var5_5 * 16 >> 1 << 14;
-lbl36:
-                // 2 sources
 
+                
                 v3 = var3_3 = v1 + v2;
             }
         }
@@ -28651,9 +28541,8 @@ lbl36:
                         GameCanvas.u[var5_5][2] = (var11_11 * GameCanvas.createOffscreenBuffer(var10_10) << 6) / 1000;
                         GameCanvas.u[var5_5][3] = (var11_11 * GameCanvas.isPlayerDead(var10_10) << 6) / 1000;
                         v0 = var7_7.g[9];
-lbl36:
-                        // 3 sources
 
+                        
                         var6_6 = v0;
                     }
                 }
@@ -29155,9 +29044,8 @@ lbl36:
                         case 4: 
 
                             v0 = var0.a.a - 0x3C0000;
-lbl33:
-                            // 2 sources
 
+                            
                             var10_10 = v0;
                         }
                     }
@@ -29170,9 +29058,8 @@ lbl33:
                         case 6: 
 
                             v1 = var0.a.b + 0x500000;
-lbl40:
-                            // 2 sources
 
+                            
                             var11_11 = v1;
                         }
                     }
@@ -29449,9 +29336,8 @@ lbl40:
 
                 GameCanvas.k[var0].g[16] = GameCanvas.k[var0].g[16] + (int)GameCanvas.d;
                 if (GameCanvas.k[var0].g[16] < 100) break;
-lbl15:
-                // 2 sources
 
+                
                 GameCanvas.k[var0].g[0] = 0;
             }
         }
@@ -29521,9 +29407,8 @@ lbl15:
                             var1_1.a.b += var1_1.g[7] * 5;
                         }
                         v1 = 192;
-lbl54:
-                        // 2 sources
 
+                        
                         GameCanvas.isPlayerDead(v1);
                     }
                 }
@@ -29855,9 +29740,8 @@ lbl54:
             case 5: 
 
                 v0 = var6_6 + var11_11;
-lbl43:
-                // 2 sources
 
+                
                 var6_6 = v0;
             }
         }
@@ -29896,9 +29780,8 @@ lbl43:
                     case 3: 
 
                         v0 = 1;
-lbl19:
-                        // 2 sources
 
+                        
                         var12_12 = v0;
                     }
                 }
@@ -30153,9 +30036,8 @@ lbl19:
                     v1 = 3;
                     v0 = GameCanvas.aj;
                     v2 = GameCanvas.aj[3] * -1;
-lbl23:
-                    // 2 sources
 
+                    
                     v0[v1] = v2;
                 }
             }
@@ -30292,8 +30174,7 @@ lbl23:
                     if (GameCanvas.k.g[14] == -1)GameCanvas.stateOrRender_aS();
                     GameCanvas.triggerDamageFlash(GameCanvas.b, 0, GameCanvas.k.g[13], GameCanvas.k.g[14], null, GameCanvas.a[7], -1);
                     v0 = 1;lbl24:
-                    // 1 sources
-
+                    
                     GameCanvas.drawLevelSelect(0);
                     GameCanvas.spawnEnemy(GameCanvas.k.g[16]);
                     return;
@@ -30308,8 +30189,7 @@ lbl23:
                     if (GameCanvas.k.g[17] == -1)GameCanvas.stateOrRender_aS();
                     GameCanvas.triggerDamageFlash(GameCanvas.b, 0, GameCanvas.k.g[13], GameCanvas.k.g[17], null, GameCanvas.a[7], -1);
                     v0 = 3;lbl40:
-                    // 1 sources
-
+                    
                     GameCanvas.eo = 5;
                     GameCanvas.k.a.spawnEnemy(GameCanvas.k.g[3]);
                     if (GameCanvas.k.g[GameCanvas.updateCutscene(0)] != -1) break;
@@ -30347,8 +30227,7 @@ lbl23:
                     var1_2 = GameCanvas.k.g[var0];
                     GameCanvas.triggerDamageFlash(var1_2, false, -1);
                     v0 = 7;lbl81:
-                    // 2 sources
-
+                    
                     GameCanvas.drawLevelSelect(0);
                     return;
                 }
@@ -30391,8 +30270,7 @@ lbl23:
                     } else {
                         v0 = 0;
                     }lbl119:
-                    // 1 sources
-
+                    
                     ++GameCanvas.en;
                     return;
                 }
@@ -30402,14 +30280,12 @@ lbl23:
                         ++GameCanvas.en;
                         v0 = 11;
                     } else 
-                    // 2 sources
-
+                    
                     {
                         v0 = 0;
                     }
-lbl128:
-                    // 10 sources
 
+                    
                     GameCanvas.eo = v0;
                 }
             }
@@ -31003,9 +30879,8 @@ lbl128:
                         v0 = 49;}
 
                         v0 = 50;
-lbl44:
-                        // 4 sources
 
+                        
                         var9_9 = v0;
                     }
                 }
@@ -31144,9 +31019,8 @@ lbl44:
 
                         if (var11_11.g[4] > 100 && var11_11.g[4] != 105 || var11_11.g[4] == 105 && var11_11.a.e == var11_11.a.a.triggerDamageFlash(var11_11.a.d) - 1) break;
                         v0 = 101;
-lbl23:
-                        // 2 sources
 
+                        
                         var0 = v0;
                     }
                 }
@@ -31192,9 +31066,8 @@ lbl23:
 
                     var2_2 = GameCanvas.stopParticles(var0.g[0], 14);
                     var3_3 = -1;
-lbl24:
-                    // 2 sources
 
+                    
                     var4_4 = 0;
                 }
             }
@@ -31233,9 +31106,8 @@ lbl24:
                     if (!var0.a.triggerDamageFlash()) break;
                     v0 = var0;
                     v1 = 100;
-lbl24:
-                    // 3 sources
 
+                    
                     GameCanvas.drawForeground(v0, v1);
                 }
             }
@@ -31331,9 +31203,8 @@ lbl24:
 
                         var3_3 += 6;
                         v0 = 6;
-lbl18:
-                        // 2 sources
 
+                        
                         var10_6 = v0;
                     }
                 }
@@ -31829,17 +31700,15 @@ lbl18:
                     var7_7 = 72;
                     var16_16 = GameCanvas.loadLevel(14);
                     v2 = GameCanvas.updateConfirmDialog(var1_1);
-lbl88:
-                    // 2 sources
 
+                    
                     var17_17 = v2;
                     var9_9 = 75;
                     GameCanvas.spawnEnemy(0, var17_17 / 1000);
                     v0 = 1;
                     v1 = (var17_17 - var17_17 / 1000 * 1000) / 100;
-lbl93:
-                    // 4 sources
 
+                    
                     GameCanvas.spawnEnemy(v0, v1);
                 }
             }
@@ -31917,9 +31786,8 @@ lbl93:
                     v1 = 8256;}
 
                     v1 = 4112;
-lbl22:
-                    // 3 sources
 
+                    
                     var3_3 = v1;
                 }
             }
@@ -32375,9 +32243,8 @@ lbl22:
                 var8_8 += var0.g[11] + (var0.g[13] >> 1);
                 v0 = var9_9;
                 v1 = var0.g[12] + (var0.g[14] >> 1);
-lbl19:
-                // 2 sources
 
+                
                 var9_9 = v0 + v1;
             }
         }
@@ -32704,9 +32571,8 @@ lbl19:
 
                     ++var4_4;
                     v0 = 2;
-lbl19:
-                    // 3 sources
 
+                    
                     var6_6 = v0;
                 }
             }
@@ -32916,9 +32782,8 @@ lbl19:
 
                 var3_3[0] = -2;
                 if (!var2_2) break;
-lbl38:
-                // 2 sources
 
+                
                 var3_3[0] = var3_3[0] - 2;
                 var3_3[2] = var3_3[2] + 2;
                 v0 = 1;
@@ -32926,9 +32791,8 @@ lbl38:
                 v2 = var3_3[1];
                 v3 = var1_1.g;
                 v4 = 14;
-lbl45:
-                // 3 sources
 
+                
                 v1[v0] = v2 + (GameCanvas.spawnEnemy(v3[v4]) >> 1);
             }
         }
@@ -33657,9 +33521,8 @@ lbl45:
                 v0 = 4;
                 v1 = GameCanvas.as;
                 v2 = GameCanvas.as[4] - (40 + GameCanvas.at[2]);
-lbl17:
-                // 2 sources
 
+                
                 v1[v0] = v2;
             }
         }
@@ -33680,9 +33543,8 @@ lbl17:
                 v3 = 5;
                 v4 = GameCanvas.as;
                 v5 = GameCanvas.as[5] + 40;
-lbl32:
-                // 2 sources
 
+                
                 v4[v3] = v5;
             }
         }
@@ -33757,36 +33619,29 @@ lbl32:
                             var4_3 = GameCanvas.Y >> 14;
                             if (GameCanvas.at[0] >= var1)v3 = var3_2;
                             v4 = var1 - GameCanvas.at[0] + 32;lbl34:
-                            // 1 sources
-
+                            
                             if (GameCanvas.at[0] + GameCanvas.at[2] <= var1 + 240)v3 = var3_2;
                             v4 = var1 + 240 - (GameCanvas.at[0] + GameCanvas.at[2] + 32);
-lbl37:
-                            // 2 sources
 
+                            
                             var3_2 = v3 + v4;
-lbl38:
-                            // 2 sources
 
+                            
                             if (GameCanvas.at[1] >= var2_1)v5 = var4_3;
                             v6 = var2_1 - GameCanvas.at[1] + 36;lbl42:
-                            // 1 sources
-
+                            
                             if (GameCanvas.at[1] + GameCanvas.at[3] <= var2_1 + 320)v5 = var4_3;
                             v6 = var2_1 + 320 - (GameCanvas.at[1] + GameCanvas.at[3] + 36);
-lbl45:
-                            // 2 sources
 
+                            
                             var4_3 = v5 + v6;
-lbl46:
-                            // 2 sources
 
+                            
                             GameCanvas.renderTarget(GameCanvas.c, 1000);
                             GameCanvas.drawForeground(var3_2, var4_3);
                             break block0;
-lbl49:
-                            // 1 sources
 
+                            
                             if (GameCanvas.S != 1) break;
                             GameCanvas.aw = false;
                             break block0;
@@ -33795,16 +33650,14 @@ lbl49:
                             v0 = GameCanvas.as;
                             v1 = 0;
                             v2 = 1;
-lbl56:
-                            // 3 sources
 
+                            
                             v0[v1] = v2;
                         }
                     }
                     return;
-lbl58:
-                    // 1 sources
 
+                    
                     GameCanvas.update_206b();
                     return;
                 }
@@ -33958,9 +33811,8 @@ lbl58:
                 v0 = 90;}
 
                 v0 = 115;
-lbl18:
-                // 3 sources
 
+                
                 var2_2 = v0;
             }
         }
@@ -34340,14 +34192,12 @@ lbl18:
                     var1_1 += 48;}
 
                     v0 = 3;
-lbl60:
-                    // 2 sources
 
+                    
                     var4_4 = v0;
                     var5_5 = 2;
-lbl62:
-                    // 3 sources
 
+                    
                     var2_2 += 48;
                 }
             }
@@ -34568,7 +34418,7 @@ lbl62:
         GameCanvas.handleWeaponSelect();
         try {
             Thread.sleep(20L);
-        }/*         catch (Exception exception) */ {}
+        } catch (Exception exception) {}
         Thread.yield();
         ax = false;
     }
